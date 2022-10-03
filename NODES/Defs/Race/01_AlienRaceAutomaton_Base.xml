@@ -131,6 +131,71 @@
 				  <label>Same creator</label>
 				  <femaleLabel>Same creator</femaleLabel>
 			   </li>
+			   <li>
+				  <relation>HalfSibling</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Cousin</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Grandparent</relation>
+				  <label>Grand creator</label>
+				  <femaleLabel>Grand creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>CousinOnceRemoved</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>SecondCousin</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Grandchild</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GreatGrandparent</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>UncleOrAunt</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GranduncleOrGrandaunt</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GreatGrandchild</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GrandnephewOrGrandniece</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>NephewOrNiece</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Kin</relation>
+				  <label>Same brunch</label>
+				  <femaleLabel>Same brunch</femaleLabel>
+			   </li>
 			</renamer>
 		</relationSettings>
 		

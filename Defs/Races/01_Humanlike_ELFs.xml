@@ -73,18 +73,83 @@
 				<renamer>
 				   <li>
 					  <relation>Parent</relation>
-					  <label>Previous brunch ELF</label>
-					  <femaleLabel>Previous brunch ELF</femaleLabel>
+					  <label>Old sister</label>
+					  <femaleLabel>Old sister</femaleLabel>
 				   </li>
 				   <li>
 					  <relation>Child</relation>
-					  <label>Next brunch ELF</label>
-					  <femaleLabel>Next brunch ELF</femaleLabel>
+					  <label>New sister</label>
+					  <femaleLabel>New sister</femaleLabel>
 				   </li>
 				   <li>
 					  <relation>Sibling</relation>
-					  <label>Same brunch ELF</label>
-					  <femaleLabel>Same brunch ELF</femaleLabel>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>HalfSibling</relation>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Cousin</relation>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Grandparent</relation>
+					  <label>Grand sister</label>
+					  <femaleLabel>Grand sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>CousinOnceRemoved</relation>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>SecondCousin</relation>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Grandchild</relation>
+					  <label>New sister</label>
+					  <femaleLabel>New sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>GreatGrandparent</relation>
+					  <label>Great sister</label>
+					  <femaleLabel>Great sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>UncleOrAunt</relation>
+					  <label>Old sister</label>
+					  <femaleLabel>Old sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>GranduncleOrGrandaunt</relation>
+					  <label>Old sister</label>
+					  <femaleLabel>Old sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>GreatGrandchild</relation>
+					  <label>New sister</label>
+					  <femaleLabel>New sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>GrandnephewOrGrandniece</relation>
+					  <label>New sister</label>
+					  <femaleLabel>New sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>NephewOrNiece</relation>
+					  <label>New sister</label>
+					  <femaleLabel>New sister</femaleLabel>
+				   </li>
+				   <li>
+					  <relation>Kin</relation>
+					  <label>Sister</label>
+					  <femaleLabel>Sister</femaleLabel>
 				   </li>
 				</renamer>
 			</relationSettings>
@@ -140,7 +205,7 @@
 
 		<statBases>
 		  <!-- <GlobalLearningFactor>1.5</GlobalLearningFactor> -->
-		  <MoveSpeed>6.9</MoveSpeed>
+		  <MoveSpeed>7.9</MoveSpeed>
 		  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 		  <ArmorRating_Heat>0.35</ArmorRating_Heat>
