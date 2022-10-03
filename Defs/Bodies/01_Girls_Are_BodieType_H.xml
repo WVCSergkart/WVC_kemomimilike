@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyTypeDef Name="Marker_HG_Herrschers_BodieType_WVC" ParentName="Valkyrie_BodieType_WVC" Abstract="True">
+	</BodyTypeDef>
+	
+	<BodyTypeDef ParentName="Marker_HG_Herrschers_BodieType_WVC">
+		<label>HoS</label>
+		<defName>Body_HoS_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_HoS</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Herrschers_BodieType_WVC">
+		<label>HoS Summer</label>
+		<defName>Body_HoS_Summer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_HoS_Summer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+
+</Defs>

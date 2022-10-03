@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AlienRace.ThingDef_AlienRace ParentName="GeneralThing_BaseValkyrie_WVC" Name="BaseValkyrie_WVC" Abstract="True">
+	<!-- <defName>Alien_Valkyrie_WVC</defName> -->
+	<label>&lt;color=#a2c8ff&gt;Valkyrie&lt;/color&gt;</label>
+	<description>Valkyries - an ancient race created to resist the mechanoids. Despite all the genetic changes, they are almost indistinguishable from humans in appearance, with the exception of the not rare presence of tails, horns, additional pairs of ears and other minor distinguishing features. How and by whom they were created has long been lost in time, but representatives of this race can still be found today in the expanses of the rimworld.&lt;color=#a2c8ff&gt;\n\nAccording to the original idea, mutations were supposed to be a replacement for the degradation of organs and not be so obvious. However, with the change of generations, less "human" and more "alien" representatives of this race began to appear, some of which are only indirectly related to the Valkyries.\n\nOne of the significant genetic deviations was the complete degeneration of the male half of this race, which is why this race consists entirely of girls and was called the Valkyries. But despite this, the representatives of the Valkyries race have full compatibility with non-genetically modified humans, thanks to which they have not become extinct.&lt;/color&gt;\n\nWith age, even the laziest Valkyrie has a very good "natural preparation" of the body, which is why these girls are always very dangerous in close combat.</description>
+	<descriptionHyperlinks>
+	  <!-- <ThingDef>VFE_ComponentMechanoid</ThingDef> -->
+	</descriptionHyperlinks>
+	<!-- <uiIconPath>WVC/Stuff/ValksB</uiIconPath> -->
+	<!-- <uiIconScale>1.0</uiIconScale> -->
+	<alienRace>
+		<generalSettings>
+			<!-- <validBeds> -->
+				<!-- <li>WVC_SleepPod</li> -->
+				<!-- <li>ELF_MendingStation_WVC</li> -->
+			<!-- </validBeds> -->
+			<maleGenderProbability>0.0</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<canLayDown>true</canLayDown>
+			<maxDamageForSocialfight>3</maxDamageForSocialfight>
+			<allowHumanBios>false</allowHumanBios>
+			<!-- <minAgeForAdulthood>3000</minAgeForAdulthood> -->
+			<minAgeForAdulthood>16</minAgeForAdulthood>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<traitCount>1~2</traitCount>
+			<additionalTraits>0</additionalTraits>
+			<!-- <lovinIntervalHoursFromAge> -->
+			  <!-- <points> -->
+				<!-- <li>(0, 2)</li> -->
+				<!-- <li>(16, 1)</li> -->
+			  <!-- </points> -->
+			<!-- </lovinIntervalHoursFromAge> -->
+			<notXenophobistTowards>
+				<li>Alien_Valkyrie_WVC</li>
+				<li>Alien_DryadMother_WVC</li>
+				<li>Alien_RoyalDryad_WVC</li>
+				<li>Alien_ELF_WVC</li>
+				<li>Alien_Herrscher_WVC</li>
+			</notXenophobistTowards>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Bisexual</defName>
+					<chance>100</chance>
+				</li>
+				<!-- <li> -->
+					<!-- <defName>Gay</defName> -->
+					<!-- <chance>100</chance> -->
+				<!-- </li> -->
+				<!-- <li MayRequire="rimeffect.core"> -->
+					<!-- <defName>RE_BioticGod</defName> -->
+					<!-- <chance>1</chance> -->
+				<!-- </li> -->
+			</forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li MayRequire="rimeffect.core">
+					<defName>RE_BioticRecoveryOffset</defName>
+					<degree>-2</degree>
+					<chance>100</chance>
+				</li>
+				<li MayRequire="rimeffect.core">
+					<defName>RE_BioticRecoveryOffset</defName>
+					<degree>-1</degree>
+					<chance>100</chance>
+				</li>
+				<li>
+					<defName>PsychicSensitivity</defName>
+					<degree>-2</degree>
+					<chance>100</chance>
+				</li>
+				<li>
+					<defName>PsychicSensitivity</defName>
+					<degree>-1</degree>
+					<chance>100</chance>
+				</li>
+				<li>
+					<defName>BodyPurist</defName>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+				</li>
+			</disallowedTraits>
+			<!-- <factionRelations> -->
+				<!-- <li> -->
+					<!-- <factions> -->
+					   <!-- <li>Empire</li> -->
+					<!-- </factions> -->
+					<!-- <goodwill> -->
+					   <!-- <min>100</min> -->
+					   <!-- <max>100</max> -->
+					<!-- </goodwill> -->
+				<!-- </li> -->
+			<!-- </factionRelations> -->
+		
+			<!--=====================================================================-->
+		
+			<alienPartGenerator>
+				<atlasScale>4</atlasScale>
+				<borderScale>1</borderScale>
+				<aliencrowntypes>
+					<!-- invisible head -->
+					<li>Head</li>
+				</aliencrowntypes>
+				<alienbodytypes>
+					<li>Body_Aloy_WVC</li>
+					<li>Body_Cocogoat_WVC</li>
+					<li>Body_Delta_WVC</li>
+					<li>Body_Haxxor_WVC</li>
+					<li>Body_Lily_WVC</li>
+					<li>Body_Roza_WVC</li>
+					<li>Body_Sayu_WVC</li>
+					<li>Body_Yae_WVC</li>
+					<li>Body_Yoimiya_WVC</li>
+					<li>Body_Lumine_WVC</li>
+					<li>Body_Ayaka_WVC</li>
+					<!-- Insects -->
+					<li MayRequire="pupa.insectgirls">Body_baier_WVC</li>
+					<li MayRequire="pupa.insectgirls">Body_zhuer_WVC</li>
+					<li MayRequire="pupa.insectgirls">Body_kuoer_WVC</li>
+					<li MayRequire="pupa.insectgirls">Body_jiaer_WVC</li>
+					<li MayRequire="pupa.insectgirls">Body_buer_WVC</li>
+					<li MayRequire="pupa.insectgirls">Body_juer_WVC</li>
+					<!-- House -->
+					<li MayRequire="psyche.kemomimihouse">Body_akame_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_aome_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_hana_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_kon_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_konf_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_kohime_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_kuro_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_miko_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_siro_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_sirof_WVC</li>
+					<li MayRequire="psyche.kemomimihouse">Body_yuki_WVC</li>
+				</alienbodytypes>
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+				<customDrawSize>(1.1, 1.1)</customDrawSize>
+				<customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize>
+				<!-- invisible headwears -->
+				<customHeadDrawSize>(0.001, 0.001)</customHeadDrawSize>
+				<!-- on portrait too -->
+				<customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
+				<headOffset>(0.0, 0.0)</headOffset>
+				<colorChannels>
+					<li>
+						<!-- always white or cause visual bugs -->
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+								</li>
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+			</alienPartGenerator>
+		</generalSettings>
+
+		<!--=====================================================================-->
+
+		<graphicPaths>
+			<li>
+				<body>WVC/Pawns/Bodies/</body>
+				<head>WVC/BaseInvisibleHead/</head>
+				<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+				<!-- <skull>WVC/BaseInvisibleHead/Head</skull> -->
+				<skinShader>CutoutComplex</skinShader>
+			</li>
+		</graphicPaths>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
+		
+		<!--=====================================================================-->
+		
+		<thoughtSettings>
+			<!-- <restrictedThoughts> -->
+				<!-- <li>WVC_KL_Naked</li> -->
+			<!-- </restrictedThoughts> -->
+			<replacerList>
+				<!-- <li> -->
+					<!-- <original>Naked</original> -->
+					<!-- <replacer>GirlsNaked_WVC</replacer>  -->
+				<!-- </li> -->
+			</replacerList>
+			<cannotReceiveThoughts>
+				<!-- <li>SharedBed</li> -->
+				<!-- They can't be naked -->
+				<li>Naked</li>
+				<!-- <li>BrawlerUnhappy</li> -->
+				<!-- <li>AteInsectMeatAsIngredient</li> -->
+				<!-- <li>AteHumanlikeMeatDirect</li> -->
+				<!-- <li>AteHumanlikeMeatAsIngredient</li> -->
+				<!-- <li>AteInsectMeatDirect</li> -->
+				<!-- Finally, fixed -->
+				<!-- Royal -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">ReignedInThroneroom</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">AteFoodInappropriateForTitle</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleApparelRequirementNotMet</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleApparelMinQualityNotMet</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleThroneroomRequirementsNotMet</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleBedroomRequirementsNotMet</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleNoThroneRoom</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.royalty">TitleNoPersonalBedroom</li> -->
+				<!-- Ideology -->
+				<!-- <li MayRequire="ludeon.rimworld.ideology">GroinChestOrHairUncovered_Disapproved_Male</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.ideology">GroinChestOrHairUncovered_Disapproved_Female</li> -->
+				<!-- Vanilla Ideology Expanded - Memes and Structures -->
+				<!-- <li MayRequire="vanillaexpanded.vmemese">VME_NeedAnonymity</li> -->
+			</cannotReceiveThoughts>
+		</thoughtSettings>
+		
+		<!--=====================================================================-->
+		
+		<relationSettings>
+			<relationChanceModifierLover>1</relationChanceModifierLover>
+			<relationChanceModifierExLover>1</relationChanceModifierExLover>
+			<relationChanceModifierFiance>1</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+			<relationChanceModifierParent>1</relationChanceModifierParent>
+			<relationChanceModifierChild>1</relationChanceModifierChild>
+			<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			<!-- <renamer> -->
+			<!-- </renamer> -->
+		</relationSettings>
+		
+		<!--=====================================================================-->
+		
+		<raceRestriction>
+			<!-- <researchList> -->
+				<!-- <li> -->
+					<!-- <projects> -->
+						<!-- <li>WVC_RaceResearching_Valkyries</li> -->
+					<!-- </projects> -->
+				<!-- </li> -->
+			<!-- </researchList> -->
+			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+			<apparelList>
+				<!-- = -->
+				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Blindfold</li>
+				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_SheerVeil</li>
+				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Shibari</li>
+			</apparelList>
+			<whiteApparelList>
+				<li MayRequire="vanillaexpanded.vpsycastse">VPE_Psyring</li>
+				<li>Apparel_GirlyUnderwear_WVC</li>
+				<li>WVC_Apparel_PerfectUnderwear</li>
+				<li>WVC_Apparel_WarmUnderwear</li>
+				<li>WVC_Apparel_SummerUnderwear</li>
+				<li>WVC_Apparel_ThermalUnderwear</li>
+				<li>WVC_Apparel_ExoticUnderwear</li>
+				<li>WVC_Apparel_MechanoidShieldBelt</li>
+				<!-- = -->
+				<li>Apparel_PsychicShockLance</li>
+				<li>Apparel_PsychicInsanityLance</li>
+				<li>Apparel_SmokepopBelt</li>
+				<li>Apparel_ShieldBelt</li>
+				<li MayRequire="ludeon.rimworld.royalty">Apparel_PackJump</li>
+				<li MayRequire="ludeon.rimworld.royalty">Apparel_PackBroadshield</li>
+				<!-- Vanilla Expanded -->
+				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Boots</li> -->
+				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Shoes</li> -->
+				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Handwear_Gloves</li> -->
+				<!-- Accessories -->
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_Backpack</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_BattleBanner</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_MedicBag</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_Quiver</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_ToolBelt</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_AmmoPack</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_ExplosiveBelt</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_RangedShieldBelt</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_RessurectorBelt</li>
+				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_MiniTurretPack</li>
+				<!-- Medieval Overhaul -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesLeather</li> -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesSplinted</li> -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesPlate</li> -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsLeather</li> -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsSplinted</li> -->
+				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsPlate</li> -->
+				<!-- SoS -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_EVA_Bubble_WVC</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBody</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmet</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavy</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSurvivalBelt</li> -->
+				<!-- <li MayRequire="kentington.saveourship2">Apparel_HologramRelay</li> -->
+			</whiteApparelList>
+			<blackApparelList>
+			</blackApparelList>
+			<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
+			<buildingList>
+			</buildingList>
+			<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
+			<recipeList>
+			</recipeList>
+			<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits>
+			<whiteTraitList>
+			</whiteTraitList>
+			<traitList>
+				<li>Valkyrie_Herrschers_WVC</li>
+			</traitList>
+			<blackTraitList>
+				<!-- <li>Bisexual</li> -->
+				<li>Asexual</li>
+				<li>Gay</li>
+				<!-- = -->
+				<li>BodyPurist</li>
+				<li>Beauty</li>
+				<li>AnnoyingVoice</li>
+				<li>CreepyBreathing</li>
+				<li>Nudist</li>
+				<!-- <li>PsychicSensitivity</li> -->
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Coward</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Technophobe</li>
+				<li MayRequire="ceteam.combatextended">Bravery</li>
+			</blackTraitList>
+			<onlyTameRaceRestrictedPets>false</onlyTameRaceRestrictedPets>
+			<petList>
+			</petList>
+			<weaponList>
+			</weaponList>
+			<!-- <workGiverList> -->
+			<!-- </workGiverList> -->
+		</raceRestriction>
+		<compatibility>
+		</compatibility>
+	</alienRace>
+
+	<!-- ==================================Thing================================== -->
+
+	<statBases>
+	  <MoveSpeed>4.9</MoveSpeed>
+	  <!-- <MoveSpeed>5.6</MoveSpeed> -->
+	  <MarketValue>1280</MarketValue>
+	  <ComfyTemperatureMin>-16</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>32</ComfyTemperatureMax>
+	  <!-- <ComfyTemperatureMin>-5</ComfyTemperatureMin> -->
+	  <!-- <ComfyTemperatureMax>26</ComfyTemperatureMax> -->
+	  <FilthRate>0</FilthRate>
+	  <MeatAmount>40</MeatAmount>
+	  <LeatherAmount>35</LeatherAmount>
+	  <ToxicSensitivity>1.0</ToxicSensitivity>
+	  <PsychicSensitivity>1.0</PsychicSensitivity>
+	  <Flammability>1</Flammability>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
+	  <!-- custom -->
+	  <PawnTrapSpringChance>0.0</PawnTrapSpringChance>
+	  <ButcheryFleshEfficiency>0.8</ButcheryFleshEfficiency>
+	  <ButcheryMechanoidEfficiency>1.2</ButcheryMechanoidEfficiency>
+	  <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+	  <FoodPoisonChance>0.8</FoodPoisonChance>
+	  <PawnBeauty>2</PawnBeauty>
+	  <SocialImpact>1.2</SocialImpact>
+	  <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+	  <DrugSynthesisSpeed>0.8</DrugSynthesisSpeed>
+	  <MedicalTendSpeed>1.2</MedicalTendSpeed>
+	  <MedicalTendQuality>1.2</MedicalTendQuality>
+	  <MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
+	  <BondAnimalChanceFactor>1.2</BondAnimalChanceFactor>
+	  <RestRateMultiplier>1.0</RestRateMultiplier>
+	  <MeleeDodgeChance>20.0</MeleeDodgeChance>
+	  <MeleeHitChance>20.0</MeleeHitChance>
+	  <!-- custom -->
+	  <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+	  <Mass>46</Mass>
+	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">7</RoyalFavorValue>
+	  <!-- CE test -->
+	  <MeleeParryChance MayRequire="ceteam.combatextended">20.0</MeleeParryChance>
+	  <UnarmedDamage MayRequire="ceteam.combatextended">5.0</UnarmedDamage>
+	  <Suppressability MayRequire="ceteam.combatextended">0.0</Suppressability>
+	  <!-- CE test -->
+	</statBases>
+
+	<!-- ==================================================================== -->
+
+	<race>
+	  <thinkTreeMain>Humanlike</thinkTreeMain>
+	  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+	  <intelligence>Humanlike</intelligence>
+	  <makesFootprints>true</makesFootprints>
+	  <!-- <useMeatFrom>Human</useMeatFrom> -->
+	  <canBePredatorPrey>false</canBePredatorPrey>
+	  <fleshType>ValkyriesFlesh_WVC</fleshType>
+	  <!-- <needsRest>true</needsRest> -->
+	  <hasGenders>true</hasGenders>
+	  <nameCategory>HumanStandard</nameCategory>
+	  <!-- <body>Human</body> -->
+	  <body>Body_Valkyrie_WVC</body>
+	  <meatLabel>mutated human meat</meatLabel>
+	  <meatMarketValue>0.7</meatMarketValue>
+	  <!-- <useMeatFrom>Alien_Valkyrie_WVC</useMeatFrom> -->
+	  <!-- <baseBodySize>1</baseBodySize> -->
+	  <baseBodySize>0.7</baseBodySize>
+	  <baseHealthScale>1.0</baseHealthScale>
+	  <baseHungerRate>0.8</baseHungerRate>
+	  <!-- <foodType>VegetarianRoughAnimal, OmnivoreHuman, OmnivoreAnimal</foodType> -->
+	  <foodType>OmnivoreHuman</foodType>
+	  <leatherDef>Leather_Human</leatherDef>
+	  <wildness>0.0</wildness>
+	  <lifeExpectancy>60</lifeExpectancy>
+	  <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+	  <litterSizeCurve>
+		<points>
+			<li>(0, 1)</li>
+			<li>(1, 5)</li>
+			<li>(2, 10)</li>
+			<li>(3, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <lifeStageAges Inherit="False">
+		<li>
+		  <def>HumanlikeBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>HumanlikeToddler</def>
+		  <minAge>1.2</minAge>
+		</li>
+		<!-- <li> -->
+		  <!-- <def>HumanlikeChild</def> -->
+		  <!-- <minAge>4</minAge> -->
+		<!-- </li> -->
+		<li>
+			<def>LifeStage_Valkyrie_I_WVC</def>
+			<minAge>4</minAge>
+		</li>
+		<li>
+			<def>LifeStage_Valkyrie_II_WVC</def>
+			<minAge>13</minAge>
+		</li>
+		<li>
+			<def>LifeStage_Valkyrie_III_WVC</def>
+			<minAge>16</minAge>
+		</li>
+		<li>
+			<def>LifeStage_Valkyrie_IV_WVC</def>
+			<minAge>18</minAge>
+		</li>
+		<li>
+			<def>LifeStage_Valkyrie_V_WVC</def>
+			<minAge>20</minAge>
+		</li>
+		<!-- <li> -->
+			<!-- <def>LifeStage_Valkyrie_VI_WVC</def> -->
+			<!-- <minAge>24</minAge> -->
+		<!-- </li> -->
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <specialShadowData>
+		<volume>(0.3, 0.8, 0.4)</volume>
+		<offset>(0,0,-0.4)</offset>
+	  </specialShadowData>
+	  <ageGenerationCurve>
+		<points>
+			<li>(12,0)</li>
+			<li>(14,100)</li>
+			<li>(16,20)</li>
+			<!-- <li>(18,0)</li> -->
+			<li>(20,0)</li>
+			<!-- <li>(30,0)</li> -->
+			<!-- <li>(60,0)</li> -->
+			<!-- <li>(80,0)</li> -->
+			<!-- <li>(100,0)</li> -->
+		</points>
+	  </ageGenerationCurve>
+	  <hediffGiverSets>
+		<li>Hediff_Valkyrie_WVC</li>
+	  </hediffGiverSets>
+	</race>
+
+	<!-- ==================================================================== -->
+
+	<!-- <damageMultipliers> -->
+		<!-- <li MayRequire="kentington.saveourship2"> -->
+			<!-- <damageDef>VacuumDamage</damageDef> -->
+			<!-- <multiplier>0</multiplier> -->
+		<!-- </li> -->
+	<!-- </damageMultipliers> -->
+
+	<!-- ==================================================================== -->
+
+	<comps>
+	</comps>
+
+	<!-- ==================================================================== -->
+
+	<recipes>
+	</recipes>
+
+	<!-- ==================================================================== -->
+
+	<butcherProducts>
+	  <Plasteel>3</Plasteel>
+	  <VFEI_ValkyrieGenome_WVC>2</VFEI_ValkyrieGenome_WVC>
+	  <DankPyon_Hide_Human MayRequire="dankpyon.medieval.overhaul">1</DankPyon_Hide_Human>
+	</butcherProducts>
+
+	<!-- ==================================================================== -->
+
+  </AlienRace.ThingDef_AlienRace>
+
+  <!-- ==================================================================== -->
+
+  <AlienRace.ThingDef_AlienRace ParentName="BaseValkyrie_WVC">
+	<defName>Alien_Valkyrie_WVC</defName>
+	<descriptionHyperlinks>
+	  <ConceptDef>WVC_AlienRace_Valkyrie</ConceptDef>
+	</descriptionHyperlinks>
+	<alienRace>
+		<generalSettings>
+			<alienPartGenerator>
+				<alienbodytypes>
+				</alienbodytypes>
+			</alienPartGenerator>
+		</generalSettings>
+		<raceRestriction>
+			<conceptList>
+				<li>WVC_AlienRace_Valkyrie</li>
+			</conceptList>
+		</raceRestriction>
+	</alienRace>
+	<comps>
+		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<hediffname>SpecialHediff_AlienInitial_Valkyrie_WVC</hediffname>
+			<hediffseverity>1</hediffseverity>
+		</li>
+	</comps>
+	<race>
+	  <hediffGiverSets>
+		<li>HediffGiverSet_MutationsBase_WVC</li>
+	  </hediffGiverSets>
+	</race>
+  </AlienRace.ThingDef_AlienRace>
+
+  <!-- ==================================================================== -->
+
+  <AlienRace.ThingDef_AlienRace Name="MeatPatch_BaseValkyrie_WVC" ParentName="BaseValkyrie_WVC" Abstract="True">
+	<race>
+	  <useMeatFrom>Alien_Valkyrie_WVC</useMeatFrom>
+	</race>
+  </AlienRace.ThingDef_AlienRace>
+
+</Defs>

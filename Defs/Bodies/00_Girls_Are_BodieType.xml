@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyTypeDef Name="Valkyrie_BodieType_WVC" Abstract="True">
+		<!-- <defName>YourRaceBody</defName> -->
+		<label>valkyrie</label>
+		<headOffset>(0.0, 0.165)</headOffset>
+		<bodyNakedGraphicPath>WVC/Pawns/Naked_aloy</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
+		<woundAnchors>
+			<!-- FullHead -->
+			<li>
+				<rotation>South</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.1</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>FullHead</group>
+				<offset>(0, 0, 0.22)</offset>
+				<range>0.2</range>
+				<layer>Head</layer>
+				<debugColor>(0,1,1,1)</debugColor>
+			</li>
+			<!-- LeftEye -->
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>LeftEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(0,0,0,1)</debugColor>
+			</li>
+			<!-- RightEye -->
+			<li>
+				<rotation>South</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(-0.095, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>RightEye</tag>
+				<canMirror>false</canMirror>
+				<offset>(0.22, 0, 0.26)</offset>
+				<range>0</range>
+				<layer>Head</layer>
+				<debugColor>(1,1,1,1)</debugColor>
+			</li>
+			<!-- Torso -->
+			<li>
+				<rotation>South</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.15</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<group>Torso</group>
+				<offset>(0,0,-0.20)</offset>
+				<range>0.2</range>
+				<debugColor>(1,0,0,1)</debugColor>
+			</li>
+			<!-- LeftShoulder -->
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftShoulder</tag>
+				<offset>(-0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,1,0,1)</debugColor>
+			</li>
+			<!-- RightShoulder -->
+			<li>
+				<rotation>South</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.1,0,0.05)</offset>
+				<range>0.075</range>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>RightShoulder</tag>
+				<offset>(0.05,0,0.1)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(1,0,1,1)</debugColor>
+			</li>
+			<!-- LeftLeg -->
+			<li>
+				<rotation>South</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<li>
+				<rotation>East</rotation>
+				<tag>LeftLeg</tag>
+				<offset>(-0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,1,0,1)</debugColor>
+			</li>
+			<!-- RightLeg -->
+			<li>
+				<rotation>South</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.075,0,-0.375)</offset>
+				<range>0.1</range>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+			<li>
+				<rotation>West</rotation>
+				<tag>RightLeg</tag>
+				<offset>(0.05,0,-0.3)</offset>
+				<range>0.15</range>
+				<canMirror>false</canMirror>
+				<debugColor>(0,0,1,1)</debugColor>
+			</li>
+		</woundAnchors>
+	</BodyTypeDef>
+
+	<!-- ================================================================= -->
+
+	<BodyTypeDef Name="Marker_HG_Valkyrie_BodieType_WVC" ParentName="Valkyrie_BodieType_WVC" Abstract="True">
+	</BodyTypeDef>
+	
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Aloy</label>
+		<defName>Body_Aloy_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_aloy</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Ganyu</label>
+		<defName>Body_Cocogoat_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_cocogoat</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Delta</label>
+		<defName>Body_Delta_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Delta</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>8-Bit</label>
+		<defName>Body_8Bit_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_8Bit</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Haxxor Bunny</label>
+		<defName>Body_Haxxor_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Haxxor</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Arc City Blues</label>
+		<defName>Body_HaxxorA_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_HaxxorA</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Liliya</label>
+		<defName>Body_Lily_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Lily</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Rozaliya</label>
+		<defName>Body_Roza_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Roza</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Sayu</label>
+		<defName>Body_Sayu_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Sayu</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Yae</label>
+		<defName>Body_Yae_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Yae</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Yoimiya</label>
+		<defName>Body_Yoimiya_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Yoimiya</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Lumine</label>
+		<defName>Body_Lumine_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Lumine</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_HG_Valkyrie_BodieType_WVC">
+		<label>Ayaka</label>
+		<defName>Body_Ayaka_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Ayaka</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	
+</Defs>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Marker_OneHandWeapon_WVC" Name="MeleeWeapon_MAGTyphoon_WVC" Abstract="True">
+	<!-- <defName>MeleeWeapon_MAGTyphoonB_WVC</defName> -->
+	<label>MAG-Typhoon MkI</label>
+	<!-- <description>Experimental modification of MagStorm. MagStorm built using mechanoids data, making it relatively safe choice for the experiment.\n\n(Only Valkyries know how to use this weapon)</description> -->
+	<graphicData>
+	  <texPath>WVC/weapon/MAGTyphoonB</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<soundInteract>Interact_PlasmaSword</soundInteract>
+	<meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+	<!-- <equippedAngleOffset>-50</equippedAngleOffset> -->
+	<statBases>
+	</statBases>
+	<tools>
+	  <li>
+		<label>handle</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>0.9</cooldownTime>
+		<chanceFactor>0.25</chanceFactor> 
+	  </li>
+	  <li>
+		<label>blade</label>
+		<capacities>
+		  <li>WVC_Cut_AngleRed</li>
+		</capacities>
+		<power>19</power>
+		<cooldownTime>0.9</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+			<def>Flame</def>
+			<amount>8</amount>
+			<chance>0.7</chance>
+		  </li>
+		  <li>
+			<def>EMP</def>
+			<amount>9</amount>
+			<chance>0.5</chance>
+		  </li>
+		</extraMeleeDamages>
+		<armorPenetration>0.7</armorPenetration>
+	  </li>
+	  <li>
+		<label>edge</label>
+		<capacities>
+		  <li>WVC_Cut_AngleRed</li>
+		</capacities>
+		<power>19</power>
+		<cooldownTime>0.9</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+			<def>Flame</def>
+			<amount>8</amount>
+			<chance>0.5</chance>
+		  </li>
+		  <li>
+			<def>EMP</def>
+			<amount>9</amount>
+			<chance>0.7</chance>
+		  </li>
+		</extraMeleeDamages>
+		<armorPenetration>0.7</armorPenetration>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_MAGTyphoon_WVC">
+	<defName>MeleeWeapon_MAGTyphoonB_WVC</defName>
+	<label>MAG-Typhoon MkI</label>
+	<devNote>MeleeWeapon_MAGTyphoon_WVC</devNote>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_MAGTyphoon_WVC">
+	<defName>MeleeWeapon_MAGTyphoonA_WVC</defName>
+	<label>MAG-Typhoon MkII</label>
+	<graphicData>
+	  <texPath>WVC/weapon/MAGTyphoonA</texPath>
+	</graphicData>
+	<devNote>MeleeWeapon_MAGTyphoon_WVC</devNote>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_MAGTyphoon_WVC">
+	<defName>MeleeWeapon_MAGTyphoonC_WVC</defName>
+	<label>MAG-Typhoon MkIII</label>
+	<graphicData>
+	  <texPath>WVC/weapon/MAGTyphoonC</texPath>
+	</graphicData>
+	<devNote>MeleeWeapon_MAGTyphoon_WVC</devNote>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_MAGTyphoon_WVC">
+	<defName>MeleeWeapon_MAGTyphoonD_WVC</defName>
+	<label>MAG-Typhoon MkIV</label>
+	<graphicData>
+	  <texPath>WVC/weapon/MAGTyphoonD</texPath>
+	</graphicData>
+	<devNote>MeleeWeapon_MAGTyphoon_WVC</devNote>
+  </ThingDef>
+
+</Defs>

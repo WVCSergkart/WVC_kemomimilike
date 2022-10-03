@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef ParentName="WVC_Nodes_WandererEventFormer_Base">
+		<defName>WandererJoin_AutomatonReshaper_WVC</defName>
+		<label>(WVC) Wanderer joins: Reshaper</label>
+		<letterLabel>Wanderer joins: Reshaper</letterLabel>
+		<pawnKind>WVC_AlienRace_Reshaper</pawnKind>
+	</IncidentDef>
+  
+</Defs>

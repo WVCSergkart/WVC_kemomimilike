@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MeleeWeapon_AmenomaKageuchi_WVC" ParentName="Marker_OneHandWeapon_WVC" Abstract="True">
+	<!-- <defName>MeleeWeapon_AmenomaKageuchiA_WVC</defName> -->
+	<label>Amenoma Kageuchi</label>
+	<!-- <description>A blade custom made for a farmed samurai who could strike down a tengu warrior, known for their incredible agility, in midair.\n\n(Only Valkyries know how to use this weapon)</description> -->
+	<graphicData>
+	  <texPath>WVC/weapon/AmenomaKageuchi</texPath>
+	</graphicData>
+	<equippedAngleOffset>-125</equippedAngleOffset>
+	<statBases>
+	</statBases>
+	<tools>
+	  <li>
+		<label>handle</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>0.9</cooldownTime>
+		<chanceFactor>0.25</chanceFactor> 
+	  </li>
+	  <li>
+		<label>blade</label>
+		<capacities>
+		  <li>WVC_Cut_BlueArk</li>
+		</capacities>
+		<power>22</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+	  </li>
+	  <li>
+		<label>edge</label>
+		<capacities>
+		  <li>WVC_Cut_LinesBlue</li>
+		</capacities>
+		<power>22</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+		<extraMeleeDamages>
+		  <li>
+			<def>EMP</def>
+			<amount>9</amount>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_AmenomaKageuchi_WVC">
+	<defName>MeleeWeapon_AmenomaKageuchiA_WVC</defName>
+	<label>Amenoma Kageuchi</label>
+	<devNote>MeleeWeapon_AmenomaKageuchi_WVC</devNote>
+  </ThingDef>
+
+</Defs>

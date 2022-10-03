@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_SuperPowersAbilities_WVC</defName>
+	<hediffGivers>
+
+		<!-- ===================================================================== -->
+
+		<li MayRequire="noodlesking.morepsycasts" Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_RegrowBodyParts</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li MayRequire="noodlesking.morepsycasts" Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_HealScars</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li MayRequire="noodlesking.morepsycasts" Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_RevivingTouch</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!-- ===================================================================== -->
+
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_BulletShield</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_BerserkPulse</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_Invisibility</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_Skip</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_VertigoPulse</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_Farskip</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_Neuroquake</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_MassChaosSkip</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!-- ===================================================================== -->
+
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_PsyAbility_PsychicClaws_WVC</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li MayRequire="ludeon.rimworld.ideology" Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_PsyAbility_SummonTreeGauranlen_WVC</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_Ability_PsyAbility_SummonTreeAnima_WVC</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li MayRequire="vanillaexpanded.ideo.dryads" Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_EchoesOfMinds</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!-- ===================================================================== -->
+
+	</hediffGivers>
+  </HediffGiverSetDef>
+
+  <!-- ============================================ -->
+
+  <HediffDef Name="WVC_HediffMutation_Ability" ParentName="WVC_HediffMutation_Base" Abstract="True">
+	<!-- <defaultLabelColor>(190,162,255)</defaultLabelColor> -->
+	<defaultLabelColor>(255,162,100)</defaultLabelColor>
+	<label>psy-neurons</label>
+	<description>As a result of the mutation, neural connections were formed that are sensitive to the psy-field, due to which psychic sensitivity was increased and a new psycast was studied.</description>
+	<stages>
+	  <li>
+		<!-- <becomeVisible>false</becomeVisible> -->
+		<partEfficiencyOffset>0.05</partEfficiencyOffset>
+		<statOffsets>
+		  <PsychicSensitivity>0.10</PsychicSensitivity>
+		</statOffsets>
+	  </li>
+	</stages>
+	<comps>
+	</comps>
+  </HediffDef>
+
+  <!-- ============================================ -->
+
+  <HediffDef MayRequire="noodlesking.morepsycasts" ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_RegrowBodyParts</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>MorePsycasts_RegrowBodyParts</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef MayRequire="noodlesking.morepsycasts" ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_HealScars</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>MorePsycasts_HealScars</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef MayRequire="noodlesking.morepsycasts" ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_RevivingTouch</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>MorePsycasts_RevivingTouch</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+
+  <!-- ============================================ -->
+
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_BulletShield</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>BulletShield</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_BerserkPulse</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>BerserkPulse</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_Invisibility</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Invisibility</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_Skip</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Skip</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_VertigoPulse</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>VertigoPulse</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_Farskip</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Farskip</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_Neuroquake</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Neuroquake</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_MassChaosSkip</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>MassChaosSkip</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+
+  <!-- ============================================ -->
+
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_PsyAbility_PsychicClaws_WVC</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>PsyAbility_PsychicClaws_WVC</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef MayRequire="ludeon.rimworld.ideology" ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_PsyAbility_SummonTreeGauranlen_WVC</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>PsyAbility_SummonTreeGauranlen_WVC</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+  <HediffDef ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_Ability_PsyAbility_SummonTreeAnima_WVC</defName>
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>PsyAbility_SummonTreeAnima_WVC</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+
+  <HediffDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_HediffMutation_Ability">
+	<defName>WVC_HediffMutation_EchoesOfMinds</defName>
+	<!-- <label>Echoes of Minds</label> -->
+	<!-- <description>For some strange reason, this ELF's mind is able to sense where beings of her kind are. She can take advantage of this and save her sisters.</description> -->
+	<!-- <extraTooltip>Grants the ability to summon an ELF. (ELF only)\n\n"Little sister is watching you."</extraTooltip> -->
+	<!-- <labelNoun>Brain</labelNoun> -->
+	<!-- <labelNounPretty>ELF</labelNounPretty> -->
+	<!-- <stages> -->
+	  <!-- <li> -->
+		<!-- <statOffsets> -->
+		  <!-- <PsychicSensitivity>0.25</PsychicSensitivity> -->
+		<!-- </statOffsets> -->
+		<!-- <statFactors> -->
+		  <!-- <Ability_EntropyPulseDeathChance_WVC>0.0</Ability_EntropyPulseDeathChance_WVC> -->
+		<!-- </statFactors> -->
+	  <!-- </li> -->
+	<!-- </stages> -->
+	<comps>
+		<li Class="HediffCompProperties_GiveAbility">
+			<abilityDef>PsyAbility_SummonELF_WVC</abilityDef>
+		</li>
+	</comps>
+  </HediffDef>
+
+</Defs>

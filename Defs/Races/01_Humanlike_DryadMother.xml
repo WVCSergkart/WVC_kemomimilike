@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" Name="BaseDryadMother_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
+		<!-- <defName>Alien_DryadMother_WVC</defName> -->
+		<!-- <label>&lt;color=#f5ffa2&gt;Dryad mother&lt;/color&gt;</label> -->
+		<!-- Гауркирия -->
+		<label>&lt;color=#f5ffa2&gt;Gaurkyrie&lt;/color&gt;</label>
+		<description>A rare subspecies of Valkyrie that hybridizes with Gauranlen sprouts.\n\nUsually mutations change Valkyries slightly, an additional tail, an eye, or unusual abilities. In the case of the Dryad Mother, the mutation brought about significant changes in both body structure and brain structure, creating separate subspecies.&lt;color=#f5ffa2&gt;\n\nDryad mothers do not experience emotions, and the reproductive system has been modified so that they are able to "give birth" to small mammalian creatures - dryads. Dryads "born" by the Mother are different from the usual, although they have a direct relationship. They are something like a biomass that has no mind and is controlled directly by the Mother. The process of birth itself has nothing to do with how it occurs in mammals, since the biomass simply falls away from the Mother like shed skin. The mucus of the bomass itself accumulates on the body of the Dryad along with sweat, or rather it is. The biomass covering the entire body of the Mother exists in synbiosis with her, protecting her from the effects of the external environment. The disadvantage is the flammability of biomass.&lt;/color&gt;\n\nDespite her size, the Dryad Mother is very heavy, which limits her mobility, however, despite the fact that she is slow, she can still deftly dodge blows.\n\nAlso on their heads, along with their hair, leaves grow like those of the Gauranlen tree, so leaves can fall from the Mother's head. Sometimes, instead of leaves of Gauranlen, a seed may fall from it.</description>
+		<descriptionHyperlinks Inherit="False">
+		  <!-- <HediffDef>Hediff_Valkyrie_DryadMother_WVC</HediffDef> -->
+		  <ThingDef MayRequire="ludeon.rimworld.ideology">Plant_TreeGauranlen</ThingDef>
+		  <ThingDef MayRequire="ludeon.rimworld.ideology">GauranlenSeed</ThingDef>
+		</descriptionHyperlinks>
+		<!-- <uiIconScale>1.0</uiIconScale> -->
+		<!-- <uiIconPath>WVC/Stuff/ValksD</uiIconPath> -->
+
+		<!-- ===================================================================== -->
+
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<customDrawSize>(1.2, 1.2)</customDrawSize>
+				</alienPartGenerator>
+			</generalSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
+				<canStillReceiveThoughts>
+					<li>Thought_HediffMotherThoughts_WVC</li>
+					<!-- for social interaction -->
+					<!-- <li>Chitchat</li> -->
+					<!-- <li>DeepTalk</li> -->
+					<!-- <li>Slighted</li> -->
+					<!-- <li>Insulted</li> -->
+					<!-- <li>KindWords</li> -->
+					<!-- <li>RapportBuilt</li> -->
+					<!-- <li>HadAngeringFight</li> -->
+					<!-- <li>HadCatharticFight</li> -->
+					<!-- <li>HarmedMe</li> -->
+					<!-- <li>BotchedMySurgery</li> -->
+					<!-- <li>RescuedMe</li> -->
+					<!-- <li>RescuedMeByOfferingHelp</li> -->
+					<!-- <li>RecruitedMe</li> -->
+					<!-- <li>CrashedTogether</li> -->
+					<!-- <li>SoldMyLovedOne</li> -->
+					<!-- <li>SoldMyBondedAnimal</li> -->
+					<!-- <li>ForcedMeToTakeDrugs</li> -->
+					<!-- <li>ForcedMeToTakeLuciferium</li> -->
+					<!-- <li>RebuffedMyRomanceAttempt</li> -->
+					<!-- <li>FailedRomanceAttemptOnMe</li> -->
+					<!-- <li>BrokeUpWithMe</li> -->
+					<!-- <li>CheatedOnMe</li> -->
+					<!-- <li>DivorcedMe</li> -->
+					<!-- <li>RejectedMyProposal</li> -->
+					<!-- <li>IRejectedTheirProposal</li> -->
+					<!-- <li>HoneymoonPhase</li> -->
+					<!-- <li>GotSomeLovin</li> -->
+					<!-- <li>KilledMyFriend</li> -->
+					<!-- <li>KilledMyRival</li> -->
+					<!-- <li>KilledMyLover</li> -->
+					<!-- <li>KilledMyFiance</li> -->
+					<!-- <li>KilledMySpouse</li> -->
+					<!-- <li>KilledMyFather</li> -->
+					<!-- <li>KilledMyMother</li> -->
+					<!-- <li>KilledMySon</li> -->
+					<!-- <li>KilledMyDaughter</li> -->
+					<!-- <li>KilledMyBrother</li> -->
+					<!-- <li>KilledMySister</li> -->
+					<!-- <li>KilledMyKin</li> -->
+					<!-- <li>KilledMyBondedAnimal</li> -->
+					<!-- vsie social interaction -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_BondedPetButcheredOpinion</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_ExposedCorpseOfMyFriendOpinion</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_IngestedHumanFlesh</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_BingedFood</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_BingedDrug</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_HideInRoom</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WanderedInSaddness</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_ThrewTantrum</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WentBerserk</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WentOnFireStartingSpree</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WentOnMurderousRage</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_RanWild</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_InsultedMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_SlaughteredAnimalInRage</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_RebuffedMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_InducedPrisonerToEscape</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_TamedThrumbo</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WasPreviouslyOurEnemy</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WasBadlyInjured</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_DidNotAttendWedding</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_AttendedMyWedding</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_RemovedPrisonersOrgans</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_FailedMedicalOperationAndKilled</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_TamedMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_ArrestedMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_ResurrectedMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_BrokeUpWithMe</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WeHadNiceChat</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_WeHadSocialFight</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_SavedMeFromMyWounds</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_HasBeenMyFriendSinceChildhood</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_SavedMeFromRaiders</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_CuredMyFriend</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_StoleMyLover</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_IsRoyalty</li> -->
+					<!-- <li MayRequire="vanillaexpanded.vanillasocialinteractionsexpanded">VSIE_GotSomeLovin</li> -->
+					<!-- end for social interaction -->
+				</canStillReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction>
+				<!-- <researchList> -->
+					<!-- <li> -->
+						<!-- <projects> -->
+							<!-- <li>WVC_RaceResearching_Dryad</li> -->
+						<!-- </projects> -->
+					<!-- </li> -->
+				<!-- </researchList> -->
+			</raceRestriction>
+		</alienRace>
+
+		<!-- ===================================================================== -->
+
+		<statBases>
+		  <MoveSpeed>2</MoveSpeed>
+		  <!-- = -->
+		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>	
+		  <!-- custom -->
+		  <GlobalLearningFactor>1.2</GlobalLearningFactor>
+		  <ToxicSensitivity>0.0</ToxicSensitivity>
+		  <MentalBreakThreshold>-1.0</MentalBreakThreshold>
+		  <PsychicSensitivity>1.2</PsychicSensitivity>
+		  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+		  <PruningSpeed MayRequire="ludeon.rimworld.ideology">2.0</PruningSpeed>
+		  <TameAnimalChance>1.2</TameAnimalChance>
+		  <TrainAnimalChance>1.2</TrainAnimalChance>
+		  <SocialIdeoSpreadFrequencyFactor MayRequire="ludeon.rimworld.ideology">1.2</SocialIdeoSpreadFrequencyFactor>
+		  <InjuryHealingFactor>2.0</InjuryHealingFactor>
+		  <CarryingCapacity>125</CarryingCapacity>
+		  <ForagedNutritionPerDay>1</ForagedNutritionPerDay>
+		  <BondAnimalChanceFactor>0.0</BondAnimalChanceFactor>
+		  <!-- custom -->
+		  <ComfyTemperatureMin>-9</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>27</ComfyTemperatureMax>
+		  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">8</RoyalFavorValue>
+		  <Flammability>2</Flammability>
+		  <Mass>196</Mass>
+		</statBases>
+		<race>
+		  <!-- <baseHealthScale>1.0</baseHealthScale> -->
+		  <animalType MayRequire="ludeon.rimworld.ideology">Dryad</animalType>
+		  <!-- <useMeatFrom>Dryad_Basic</useMeatFrom> -->
+		  <!-- <useMeatFrom>Alien_Valkyrie_WVC</useMeatFrom> -->
+		  <baseBodySize>1.0</baseBodySize>
+		  <allowedOnCaravan>false</allowedOnCaravan>
+		  <hediffGiverSets Inherit="False">
+			<li>Hediff_Valkyrie_DryadMother_WVC</li>
+		  </hediffGiverSets>
+		  <lifeStageAges Inherit="False">
+			<li>
+			  <def>HumanlikeBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeToddler</def>
+			  <minAge>1.2</minAge>
+			</li>
+			<!-- <li> -->
+			  <!-- <def>HumanlikeChild</def> -->
+			  <!-- <minAge>4</minAge> -->
+			<!-- </li> -->
+			<li>
+				<def>LifeStage_DryadMother_Immature_WVC</def>
+				<minAge>4</minAge>
+			</li>
+			<li>
+				<def>LifeStage_DryadMother_Young_WVC</def>
+				<minAge>13</minAge>
+			</li>
+			<li>
+				<def>LifeStage_DryadMother_Adult_WVC</def>
+				<minAge>16</minAge>
+			</li>
+			<li>
+				<def>LifeStage_DryadMother_Venerable_WVC</def>
+				<minAge>18</minAge>
+			</li>
+			<li>
+				<def>LifeStage_DryadMother_Royal_WVC</def>
+				<minAge>20</minAge>
+			</li>
+			<!-- <li> -->
+				<!-- <def>LifeStage_DryadMother_Legend_WVC</def> -->
+				<!-- <minAge>24</minAge> -->
+			<!-- </li> -->
+		  </lifeStageAges>
+		</race>
+		<butcherProducts>
+		  <GauranlenSeed MayRequire="ludeon.rimworld.ideology">2</GauranlenSeed>
+		</butcherProducts>
+		<comps>
+			<li MayRequire="ludeon.rimworld.ideology" Class="CompProperties_Spawner">
+				<thingToSpawn>GauranlenSeed</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>2400000</min><max>4200000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+			<li MayRequire="ludeon.rimworld.ideology" Class="CompProperties_TreeConnection">
+				<pawnKind>Dryad_Biomass_WVC</pawnKind>
+				<spawnDays>6</spawnDays>
+				<initialConnectionStrengthRange>1</initialConnectionStrengthRange>
+				<connectionStrengthLossPerDryadDeath>0</connectionStrengthLossPerDryadDeath>
+				<connectionStrengthGainPerHourPruningBase>1</connectionStrengthGainPerHourPruningBase>
+				<spawningPodOffset>(-0.15, 0, -0.55)</spawningPodOffset>
+				<spawningPodSizeRange>0</spawningPodSizeRange>
+				<maxDryadsWild>0</maxDryadsWild>
+				<maxDryadsPerConnectionStrengthCurve>
+				  <points>
+					<li>(0, 6)</li>
+				  </points>
+				</maxDryadsPerConnectionStrengthCurve>
+				<connectionLossPerLevelCurve>
+				  <points>
+					<li>(0, 0)</li>
+				  </points>
+				</connectionLossPerLevelCurve>
+				<connectionLossDailyPerBuildingDistanceCurve>
+				  <points>
+					<li>(0, 0)</li>
+				  </points>
+				</connectionLossDailyPerBuildingDistanceCurve>
+				<connectionStrengthGainPerPlantSkill>
+				  <points>
+					<li>(0, 1)</li>
+				  </points>
+				</connectionStrengthGainPerPlantSkill>
+			</li>
+		</comps>
+		<tradeTags>
+		  <li MayRequire="ludeon.rimworld.ideology">AnimalDryad</li>
+		</tradeTags>
+		<damageMultipliers>
+			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Frostbite</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="BaseDryadMother_WVC">
+		<defName>Alien_DryadMother_WVC</defName>
+		<descriptionHyperlinks>
+		  <ConceptDef>WVC_AlienRace_DryadMother</ConceptDef>
+		</descriptionHyperlinks>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<alienbodytypes>
+					</alienbodytypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<raceRestriction>
+				<conceptList>
+					<li>WVC_AlienRace_DryadMother</li>
+				</conceptList>
+			</raceRestriction>
+		</alienRace>
+		<comps>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>SpecialHediff_AlienInitial_Mother_WVC</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<race>
+		  <hediffGiverSets>
+			<li>HediffGiverSet_MutationsBase_WVC</li>
+		  </hediffGiverSets>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

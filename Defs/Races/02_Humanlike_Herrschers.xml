@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="MeatPatch_BaseValkyrie_WVC" Name="BaseHerrscher_WVC" Abstract="True">
+		<!-- <defName>Alien_Herrscher_WVC</defName> -->
+		<label>&lt;color=#cca2ff&gt;Herrscher&lt;/color&gt;</label>
+		<description>Herrschers is a mechanoid-enhanced version of the Valkyries, more precisely, it is an interpretation of the Valkyries by mechanoids. Like their not-so-distant cousins ​​ELFs, Herrschers were artificially created by machines. The versions of Herrscher you see today have little to do with those invincible hybrids of machine and organics, but they are able to think and make decisions for themselves. As with the Valkyries, knowledge of the Herrscher's past has been lost, and how they got free remains a mystery.\n\n&lt;color=#cca2ff&gt;Herrschers are not too different from Valkyries. They are subject to the same diseases, mutations, abnormalities and are one of the closest sub-races to the original. The main difference is the skin of the Herrschers. If Valkyries skin becomes like stone. Herrscher's skin resembles plasteel, which affects not only survivability but also allows them to fight with crushing force with their bare hands.&lt;/color&gt;</description>
+		<descriptionHyperlinks Inherit="False">
+		  <ThingDef>PsychicAmplifier</ThingDef>
+		</descriptionHyperlinks>
+
+		<!--=====================================================================-->
+
+		<alienRace>
+			<generalSettings>
+				<traitCount>1~3</traitCount>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Valkyrie_Herrschers_WVC</defName>
+						<chance>100</chance>
+					</li>
+				</forcedRaceTraitEntries>
+
+				<!--=====================================================================-->
+
+				<alienPartGenerator>
+					<alienbodytypes Inherit="False">
+						<!-- HoS -->
+						<li>Body_HoS_WVC</li>
+						<li>Body_HoS_Summer_WVC</li>
+					</alienbodytypes>
+				</alienPartGenerator>
+
+			</generalSettings>
+
+			<!--=====================================================================-->
+
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>PsychicDrone</li>
+					<!-- Ate -->
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteRottenFood</li>
+					<li>AteCorpse</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+			<!--=====================================================================-->
+
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+			</relationSettings>
+			
+			<!--=====================================================================-->
+			
+			<raceRestriction>
+				<!-- <researchList> -->
+					<!-- <li> -->
+						<!-- <projects> -->
+							<!-- <li>WVC_RaceResearching_Herrschers</li> -->
+						<!-- </projects> -->
+					<!-- </li> -->
+				<!-- </researchList> -->
+				<blackTraitList>
+					<li>DrugDesire</li>
+					<li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Stoner</li>
+					<li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Lush</li>
+				</blackTraitList>
+			</raceRestriction>
+		</alienRace>
+
+		<!--=====================================================================-->
+
+		<statBases>
+		  <MoveSpeed>5.9</MoveSpeed>
+		  <GlobalLearningFactor>1.2</GlobalLearningFactor>
+		  <ToxicSensitivity>0.0</ToxicSensitivity>
+		  <!-- <MentalBreakThreshold>0.2</MentalBreakThreshold> -->
+		  <PsychicSensitivity>0.75</PsychicSensitivity>
+		  <ArrestSuccessChance>2.0</ArrestSuccessChance>
+		  <MedicalTendQuality>2.0</MedicalTendQuality>
+		  <MedicalTendSpeed>0.8</MedicalTendSpeed>
+		  <TradePriceImprovement>0.8</TradePriceImprovement>
+		  <Flammability>0</Flammability>
+		  <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+		  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.35</ArmorRating_Heat>
+		  <!-- <ArmorRating_Blunt>0.20</ArmorRating_Blunt> -->
+		  <!-- <ArmorRating_Sharp>0.15</ArmorRating_Sharp> -->
+		  <!-- <ArmorRating_Heat>0.25</ArmorRating_Heat> -->
+		</statBases>
+
+		<!--=====================================================================-->
+
+		<race>
+		  <baseHealthScale>1.2</baseHealthScale>
+		</race>
+
+		<!--=====================================================================-->
+
+		<butcherProducts>
+		  <Plasteel>9</Plasteel>
+		  <!-- <PsychicAmplifier>1</PsychicAmplifier> -->
+		</butcherProducts>
+
+		<!--=====================================================================-->
+
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>PsychicAmplifier</thingToSpawn>
+				<spawnCount>1</spawnCount>
+				<spawnIntervalRange><min>900000</min><max>1800000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+		</comps>
+
+		<!--=====================================================================-->
+
+		<tools Inherit="False">
+		  <li>
+			<label>left fist</label>
+			<capacities>
+			  <li>WVC_Blunt_FistRed</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>0.9</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<chanceFactor>1.0</chanceFactor>
+			<armorPenetration>0.1</armorPenetration>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>6</amount>
+				  <chance>0.6</chance>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right fist</label>
+			<capacities>
+			  <li>WVC_Blunt_FistRed</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>0.9</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<chanceFactor>1.0</chanceFactor>
+			<armorPenetration>0.1</armorPenetration>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>6</amount>
+				  <chance>0.6</chance>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>feet</label>
+			<capacities>
+			  <li>WVC_Blunt_FeetRed</li>
+			</capacities>
+			<power>19</power>
+			<cooldownTime>0.8</cooldownTime>
+			<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+			<armorPenetration>0.1</armorPenetration>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>7</amount>
+				  <chance>1.0</chance>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		</tools>
+
+		<!--=====================================================================-->
+
+		<damageMultipliers>
+			<!-- <li> -->
+				<!-- <damageDef>Arrow</damageDef> -->
+				<!-- <multiplier>0</multiplier> -->
+			<!-- </li> -->
+			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Frostbite</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+
+		<!--=====================================================================-->
+
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BaseHerrscher_WVC">
+		<defName>Alien_Herrscher_WVC</defName>
+		<descriptionHyperlinks>
+		  <!-- <ConceptDef>WVC_AlienRace_Valkyrie</ConceptDef> -->
+		</descriptionHyperlinks>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<alienbodytypes>
+					</alienbodytypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<raceRestriction>
+				<conceptList>
+					<!-- <li>WVC_AlienRace_Valkyrie</li> -->
+				</conceptList>
+			</raceRestriction>
+		</alienRace>
+		<comps>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>SpecialHediff_AlienInitial_Herrscher_WVC</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<race>
+		  <hediffGiverSets>
+			<li>HediffGiverSet_MutationsBase_WVC</li>
+		  </hediffGiverSets>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

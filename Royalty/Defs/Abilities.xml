@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef ParentName="PsycastBase" Name="Marker_Abilities_PsycastBase_WVC" Abstract="True">
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBaseSkip" Name="Marker_Abilities_PsycastBaseSkip_WVC" Abstract="True">
+  </AbilityDef>
+
+  <AbilityDef ParentName="WordOfBase" Name="Marker_Abilities_WordOfBase_WVC" Abstract="True">
+  </AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <AbilityDef ParentName="Marker_Abilities_PsycastBase_WVC">
+	<defName>PsyAbility_PsychicClaws_WVC</defName>
+	<label>psychic claws</label>
+	<description>Gives the target and its allies the ability to attack with abyssal claws for a short period of time.</description>
+	<level>6</level>
+	<iconPath>WVC/Abilities/Claws</iconPath>
+	<hotKey>Misc11</hotKey>
+	<statBases>
+	  <Ability_EntropyGain>60</Ability_EntropyGain>
+	  <Ability_PsyfocusCost>0.10</Ability_PsyfocusCost>
+	  <Ability_Duration>80</Ability_Duration>
+	  <Ability_EffectRadius>6.9</Ability_EffectRadius>
+	</statBases>
+	<verbProperties>
+	  <warmupTime>0.50</warmupTime>
+	  <range>12.9</range>
+	  <targetParams>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetLocations>True</canTargetLocations>
+		<canTargetBuildings>false</canTargetBuildings>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<neverTargetHostileFaction>true</neverTargetHostileFaction>
+		<onlyTargetColonists>false</onlyTargetColonists>
+		<onlyTargetControlledPawns>false</onlyTargetControlledPawns>
+		<onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="CompProperties_AbilityGiveHediff">
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<hediffDef>PsychicClaws_WVC</hediffDef>
+		<onlyBrain>True</onlyBrain>
+		<psychic>True</psychic>
+		<durationMultiplier>PsychicSensitivity</durationMultiplier>
+	  </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+		<fleckDef>PsycastPsychicEffect</fleckDef>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <AbilityDef ParentName="Marker_Abilities_PsycastBaseSkip_WVC" Name="PsycastSkip_TreeSummon_WVC" Abstract="True">
+	<description>Generates a skipgate and forcibly transfers the tree to the point specified by the caster. Casting this takes 12 seconds of meditation, and afterwards, the caster will go into a one-day psychic coma.</description>
+	<level>5</level>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<statBases>
+	  <Ability_EntropyGain>0</Ability_EntropyGain>
+	  <Ability_PsyfocusCost>0.50</Ability_PsyfocusCost>
+	  <Ability_Duration>960</Ability_Duration>
+	</statBases>
+	<verbProperties>
+	  <warmupTime>12</warmupTime>
+	  <range>24.9</range>
+	  <targetParams>
+		<canTargetPawns>False</canTargetPawns>
+		<canTargetLocations>True</canTargetLocations>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="CompProperties_AbilityGiveHediff">
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<hediffDef>PsychicComa</hediffDef>
+		<onlyApplyToSelf>True</onlyApplyToSelf>
+	  </li>
+	  <li Class="CompProperties_AbilityEffecterOnTarget">
+		<effecterDef>Skip_Exit</effecterDef>
+		<maintainForTicks>60</maintainForTicks>
+		<scale>1.0</scale>
+	  </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+		<fleckDefs>
+		  <li>PsycastSkipInnerExit</li>
+		  <li>PsycastSkipOuterRingExit</li>
+		</fleckDefs>
+		<scale>1.0</scale>
+		<sound>Psycast_Skip_Exit</sound>
+		<preCastTicks>5</preCastTicks>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastSkip_TreeSummon_WVC">
+	<defName>PsyAbility_SummonTreeAnima_WVC</defName>
+	<label>anima skip</label>
+	<iconPath>WVC/Abilities/AnimaTree</iconPath>
+	<comps>
+	  <li Class="CompProperties_AbilitySpawn">
+		<thingDef>Plant_TreeAnima</thingDef>
+		<allowOnBuildings>False</allowOnBuildings>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+  <AbilityDef MayRequire="ludeon.rimworld.ideology" ParentName="PsycastSkip_TreeSummon_WVC">
+	<defName>PsyAbility_SummonTreeGauranlen_WVC</defName>
+	<label>gauranlen skip</label>
+	<iconPath>WVC/Abilities/GauranlenTree</iconPath>
+	<comps>
+	  <li Class="CompProperties_AbilitySpawn">
+		<thingDef>Plant_TreeGauranlen</thingDef>
+		<allowOnBuildings>False</allowOnBuildings>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <AbilityDef ParentName="Marker_Abilities_PsycastBaseSkip_WVC">
+	<defName>PsyAbility_SummonELF_WVC</defName>
+	<label>living form skip</label>
+	<description>Find the mind echoes in the psychic field and create a skipgate through which the &lt;color=#a2adff&gt;ELF&lt;/color&gt; can escape. The &lt;color=#a2adff&gt;ELF&lt;/color&gt; summoned in this way will join the settlement.\n\nThis process releases an enormous amount of psychic energy, the mind of the caster is guaranteed to be destroyed. Casting this takes 12 seconds of meditation, and afterwards, the caster will die.</description>
+	<level>6</level>
+	<iconPath>WVC/Abilities/SummonELF</iconPath>
+	<warmupMote>Mote_WarmupNeuroquake</warmupMote>
+	<warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+	<warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+	<warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
+	<warmupPreEndSoundSeconds>5</warmupPreEndSoundSeconds>
+	<targetRequired>False</targetRequired>
+	<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+	<showPsycastEffects>False</showPsycastEffects>
+	<showCastingProgressBar>True</showCastingProgressBar>
+	<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+	<statBases>
+	  <Ability_EntropyGain>1000</Ability_EntropyGain>
+	  <Ability_PsyfocusCost>0.0</Ability_PsyfocusCost>
+	  <Ability_Duration>4800</Ability_Duration>
+	</statBases>
+	<verbProperties>
+	  <warmupTime>12</warmupTime>
+	  <!-- <range>5.9</range> -->
+	  <drawAimPie>False</drawAimPie>
+	  <requireLineOfSight>False</requireLineOfSight>
+	  <targetParams>
+		<canTargetSelf>True</canTargetSelf>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="CompProperties_AbilitySpawn">
+		<thingDef>PsyAbility_SummonPod_ELF_WVC</thingDef>
+		<allowOnBuildings>False</allowOnBuildings>
+	  </li>
+	  <li Class="CompProperties_AbilityGiveHediff">
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<hediffDef>PsychicDead_WVC</hediffDef>
+		<onlyApplyToSelf>True</onlyApplyToSelf>
+		<!-- <onlyBrain>True</onlyBrain> -->
+		<psychic>True</psychic>
+		<!-- <durationMultiplier>EntropyPulseDeathChance_WVC</durationMultiplier> -->
+	  </li>
+	  <li Class="CompProperties_AbilityEffecterOnTarget">
+		<effecterDef>Skip_Exit</effecterDef>
+		<maintainForTicks>60</maintainForTicks>
+		<scale>1.0</scale>
+	  </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+		<fleckDefs>
+		  <li>PsycastSkipInnerExit</li>
+		  <li>PsycastSkipOuterRingExit</li>
+		  <li>PsychicApplyNeuroquake</li>
+		</fleckDefs>
+		<scale>1.0</scale>
+		<!-- <sound>Psycast_Skip_Exit</sound> -->
+		<sound>Psycast_Neuroquake_Effect</sound>
+		<preCastTicks>5</preCastTicks>
+	  </li>
+	</comps>
+	<confirmationDialogText>If you use this ability, the caster will die, are you sure you want to exchange the life of this pawn for a cute little girl?\n\n(&lt;color=#a2adff&gt;ELF&lt;/color&gt;s are the best psycasters, they are not affected by entropy and are guaranteed to learn the "Farskip" ability. They also spawn Anima tree seeds from time to time.)</confirmationDialogText>
+  </AbilityDef>
+
+  <!-- MayRequire="vanillaexpanded.ideo.dryads" -->
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+	<defName>PsyAbility_SummonPod_ELF_WVC</defName>
+	<comps>
+		<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened"> -->
+			<!-- <ticksToSpawn>1</ticksToSpawn> -->
+			<!-- <dryadToSpawn>Alien_ELF_WVC</dryadToSpawn> -->
+		<!-- </li> -->
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+	<defName>PsyAbility_SummonPod_Valkyrie_WVC</defName>
+	<comps>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+	<defName>PsyAbility_SummonPod_Gaurkyrie_WVC</defName>
+	<comps>
+	</comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" Name="AlienBase_RoyalDryad_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
+		<!-- <defName>Alien_RoyalDryad_WVC</defName> -->
+		<label>&lt;color=#ffcea2&gt;Royal dryad&lt;/color&gt;</label>
+		<description>This dryad caste bears a strong resemblance to humans, some individuals are even capable of verbal communication. However, in the vast majority of cases, they are not intelligent, and even rare manifestations of personality are an illusion created by their behavior pattern. Their caste is universal, thanks to which they can always significantly help the settlement.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+		<descriptionHyperlinks Inherit="False">
+		  <ThingDef>Plant_TreeGauranlen</ThingDef>
+		  <ThingDef>GauranlenSeed</ThingDef>
+		  <!-- <ConceptDef>WVC_Dryads_RoyalDryads_Evolution</ConceptDef> -->
+		</descriptionHyperlinks>
+		<uiIconScale>1.0</uiIconScale>
+		<!-- <uiIconPath>WVC/Stuff/GizmoValkVisible</uiIconPath> -->
+		<uiIconPath>WVC/Stuff/ValksA</uiIconPath>
+		<alienRace>
+			<generalSettings>
+				<allowHumanBios>false</allowHumanBios>
+				<traitCount>1</traitCount>
+				<additionalTraits>0</additionalTraits>
+				<!-- <immuneToXenophobia>true</immuneToXenophobia> -->
+				<forcedRaceTraitEntries Inherit="False">
+					<li>
+						<defName>Asexual</defName>
+						<chance>100</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<alienPartGenerator>
+					<customDrawSize>(1.0, 1.0)</customDrawSize>
+				</alienPartGenerator>
+
+			</generalSettings>
+
+			<!-- ===================================================================== -->
+
+			<thoughtSettings>
+				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
+				<canStillReceiveThoughts>
+					<li>Thought_HediffDryadThoughts_WVC</li>
+				</canStillReceiveThoughts>
+			</thoughtSettings>
+
+			<!-- ===================================================================== -->
+
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+			</relationSettings>
+			
+			<!-- ===================================================================== -->
+			
+			<raceRestriction>
+				<onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+				<traitList Inherit="False">
+				</traitList>
+				<whiteTraitList Inherit="False">
+					<li>Asexual</li>
+				</whiteTraitList>
+			</raceRestriction>
+			<compatibility>
+				<isSentient>false</isSentient>
+			</compatibility>
+		</alienRace>
+		<statBases>
+		  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		  <ArmorRating_Heat>0.0</ArmorRating_Heat>
+		  <MarketValue>1</MarketValue>
+		  <MoveSpeed>4.9</MoveSpeed>
+		  <LeatherAmount>0</LeatherAmount>
+		  <!-- custom -->
+		  <FoodPoisonChance>0.0</FoodPoisonChance>
+		  <GlobalLearningFactor>1.5</GlobalLearningFactor>
+		  <ToxicSensitivity>0.0</ToxicSensitivity>
+		  <MentalBreakThreshold>-1.0</MentalBreakThreshold>
+		  <PsychicSensitivity>1.0</PsychicSensitivity>
+		  <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
+		  <!-- <PruningSpeed>2.0</PruningSpeed> -->
+		  <TameAnimalChance>0.8</TameAnimalChance>
+		  <TrainAnimalChance>0.8</TrainAnimalChance>
+		  <InjuryHealingFactor>2.0</InjuryHealingFactor>
+		  <CarryingCapacity>125</CarryingCapacity>
+		  <ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
+		  <!-- <RestRateMultiplier>2.0</RestRateMultiplier> -->
+		  <!-- custom -->
+		  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <RoyalFavorValue>0</RoyalFavorValue>
+		  <Flammability>1</Flammability>
+		  <Mass>39</Mass>
+		  <BondAnimalChanceFactor>0.0</BondAnimalChanceFactor>
+		  <!-- = -->
+		  <ConversionPower MayRequire="ludeon.rimworld.ideology">0.5</ConversionPower>
+		  <CertaintyLossFactor MayRequire="ludeon.rimworld.ideology">2.0</CertaintyLossFactor>
+		  <SocialIdeoSpreadFrequencyFactor MayRequire="ludeon.rimworld.ideology">0.0</SocialIdeoSpreadFrequencyFactor>
+		</statBases>
+		<race>
+		  <thinkTreeMain>Humanlike_RoyalDryad_WVC</thinkTreeMain>
+		  <!-- <thinkTreeConstant>Humanlike_RoyalDryad_WVC</thinkTreeConstant> -->
+		  <!-- <body>Valkyries_WVC</body> -->
+		  <nameGenerator>NamerAnimalGenericFemale</nameGenerator>
+		  <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+		  <baseHealthScale>0.8</baseHealthScale>
+		  <baseBodySize>0.667</baseBodySize>
+		  <!-- Dryad -->
+		  <animalType>Dryad</animalType>
+		  <allowedOnCaravan>false</allowedOnCaravan>
+		  <giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+		  <canReleaseToWild>false</canReleaseToWild>
+		  <trainability>None</trainability>
+		  <showTrainables>false</showTrainables>
+		  <playerCanChangeMaster>false</playerCanChangeMaster>
+		  <hideTrainingTab>true</hideTrainingTab>
+		  <!-- <useMeatFrom>Alien_Valkyrie_WVC</useMeatFrom> -->
+		  <!-- <hediffGiverSets Inherit="False"> -->
+			<!-- <li>Extra_VenerableDryads_WVC</li> -->
+		  <!-- </hediffGiverSets> -->
+		  <!-- <foodType>None</foodType> -->
+		  <lifeStageAges Inherit="False">
+			<li>
+				<def>Alien_RoyalDryad_Baby_WVC</def>
+				<minAge>0</minAge>
+				<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+				<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+			</li>
+			<li>
+				<def>Alien_RoyalDryad_Juvenile_WVC</def>
+				<minAge>1</minAge>
+				<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+				<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+			</li>
+			<li>
+				<def>Alien_RoyalDryad_Adult_WVC</def>
+				<minAge>2</minAge>
+				<soundWounded>Pawn_Dryad_Woodmaker_Wounded</soundWounded>
+				<soundCall>Pawn_Dryad_Woodmaker_Call</soundCall>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge"> -->
+				<!-- <requiredCount>6</requiredCount> -->
+				<!-- <podToBuild>VIE_Awakening_DryadMother_Cocoon_WVC</podToBuild> -->
+				<!-- <gizmoImage>WVC/Stuff/ValksD</gizmoImage> -->
+				<!-- <gizmoLabel>VDE_EvolveDryadMother_WVC</gizmoLabel> -->
+				<!-- <gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge"> -->
+				<!-- <requiredCount>5</requiredCount> -->
+				<!-- <podToBuild>VIE_Awakening_Valkyries_Cocoon_WVC</podToBuild> -->
+				<!-- <gizmoImage>WVC/Stuff/ValksB</gizmoImage> -->
+				<!-- <gizmoLabel>VDE_EvolveValkyrie_WVC</gizmoLabel> -->
+				<!-- <gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge"> -->
+				<!-- <requiredCount>3</requiredCount> -->
+				<!-- <podToBuild>VIE_Awakening_ELF_Cocoon_WVC</podToBuild> -->
+				<!-- <gizmoImage>WVC/Stuff/ValksW</gizmoImage> -->
+				<!-- <gizmoLabel>VDE_EvolveELF_WVC</gizmoLabel> -->
+				<!-- <gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc> -->
+			<!-- </li> -->
+		</comps>
+		<tradeTags>
+		  <li>AnimalDryad</li>
+		</tradeTags>
+		<!-- <damageMultipliers> -->
+			<!-- <li> -->
+				<!-- <damageDef>Burn</damageDef> -->
+				<!-- <multiplier>0</multiplier> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <damageDef>Frostbite</damageDef> -->
+				<!-- <multiplier>0</multiplier> -->
+			<!-- </li> -->
+		<!-- </damageMultipliers> -->
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="AlienBase_RoyalDryad_WVC">
+		<defName>Alien_RoyalDryad_WVC</defName>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<alienbodytypes>
+					</alienbodytypes>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+		<comps>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>SpecialHediff_AlienInitial_RoyalDryad_WVC</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<race>
+		  <hediffGiverSets>
+			<li>HediffGiverSet_MutationsBase_WVC</li>
+		  </hediffGiverSets>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

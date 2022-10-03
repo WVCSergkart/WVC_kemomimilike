@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef ParentName="Backstory_NaturalMeditationBasePatch_WVC" Name="Nodes_AutomatonBackstory_WVC" Abstract="True">
+		<title>Automaton</title>
+		<titleShort>Automaton</titleShort>
+		<!-- <baseDescription>No available information.</baseDescription> -->
+		<baseDescription>No available information.</baseDescription>
+		<slot>Childhood</slot>
+		<shuffleable>true</shuffleable>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<chronoAgeRange>
+			<!-- <min>0</min> -->
+			<max>3333</max>
+		</chronoAgeRange>
+		<spawnCategories>
+		  <li>WVC_NodesBackstory_Automatons</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+<!-- [PAWN_nameDef] Bobby -->
+<!-- [PAWN_nameFull] Juan Bobby Fisher -->
+<!-- [PAWN_pronoun] he/she -->
+<!-- [PAWN_possessive] his/her -->
+<!-- [PAWN_objective] him/her -->
+
+	<!-- ================================================================== -->
+
+	<!-- Base -->
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_WVC">
+		<defName>NodesBackstoryChild_Automaton_WVC</defName>
+		<slot>Childhood</slot>
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_WVC">
+		<defName>NodesBackstoryAdult_Automaton_WVC</defName>
+		<slot>Adulthood</slot>
+		<skillGains>
+		  <!-- <li> -->
+			<!-- <defName>Shooting</defName> -->
+			<!-- <amount>3</amount> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <defName>Melee</defName> -->
+			<!-- <amount>3</amount> -->
+		  <!-- </li> -->
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>2</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- Standart -->
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_WVC" Name="Nodes_AutomatonBackstory_AdulthoodBase_WVC" Abstract="True">
+		<title>Automaton</title>
+		<titleShort>Automaton</titleShort>
+		<!-- <baseDescription>No available information.</baseDescription> -->
+		<slot>Adulthood</slot>
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<!-- Standart -->
+
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonPlants_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Plants</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonAnimals_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Animals</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonCooking_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Cooking</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonMining_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Mining</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonConstruction_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Construction</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonCrafting_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Crafting</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonArtistic_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Artistic</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonMedicine_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Medicine</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonSocial_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Social</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonIntellectual_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonMelee_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_AdulthoodBase_WVC">
+		<defName>NodesBackstoryAdult_AutomatonShooting_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- Standart -->
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_WVC" Name="Nodes_AutomatonBackstory_ChildhoodBase_WVC" Abstract="True">
+		<title>Automaton</title>
+		<titleShort>Automaton</titleShort>
+		<!-- <baseDescription>No available information.</baseDescription> -->
+		<slot>Childhood</slot>
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<!-- Standart -->
+
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonPlants_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Plants</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonAnimals_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Animals</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonCooking_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Cooking</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonMining_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Mining</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonConstruction_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Construction</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonCrafting_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Crafting</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonArtistic_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Artistic</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonMedicine_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Medicine</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonSocial_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Social</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonIntellectual_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonMelee_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Melee</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Nodes_AutomatonBackstory_ChildhoodBase_WVC">
+		<defName>NodesBackstoryChild_AutomatonShooting_WVC</defName>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Shooting</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+  
+</Defs>

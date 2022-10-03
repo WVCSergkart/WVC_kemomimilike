@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================ -->
+
+  <HediffDef Name="WVC_HediffMutation_Good" ParentName="WVC_HediffMutation_Base" Abstract="True">
+	<defaultLabelColor>(162,255,100)</defaultLabelColor>
+	<description>Green mutations or mutations that have been found to be beneficial for all their shortcomings. These include mutations that have good adaptability without causing discomfort to the carrier. These included some psy-enhancing abilities, tails, ears, and some skin transformations.</description>
+	<priceOffset>655</priceOffset>
+	<comps>
+	</comps>
+  </HediffDef>
+
+  <HediffDef Name="WVC_HediffMutation_Neutral" ParentName="WVC_HediffMutation_Base" Abstract="True">
+	<defaultLabelColor>(100,162,255)</defaultLabelColor>
+	<description>Blue mutations or mutations that do not always have a positive effect. This includes mutations that can bring discomfort or some kind of danger to both the host and those around the mutant. These included rather "aggressive" skin changes, too large tails, ridiculous claws, unstable fields, etc.</description>
+	<priceOffset>355</priceOffset>
+	<comps>
+	</comps>
+  </HediffDef>
+
+  <!-- <HediffDef Name="WVC_HediffMutation_Bad" ParentName="WVC_HediffMutation_Base" Abstract="True"> -->
+	<!-- <defaultLabelColor>(255,162,100)</defaultLabelColor> -->
+	<!-- <comps> -->
+	<!-- </comps> -->
+  <!-- </HediffDef> -->
+
+  <!-- ============================================ -->
+
+  <HediffDef Name="Special_Hediff_HumanlikeInitial_WVC" ParentName="WVC_HediffMutation_Base" Abstract="True">
+	<!-- <description></description> -->
+	<!-- <defName>Hediff_Alien_RoyalDryad_WVC</defName> -->
+	<!-- <label>Dryad</label> -->
+	<!-- Valks -->
+	<!-- <defaultLabelColor>(162,200,255)</defaultLabelColor> -->
+	<!-- ELF -->
+	<!-- <defaultLabelColor>(162,173,255)</defaultLabelColor> -->
+	<!-- Mother -->
+	<!-- <defaultLabelColor>(245,255,162)</defaultLabelColor> -->
+	<!-- Herrscher -->
+	<!-- <defaultLabelColor>(204,162,255)</defaultLabelColor> -->
+	<!-- Dryad -->
+	<!-- <defaultLabelColor>(255,206,162)</defaultLabelColor> -->
+	<!-- <priceOffset>-10000</priceOffset> -->
+	<!-- <disablesNeeds> -->
+	  <!-- <li>Mood</li> -->
+	  <!-- <li>Joy</li> -->
+	  <!-- <li>Comfort</li> -->
+	  <!-- <li>Outdoors</li> -->
+	  <!-- <li>Indoors</li> -->
+	  <!-- <li>RoomSize</li> -->
+	  <!-- <li>Beauty</li> -->
+	<!-- </disablesNeeds> -->
+	<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	<stages Inherit="False">
+	  <li>
+		<!-- <becomeVisible>false</becomeVisible> -->
+		<foodPoisoningChanceFactor>0.5</foodPoisoningChanceFactor>
+		<painFactor>0.8</painFactor>
+	  </li>
+	</stages>
+	<!-- <comps> -->
+		<!-- <li Class="HediffCompProperties_SkillDecay"> -->
+			<!-- <decayPerDayPercentageLevelCurve> -->
+			  <!-- <points> -->
+				<!-- <li>(0, -0.1)</li> -->
+				<!-- <li>(0.05, -0.1)</li> -->
+				<!-- <li>(1, -0.1)</li> -->
+			  <!-- </points> -->
+			<!-- </decayPerDayPercentageLevelCurve> -->
+		<!-- </li> -->
+	<!-- </comps> -->
+  </HediffDef>
+
+  <!-- ============================================ -->
+
+  <HediffDef Name="WVC_ChipsHediffs_Base" ParentName="WVC_HediffMutation_Base" Abstract="True">
+	<label>SO-chip</label>
+	<defaultLabelColor>(190,162,255)</defaultLabelColor>
+	<description>Connected chip to the brain of a semi-organic being.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<isBad>false</isBad>
+	<comps>
+	  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+	</comps>
+  </HediffDef>
+
+  <!--=====================================================================-->
+
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_MutationsBase_WVC</defName>
+	<hediffGivers>
+		
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_OrgansImprovment</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			  <li>Shoulder</li>
+			  <li>Leg</li>
+			  <li>Eye</li>
+			  <li>Nose</li>
+			  <li>Ear</li>
+			  <li>Heart</li>
+			  <li>Stomach</li>
+			  <li>Lung</li>
+			  <li>Kidney</li>
+			  <li>Liver</li>
+			  <li>Spine</li>
+			  <li>Jaw</li>
+			  <li>Tail</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>WVC_HediffMutation_OrgansChange</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			  <li>Shoulder</li>
+			  <li>Leg</li>
+			  <li>Eye</li>
+			  <li>Nose</li>
+			  <li>Ear</li>
+			  <li>Heart</li>
+			  <li>Stomach</li>
+			  <li>Lung</li>
+			  <li>Kidney</li>
+			  <li>Liver</li>
+			  <li>Spine</li>
+			  <li>Jaw</li>
+			  <li>Tail</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+	</hediffGivers>
+  </HediffGiverSetDef>
+
+  <!--=====================================================================-->
+
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_MutationsValkyrie_WVC</defName>
+	<hediffGivers>
+	</hediffGivers>
+  </HediffGiverSetDef>
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_MutationsELF_WVC</defName>
+	<hediffGivers>
+	</hediffGivers>
+  </HediffGiverSetDef>
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_MutationsDryads_WVC</defName>
+	<hediffGivers>
+	</hediffGivers>
+  </HediffGiverSetDef>
+
+  <HediffGiverSetDef>
+	<defName>HediffGiverSet_SuperPowersBase_WVC</defName>
+	<hediffGivers>
+		<!-- All girls are supposed to have psychic powers -->
+		<li MayRequire="ludeon.rimworld.royalty" Class="HediffGiver_Birthday">
+			<hediff>PsychicAmplifier</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 1)</li>
+				<li>(1, 1)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<!-- ... -->
+		<!-- <li MayRequire="rimeffect.core" Class="HediffGiver_Birthday"> -->
+			<!-- <hediff>RE_BioticNatural</hediff> -->
+			<!-- <partsToAffect> -->
+			  <!-- <li>Brain</li> -->
+			<!-- </partsToAffect> -->
+			<!-- <ageFractionChanceCurve> -->
+			  <!-- <points> -->
+				<!-- <li>(0, 1)</li> -->
+				<!-- <li>(1, 1)</li> -->
+			  <!-- </points> -->
+			<!-- </ageFractionChanceCurve> -->
+		<!-- </li> -->
+	</hediffGivers>
+  </HediffGiverSetDef>
+
+</Defs>

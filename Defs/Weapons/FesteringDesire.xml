@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MeleeWeapon_FesteringDesire_WVC" ParentName="Marker_OneHandWeapon_WVC" Abstract="True">
+	<graphicData>
+	  <texPath>WVC/weapon/FesteringDesire</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<equippedAngleOffset>-125</equippedAngleOffset>
+	<statBases>
+	</statBases>
+	<tools>
+	  <li>
+		<label>handle</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>0.9</cooldownTime>
+		<chanceFactor>0.25</chanceFactor> 
+	  </li>
+	  <li>
+		<label>blade</label>
+		<capacities>
+		  <li>WVC_Cut_AngleRed</li>
+		</capacities>
+		<power>17</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+		<extraMeleeDamages>
+		  <li>
+			<def>Scratch_AbyssCorruption_WVC</def>
+			<amount>5</amount>
+			<chance>1.0</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<label>edge</label>
+		<capacities>
+		  <li>WVC_Cut_AngleBlue</li>
+		</capacities>
+		<power>17</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+		<extraMeleeDamages>
+		  <li>
+			<def>Scratch_AbyssCorruption_WVC</def>
+			<amount>5</amount>
+			<chance>1.0</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_FesteringDesire_WVC">
+	<defName>MeleeWeapon_FesteringDesireA_WVC</defName>
+	<label>Festering Desire</label>
+  </ThingDef>
+
+</Defs>

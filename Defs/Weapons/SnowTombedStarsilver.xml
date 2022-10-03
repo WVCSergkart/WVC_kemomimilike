@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Marker_TwoHandWeapon_WVC" Name="MeleeWeapon_SnowTombedStarsilver_WVC" Abstract="True">
+	<graphicData>
+	  <texPath>WVC/weapon/SnowTombedStarsilver</texPath>
+	  <shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	<equippedAngleOffset>-125</equippedAngleOffset>
+	<statBases>
+	</statBases>
+	<tools>
+	  <li>
+		<label>handle</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>0.9</cooldownTime>
+		<chanceFactor>0.25</chanceFactor> 
+	  </li>
+	  <li>
+		<label>blade</label>
+		<capacities>
+		  <li>WVC_Cut_BlueArk</li>
+		</capacities>
+		<power>22</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+		<extraMeleeDamages>
+		  <li>
+			<def>EMP</def>
+			<amount>12</amount>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<label>edge</label>
+		<capacities>
+		  <li>WVC_Cut_LinesBlue</li>
+		</capacities>
+		<power>22</power>
+		<cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
+		<extraMeleeDamages>
+		  <li>
+			<def>EMP</def>
+			<amount>12</amount>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_SnowTombedStarsilver_WVC">
+	<defName>MeleeWeapon_SnowTombedStarsilverA_WVC</defName>
+	<label>Snow-Tombed Starsilver</label>
+  </ThingDef>
+
+</Defs>

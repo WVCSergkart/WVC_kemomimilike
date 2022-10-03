@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=====================================================================-->
+
+  <ThingDef MayRequire="ludeon.rimworld.ideology" ParentName="Marker_WVC_ApparelMakeableBase">
+	<defName>WVC_Apparel_Blindfold</defName>
+	<label>exotic blindfold</label>
+	<description>Blindfold for those who may have an extra eye or other mutations that interfere with the normal blindfold.</description>
+	<graphicData>
+	  <texPath>WVC/Apparels/Blindfold</texPath>
+	</graphicData>
+	<costStuffCount>30</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	</stuffCategories>
+	<thingCategories>
+	  <li>Apparel</li>
+	</thingCategories>
+	<statBases>
+	  <MaxHitPoints>90</MaxHitPoints>
+	  <WorkToMake>1200</WorkToMake>
+	  <Mass>0.07</Mass>
+	  <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>0.8</EquipDelay>
+	</statBases>
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Crafting</workSkill>
+	  <recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+	  </recipeUsers>
+	  <memePrerequisitesAny><li>Blindsight</li></memePrerequisitesAny>
+	</recipeMaker>
+	<apparel>
+	  <forceRenderUnderHair>true</forceRenderUnderHair>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <bodyPartGroups>
+		<li>Eyes</li>
+	  </bodyPartGroups>
+	  <layers>
+		<li>EyeCover</li>
+	  </layers>
+	  <blocksVision>true</blocksVision>
+	  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+	</apparel>
+	<comps>
+	  <li Class="CompProperties_CauseHediff_Apparel">
+		<hediff>Blindfold</hediff>
+		<part>Head</part>
+	  </li>
+	</comps>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef MayRequire="ludeon.rimworld.ideology" ParentName="Marker_WVC_ApparelMakeableBase">
+	<defName>WVC_Apparel_SheerVeil</defName>
+	<label>sheer veil</label>
+	<description>Strong but very thin veil because of what it seems almost transparent. This is needed as an alternative to a burka for those who have horns or cat ears.</description>
+	<techLevel>Neolithic</techLevel>
+	<graphicData>
+	  <texPath>WVC/Apparels/Burka</texPath>
+	</graphicData>
+	<costStuffCount>45</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	</stuffCategories>
+	<thingCategories>
+	  <li>Apparel</li>
+	</thingCategories>
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>8000</WorkToMake>
+	  <Mass>1</Mass>
+	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>1.5</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+	  <MoveSpeed>-0.2</MoveSpeed>
+	</equippedStatOffsets>
+	<apparel>
+	  <bodyPartGroups>
+		<li>FullHead</li>
+		<li>UpperHead</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Torso</li>
+		<li>Legs</li>
+		<li>Arms</li>
+	  </bodyPartGroups>
+	  <shellCoversHead>true</shellCoversHead>
+	  <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+	  <layers>
+		<li>Shell</li>
+	  </layers>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+	  </defaultOutfitTags>
+	  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef MayRequire="ludeon.rimworld.ideology" ParentName="Marker_WVC_ApparelMakeableBase">
+	<defName>WVC_Apparel_Shibari</defName>
+	<label>slave shibari</label>
+	<description>Rough and prickly ropes digging into the skin, not everyone will be ready to walk in this everyday.</description>
+	<graphicData>
+	  <texPath>WVC/Apparels/SlaveStrap</texPath>
+	</graphicData>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<thingCategories>
+	  <li>Apparel</li>
+	</thingCategories>
+	<statBases>
+	  <MaxHitPoints>90</MaxHitPoints>
+	  <WorkToMake>4000</WorkToMake>
+	  <Mass>1.5</Mass>
+	  <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>1.8</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+	  <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<apparel>
+	  <slaveApparel>true</slaveApparel>
+	  <bodyPartGroups>
+		<li>Torso</li>
+	  </bodyPartGroups>
+	  <layers>
+		<li>Shell</li>
+	  </layers>
+	  <defaultOutfitTags>
+		<li>Slave</li>
+	  </defaultOutfitTags>
+	  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+	  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>GirlsDryads_SecretResources_WVC</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>honkai.girls.sergkart</modId>
+				<key>AdditionalResoucres_OptionPatch_MyGirls_WVC</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>/Defs/ThingDef[@WVC_Tag="EasyResourcesPatch"]</xpath>
+						<safetyDepth>1</safetyDepth>
+						<value>
+							<comps>
+								<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
+									<customThingToDig>
+									</customThingToDig>
+									<customAmountToDig>
+									</customAmountToDig>
+									<ticksToDig>180000</ticksToDig>
+									<!-- <ticksToDig>2500</ticksToDig> -->
+									<onlyWhenTamed>true</onlyWhenTamed>
+								</li>
+							</comps>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>honkai.girls.sergkart</modId>
+				<key>AdditionalResoucres_OptionPatch_House_WVC</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>/Defs/ThingDef[defName="akame" or defName="siro" or defName="miko" or defName="kuro" or defName="kon" or defName="hana" or defName="aome" or defName="yuki" or defName="kohime" or defName="konf" or defName="sirof"]</xpath>
+						<safetyDepth>1</safetyDepth>
+						<value>
+							<comps>
+								<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
+									<customThingToDig>
+									</customThingToDig>
+									<customAmountToDig>
+									</customAmountToDig>
+									<ticksToDig>180000</ticksToDig>
+									<onlyWhenTamed>true</onlyWhenTamed>
+								</li>
+							</comps>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+			<Operation Class="XmlExtensions.OptionalPatch">
+				<modId>honkai.girls.sergkart</modId>
+				<key>AdditionalResoucres_OptionPatch_IG_WVC</key>
+				<defaultValue>true</defaultValue>
+				<caseTrue>
+					<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>/Defs/ThingDef[@Name="IG_RacesBase"]</xpath>
+						<safetyDepth>1</safetyDepth>
+						<value>
+							<comps>
+								<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_DigPeriodically">
+									<customThingToDig>
+									</customThingToDig>
+									<customAmountToDig>
+									</customAmountToDig>
+									<ticksToDig>180000</ticksToDig>
+									<onlyWhenTamed>true</onlyWhenTamed>
+								</li>
+							</comps>
+						</value>
+					</Operation>
+				</caseTrue>
+			</Operation>
+
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>Components:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResComp</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Industrial component</li>
+					<li>ComponentIndustrial</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Advanced component</li>
+					<li>ComponentSpacer</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Prefabrication component</li>
+					<li>RE_PrefabComponent</li>
+					<li>1</li>
+					<li>rimeffect.core</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Mechanoid component</li>
+					<li>VFE_ComponentMechanoid</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Archotech fragment</li>
+					<li>ArchotechScrap</li>
+					<li>2</li>
+					<li>MrKociak.MoreArchotechStuffandThingsReupload</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nMaterials:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResMater</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Steel</li>
+					<li>Steel</li>
+					<li>10</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Bronze</li>
+					<li>VFEC_Bronze</li>
+					<li>12</li>
+					<li>oskarpotocki.vfe.classical</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Plasteel</li>
+					<li>Plasteel</li>
+					<li>6</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Abyssteel</li>
+					<li>Moyo_Abyssteel</li>
+					<li>6</li>
+					<li>nemonian.my</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Uranium</li>
+					<li>Uranium</li>
+					<li>4</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Archotech mass</li>
+					<li>archotechmatteraddingsomecraptoavoidproblems</li>
+					<li>4</li>
+					<li>MrKociak.MoreArchotechStuffandThingsReupload</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nSmall volume:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResSmallVolume</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Gold</li>
+					<li>Gold</li>
+					<li>10</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>10</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nStone:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResStone</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Jade</li>
+					<li>Jade</li>
+					<li>7</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Insect jade (IG)</li>
+					<li>IJade</li>
+					<li>7</li>
+					<li>pupa.insectgirls</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nFood:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResFood</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Insect saliva (IG)</li>
+					<li>ISaliva</li>
+					<li>10</li>
+					<li>pupa.insectgirls</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Chocolate</li>
+					<li>Chocolate</li>
+					<li>5</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Survival pack</li>
+					<li>MealSurvivalPack</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Nutrient paste meal</li>
+					<li>MealNutrientPaste</li>
+					<li>5</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nMedicine:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResMedicine</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Herbal medicine</li>
+					<li>MedicineHerbal</li>
+					<li>3</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Medicine</li>
+					<li>MedicineIndustrial</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Bluemed</li>
+					<li>MoyoMedicine</li>
+					<li>1</li>
+					<li>nemonian.my</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Glitterworld medicine</li>
+					<li>MedicineUltratech</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Mechanite medicine</li>
+					<li>WVC_MedicineMechanite</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nGenetic materials:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResOther</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Drone genetic material</li>
+					<li>VFEI_DroneGenome</li>
+					<li>1</li>
+					<li>oskarpotocki.vfe.insectoid</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Warrior genetic material</li>
+					<li>VFEI_WarriorGenome</li>
+					<li>1</li>
+					<li>oskarpotocki.vfe.insectoid</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Royal genetic material</li>
+					<li>VFEI_RoyalGenome</li>
+					<li>1</li>
+					<li>oskarpotocki.vfe.insectoid</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Valkyrie genetic material</li>
+					<li>VFEI_ValkyrieGenome_WVC</li>
+					<li>1</li>
+					<li>oskarpotocki.vfe.insectoid</li>
+				</arguments>
+			</Operation>
+
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AnyTextInAnySettings_Patch_WVC</patchName>
+				<arguments>
+					<li>settings/li[@Class="XmlExtensions.Setting.Group"]/settings</li>
+					<li>\nOther:</li>
+					<li>Settings_RoyalDryads_AdditionalResoucres_WVC</li>
+					<li>ResOther</li>
+				</arguments>
+			</Operation>
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Chemfuel</li>
+					<li>Chemfuel</li>
+					<li>10</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Universal fuel</li>
+					<li>WVC_UniversalFuel</li>
+					<li>10</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Neutroamine</li>
+					<li>Neutroamine</li>
+					<li>1</li>
+					<li>ludeon.rimworld</li>
+				</arguments>
+			</Operation>
+
+			<!--=====================================================================-->
+
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<!-- <patchName>Autopatcher_AdditionalResources_Spawner_Patch_WVC</patchName> -->
+				<arguments>
+					<li>Gauranlen seed</li>
+					<li>GauranlenSeed</li>
+					<li>1</li>
+					<li>ludeon.rimworld.ideology</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Anima seed</li>
+					<li>AnimaSeed_WVC</li>
+					<li>1</li>
+					<li>ludeon.rimworld.royalty</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Psylink neuroformer</li>
+					<li>PsychicAmplifier</li>
+					<li>1</li>
+					<li>ludeon.rimworld.royalty</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Biotic amp</li>
+					<li>RE_BioticAmp</li>
+					<li>1</li>
+					<li>rimeffect.core</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Omni tool</li>
+					<li>RE_OmniTool</li>
+					<li>1</li>
+					<li>rimeffect.core</li>
+				</arguments>
+			</Operation>
+			<Operation Class="XmlExtensions.ApplyPatch">
+				<patchName>Autopatcher_AdditionalResources_Patch_WVC</patchName>
+				<arguments>
+					<li>Belial-V</li>
+					<li>Moyo_BelialV</li>
+					<li>1</li>
+					<li>nemonian.my</li>
+				</arguments>
+			</Operation>
+
+		</caseTrue>
+		<caseFalse>
+		</caseFalse>
+	</Operation>
+</Patch>

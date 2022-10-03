@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================ -->
+
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_DragonScale</defName>
+	<label>Dragon scale</label>
+	<!-- Тултип используется как описание в настройках и в игре -->
+	<!-- The tooltip is used as a description in the settings and in the game -->
+	<extraTooltip>All armor statuses are increased by 40.</extraTooltip>
+	<!-- Лабели нужны только для автопатчера и в переводе не нуждаются -->
+	<!-- Labels are needed only for the autopatcher and do not need to be translated -->
+	<!-- ===================================== -->
+	<!-- <labelNoun>Torso</labelNoun> -->
+	<!-- <labelNounPretty>Base</labelNounPretty> -->
+	<!-- ===================================== -->
+	<stages>
+	  <li>
+		<statOffsets>
+		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.4</ArmorRating_Heat>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags>
+		<!-- Часть на которую действует мутация -->
+		<!-- The part affected by the mutation -->
+		<li>Torso</li>
+		<!-- Тип мутации. Всего 4: Вальки, Матери, Эльфы и базовый -->
+		<!-- Mutation type. 4 in total: Valks, Mothers, ELFs and Base -->
+		<li>Base</li>
+		<!-- Тип импланта, определяет как будет проводиться операция. -->
+		<!-- The type of implant determines how the operation will be performed. -->
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+  
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_Telekinesis</defName>
+	<label>Telefier</label>
+	<!-- <description>As a result of the mutation, the subject's brain began to create microscopic skip gates, where, according to the subject, he has manipulative limbs. Due to this, the subject seemed to have acquired telekinetic abilities.</description> -->
+	<extraTooltip>Slightly increases the manipulation parameter and added Skip psycast.</extraTooltip>
+	<comps>
+		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Skip</abilityDef>
+		</li>
+	</comps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.05</partEfficiencyOffset>
+		<statOffsets>
+		  <CarryingCapacity>30</CarryingCapacity>
+		  <PsychicSensitivity>0.1</PsychicSensitivity>
+		</statOffsets>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<offset>0.1</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Brain</li>
+		<li>Base</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+  
+  <!-- =============================Tails============================= -->
+  
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_TailArm</defName>
+	<label>Tail-Arm</label>
+	<!-- <description>Due to a mutation, the subject acquired a tail-arm, which helps her to hold a mug of tea and do household chores without debuffs.</description> -->
+	<extraTooltip>Slightly increases manipulation. Adds a tail attack.</extraTooltip>
+	<hediffClass>Hediff_AddedPart</hediffClass>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<comps>
+		<li Class="HediffCompProperties_VerbGiver">
+			<tools>
+			  <li>
+				<label>tail fist</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>0.8</cooldownTime>
+				<chanceFactor>1.2</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>20</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			</tools>
+		</li>
+		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
+			<abilityDef>Waterskip</abilityDef>
+		</li>
+	</comps>
+	<stages>
+	  <li>
+		<capMods>
+		  <!-- <li> -->
+			<!-- <capacity>Moving</capacity> -->
+			<!-- <offset>0.1</offset> -->
+		  <!-- </li> -->
+		  <li>
+			<capacity>Manipulation</capacity>
+			<offset>0.25</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Tail</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+  
+  <!-- ========================================================== -->
+
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_SecondMind</defName>
+	<label>Mindseparator</label>
+	<!-- <description>Due to a brain mutation, the subject's mind acquired a second consciousness. The subject's original mind is classified as subject A, acquired as subject B. According to both subjects, they can control the body in turn, as well as communicate "inside the head".</description> -->
+	<extraTooltip>Multiplies consciousness and also constantly regenerates the need for entertainment.</extraTooltip>
+	<stages>
+	  <li>
+		<!-- <restFallFactor>0.2</restFallFactor> -->
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<postFactor>1.1</postFactor>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_ChangeNeed">
+		<needDef>Joy</needDef>
+		<percentPerDay>1</percentPerDay>
+	  </li>
+	</comps>
+	<tags>
+		<li>Brain</li>
+		<li>Base</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+  
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_TemperatureAdaptation</defName>
+	<label>Adaptive glands</label>
+	<!-- <description>Due to the mutation, the subject's glands have become better adapted to external influences.</description> -->
+	<extraTooltip>Invulnerability to extreme temperatures.</extraTooltip>
+	<stages>
+	  <li>
+		<statOffsets>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+		</statOffsets>
+		<!-- <statFactors> -->
+			<!-- <Flammability>0.0</Flammability> -->
+		<!-- </statFactors> -->
+	  </li>
+	</stages>
+	<tags>
+		<li>Torso</li>
+		<li>Base</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+  
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_SelfHeal</defName>
+	<label>Tissnites colonies</label>
+	<!-- <description>Due to the mutation, colonies of microscopic creatures called Tissnits began to appear throughout the subject's body. They exist in symbiosis with the host, enhancing the regenerative abilities of the subject's tissues.</description> -->
+	<extraTooltip>Very high regeneration rate. Does not restore lost limbs.</extraTooltip>
+	<stages>
+	  <li>
+		<!-- <hungerRateFactor>2.0</hungerRateFactor> -->
+		<!-- <statOffsets> -->
+		  <!-- <ImmunityGainSpeed>2.0</ImmunityGainSpeed> -->
+		<!-- </statOffsets> -->
+		<statFactors>
+			<InjuryHealingFactor>5.0</InjuryHealingFactor>
+		</statFactors>
+		<!-- <naturalHealingFactor>5.0</naturalHealingFactor> -->
+	  </li>
+	</stages>
+	<tags>
+		<li>Torso</li>
+		<li>Base</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+
+  <!-- ========================================================== -->
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FibrousMechanites</defName>
+	<label>Fibrous sporenites</label>
+	<extraTooltip>Gives bonuses of the meсhanites of the same name. (Install or ELF only)</extraTooltip>
+	<stages>
+	  <li>
+		<makeImmuneTo>
+			<li>FibrousMechanites</li>
+			<!-- <li>SensoryMechanites</li> -->
+		</makeImmuneTo>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>BloodPumping</capacity>
+			<offset>0.2</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Torso</li>
+		<li>ELF</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_SensoryMechanites</defName>
+	<label>Sensory sporenites</label>
+	<extraTooltip>Gives bonuses of the meсhanites of the same name. (Install or ELF only)</extraTooltip>
+	<stages>
+	  <li>
+		<makeImmuneTo>
+			<!-- <li>FibrousMechanites</li> -->
+			<li>SensoryMechanites</li>
+		</makeImmuneTo>
+		<capMods>
+		  <li>
+			<capacity>Sight</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Hearing</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Talking</capacity>
+			<offset>0.2</offset>
+		  </li>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<offset>0.1</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Torso</li>
+		<li>ELF</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+
+  <!-- ========================================================== -->
+
+  <HediffDef MayRequire="ludeon.rimworld.royalty" ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_Overmind</defName>
+	<label>Neuroduplicator</label>
+	<!-- <description>The subject remembers and assimilates information much better, which allows the subject to draw skills from absolutely everything.</description> -->
+	<extraTooltip>Replaces the degradation of skills with their accumulation, thanks to which the pawn is always learning, even when doing nothing.</extraTooltip>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+	  </li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_SkillDecay">
+			<decayPerDayPercentageLevelCurve>
+			  <points>
+				<li>(0, -0.1)</li>
+				<li>(0.05, -0.1)</li>
+				<li>(1, -0.1)</li>
+			  </points>
+			</decayPerDayPercentageLevelCurve>
+		</li>
+	</comps>
+	<tags>
+		<li>Brain</li>
+		<li>Base</li>
+		<li>Implant</li>
+	</tags>
+  </HediffDef>
+
+  <!-- ========================================================== -->
+
+  <HediffDef  ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_EagleEye</defName>
+	<label>Eagle eye</label>
+	<extraTooltip>Increases sight. As well as attack range.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.2</partEfficiencyOffset>
+		<statFactors>
+			<VEF_VerbRangeFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">1.1</VEF_VerbRangeFactor>
+		</statFactors>
+	  </li>
+	</stages>
+	<tags>
+		<li>Eye</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FelineEar</defName>
+	<label>Feline ear</label>
+	<extraTooltip>Enhances hearing.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.2</partEfficiencyOffset>
+		<capMods>
+		  <li>
+			<capacity>Hearing</capacity>
+			<offset>0.1</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Ear</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FelineEye</defName>
+	<label>Feline eye</label>
+	<extraTooltip>Increases hit chance and shooting accuracy.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		<statOffsets>
+			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+			<MeleeHitChance>0.2</MeleeHitChance>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags>
+		<li>Eye</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FelineLeg</defName>
+	<label>Feline leg</label>
+	<extraTooltip>Increases moving speed.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>0.1</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Leg</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FelineNose</defName>
+	<label>Feline nose</label>
+	<extraTooltip>Increases cooking speed.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.5</partEfficiencyOffset>
+		<statOffsets>
+		  <CookSpeed>2</CookSpeed>
+		</statOffsets>
+	  </li>
+	</stages>
+	<tags>
+		<li>Nose</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_FelineTail</defName>
+	<label>Feline tail</label>
+	<extraTooltip>Increases moving speed.</extraTooltip>
+	<hediffClass>Hediff_AddedPart</hediffClass>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		<capMods>
+		  <li>
+			<capacity>Moving</capacity>
+			<offset>0.1</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<tags>
+		<li>Tail</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Good">
+	<defName>WVC_HediffMutation_SneakJaw</defName>
+	<label>Sneak jaw</label>
+	<extraTooltip>Slightly increases defense against toxins.</extraTooltip>
+	<addedPartProps>
+	  <solid>true</solid>
+	  <partEfficiency>1.0</partEfficiency>
+	  <betterThanNatural>true</betterThanNatural>
+	</addedPartProps>
+	<stages>
+	  <li>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		<statFactors>
+			<ToxicSensitivity>0.8</ToxicSensitivity>
+		</statFactors>
+	  </li>
+	</stages>
+	<tags>
+		<li>Jaw</li>
+		<li>Base</li>
+		<li>ArtificialBodyPart</li>
+	</tags>
+  </HediffDef>
+
+  <!-- ========================================================== -->
+
+  <HediffDef ParentName="WVC_HediffMutation_Base">
+	<defName>WVC_HediffMutation_OrgansImprovment</defName>
+	<label>Organic improvment</label>
+	<description>Should be invisible.</description>
+	<stages>
+	  <li>
+		<becomeVisible>false</becomeVisible>
+		<partEfficiencyOffset>0.2</partEfficiencyOffset>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <HediffDef ParentName="WVC_HediffMutation_Base">
+	<defName>WVC_HediffMutation_OrgansChange</defName>
+	<label>Organic regeneration</label>
+	<description>Should be invisible.</description>
+	<stages>
+	  <li>
+		<becomeVisible>false</becomeVisible>
+		<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+		<statOffsets>
+			<InjuryHealingFactor>0.2</InjuryHealingFactor>
+		</statOffsets>
+	  </li>
+	</stages>
+  </HediffDef>
+
+</Defs>

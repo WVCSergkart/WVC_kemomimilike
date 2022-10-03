@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ===================================================================== -->
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<defName>VPE_PsychicClaws_WVC</defName>
+	<label>psychic claws</label>
+	<description>Gives the target and its allies the ability to attack with abyssal claws for a short period of time.</description>
+	<iconPath>WVC/Abilities/Claws</iconPath>
+	<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+	<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+	<!-- <statBases> -->
+	  <!-- <Ability_EntropyGain>60</Ability_EntropyGain> -->
+	  <!-- <Ability_PsyfocusCost>0.10</Ability_PsyfocusCost> -->
+	  <!-- <Ability_Duration>80</Ability_Duration> -->
+	  <!-- <Ability_EffectRadius>6.9</Ability_EffectRadius> -->
+	<!-- </statBases> -->
+	<!-- <verbProperties> -->
+	  <!-- <warmupTime>0.50</warmupTime> -->
+	  <!-- <range>12.9</range> -->
+	  <!-- <targetParams> -->
+		<!-- <canTargetSelf>True</canTargetSelf> -->
+		<!-- <canTargetLocations>True</canTargetLocations> -->
+		<!-- <canTargetBuildings>false</canTargetBuildings> -->
+		<!-- <canTargetAnimals>true</canTargetAnimals> -->
+		<!-- <canTargetMechs>false</canTargetMechs> -->
+		<!-- <canTargetPawns>true</canTargetPawns> -->
+		<!-- <canTargetHumans>true</canTargetHumans> -->
+		<!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
+		<!-- <onlyTargetColonists>false</onlyTargetColonists> -->
+		<!-- <onlyTargetControlledPawns>false</onlyTargetControlledPawns> -->
+		<!-- <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive> -->
+	  <!-- </targetParams> -->
+	<!-- </verbProperties> -->
+	<castTime>60</castTime>
+	<durationTime>2500</durationTime>
+	<range>13</range>
+	<radius>3.9</radius>
+	<targetMode>Location</targetMode>
+	<hasAoE>true</hasAoE>
+	<targetingParametersForAoE>
+		<canTargetSelf>True</canTargetSelf>
+		<canTargetHumans>True</canTargetHumans>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetAnimals>True</canTargetAnimals>
+		<neverTargetIncapacitated>True</neverTargetIncapacitated>
+		<onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+		<neverTargetHostileFaction>true</neverTargetHostileFaction>
+	</targetingParametersForAoE>
+	<!-- <comps> -->
+	  <!-- <li Class="CompProperties_AbilityGiveHediff"> -->
+		<!-- <compClass>CompAbilityEffect_GiveHediff</compClass> -->
+		<!-- <hediffDef>PsychicClaws_WVC</hediffDef> -->
+		<!-- <onlyBrain>True</onlyBrain> -->
+		<!-- <psychic>True</psychic> -->
+		<!-- <durationMultiplier>PsychicSensitivity</durationMultiplier> -->
+	  <!-- </li> -->
+	  <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+		<!-- <fleckDef>PsycastPsychicEffect</fleckDef> -->
+	  <!-- </li> -->
+	<!-- </comps> -->
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>3</level>
+		  <order>1</order>
+		  <psyfocusCost>0.10</psyfocusCost>
+		  <entropyGain>60</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_Hediff">
+			<hediff>PsychicClaws_WVC</hediff>
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+			<bodyPartToApply>Brain</bodyPartToApply>
+		</li>
+		<!-- <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget"> -->
+		  <!-- <fleckDefs> -->
+			<!-- <li>PsycastPsychicEffect</li> -->
+		  <!-- </fleckDefs> -->
+		  <!-- <scale>1.0</scale> -->
+		  <!-- <preCastTicks>10</preCastTicks> -->
+		<!-- </li> -->
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase" Name="VPE_TreeSummon_WVC" Abstract="True">
+	<description>Generates a skipgate and forcibly transfers the tree to the point specified by the caster. Casting this takes 12 seconds of meditation, and afterwards, the caster will go into a one-day psychic coma.</description>
+	<abilityClass>VFECore.Abilities.Ability_Spawn</abilityClass>
+	<needsTicking>true</needsTicking>
+	<castTime>260</castTime>
+	<durationTime>60000</durationTime>
+	<!-- <radius>14.9</radius> -->
+	<range>24.9</range>
+	<targetMode>Location</targetMode>
+	<showUndrafted>true</showUndrafted>
+	<modExtensions>
+	  <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+		<hediff>PsychicShock</hediff>
+		<durationMultiplier>PsychicSensitivity</durationMultiplier>
+	  </li>
+	  <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+		<effecterDef>Skip_Exit</effecterDef>
+		<maintainForTicks>60</maintainForTicks>
+		<scale>1.0</scale>
+	  </li>
+	  <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+		<fleckDefs>
+		  <li>PsycastSkipInnerExit</li>
+		  <li>PsycastSkipOuterRingExit</li>
+		</fleckDefs>
+		<scale>1.0</scale>
+		<sound>Psycast_Skip_Exit</sound>
+		<preCastTicks>5</preCastTicks>
+	  </li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_TreeSummon_WVC">
+	<defName>VPE_SummonTreeAnima_WVC</defName>
+	<label>anima skip</label>
+	<iconPath>WVC/Abilities/AnimaTree</iconPath>
+	<modExtensions>
+	  <li Class="VFECore.Abilities.AbilityExtension_Spawn">
+		<thing>Plant_TreeAnima</thing>
+	  </li>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>2</level>
+		  <order>1</order>
+		  <psyfocusCost>0.50</psyfocusCost>
+		  <entropyGain>0</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <VFECore.Abilities.AbilityDef MayRequire="ludeon.rimworld.ideology" ParentName="VPE_TreeSummon_WVC">
+	<defName>VPE_SummonTreeGauranlen_WVC</defName>
+	<label>gauranlen skip</label>
+	<iconPath>WVC/Abilities/GauranlenTree</iconPath>
+	<modExtensions>
+	  <li Class="VFECore.Abilities.AbilityExtension_Spawn">
+		<thing>Plant_TreeGauranlen</thing>
+	  </li>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>2</level>
+		  <order>2</order>
+		  <psyfocusCost>0.50</psyfocusCost>
+		  <entropyGain>0</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase" Name="VPE_WVC_SummonBase" Abstract="True">
+	<defName>VPE_SummonELF_WVC</defName>
+	<label>living form skip</label>
+	<description>No information available.</description>
+	<!-- <level>6</level> -->
+	<iconPath>WVC/Abilities/SummonELF</iconPath>
+	<jobDef>VFEA_UseAbilityUninterruptible</jobDef>
+	<castTime>720</castTime>
+	<targetMode>Self</targetMode>
+	<durationTime>288000</durationTime>
+	<warmupMote>Mote_WarmupNeuroquake</warmupMote>
+	<warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+	<warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+	<warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
+	<warmupPreEndSoundTicks>300</warmupPreEndSoundTicks>
+	<!-- <radius>60</radius> -->
+	<abilityClass>VFECore.Abilities.Ability_Spawn</abilityClass>
+	<modExtensions>
+		<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+			<fleckDef>PsychicApplyNeuroquake</fleckDef>
+			<sound>Psycast_Neuroquake_Effect</sound>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_Hediff">
+			<hediff>PsychicShock</hediff>
+			<!-- <hediff>PsychicDead_WVC</hediff> -->
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+			<!-- <bodyPartToApply>Brain</bodyPartToApply> -->
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+		  <fleckDefs>
+			<li>PsycastSkipInnerExit</li>
+			<li>PsycastSkipOuterRingExit</li>
+		  </fleckDefs>
+		  <scale>1.0</scale>
+		  <sound>Psycast_Skip_Exit</sound>
+		  <preCastTicks>10</preCastTicks>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+		  <effecterDef>Skip_Exit</effecterDef>
+		  <!-- <maintainForTicks>60</maintainForTicks> -->
+		  <scale>1.0</scale>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <!-- ===================================================================== -->
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+	<defName>VPE_SummonELF_WVC</defName>
+	<label>living form skip (ELF)</label>
+	<description>Find the mind echoes in the psychic field and create a skipgate through which the &lt;color=#a2adff&gt;ELF&lt;/color&gt; can escape. The &lt;color=#a2adff&gt;ELF&lt;/color&gt; summoned in this way will join the settlement.\n\nThis process releases an enormous amount of psychic energy, the mind of the caster is guaranteed to be destroyed. Casting this takes 12 seconds of meditation, and afterwards, the caster will die.</description>
+	<!-- <level>6</level> -->
+	<iconPath>WVC/Abilities/SummonELF</iconPath>
+	<jobDef>VFEA_UseAbilityUninterruptible</jobDef>
+	<castTime>720</castTime>
+	<targetMode>Self</targetMode>
+	<durationTime>288000</durationTime>
+	<warmupMote>Mote_WarmupNeuroquake</warmupMote>
+	<warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+	<warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+	<warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
+	<warmupPreEndSoundTicks>300</warmupPreEndSoundTicks>
+	<!-- <radius>60</radius> -->
+	<abilityClass>VFECore.Abilities.Ability_Spawn</abilityClass>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>5</level>
+		  <order>1</order>
+		  <psyfocusCost>0.0</psyfocusCost>
+		  <entropyGain>1000</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_ConfirmationMessage">
+			<message>If you use this ability, the caster will die, are you sure you want to exchange the life of this pawn for a cute little girl?\n\n(&lt;color=#a2adff&gt;ELF&lt;/color&gt;s are the best psycasters, they are not affected by entropy and spawn Anima tree seeds from time to time.)\n\n(The VPE version of the ability does not kill pawns)</message>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_Spawn">
+			<thing>PsyAbility_SummonPod_ELF_WVC</thing>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+	<defName>VPE_SummonValkyrie_WVC</defName>
+	<label>living form skip (Valkyrie)</label>
+	<!-- <level>6</level> -->
+	<iconPath>WVC/Abilities/SummonValk</iconPath>
+	<jobDef>VFEA_UseAbilityUninterruptible</jobDef>
+	<castTime>720</castTime>
+	<targetMode>Self</targetMode>
+	<durationTime>288000</durationTime>
+	<warmupMote>Mote_WarmupNeuroquake</warmupMote>
+	<warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+	<warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+	<warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
+	<warmupPreEndSoundTicks>300</warmupPreEndSoundTicks>
+	<!-- <radius>60</radius> -->
+	<abilityClass>VFECore.Abilities.Ability_Spawn</abilityClass>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>5</level>
+		  <order>2</order>
+		  <psyfocusCost>0.0</psyfocusCost>
+		  <entropyGain>1000</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_ConfirmationMessage">
+			<message>If you use this ability, the caster will die, are you sure you want to exchange the life of this pawn for a cute girl?\n\n(&lt;color=#a2c8ff&gt;Valkyrie&lt;/color&gt;s are stronger than standard pawns and are excellent fighters, however, it may take several years for them to reach their full potential.)\n\n(The VPE version of the ability does not kill pawns)</message>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_Spawn">
+			<thing>PsyAbility_SummonPod_Valkyrie_WVC</thing>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+	<defName>VPE_SummonGaurkyrie_WVC</defName>
+	<label>living form skip (Gaurkyrie)</label>
+	<!-- <level>6</level> -->
+	<iconPath>WVC/Abilities/SummonGaur</iconPath>
+	<jobDef>VFEA_UseAbilityUninterruptible</jobDef>
+	<castTime>720</castTime>
+	<targetMode>Self</targetMode>
+	<durationTime>288000</durationTime>
+	<warmupMote>Mote_WarmupNeuroquake</warmupMote>
+	<warmupStartSound>Psycast_Neuroquake_CastStart</warmupStartSound>
+	<warmupSound>Psycast_Neuroquake_CastLoop</warmupSound>
+	<warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
+	<warmupPreEndSoundTicks>300</warmupPreEndSoundTicks>
+	<!-- <radius>60</radius> -->
+	<abilityClass>VFECore.Abilities.Ability_Spawn</abilityClass>
+	<modExtensions>
+		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+		  <path>WVC_Other</path>
+		  <level>5</level>
+		  <order>3</order>
+		  <psyfocusCost>0.0</psyfocusCost>
+		  <entropyGain>1000</entropyGain>
+		  <psychic>true</psychic>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_ConfirmationMessage">
+			<message>If you use this ability, the caster will die, are you sure you want to exchange the life of this pawn for a cute big girl?\n\n(&lt;color=#f5ffa2&gt;Gaurkyrie&lt;/color&gt;s are the best melee fighters, however they have a big drawback - they are very slow.)\n\n(The VPE version of the ability does not kill pawns)</message>
+		</li>
+		<li Class="VFECore.Abilities.AbilityExtension_Spawn">
+			<thing>PsyAbility_SummonPod_Gaurkyrie_WVC</thing>
+		</li>
+	</modExtensions>
+  </VFECore.Abilities.AbilityDef>
+
+</Defs>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>DisableWeapons_WVC</key>
+		<defaultValue>false</defaultValue>
+		<caseFalse>
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>Valkyries_WeaponRestrictions_WVC</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="XmlExtensions.ForEachDescendant">
+				<xpathParent>/Defs/ThingDef[@Name="MeleeBladelink_WVC"]</xpathParent>
+				<concreteOnly>true</concreteOnly>
+				<storeIn>DEF</storeIn>
+				<apply> 
+					<Operation Class="XmlExtensions.CreateVariable">
+						<value>{DEF}/defName</value>
+						<storeIn>defName_DEF</storeIn>
+						<fromXml>true</fromXml>
+						<apply>
+							<Operation Class="PatchOperationAdd">
+							  <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/alienRace/raceRestriction/weaponList</xpath>
+							  <value>
+								<li>{defName_DEF}</li>
+							  </value>
+							</Operation>
+						</apply>
+					</Operation>
+				</apply>
+			</Operation>
+		</caseTrue>
+	</Operation>
+
+		</caseFalse>
+	</Operation>
+</Patch>
