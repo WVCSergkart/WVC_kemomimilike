@@ -355,7 +355,7 @@
 	<!-- ==================================Thing================================== -->
 
 	<statBases>
-	  <MoveSpeed>4.9</MoveSpeed>
+	  <MoveSpeed>5.9</MoveSpeed>
 	  <!-- <MoveSpeed>5.6</MoveSpeed> -->
 	  <MarketValue>1280</MarketValue>
 	  <ComfyTemperatureMin>-16</ComfyTemperatureMin>
@@ -395,7 +395,7 @@
 	  <!-- CE test -->
 	  <MeleeParryChance MayRequire="ceteam.combatextended">20.0</MeleeParryChance>
 	  <UnarmedDamage MayRequire="ceteam.combatextended">5.0</UnarmedDamage>
-	  <Suppressability MayRequire="ceteam.combatextended">0.0</Suppressability>
+	  <Suppressability MayRequire="ceteam.combatextended">0.20</Suppressability>
 	  <!-- CE test -->
 	</statBases>
 

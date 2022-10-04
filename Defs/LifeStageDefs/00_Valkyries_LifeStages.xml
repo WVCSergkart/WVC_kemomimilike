@@ -53,7 +53,7 @@
 	<hungerRateFactor>1.2</hungerRateFactor>
 	<meleeDamageFactor>1.25</meleeDamageFactor>
 	<statFactors>
-	  <MoveSpeed>1.25</MoveSpeed>
+	  <!-- <MoveSpeed>1.25</MoveSpeed> -->
 	  <ImmunityGainSpeed>1.05</ImmunityGainSpeed>
 	  <ToxicSensitivity>0.8</ToxicSensitivity>
 	  <!-- = -->
@@ -93,7 +93,7 @@
 	<hungerRateFactor>1.0</hungerRateFactor>
 	<meleeDamageFactor>1.5</meleeDamageFactor>
 	<statFactors>
-	  <MoveSpeed>1.5</MoveSpeed>
+	  <!-- <MoveSpeed>1.5</MoveSpeed> -->
 	  <ImmunityGainSpeed>1.10</ImmunityGainSpeed>
 	  <ToxicSensitivity>0.6</ToxicSensitivity>
 	  <!-- = -->
@@ -129,7 +129,7 @@
 	<hungerRateFactor>0.8</hungerRateFactor>
 	<meleeDamageFactor>1.75</meleeDamageFactor>
 	<statFactors>
-	  <MoveSpeed>1.75</MoveSpeed>
+	  <!-- <MoveSpeed>1.75</MoveSpeed> -->
 	  <ImmunityGainSpeed>1.15</ImmunityGainSpeed>
 	  <ToxicSensitivity>0.3</ToxicSensitivity>
 	  <!-- = -->
@@ -165,7 +165,7 @@
 	<hungerRateFactor>0.5</hungerRateFactor>
 	<meleeDamageFactor>2.0</meleeDamageFactor>
 	<statFactors>
-	  <MoveSpeed>2.0</MoveSpeed>
+	  <!-- <MoveSpeed>2.0</MoveSpeed> -->
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  <ToxicSensitivity>0.0</ToxicSensitivity>
 	  <!-- = -->

@@ -35,11 +35,11 @@
 	  <!-- = -->
 	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
 	  <!-- = -->
-	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-	  <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+	  <!-- <ArmorRating_Blunt>1.0</ArmorRating_Blunt> -->
+	  <!-- <ArmorRating_Sharp>1.0</ArmorRating_Sharp> -->
 	  <ArmorRating_Heat>0.6</ArmorRating_Heat>
 	  <!-- = -->
-	  <WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+	  <!-- <WorkSpeedGlobal>1.1</WorkSpeedGlobal> -->
 	  <RestRateMultiplier>1.125</RestRateMultiplier>
 	  <InjuryHealingFactor>1.125</InjuryHealingFactor>
 	  <!-- <PainShockThreshold>1.25</PainShockThreshold> -->
@@ -64,7 +64,7 @@
 	  <!-- <ArmorRating_Sharp>2.0</ArmorRating_Sharp> -->
 	  <ArmorRating_Heat>0.4</ArmorRating_Heat>
 	  <!-- = -->
-	  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+	  <!-- <WorkSpeedGlobal>1.2</WorkSpeedGlobal> -->
 	  <RestRateMultiplier>1.25</RestRateMultiplier>
 	  <InjuryHealingFactor>1.25</InjuryHealingFactor>
 	  <!-- <PainShockThreshold>1.5</PainShockThreshold> -->
@@ -89,7 +89,7 @@
 	  <!-- <ArmorRating_Sharp>3.5</ArmorRating_Sharp> -->
 	  <ArmorRating_Heat>0.2</ArmorRating_Heat>
 	  <!-- = -->
-	  <WorkSpeedGlobal>1.3</WorkSpeedGlobal>
+	  <!-- <WorkSpeedGlobal>1.3</WorkSpeedGlobal> -->
 	  <RestRateMultiplier>1.375</RestRateMultiplier>
 	  <InjuryHealingFactor>1.375</InjuryHealingFactor>
 	  <!-- <PainShockThreshold>1.75</PainShockThreshold> -->
@@ -114,7 +114,7 @@
 	  <!-- <ArmorRating_Sharp>5.0</ArmorRating_Sharp> -->
 	  <ArmorRating_Heat>0.0</ArmorRating_Heat>
 	  <!-- = -->
-	  <WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+	  <!-- <WorkSpeedGlobal>1.4</WorkSpeedGlobal> -->
 	  <RestRateMultiplier>1.5</RestRateMultiplier>
 	  <InjuryHealingFactor>1.5</InjuryHealingFactor>
 	  <!-- <PainShockThreshold>2.0</PainShockThreshold> -->

@@ -127,6 +127,8 @@
 		  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 		  <ArmorRating_Heat>0.15</ArmorRating_Heat>	
 		  <!-- custom -->
+		  <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+		  <PawnTrapSpringChance>2.0</PawnTrapSpringChance>
 		  <GlobalLearningFactor>1.2</GlobalLearningFactor>
 		  <ToxicSensitivity>0.0</ToxicSensitivity>
 		  <MentalBreakThreshold>-1.0</MentalBreakThreshold>

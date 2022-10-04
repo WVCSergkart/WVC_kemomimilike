@@ -215,8 +215,8 @@
 		  <!-- <RoyalFavorValue>12</RoyalFavorValue> -->
 		  <Mass>22</Mass>
 		  <PawnTrapSpringChance>0.0</PawnTrapSpringChance>
-		  <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
-		  <FoodPoisonChance>0.5</FoodPoisonChance>
+		  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+		  <FoodPoisonChance>0.25</FoodPoisonChance>
 		  <SocialImpact>1.2</SocialImpact>
 		  <GeneralLaborSpeed>0.8</GeneralLaborSpeed>
 		  <DrugSynthesisSpeed>0.8</DrugSynthesisSpeed>
