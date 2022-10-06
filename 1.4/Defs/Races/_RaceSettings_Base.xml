@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AlienRace.RaceSettings>
+	<defName>Valkyries_Base_RaceSettings_WVC</defName>
+	<pawnKindSettings>
+	  <startingColonists>
+		<li>
+		  <pawnKindEntries>
+			<li>
+			  <kindDefs>
+				<!-- <li>Alien_Valkyrie_WVC</li> -->
+				<li>Alien_ELF_WVC</li>
+				<li>Alien_DryadMother_WVC</li>
+				<li>Alien_Herrscher_WVC</li>
+			  </kindDefs>
+			  <chance>100.0</chance>
+			</li>
+		  </pawnKindEntries>
+		  <factionDefs>
+			<li>PlayerFaction_Valkyrie_WVC</li>
+		  </factionDefs>
+		</li>
+	  </startingColonists>
+	</pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+</Defs>

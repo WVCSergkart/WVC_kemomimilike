@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- =========================UNTOUCHABLE CRUTCH========================= -->
+	<!-- =========================UNTOUCHABLE CRUTCH========================= -->
+	<!-- =========================UNTOUCHABLE CRUTCH========================= -->
+
+	<!-- If you delete the backstories below, then everything will stop working. -->
+
+	<AlienRace.BackstoryDef ParentName="Base_HumanoidBackstory_WVC" Name="ForAll_HumanoidBackstory_WVC" Abstract="True">
+		<slot>Childhood</slot>
+		<spawnCategories>
+		  <li>BaseBackstory_ForGirls_WVC</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC" Name="OneSkill_HumanoidBackstory_WVC" Abstract="True">
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- Very rare backstory with 20 skill points -->
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC" Name="Legendary_HumanoidBackstory_WVC" Abstract="True">
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<title>&lt;color=#a2c8ff&gt;Legend&lt;/color&gt;</title>
+		<titleShort>&lt;color=#a2c8ff&gt;Legend&lt;/color&gt;</titleShort>
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- ================================================================== -->
+
+	<AlienRace.BackstoryDef ParentName="Base_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Valkyries_WVC</defName>
+		<slot>Childhood</slot>
+		<maleCommonality>200</maleCommonality>
+		<femaleCommonality>200</femaleCommonality>
+		<spawnCategories>
+		  <li>BaseBackstory_Valkyries_WVC</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Base_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Herrschers_WVC</defName>
+		<title>&lt;color=#cca2ff&gt;Herrscher&lt;/color&gt;</title>
+		<titleShort>&lt;color=#cca2ff&gt;Herrscher&lt;/color&gt;</titleShort>
+		<slot>Childhood</slot>
+		<maleCommonality>200</maleCommonality>
+		<femaleCommonality>200</femaleCommonality>
+		<spawnCategories>
+		  <li>BaseBackstory_Herrschers_WVC</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<!-- ================================================================== -->
+
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Wanderer_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Plants</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Delta_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Artistic</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Psy_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Medicine</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Cute_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Social</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Haxxor_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Error_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>3</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Idiotka_WVC</defName>
+		<maleCommonality>0</maleCommonality>
+		<skillGains>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>-20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Tabibito_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>2</amount>
+		  </li>
+		  <li>
+			<defName>Plants</defName>
+			<amount>2</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Antagonist_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Cooking</defName>
+			<amount>2</amount>
+		  </li>
+		  <li>
+			<defName>Social</defName>
+			<amount>2</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Protagonist_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>2</amount>
+		  </li>
+		  <li>
+			<defName>Social</defName>
+			<amount>2</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Nameless_WVC</defName>
+		<skillGains Inherit="False">
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- ================================================================== -->
+
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Rozaliya_WVC</defName>
+		<bodyTypeGlobal>Body_Roza_WVC</bodyTypeGlobal>
+		<maleCommonality>0</maleCommonality>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Melee</defName>
+			<amount>10</amount>
+		  </li>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>-5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="ForAll_HumanoidBackstory_WVC">
+		<defName>BaseBackstoryChild_Liliya_WVC</defName>
+		<bodyTypeGlobal>Body_Lily_WVC</bodyTypeGlobal>
+		<maleCommonality>0</maleCommonality>
+		<skillGains Inherit="False">
+		  <li>
+			<defName>Shooting</defName>
+			<amount>2</amount>
+		  </li>
+		  <li>
+			<defName>Melee</defName>
+			<amount>8</amount>
+		  </li>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>-5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- =========================LEGEND========================= -->
+	<!-- =========================LEGEND========================= -->
+	<!-- =========================LEGEND========================= -->
+
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Plants_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Plants</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Shooting_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Shooting</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Melee_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Melee</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Construction_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Construction</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Mining_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Mining</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Cooking_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Cooking</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Animals_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Animals</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Crafting_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Artistic_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Artistic</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Medicine_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Medicine</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Social_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Social</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_Intellectual_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Legendary_HumanoidBackstory_WVC">
+		<defName>LegendaryBackstoryChild_ValkyriesSkill_All_WVC</defName>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
+		<skillGains>
+		  <li>
+			<defName>Plants</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Shooting</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Melee</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Construction</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Mining</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Cooking</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Animals</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Artistic</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Medicine</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Social</defName>
+			<amount>20</amount>
+		  </li>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>20</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- =========================SIMPLE========================= -->
+	<!-- =========================SIMPLE========================= -->
+	<!-- =========================SIMPLE========================= -->
+
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Plants_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Plants</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Shooting_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Melee_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Construction_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Construction</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Mining_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Mining</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Cooking_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Cooking</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Animals_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Animals</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Crafting_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Artistic_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Artistic</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Medicine_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Medicine</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Social_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_Intellectual_WVC</defName>
+		<skillGains>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="OneSkill_HumanoidBackstory_WVC">
+		<defName>OneSkillBackstoryChild_ValkyriesSkill_All_WVC</defName>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>10</femaleCommonality>
+		<skillGains>
+		  <li>
+			<defName>Plants</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Shooting</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Construction</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Mining</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Cooking</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Animals</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Crafting</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Artistic</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Medicine</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Social</defName>
+			<amount>5</amount>
+		  </li>
+		  <li>
+			<defName>Intellectual</defName>
+			<amount>5</amount>
+		  </li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- ================================================================== -->
+
+  
+</Defs>

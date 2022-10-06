@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=====================================================================-->
+
+  <RecipeDef ParentName="SurgeryFlesh">
+	<defName>VFEI_InstallValkyrieGenome_WVC</defName>
+	<label>install living form genome</label>
+	<description>Install a living form genome.</description>
+	<descriptionHyperlinks><ThingDef>VFEI_ValkyrieGenome_WVC</ThingDef></descriptionHyperlinks>
+	<workerClass>VFEI.Other.Recipe_AddMutationHediff</workerClass>
+	<jobString>Installing living form genome.</jobString>
+	<workAmount>2000</workAmount>
+	<hideBodyPartNames>true</hideBodyPartNames>
+	<targetsBodyPart>false</targetsBodyPart>
+	<surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
+	<recipeUsers>
+	  <li>Human</li>
+	</recipeUsers>
+	<ingredients>
+	  <li>
+		<filter><thingDefs><li>VFEI_ValkyrieGenome_WVC</li></thingDefs></filter>
+		<count>1</count>
+	  </li>
+	  <li>
+		<filter><categories><li>Medicine</li></categories></filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>VFEI_ValkyrieGenome_WVC</li>
+	  </thingDefs>
+	  <categories>
+		<li>Medicine</li>
+	  </categories>
+	</fixedIngredientFilter>
+	<addsHediff>VFEI_ValkyrieGenome_WVC</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+	<defName>VFEI_ValkyrieGenome_WVC</defName>
+	<hediffClass>HediffWithComps</hediffClass>
+	<label>living form genome</label>
+	<labelNoun>a living form genome</labelNoun>
+	<description>An installed living form genome.</description>
+	<descriptionHyperlinks>
+	  <ThingDef>VFEI_ValkyrieGenome_WVC</ThingDef>
+	</descriptionHyperlinks>
+	<spawnThingOnRemoved>VFEI_ValkyrieGenome_WVC</spawnThingOnRemoved>
+	<comps>
+	  <li Class="VFEI.Comps.ItemComps.Properties.CompProperties_RandomHediffGiver">
+		<allowedRecipeDefs>
+		  <!-- <li>VFEI_InstallInsectoidLeg</li> -->
+		</allowedRecipeDefs>
+	  </li>
+	</comps>
+  </HediffDef>
+
+  <!--=====================================================================-->
+
+  <HediffGiverSetDef MayRequire="oskarpotocki.vfe.insectoid">
+	<defName>HediffGiverSet_MutationsVFEI_WVC</defName>
+	<hediffGivers>
+
+		<!--=====================================================================-->
+
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_InsectoidLeg</hediff>
+			<partsToAffect>
+			  <li>Leg</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_InsectoidArm</hediff>
+			<partsToAffect>
+			  <li>Shoulder</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_CompoundEye</hediff>
+			<partsToAffect>
+			  <li>Eye</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_Mandibles</hediff>
+			<partsToAffect>
+			  <li>Jaw</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_JellySac</hediff>
+			<partsToAffect>
+			  <li>Torso</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!--=====================================================================-->
+
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_VenomGland</hediff>
+			<partsToAffect>
+			  <li>Jaw</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_PneumaticClaw</hediff>
+			<partsToAffect>
+			  <li>Hand</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_Antenna</hediff>
+			<partsToAffect>
+			  <li>Ear</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_PredatorStomach</hediff>
+			<partsToAffect>
+			  <li>Stomach</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!--=====================================================================-->
+
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_PheromoneSecretor</hediff>
+			<partsToAffect>
+			  <li>Neck</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_VentricularSleeve</hediff>
+			<partsToAffect>
+			  <li>Heart</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+		<li Class="HediffGiver_Birthday">
+			<hediff>VFEI_SynapticCerebellum</hediff>
+			<partsToAffect>
+			  <li>Brain</li>
+			</partsToAffect>
+			<ageFractionChanceCurve>
+			  <points>
+				<li>(0, 0.1)</li>
+				<li>(0.05, 0.0)</li>
+				<li>(1, 0.0)</li>
+			  </points>
+			</ageFractionChanceCurve>
+		</li>
+
+		<!--=====================================================================-->
+
+	</hediffGivers>
+  </HediffGiverSetDef>
+
+</Defs>

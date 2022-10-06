@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase" Name="PlayerFaction_Valkyrie_WVC" Abstract="True">
+		<!-- <defName>PlayerFaction_Valkyrie_WVC</defName> -->
+		<label>&lt;color=#a2c8ff&gt;Valkyries&lt;/color&gt;</label>
+		<description>A group of wanderers traveling aimlessly.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Alien_Valkyrie_WVC</basicMemberKind>
+		<pawnSingular>wanderer</pawnSingular>
+		<pawnsPlural>wanderers</pawnsPlural>
+		<techLevel>Animal</techLevel>
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>1.0</commonality>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>WVC/Icons/Faction</factionIconPath>
+		<!-- <factionIconPath>WVC/Icons/IconsA</factionIconPath> -->
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>0.0</geneticVariance>
+		<colorSpectrum Inherit="False">
+		  <li>(94,163,255)</li>
+		</colorSpectrum>
+		<startingResearchTags Inherit="False">
+			<!-- <li>ClassicStart</li> -->
+			<li>ValkyriesStart_WVC</li>
+			<li MayRequire="pupa.insectgirls">IGStart</li>
+		</startingResearchTags>
+		<!-- <startingTechprintsResearchTags> -->
+			<!-- <li>ClassicStart</li> -->
+			<!-- <li>ClassicStartTechprints</li> -->
+		<!-- </startingTechprintsResearchTags> -->
+		<!-- <apparelStuffFilter> -->
+			<!-- <thingDefs> -->
+			<!-- </thingDefs> -->
+		<!-- </apparelStuffFilter> -->
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFaction_Valkyrie_WVC">
+		<defName>PlayerFaction_Valkyrie_WVC</defName>
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFaction_Valkyrie_WVC">
+		<defName>PlayerFaction_ELF_WVC</defName>
+		<label>&lt;color=#a2c8ff&gt;ELF&lt;/color&gt;</label>
+		<techLevel>Ultra</techLevel>
+		<basicMemberKind>Alien_Assembled_ELF_WVC</basicMemberKind>
+		<!-- <factionIconPath>WVC/Icons/Claws</factionIconPath> -->
+		<colorSpectrum Inherit="False">
+		  <li>(109,126,255)</li>
+		</colorSpectrum>
+		<startingResearchTags Inherit="False">
+			<li>WVC_Assembled_ELF_Base</li>
+		</startingResearchTags>
+	</FactionDef>
+  
+</Defs>

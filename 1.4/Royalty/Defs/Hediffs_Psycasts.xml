@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="PsycastHediffBase" Name="Marker_PsycastHediffBase_WVC" Abstract="True">
+	<label>Psycast</label>
+	<description>No more information available.</description>
+	<everCurableByItem>false</everCurableByItem>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<makesAlert>false</makesAlert>
+	<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	<stages>
+	</stages>
+	<comps>
+	</comps>
+  </HediffDef>
+
+  <!-- ===================================================================== -->
+
+  <HediffDef ParentName="Marker_PsycastHediffBase_WVC">
+	<defName>PsychicClaws_WVC</defName>
+	<label>psychic claws</label>
+	<description>Psychically-induced claws, capable of cutting through the toughest alloys. The ability is transferred to nearby allies.</description>
+	<stages>
+	  <li>
+		<statFactors>
+		  <WVC_CorruptionSensitivity>0</WVC_CorruptionSensitivity>
+		</statFactors>
+		<capMods>
+		  <li>
+			<capacity>Manipulation</capacity>
+			<offset>-0.10</offset>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_VerbGiver">
+			<tools>
+			  <li>
+				<label>psychic claw</label>
+				<capacities>
+				  <li>Scratch_AbyssCorruption_WVC</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>0.7</armorPenetration>
+				<chanceFactor>5.0</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>4</amount>
+					</li>
+					<li>
+					  <def>EMP</def>
+					  <amount>3</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			</tools>
+		</li>
+	</comps>
+  </HediffDef>
+
+  <!-- ===================================================================== -->
+
+  <HediffDef ParentName="Marker_PsycastHediffBase_WVC">
+	<defName>PsychicDead_WVC</defName>
+	<label>Entropy pulse</label>
+	<description>An entropic echo of unbelievable force presses against the mind of this pawn, only the strongest minds can survive it.</description>
+	<stages>
+	  <li>
+		<capMods>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<postFactor>0.0</postFactor>
+		  </li>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<offset>-1.0</offset>
+		  </li>
+		  <li>
+			<capacity>Consciousness</capacity>
+			<setMax>0.0</setMax>
+		  </li>
+		</capMods>
+	  </li>
+	</stages>
+  </HediffDef>
+
+</Defs>

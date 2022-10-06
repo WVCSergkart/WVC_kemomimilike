@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef MayRequire="vanillaexpanded.ideo.dryads" Name="AwakeGirlsFromDryads_Base_WVC" Abstract="True">
+		<!-- <defName>DryadMother_Cocoon_WVC</defName> -->
+		<label>biomass pod</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Building</category>
+		<description>A disgusting pink cocoon, inside of which something is stirring.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>WVC/Stuff/biomass_pod</texPath>
+			<drawSize>2.5</drawSize>
+			<drawOffset>(0,0,0.3)</drawOffset>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.25</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<fillPercent>0.5</fillPercent>
+		<selectable>true</selectable>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>3</glowRadius>
+			<glowColor>(200,114,110)</glowColor>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="AwakeGirlsFromDryads_Base_WVC">
+		<defName>VIE_Awakening_DryadMother_Cocoon_WVC</defName>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>600000</ticksToSpawn>
+				<dryadToSpawn>Alien_Evolved_DryadMother_WVC</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="AwakeGirlsFromDryads_Base_WVC">
+		<defName>VIE_Awakening_Valkyries_Cocoon_WVC</defName>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>480000</ticksToSpawn>
+				<dryadToSpawn>Alien_Evolved_Valkyrie_WVC</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="AwakeGirlsFromDryads_Base_WVC">
+		<defName>VIE_Awakening_ELF_Cocoon_WVC</defName>
+		<comps>
+			<li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
+				<ticksToSpawn>480000</ticksToSpawn>
+				<dryadToSpawn>Alien_Evolved_ELF_WVC</dryadToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

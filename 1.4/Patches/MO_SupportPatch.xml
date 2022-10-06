@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>dankpyon.medieval.overhaul</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+
+			<Operation Class="XmlExtensions.PatchOperationAddOrReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/statBases</xpath>
+				<value>
+					<LeatherAmount>0</LeatherAmount>
+				</value>
+			</Operation>
+
+		</caseTrue>
+	</Operation>
+</Patch>

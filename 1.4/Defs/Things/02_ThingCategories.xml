@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+	<defName>ValkyriesWeapon_WVC</defName>
+	<label>exotic weapons</label>
+	<parent>Weapons</parent>
+  </ThingCategoryDef>
+
+  <!-- <ThingCategoryDef> -->
+	<!-- <defName>WVC_ChipsELF</defName> -->
+	<!-- <label>ELF chips</label> -->
+	<!-- <parent>ApparelUtility</parent> -->
+  <!-- </ThingCategoryDef> -->
+
+</Defs>

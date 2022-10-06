@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Marker_TwoHandWeapon_WVC" Name="MeleeWeapon_LaborofOlympus_WVC" Abstract="True">
+	<!-- <defName>MeleeWeapon_LaborofOlympusB_WVC</defName> -->
+	<label>Labor of Olympus MkI</label>
+	<!-- <description>The experimental greatsword.\n\n(Only Valkyries know how to use this weapon)</description> -->
+	<graphicData>
+	  <texPath>WVC/weapon/LaborofOlympusB</texPath>
+	</graphicData>
+	<!-- <equippedAngleOffset>-50</equippedAngleOffset> -->
+	<statBases>
+	</statBases>
+	<tools>
+	  <li>
+		<label>handle</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>0.9</cooldownTime>
+		<chanceFactor>0.25</chanceFactor> 
+	  </li>
+	  <li>
+		<label>blade</label>
+		<capacities>
+		  <li>WVC_Cut_RedArk</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>0.9</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+			<def>Flame</def>
+			<amount>15</amount>
+			<chance>1.0</chance>
+		  </li>
+		</extraMeleeDamages>
+		<armorPenetration>0.7</armorPenetration>
+	  </li>
+	  <li>
+		<label>edge</label>
+		<capacities>
+		  <li>WVC_Cut_RedArk</li>
+		</capacities>
+		<power>17</power>
+		<cooldownTime>0.9</cooldownTime>
+		<extraMeleeDamages>
+		  <li>
+			<def>Flame</def>
+			<amount>9</amount>
+			<chance>1.0</chance>
+		  </li>
+		</extraMeleeDamages>
+		<armorPenetration>0.7</armorPenetration>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_LaborofOlympus_WVC">
+	<defName>MeleeWeapon_LaborofOlympusB_WVC</defName>
+	<label>Labor of Olympus MkI</label>
+	<devNote>MeleeWeapon_LaborofOlympus_WVC</devNote>
+  </ThingDef>
+
+  <ThingDef ParentName="MeleeWeapon_LaborofOlympus_WVC">
+	<defName>MeleeWeapon_LaborofOlympusA_WVC</defName>
+	<label>Labor of Olympus MkII</label>
+	<graphicData>
+	  <texPath>WVC/weapon/LaborofOlympusA</texPath>
+	</graphicData>
+	<devNote>MeleeWeapon_LaborofOlympus_WVC</devNote>
+  </ThingDef>
+
+</Defs>

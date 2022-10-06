@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_UltraComponents_Base">
+	<defName>WVC_ExoticWeaponComponents</defName>
+	<label>exotic weapon blank</label>
+	<description>Very advanced components for equally advanced weapon.</description>
+	<graphicData>
+	  <texPath>WVC/Stuff/WeaponComponents</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.1</drawSize>
+	</graphicData>
+	<thingCategories Inherit="False">
+	  <li>Manufactured</li>
+	</thingCategories>
+	<stackLimit>5</stackLimit>
+	<statBases>
+	  <MaxHitPoints>210</MaxHitPoints>
+	  <MarketValue>2450</MarketValue>
+	</statBases>
+  </ThingDef>
+
+  <!-- ===================================================================== -->
+
+  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="ResourceBase">
+	<defName>VFEI_ValkyrieGenome_WVC</defName>
+	<!-- <label>valkyrie genetic material</label> -->
+	<label>living form genome</label>
+	<description>Genetic material of several different species, mixed into one payload of DNA.</description>
+	<descriptionHyperlinks>
+	  <ConceptDef>WVC_LivingFormGenome</ConceptDef>
+	</descriptionHyperlinks>
+	<graphicData>
+	  <texPath>Things/Item/GenomeIcons/VFEI_ValkyrieGenome_WVC</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<statBases>
+	  <MaxHitPoints>15</MaxHitPoints>
+	  <MarketValue>300</MarketValue>
+	  <Mass>0.10</Mass>
+	  <Flammability>0.0</Flammability>
+	  <DeteriorationRate>6</DeteriorationRate>
+	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">1</RoyalFavorValue>
+	</statBases>
+	<thingCategories>
+	  <li>Manufactured</li>
+	</thingCategories>
+	<tickerType>Never</tickerType>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>2</glowRadius>
+		<glowColor>(78, 226, 229, 0)</glowColor>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <!-- ===================================================================== -->
+
+  <ThingDef ParentName="ResourceBase" Name="SummonPod_WithGirl_Base_WVC" Abstract="True">
+	<label>pod</label>
+	<graphicData>
+		<texPath>WVC/Stuff/AnimaSeed</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+		<drawSize>0.1</drawSize>
+	</graphicData>
+	<altitudeLayer>FloorCoverings</altitudeLayer>
+	<passability>Standable</passability>
+	<soundInteract>Standard_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<stackLimit>1</stackLimit>
+	<statBases>
+	  <MaxHitPoints>20</MaxHitPoints>
+	  <MarketValue>300</MarketValue>
+	  <Mass>0.10</Mass>
+	  <Flammability>0.0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<thingCategories Inherit="False" />
+	<tickerType>Normal</tickerType>
+  </ThingDef>
+
+  <!-- ================================================================= -->
+
+  <ThingDef Name="WVC_SpawnCapsuleBase" ParentName="ResourceBase" Abstract="True">
+	<graphicData>
+	  <texPath>WVC/Stuff/ILF_Capsule</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+	<soundDrop>Standard_Drop</soundDrop>
+	<stackLimit>1</stackLimit>
+	<statBases>
+	  <MaxHitPoints>20</MaxHitPoints>
+	  <MarketValue>300</MarketValue>
+	  <Mass>0.10</Mass>
+	  <Flammability>0.0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<thingCategories>
+	  <li>WVC_MechanicalEggs</li>
+	</thingCategories>
+	<tickerType>Normal</tickerType>
+	<comps>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>2</glowRadius>
+		<glowColor>(182,255,253)</glowColor>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <!-- <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_SpawnCapsuleBase"> -->
+	<!-- <defName>WVC_DormantCapsuleILF</defName> -->
+	<!-- <label>ILF capsule</label> -->
+	<!-- <description>A capsule with a dormant ELF inside, also known as a "Mechanical Egg".</description> -->
+	<!-- <comps> -->
+		<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge"> -->
+			<!-- <requiredCount>1</requiredCount> -->
+			<!-- <podToBuild>WVC_CapsuleILF</podToBuild> -->
+			<!-- <gizmoImage>WVC/Stuff/ValksW</gizmoImage> -->
+			<!-- <gizmoLabel>VDE_DormantELF_WVC</gizmoLabel> -->
+			<!-- <gizmoDesc>VDE_AwakenDesc</gizmoDesc> -->
+		<!-- </li> -->
+	<!-- </comps> -->
+  <!-- </ThingDef> -->
+
+  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_SpawnCapsuleBase">
+	<defName>WVC_CapsuleILF</defName>
+	<!-- <label>CT capsule</label> -->
+	<!-- <description>A capsule with a dormant cat inside, also known as a "Mechanical Egg".</description> -->
+	<label>ILF capsule</label>
+	<description>A capsule with a dormant ELF inside, also known as a "Mechanical Egg".</description>
+	<comps>
+	</comps>
+  </ThingDef>
+
+</Defs>

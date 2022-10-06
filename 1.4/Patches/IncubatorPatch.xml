@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>oskarpotocki.vfe.insectoid</li>
+		</mods>
+		<packageId>true</packageId>
+		<logic>or</logic>
+		<caseTrue>
+
+			<Operation Class="PatchOperationAdd">
+				<xpath>/Defs/InsectoidBioengineering.AcceptedGenomesDef[defName="VFEI_AcceptedGenomes"]/genomes</xpath>
+				<value>
+					<li>VFEI_ValkyrieGenome_WVC</li>
+				</value>
+			</Operation>
+
+		</caseTrue>
+	</Operation>
+</Patch>

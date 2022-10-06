@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =================================================== -->
+
+  <AlienRace.ThingDef_AlienRace ParentName="WVC_RaceAutomatons_Base" Name="WVC_AlienRaceAutomatons_Base" Abstract="True">
+	<alienRace Inherit="False">
+		<generalSettings>
+			<!-- <validBeds> -->
+				<!-- <li>WVC_SleepPod</li> -->
+				<!-- <li>ELF_MendingStation_WVC</li> -->
+			<!-- </validBeds> -->
+			<maleGenderProbability>0.0</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<canLayDown>false</canLayDown>
+			<maxDamageForSocialfight>3</maxDamageForSocialfight>
+			<allowHumanBios>false</allowHumanBios>
+			<!-- <minAgeForAdulthood>3000</minAgeForAdulthood> -->
+			<minAgeForAdulthood>16</minAgeForAdulthood>
+			<humanRecipeImport>false</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<traitCount>0~1</traitCount>
+			<additionalTraits>0</additionalTraits>
+			<notXenophobistTowards>
+				<li>WVC_AlienRace_Reshaper</li>
+				<!-- <li>WVC_AlienRace_RedFormer</li> -->
+			</notXenophobistTowards>
+		
+			<!--=====================================================================-->
+		
+			<alienPartGenerator>
+				<atlasScale>4</atlasScale>
+				<borderScale>1</borderScale>
+				<aliencrowntypes>
+					<li>Head</li>
+				</aliencrowntypes>
+				<alienbodytypes>
+					<!-- <li>Body_Reshaper_WVC</li> -->
+				</alienbodytypes>
+				<colorChannels>
+					<li>
+						<!-- always white or cause visual bugs -->
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(1.0, 1.0, 1.0, 1.0)</only>
+								</li>
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+				<headOffset>(-0.03, -0.06)</headOffset>
+				<!-- <headOffset>(-0.03, 0.00)</headOffset> -->
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+				<customDrawSize>(1.0, 1.0)</customDrawSize>
+				<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
+				<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+				<headBodyPartDef>MechanicalHead</headBodyPartDef>
+			</alienPartGenerator>
+		</generalSettings>
+
+		<!--=====================================================================-->
+
+		<graphicPaths>
+			<li>
+				<body>WVC/Automatons/</body>
+				<head>WVC/BaseInvisibleHead/</head>
+				<skeleton>WVC/NodeRace/Dead</skeleton>
+				<!-- <skull>WVC/Pawns/Head/Head</skull> -->
+				<skinShader>CutoutComplex</skinShader>
+			</li>
+		</graphicPaths>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
+		
+		<!--=====================================================================-->
+		
+		<thoughtSettings>
+			<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
+			<canStillReceiveThoughts>
+				<li>WVC_AutomatonsBaseHediff</li>
+			</canStillReceiveThoughts>
+		</thoughtSettings>
+		
+		<!--=====================================================================-->
+		
+		<relationSettings>
+			<relationChanceModifierLover>0.1</relationChanceModifierLover>
+			<relationChanceModifierExLover>0.1</relationChanceModifierExLover>
+			<relationChanceModifierFiance>0.1</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0.1</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0.1</relationChanceModifierExSpouse>
+			<relationChanceModifierParent>1</relationChanceModifierParent>
+			<relationChanceModifierChild>1</relationChanceModifierChild>
+			<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			<renamer>
+			   <li>
+				  <relation>Parent</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Child</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Sibling</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>HalfSibling</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Cousin</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Grandparent</relation>
+				  <label>Grand creator</label>
+				  <femaleLabel>Grand creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>CousinOnceRemoved</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>SecondCousin</relation>
+				  <label>Same creator</label>
+				  <femaleLabel>Same creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Grandchild</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GreatGrandparent</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>UncleOrAunt</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GranduncleOrGrandaunt</relation>
+				  <label>Creator</label>
+				  <femaleLabel>Creator</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GreatGrandchild</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>GrandnephewOrGrandniece</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>NephewOrNiece</relation>
+				  <label>Creation</label>
+				  <femaleLabel>Creation</femaleLabel>
+			   </li>
+			   <li>
+				  <relation>Kin</relation>
+				  <label>Same brunch</label>
+				  <femaleLabel>Same brunch</femaleLabel>
+			   </li>
+			</renamer>
+		</relationSettings>
+		
+		<!--=====================================================================-->
+		
+		<raceRestriction>
+			<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+			<foodList>
+			</foodList>
+			<whiteFoodList>
+				<!-- <li>MealNutrientPaste</li> -->
+			</whiteFoodList>
+			<blackFoodList>
+			</blackFoodList>
+			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+			<apparelList>
+			</apparelList>
+			<whiteApparelList>
+			</whiteApparelList>
+			<blackApparelList>
+			</blackApparelList>
+			<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
+			<buildingList>
+			</buildingList>
+			<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
+			<recipeList>
+			</recipeList>
+			<onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+			<whiteTraitList>
+				<li>Kind</li>
+				<!-- <li>Bloodlust</li> -->
+				<li>Abrasive</li>
+				<li>FastLearner</li>
+				<li>SlowLearner</li>
+				<li>Tough</li>
+			</whiteTraitList>
+			<traitList>
+				<li MayRequire="honkai.girls.sergkart">Valkyrie_Herrschers_WVC</li>
+			</traitList>
+			<blackTraitList>
+			</blackTraitList>
+			<onlyTameRaceRestrictedPets>false</onlyTameRaceRestrictedPets>
+			<petList>
+			</petList>
+			<weaponList>
+			</weaponList>
+		</raceRestriction>
+
+		<!-- ==================================================================== -->
+
+		<compatibility>
+			<isFlesh>false</isFlesh>
+			<hasBlood>false</hasBlood>
+		</compatibility>
+
+	</alienRace>
+  </AlienRace.ThingDef_AlienRace>
+
+</Defs>

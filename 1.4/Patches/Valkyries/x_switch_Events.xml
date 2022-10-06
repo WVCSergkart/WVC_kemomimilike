@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========================================================== -->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>WVC_Events_WandererJoin_Valkyrie</key>
+		<defaultValue>true</defaultValue>
+		<caseFalse>
+			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>/Defs/IncidentDef[defName="WandererJoin_Valkyrie_WVC"]</xpath>
+			</Operation>
+		</caseFalse>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>WVC_Events_WandererJoin_DryadMother</key>
+		<defaultValue>true</defaultValue>
+		<caseFalse>
+			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>/Defs/IncidentDef[defName="WandererJoin_DryadMother_WVC"]</xpath>
+			</Operation>
+		</caseFalse>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>WVC_Events_WandererJoin_ELF</key>
+		<defaultValue>true</defaultValue>
+		<caseFalse>
+			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>/Defs/IncidentDef[defName="WandererJoin_ELF_WVC"]</xpath>
+			</Operation>
+		</caseFalse>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>WVC_Events_WandererJoin_Herrscher</key>
+		<defaultValue>true</defaultValue>
+		<caseFalse>
+			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>/Defs/IncidentDef[defName="WandererJoin_Herrscher_WVC"]</xpath>
+			</Operation>
+		</caseFalse>
+	</Operation>
+	<!-- ========================================================== -->
+
+</Patch>

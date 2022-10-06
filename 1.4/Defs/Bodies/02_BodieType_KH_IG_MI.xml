@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyTypeDef Name="Marker_KH_Valkyrie_BodieType_WVC" ParentName="Valkyrie_BodieType_WVC" Abstract="True">
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Akame</label>
+		<defName>Body_akame_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_akame</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Aome</label>
+		<defName>Body_aome_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_aome</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Hana</label>
+		<defName>Body_hana_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_hana</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Kon</label>
+		<defName>Body_kon_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_kon</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Armed Kon</label>
+		<defName>Body_konf_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_konf</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Kohime</label>
+		<defName>Body_kohime_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_kohime</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Kuro</label>
+		<defName>Body_kuro_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_kuro</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Miko</label>
+		<defName>Body_miko_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_miko</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Siro</label>
+		<defName>Body_siro_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_siro</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Armed Siro</label>
+		<defName>Body_sirof_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_sirof</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_KH_Valkyrie_BodieType_WVC">
+		<label>Yuki</label>
+		<defName>Body_yuki_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_yuki</bodyNakedGraphicPath>
+	</BodyTypeDef>
+
+	<!-- ================================================================= -->
+
+	<BodyTypeDef Name="Marker_IG_Valkyrie_BodieType_WVC" ParentName="Valkyrie_BodieType_WVC" Abstract="True">
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Whity</label>
+		<defName>Body_baier_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_baier</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Spikky</label>
+		<defName>Body_zhuer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_zhuer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Spelby</label>
+		<defName>Body_kuoer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_kuoer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Scaraby</label>
+		<defName>Body_jiaer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_jiaer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Pedey</label>
+		<defName>Body_buer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_buer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_IG_Valkyrie_BodieType_WVC">
+		<label>Orangy</label>
+		<defName>Body_juer_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_juer</bodyNakedGraphicPath>
+	</BodyTypeDef>
+
+	<!-- ================================================================= -->
+
+	<BodyTypeDef Name="Marker_Mimikko_Valkyrie_BodieType_WVC" ParentName="Valkyrie_BodieType_WVC" Abstract="True">
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Alphazero</label>
+		<defName>Body_Alphazero_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Alphazero</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Ariana</label>
+		<defName>Body_Ariana_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Ariana</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Liuli</label>
+		<defName>Body_Liuli_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Liuli</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Momona</label>
+		<defName>Body_Momona_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Momona</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Nemuri</label>
+		<defName>Body_Nemuri_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Nemuri</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Nonona</label>
+		<defName>Body_Nonona_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Nonona</bodyNakedGraphicPath>
+	</BodyTypeDef>
+	<BodyTypeDef ParentName="Marker_Mimikko_Valkyrie_BodieType_WVC">
+		<label>Ulrica</label>
+		<defName>Body_Ulrica_WVC</defName>
+		<bodyNakedGraphicPath>WVC/Pawns/Bodies/Naked_Ulrica</bodyNakedGraphicPath>
+	</BodyTypeDef>
+
+</Defs>
