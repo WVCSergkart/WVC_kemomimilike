@@ -4,24 +4,42 @@
   <AlienRace.RaceSettings>
 	<defName>Valkyries_Base_RaceSettings_WVC</defName>
 	<pawnKindSettings>
-	  <startingColonists>
-		<li>
-		  <pawnKindEntries>
+		<startingColonists>
 			<li>
-			  <kindDefs>
-				<!-- <li>Alien_Valkyrie_WVC</li> -->
-				<li>Alien_ELF_WVC</li>
-				<li>Alien_DryadMother_WVC</li>
-				<li>Alien_Herrscher_WVC</li>
-			  </kindDefs>
-			  <chance>100.0</chance>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<!-- <li>Alien_Valkyrie_WVC</li> -->
+							<li>Alien_ELF_WVC</li>
+							<li>Alien_DryadMother_WVC</li>
+							<!-- <li>Alien_Herrscher_WVC</li> -->
+						</kindDefs>
+						<chance>100.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerFaction_Valkyrie_WVC</li>
+				</factionDefs>
 			</li>
-		  </pawnKindEntries>
-		  <factionDefs>
-			<li>PlayerFaction_Valkyrie_WVC</li>
-		  </factionDefs>
-		</li>
-	  </startingColonists>
+		</startingColonists>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>Alien_Assembled_ELF_WVC</li>
+				</kindDefs>
+				<chance>20.0</chance>
+			</li>
+		</alienslavekinds>
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>Alien_Valkyrie_WVC</li>
+					<li>Alien_ELF_WVC</li>
+					<li>Alien_DryadMother_WVC</li>
+				</kindDefs>
+				<chance>10.0</chance>
+			</li>
+		</alienrefugeekinds>
 	</pawnKindSettings>
   </AlienRace.RaceSettings>
 

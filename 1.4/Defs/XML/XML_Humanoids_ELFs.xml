@@ -10,7 +10,7 @@
 			<!-- ================================================================= -->
 
 			<li Class="XmlExtensions.Setting.Text">
-				<text>ELFs - a subspecies of the Valkyries, most of the settings, as well as mutations, they inherit from them. ELFs have some limitations and serious buffs to starting skills, especially medicine.&lt;color=#a2adff&gt;\n\n- Move fast\n- Peak strength at age 12, average age 8 years\n- Unique skin\n- Weak in melee combat, but have strong ranged bonuses\n- Ignore the slowdown of surfaces&lt;/color&gt;\n\nCan only be obtained through dryad evolution, psycasts or an incubator</text>
+				<text>ELFs - a subspecies of the Valkyries, most of the settings, as well as mutations, they inherit from them. ELFs have some limitations and serious buffs to starting skills, especially medicine.&lt;color=#a2adff&gt;\n\n- Move fast\n- Peak strength at age 12, average age 8 years\n- Unique skin\n- Weak in melee combat, but have strong ranged bonuses\n- Ignore the slowdown of surfaces&lt;/color&gt;\n\nCan be obtained through events or slave trader</text>
 				<tKey>HGS_Humanoids_ELFsTab_WVC</tKey>
 			</li>
 

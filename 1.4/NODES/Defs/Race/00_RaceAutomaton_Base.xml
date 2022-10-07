@@ -84,7 +84,7 @@
 	  <baseHungerRate>0.2</baseHungerRate>
 	  <foodType>OmnivoreHuman</foodType>
 	  <specificMeatDef>WVC_ResourceNodes_Yellow</specificMeatDef>
-	  <leatherDef>Plasteel</leatherDef>
+	  <leatherDef>WVC_LivingMetall</leatherDef>
 	  <!-- <corpseDef>Corpse_Automaton_WVC</corpseDef> -->
 	  <wildness>0.0</wildness>
 	  <manhunterOnDamageChance>1.00</manhunterOnDamageChance>

@@ -63,14 +63,14 @@
 						<li Class="XmlExtensions.Setting.SetColor">
 							<color>(255,162,100)</color>
 						</li>
-						<li Class="XmlExtensions.Setting.Checkbox">
-							<key>Mutations_HediffGiverSet_SuperPowersAbilities_WVC</key>
-							<label>Mutations with abilities</label>
-							<defaultValue>true</defaultValue>
-							<tooltip>Adds a chance for mutations that grant a bonus to consciousness, psi sensitivity and one psycast. Not related to the list below.</tooltip>
-							<tKey>HGS_Humanlike_HediffGiverSet_SuperPowersAbilities_Label_WVC</tKey>
-							<tKeyTip>HGS_Humanlike_HediffGiverSet_SuperPowersAbilities_Desc_WVC</tKeyTip>
-						</li>
+						<!-- <li Class="XmlExtensions.Setting.Checkbox"> -->
+							<!-- <key>Mutations_HediffGiverSet_SuperPowersAbilities_WVC</key> -->
+							<!-- <label>Mutations with abilities</label> -->
+							<!-- <defaultValue>true</defaultValue> -->
+							<!-- <tooltip>Adds a chance for mutations that grant a bonus to consciousness, psi sensitivity and one psycast. Not related to the list below.</tooltip> -->
+							<!-- <tKey>HGS_Humanlike_HediffGiverSet_SuperPowersAbilities_Label_WVC</tKey> -->
+							<!-- <tKeyTip>HGS_Humanlike_HediffGiverSet_SuperPowersAbilities_Desc_WVC</tKeyTip> -->
+						<!-- </li> -->
 						<li Class="XmlExtensions.Setting.Checkbox">
 							<key>Mutations_HediffGiverSet_VFEI_WVC</key>
 							<label>Mutations VFEI</label>

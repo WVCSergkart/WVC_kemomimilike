@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="WVC_Apparel_PerfectUnderwear">
+  <ThingDef MayRequire="ludeon.rimworld.ideology" ParentName="WVC_Apparel_PerfectUnderwear">
 	<defName>WVC_Apparel_Shibari</defName>
 	<label>shibari</label>
 	<description>Rough and prickly ropes digging into the skin, not everyone will be ready to walk in this everyday.</description>

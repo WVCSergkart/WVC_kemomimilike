@@ -499,7 +499,7 @@
 	<stages>
 	  <li>
 		<becomeVisible>false</becomeVisible>
-		<partEfficiencyOffset>0.2</partEfficiencyOffset>
+		<partEfficiencyOffset>0.1</partEfficiencyOffset>
 	  </li>
 	</stages>
   </HediffDef>
@@ -511,9 +511,9 @@
 	<stages>
 	  <li>
 		<becomeVisible>false</becomeVisible>
-		<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+		<partEfficiencyOffset>-0.05</partEfficiencyOffset>
 		<statOffsets>
-			<InjuryHealingFactor>0.2</InjuryHealingFactor>
+			<InjuryHealingFactor>0.1</InjuryHealingFactor>
 		</statOffsets>
 	  </li>
 	</stages>

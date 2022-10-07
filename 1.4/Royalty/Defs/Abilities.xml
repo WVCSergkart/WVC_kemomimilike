@@ -124,7 +124,7 @@
 
   <!-- ===================================================================== -->
 
-  <AbilityDef ParentName="Marker_Abilities_PsycastBaseSkip_WVC">
+  <AbilityDef ParentName="Marker_Abilities_PsycastBaseSkip_WVC" WVC_Tag="RemoveWithoutVAED">
 	<defName>PsyAbility_SummonELF_WVC</defName>
 	<label>living form skip</label>
 	<description>Find the mind echoes in the psychic field and create a skipgate through which the &lt;color=#a2adff&gt;ELF&lt;/color&gt; can escape. The &lt;color=#a2adff&gt;ELF&lt;/color&gt; summoned in this way will join the settlement.\n\nThis process releases an enormous amount of psychic energy, the mind of the caster is guaranteed to be destroyed. Casting this takes 12 seconds of meditation, and afterwards, the caster will die.</description>
@@ -189,7 +189,7 @@
   </AbilityDef>
 
   <!-- MayRequire="vanillaexpanded.ideo.dryads" -->
-  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC" WVC_Tag="RemoveWithoutVAED">
 	<defName>PsyAbility_SummonPod_ELF_WVC</defName>
 	<comps>
 		<!-- <li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened"> -->
@@ -199,13 +199,13 @@
 	</comps>
   </ThingDef>
 
-  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC" WVC_Tag="RemoveWithoutVAED">
 	<defName>PsyAbility_SummonPod_Valkyrie_WVC</defName>
 	<comps>
 	</comps>
   </ThingDef>
 
-  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC">
+  <ThingDef ParentName="SummonPod_WithGirl_Base_WVC" WVC_Tag="RemoveWithoutVAED">
 	<defName>PsyAbility_SummonPod_Gaurkyrie_WVC</defName>
 	<comps>
 	</comps>

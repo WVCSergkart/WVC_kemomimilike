@@ -3,8 +3,8 @@
 
   <AlienRace.ThingDef_AlienRace ParentName="GeneralThing_BaseValkyrie_WVC" Name="BaseValkyrie_WVC" Abstract="True">
 	<!-- <defName>Alien_Valkyrie_WVC</defName> -->
-	<label>&lt;color=#a2c8ff&gt;Valkyrie&lt;/color&gt;</label>
-	<description>Valkyries - an ancient race created to resist the mechanoids. Despite all the genetic changes, they are almost indistinguishable from humans in appearance, with the exception of the not rare presence of tails, horns, additional pairs of ears and other minor distinguishing features. How and by whom they were created has long been lost in time, but representatives of this race can still be found today in the expanses of the rimworld.&lt;color=#a2c8ff&gt;\n\nAccording to the original idea, mutations were supposed to be a replacement for the degradation of organs and not be so obvious. However, with the change of generations, less "human" and more "alien" representatives of this race began to appear, some of which are only indirectly related to the Valkyries.\n\nOne of the significant genetic deviations was the complete degeneration of the male half of this race, which is why this race consists entirely of girls and was called the Valkyries. But despite this, the representatives of the Valkyries race have full compatibility with non-genetically modified humans, thanks to which they have not become extinct.&lt;/color&gt;\n\nWith age, even the laziest Valkyrie has a very good "natural preparation" of the body, which is why these girls are always very dangerous in close combat.</description>
+	<label>valkyrie</label>
+	<description>Valkyries - an ancient race created to resist the mechanoids. Despite all the genetic changes, they are almost indistinguishable from humans in appearance, with the exception of the not rare presence of tails, horns, additional pairs of ears and other minor distinguishing features.&lt;color=#a2c8ff&gt;\n\nAccording to the original idea, mutations were supposed to be a replacement for the degradation of organs and not be so obvious. However, with the change of generations, less "human" and more "alien" representatives of this race began to appear, some of which are only indirectly related to the valkyries.\n\nOne of the significant genetic deviations was the complete degeneration of the male half of this race, which is why this race consists entirely of girls and was called the valkyries. But despite this, the representatives of the valkyries race have full compatibility with non-genetically modified humans, thanks to which they have not become extinct.&lt;/color&gt;\n\nWith age, even the laziest valkyrie has a very good "natural preparation" of the body, which is why these girls are always very dangerous in close combat.</description>
 	<descriptionHyperlinks>
 	  <!-- <ThingDef>VFE_ComponentMechanoid</ThingDef> -->
 	</descriptionHyperlinks>
@@ -36,9 +36,9 @@
 			<notXenophobistTowards>
 				<li>Alien_Valkyrie_WVC</li>
 				<li>Alien_DryadMother_WVC</li>
-				<li>Alien_RoyalDryad_WVC</li>
+				<!-- <li>Alien_RoyalDryad_WVC</li> -->
 				<li>Alien_ELF_WVC</li>
-				<li>Alien_Herrscher_WVC</li>
+				<!-- <li>Alien_Herrscher_WVC</li> -->
 			</notXenophobistTowards>
 			<forcedRaceTraitEntries>
 				<!-- <li> -->
@@ -260,9 +260,8 @@
 			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 			<apparelList>
 				<!-- = -->
-				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Blindfold</li>
-				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_SheerVeil</li>
-				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Shibari</li>
+				<!-- <li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Blindfold</li> -->
+				<!-- <li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_SheerVeil</li> -->
 			</apparelList>
 			<whiteApparelList>
 				<li MayRequire="vanillaexpanded.vpsycastse">VPE_Psyring</li>
@@ -273,6 +272,7 @@
 				<li>WVC_Apparel_ThermalUnderwear</li>
 				<li>WVC_Apparel_ExoticUnderwear</li>
 				<li>WVC_Apparel_MechanoidShieldBelt</li>
+				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Shibari</li>
 				<!-- = -->
 				<li>Apparel_PsychicShockLance</li>
 				<li>Apparel_PsychicInsanityLance</li>
@@ -364,11 +364,11 @@
 	  <!-- <ComfyTemperatureMax>26</ComfyTemperatureMax> -->
 	  <FilthRate>0</FilthRate>
 	  <MeatAmount>40</MeatAmount>
-	  <LeatherAmount>35</LeatherAmount>
+	  <LeatherAmount>25</LeatherAmount>
 	  <ToxicSensitivity>0.0</ToxicSensitivity>
 	  <PsychicSensitivity>1.0</PsychicSensitivity>
 	  <Flammability>0.4</Flammability>
-	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 	  <ArmorRating_Heat>0.25</ArmorRating_Heat>
 	  <!-- custom -->
@@ -377,7 +377,7 @@
 	  <ButcheryMechanoidEfficiency>1.2</ButcheryMechanoidEfficiency>
 	  <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 	  <FoodPoisonChance>0.8</FoodPoisonChance>
-	  <PawnBeauty>2</PawnBeauty>
+	  <PawnBeauty>1</PawnBeauty>
 	  <SocialImpact>1.2</SocialImpact>
 	  <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
 	  <DrugSynthesisSpeed>0.8</DrugSynthesisSpeed>
@@ -386,15 +386,15 @@
 	  <MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
 	  <BondAnimalChanceFactor>1.2</BondAnimalChanceFactor>
 	  <RestRateMultiplier>1.0</RestRateMultiplier>
-	  <MeleeDodgeChance>20.0</MeleeDodgeChance>
-	  <MeleeHitChance>20.0</MeleeHitChance>
+	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
+	  <MeleeHitChance>2.0</MeleeHitChance>
 	  <!-- custom -->
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  <InjuryHealingFactor>1.5</InjuryHealingFactor>
 	  <Mass>46</Mass>
-	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">7</RoyalFavorValue>
+	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">5</RoyalFavorValue>
 	  <!-- CE test -->
-	  <MeleeParryChance MayRequire="ceteam.combatextended">20.0</MeleeParryChance>
+	  <MeleeParryChance MayRequire="ceteam.combatextended">2.0</MeleeParryChance>
 	  <UnarmedDamage MayRequire="ceteam.combatextended">5.0</UnarmedDamage>
 	  <Suppressability MayRequire="ceteam.combatextended">0.20</Suppressability>
 	  <!-- CE test -->
@@ -425,11 +425,13 @@
 	  <baseHungerRate>0.8</baseHungerRate>
 	  <!-- <foodType>VegetarianRoughAnimal, OmnivoreHuman, OmnivoreAnimal</foodType> -->
 	  <foodType>OmnivoreHuman</foodType>
-	  <leatherDef>Leather_Human</leatherDef>
+	  <!-- <leatherDef>Leather_Human</leatherDef> -->
+	  <leatherDef>WVC_LivingMetall</leatherDef>
 	  <wildness>0.0</wildness>
 	  <lifeExpectancy>60</lifeExpectancy>
 	  <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+	  <bloodDef>WVC_Filth_AbyssBlood</bloodDef>
 	  <litterSizeCurve>
 		<points>
 			<li>(0, 1)</li>
@@ -524,8 +526,8 @@
 
 	<butcherProducts>
 	  <Plasteel>3</Plasteel>
-	  <VFEI_ValkyrieGenome_WVC>2</VFEI_ValkyrieGenome_WVC>
-	  <DankPyon_Hide_Human MayRequire="dankpyon.medieval.overhaul">1</DankPyon_Hide_Human>
+	  <VFEI_ValkyrieGenome_WVC>1</VFEI_ValkyrieGenome_WVC>
+	  <!-- <DankPyon_Hide_Human MayRequire="dankpyon.medieval.overhaul">1</DankPyon_Hide_Human> -->
 	</butcherProducts>
 
 	<!-- ==================================================================== -->
@@ -536,6 +538,7 @@
 
   <AlienRace.ThingDef_AlienRace ParentName="BaseValkyrie_WVC">
 	<defName>Alien_Valkyrie_WVC</defName>
+	<label>valkyrie</label>
 	<descriptionHyperlinks>
 	  <ConceptDef>WVC_AlienRace_Valkyrie</ConceptDef>
 	</descriptionHyperlinks>

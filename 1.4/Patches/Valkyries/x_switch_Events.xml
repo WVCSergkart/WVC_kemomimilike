@@ -32,16 +32,16 @@
 			</Operation>
 		</caseFalse>
 	</Operation>
-	<Operation Class="XmlExtensions.OptionalPatch">
-		<modId>honkai.girls.sergkart</modId>
-		<key>WVC_Events_WandererJoin_Herrscher</key>
-		<defaultValue>true</defaultValue>
-		<caseFalse>
-			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-				<xpath>/Defs/IncidentDef[defName="WandererJoin_Herrscher_WVC"]</xpath>
-			</Operation>
-		</caseFalse>
-	</Operation>
+	<!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
+		<!-- <modId>honkai.girls.sergkart</modId> -->
+		<!-- <key>WVC_Events_WandererJoin_Herrscher</key> -->
+		<!-- <defaultValue>true</defaultValue> -->
+		<!-- <caseFalse> -->
+			<!-- <Operation Class="XmlExtensions.PatchOperationSafeRemove"> -->
+				<!-- <xpath>/Defs/IncidentDef[defName="WandererJoin_Herrscher_WVC"]</xpath> -->
+			<!-- </Operation> -->
+		<!-- </caseFalse> -->
+	<!-- </Operation> -->
 	<!-- ========================================================== -->
 
 </Patch>

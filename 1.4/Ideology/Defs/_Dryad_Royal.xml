@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="DryadBase" Name="DryadsThingWVC" Abstract="True" WVC_Tag="EasyResourcesPatch">
-	<label>&lt;color=#ffcea2&gt;Royal dryad&lt;/color&gt;</label>
-	<description>This dryad caste bears a strong resemblance to humans, some individuals are even capable of verbal communication. However, in the vast majority of cases, they are not intelligent, and even rare manifestations of personality are an illusion created by their behavior pattern. Their caste is universal, thanks to which they can always significantly help the settlement.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.</description>
+  <ThingDef ParentName="DryadBase">
+	<defName>DryadGirlWVC</defName>
+	<label>royal dryad</label>
+	<description>This dryad caste bears a strong resemblance to humans, some individuals are even capable of verbal communication.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;</description>
 	<descriptionHyperlinks>
 	  <ConceptDef>WVC_Dryads_RoyalDryads_Evolution</ConceptDef>
 	  <ConceptDef>WVC_Dryads_RoyalDryads_Hardwork</ConceptDef>
@@ -23,8 +24,7 @@
 	</statBases>
 	<race>
 	  <!-- <thinkTreeMain>Default_DryadGirls_WVC</thinkTreeMain> -->
-	  <useMeatFrom>Dryad_Basic</useMeatFrom>
-	  <canBePredatorPrey>false</canBePredatorPrey>
+	  <!-- <canBePredatorPrey>false</canBePredatorPrey> -->
 	  <trainability>Advanced</trainability>
 	  <!-- <baseHealthScale>1.5</baseHealthScale> -->
 	  <!-- <leatherDef>Leather_Human</leatherDef> -->
@@ -33,35 +33,38 @@
 	  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 	  <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
 	  <disableAreaControl>false</disableAreaControl>
+	  <useMeatFrom>Dryad_Basic</useMeatFrom>
+	  <leatherDef>WVC_LivingMetall</leatherDef>
 	  <body>Body_Valkyrie_WVC</body>
+	  <bloodDef>WVC_Filth_AbyssBlood</bloodDef>
 	  <!-- <baseBodySize>0.7</baseBodySize> -->
 	  <specialShadowData>
 		<volume>(0.3, 0.8, 0.4)</volume>
 		<offset>(0,0,-0.4)</offset>
 	  </specialShadowData>
-	  <lifeStageAges Inherit="False">
-		<li>
-			<def>Alien_RoyalDryad_Baby_WVC</def>
-			<minAge>0</minAge>
-			<soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded>
-			<soundCall>Pawn_Dryad_Gaumaker_Call</soundCall>
-		</li>
-		<li>
-			<def>Alien_RoyalDryad_Juvenile_WVC</def>
-			<minAge>1</minAge>
-			<soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded>
-			<soundCall>Pawn_Dryad_Gaumaker_Call</soundCall>
-		</li>
-		<li>
-			<def>Alien_RoyalDryad_Adult_WVC</def>
-			<minAge>2</minAge>
-			<soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded>
-			<soundCall>Pawn_Dryad_Gaumaker_Call</soundCall>
-		</li>
-	  </lifeStageAges>
+	  <!-- <lifeStageAges Inherit="False"> -->
+		<!-- <li> -->
+			<!-- <def>Alien_RoyalDryad_Baby_WVC</def> -->
+			<!-- <minAge>0</minAge> -->
+			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
+			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <def>Alien_RoyalDryad_Juvenile_WVC</def> -->
+			<!-- <minAge>1</minAge> -->
+			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
+			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <def>Alien_RoyalDryad_Adult_WVC</def> -->
+			<!-- <minAge>2</minAge> -->
+			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
+			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
+		<!-- </li> -->
+	  <!-- </lifeStageAges> -->
 	</race>
 	<butcherProducts>
-	  <VFEI_ValkyrieGenome_WVC>2</VFEI_ValkyrieGenome_WVC>
+	  <VFEI_ValkyrieGenome_WVC>1</VFEI_ValkyrieGenome_WVC>
 	</butcherProducts>
 	<comps>
 		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_FixedGender">
@@ -88,17 +91,24 @@
 			<gizmoLabel>VDE_EvolveELF_WVC</gizmoLabel>
 			<gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc>
 		</li>
-		<li MayRequire="vanillaexpanded.ideo.dryads" Class="AnimalBehaviours.CompProperties_AnimalProduct">
-			<resourceDef>VDE_Gaubric</resourceDef>
-			<gatheringIntervalDays>8</gatheringIntervalDays>
-			<resourceAmount>30</resourceAmount>
-			<customResourceString>VDE_GaubricDesc</customResourceString>
+		<!-- <li Class="AnimalBehaviours.CompProperties_AnimalProduct"> -->
+			<!-- <resourceDef>WVC_LivingMetall</resourceDef> -->
+			<!-- <gatheringIntervalDays>8</gatheringIntervalDays> -->
+			<!-- <resourceAmount>30</resourceAmount> -->
+			<!-- <customResourceString>VDE_GaubricDesc</customResourceString> -->
+		<!-- </li> -->
+		<li Class="CompProperties_Spawner">
+			<thingToSpawn>WVC_LivingMetall</thingToSpawn>
+			<spawnCount>2</spawnCount>
+			<spawnIntervalRange>120000</spawnIntervalRange>
+			<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+			<showMessageIfOwned>true</showMessageIfOwned>
 		</li>
 	</comps>
 	<recipes>
 	</recipes>
-	<verbs Inherit="False">
-	</verbs>
+	<!-- <verbs Inherit="False"> -->
+	<!-- </verbs> -->
 	<tools Inherit="False">
 	  <li>
 		<label>left fist</label>
@@ -162,5 +172,35 @@
 	  </li>
 	</tools>
   </ThingDef>
-  
+
+  <!-- ======================================================= -->
+
+  <PawnKindDef ParentName="PawnAnimal_Base_Skins_WVC">
+	<defName>DryadGirlWVC</defName>
+	<label>royal dryad</label>
+	<labelPlural>royal dryads</labelPlural>
+	<labelMale>royal dryad</labelMale>
+	<labelFemale>royal dryad</labelFemale>
+	<race>DryadGirlWVC</race>
+	<!-- <combatPower>50</combatPower> -->
+	<lifeStages Inherit="False">
+	  <li>
+		<bodyGraphicData>
+		  <texPath>WVC/Pawns/lumine</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>1.6</drawSize>
+		  <!-- <shadowData> -->
+			<!-- <volume>(0.3, 0.8, 0.4)</volume> -->
+			<!-- <offset>(-0.1,1,-0.4)</offset> -->
+		  <!-- </shadowData> -->
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
 </Defs>

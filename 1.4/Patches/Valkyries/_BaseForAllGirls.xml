@@ -92,17 +92,52 @@
 				<modId>honkai.girls.sergkart</modId>
 				<key>WVC_Enable_GauranlenFeaturesForMothers</key>
 				<defaultValue>false</defaultValue>
-				<caseFalse>
-					<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-						<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BaseDryadMother_WVC"]/comps/li[@Class="CompProperties_TreeConnection"]</xpath>
-					</Operation>
+				<caseTrue>
+
 					<Operation Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseDryadMother_WVC"]/race/allowedOnCaravan</xpath>
 						<value>
-							<allowedOnCaravan>true</allowedOnCaravan>
+							<allowedOnCaravan>false</allowedOnCaravan>
 						</value>
 					</Operation>
-				</caseFalse>
+
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BaseDryadMother_WVC"]/comps</xpath>
+						<value>
+							<li MayRequire="ludeon.rimworld.ideology" Class="CompProperties_TreeConnection">
+								<pawnKind>Dryad_Biomass_WVC</pawnKind>
+								<spawnDays>6</spawnDays>
+								<initialConnectionStrengthRange>1</initialConnectionStrengthRange>
+								<connectionStrengthLossPerDryadDeath>0</connectionStrengthLossPerDryadDeath>
+								<connectionStrengthGainPerHourPruningBase>1</connectionStrengthGainPerHourPruningBase>
+								<spawningPodOffset>(-0.15, 0, -0.55)</spawningPodOffset>
+								<spawningPodSizeRange>0</spawningPodSizeRange>
+								<maxDryadsWild>0</maxDryadsWild>
+								<maxDryadsPerConnectionStrengthCurve>
+								  <points>
+									<li>(0, 6)</li>
+								  </points>
+								</maxDryadsPerConnectionStrengthCurve>
+								<connectionLossPerLevelCurve>
+								  <points>
+									<li>(0, 0)</li>
+								  </points>
+								</connectionLossPerLevelCurve>
+								<connectionLossDailyPerBuildingDistanceCurve>
+								  <points>
+									<li>(0, 0)</li>
+								  </points>
+								</connectionLossDailyPerBuildingDistanceCurve>
+								<connectionStrengthGainPerPlantSkill>
+								  <points>
+									<li>(0, 1)</li>
+								  </points>
+								</connectionStrengthGainPerPlantSkill>
+							</li>
+						</value>
+					</Operation>
+
+				</caseTrue>
 			</Operation>
 
 		</caseTrue>
@@ -173,14 +208,14 @@
 			<!-- </Operation> -->
 
 			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_ELF_WVC" or defName="PsyAbility_SummonPod_Valkyrie_WVC" or defName="PsyAbility_SummonPod_Gaurkyrie_WVC"]</xpath>
+			  <xpath>/Defs/ThingDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
 			</Operation>
 
 			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/AbilityDef[defName="PsyAbility_SummonELF_WVC"]</xpath>
+			  <xpath>/Defs/AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
 			</Operation>
 			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/VFECore.Abilities.AbilityDef[defName="VPE_SummonELF_WVC" or defName="VPE_SummonValkyrie_WVC" or defName="VPE_SummonGaurkyrie_WVC"]</xpath>
+			  <xpath>/Defs/VFECore.Abilities.AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
 			</Operation>
 
 		</caseFalse>
@@ -340,31 +375,31 @@
 				</arguments>
 			</Operation>
 
-			<Operation Class="XmlExtensions.FindMod">
-				<mods>
-					<li>vanillaexpanded.vpsycastse</li>
-				</mods>
-				<packageId>true</packageId>
-				<caseTrue>
-				</caseTrue>
-				<caseFalse>
+			<!-- <Operation Class="XmlExtensions.FindMod"> -->
+				<!-- <mods> -->
+					<!-- <li>vanillaexpanded.vpsycastse</li> -->
+				<!-- </mods> -->
+				<!-- <packageId>true</packageId> -->
+				<!-- <caseTrue> -->
+				<!-- </caseTrue> -->
+				<!-- <caseFalse> -->
 
-			<Operation Class="XmlExtensions.OptionalPatch">
-				<modId>honkai.girls.sergkart</modId>
-				<key>Mutations_HediffGiverSet_SuperPowersAbilities_WVC</key>
-				<defaultValue>true</defaultValue>
-				<caseTrue>
-					<Operation Class="PatchOperationAdd">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/race/hediffGiverSets</xpath>
-						<value>
-							<li MayRequire="ludeon.rimworld.royalty">HediffGiverSet_SuperPowersAbilities_WVC</li>
-						</value>
-					</Operation>
-				</caseTrue>
-			</Operation>
+			<!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
+				<!-- <modId>honkai.girls.sergkart</modId> -->
+				<!-- <key>Mutations_HediffGiverSet_SuperPowersAbilities_WVC</key> -->
+				<!-- <defaultValue>true</defaultValue> -->
+				<!-- <caseTrue> -->
+					<!-- <Operation Class="PatchOperationAdd"> -->
+						<!-- <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/race/hediffGiverSets</xpath> -->
+						<!-- <value> -->
+							<!-- <li MayRequire="ludeon.rimworld.royalty">HediffGiverSet_SuperPowersAbilities_WVC</li> -->
+						<!-- </value> -->
+					<!-- </Operation> -->
+				<!-- </caseTrue> -->
+			<!-- </Operation> -->
 
-				</caseFalse>
-			</Operation>
+				<!-- </caseFalse> -->
+			<!-- </Operation> -->
 
 			<Operation Class="XmlExtensions.OptionalPatch">
 				<modId>honkai.girls.sergkart</modId>
@@ -467,44 +502,6 @@
 
 		</caseFalse>
 		<caseTrue>
-
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_whiteApparelListPatch_CE_Patch_WVC</patchName>
-				<arguments>
-					<li>ApparelBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-
-			<!-- Hats -->
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_CE_AllHats</patchName>
-				<arguments>
-					<li>HatBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_CE_AllHats</patchName>
-				<arguments>
-					<li>HatMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_CE_AllHats</patchName>
-				<arguments>
-					<li>ArmorHelmetMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_CE_AllHats</patchName>
-				<arguments>
-					<li>NobleHatMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
 
 		</caseTrue>
 	</Operation>

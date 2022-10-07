@@ -208,7 +208,7 @@
 
   <!-- ===================================================================== -->
 
-  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase" WVC_Tag="RemoveWithoutVAED">
 	<defName>VPE_SummonELF_WVC</defName>
 	<label>living form skip (ELF)</label>
 	<description>Find the mind echoes in the psychic field and create a skipgate through which the &lt;color=#a2adff&gt;ELF&lt;/color&gt; can escape. The &lt;color=#a2adff&gt;ELF&lt;/color&gt; summoned in this way will join the settlement.\n\nThis process releases an enormous amount of psychic energy, the mind of the caster is guaranteed to be destroyed. Casting this takes 12 seconds of meditation, and afterwards, the caster will die.</description>
@@ -243,7 +243,7 @@
 	</modExtensions>
   </VFECore.Abilities.AbilityDef>
 
-  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase" WVC_Tag="RemoveWithoutVAED">
 	<defName>VPE_SummonValkyrie_WVC</defName>
 	<label>living form skip (Valkyrie)</label>
 	<!-- <level>6</level> -->
@@ -277,7 +277,7 @@
 	</modExtensions>
   </VFECore.Abilities.AbilityDef>
 
-  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase">
+  <VFECore.Abilities.AbilityDef ParentName="VPE_WVC_SummonBase" WVC_Tag="RemoveWithoutVAED">
 	<defName>VPE_SummonGaurkyrie_WVC</defName>
 	<label>living form skip (Gaurkyrie)</label>
 	<!-- <level>6</level> -->

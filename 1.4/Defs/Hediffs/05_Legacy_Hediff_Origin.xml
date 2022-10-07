@@ -9,6 +9,13 @@
 	<defaultLabelColor>(162,200,255)</defaultLabelColor>
 	<disablesNeeds>
 	</disablesNeeds>
+	<stages Inherit="False">
+	  <li>
+		<!-- <becomeVisible>false</becomeVisible> -->
+		<foodPoisoningChanceFactor>0.5</foodPoisoningChanceFactor>
+		<painFactor>0.8</painFactor>
+	  </li>
+	</stages>
   </HediffDef>
 
   <!-- ================================================================ -->
@@ -42,35 +49,6 @@
 	<defName>SpecialHediff_AlienInitial_Mother_WVC</defName>
 	<label>Dryad Mother</label>
 	<defaultLabelColor>(245,255,162)</defaultLabelColor>
-	<disablesNeeds>
-	  <li>Comfort</li>
-	  <li>RoomSize</li>
-	</disablesNeeds>
-	<stages Inherit="False">
-	  <li>
-		<!-- <becomeVisible>false</becomeVisible> -->
-		<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
-	  </li>
-	</stages>
-  </HediffDef>
-
-  <!-- ================================================================ -->
-
-  <HediffDef ParentName="Special_Hediff_HumanlikeInitial_WVC">
-	<defName>SpecialHediff_AlienInitial_Herrscher_WVC</defName>
-	<label>Herrscher</label>
-	<defaultLabelColor>(204,162,255)</defaultLabelColor>
-	<disablesNeeds>
-	  <li>Chemical_Luciferium</li>
-	</disablesNeeds>
-  </HediffDef>
-
-  <!-- ================================================================ -->
-
-  <HediffDef ParentName="Special_Hediff_HumanlikeInitial_WVC">
-	<defName>SpecialHediff_AlienInitial_RoyalDryad_WVC</defName>
-	<label>Dryad</label>
-	<defaultLabelColor>(255,206,162)</defaultLabelColor>
 	<disablesNeeds>
 	  <li>Comfort</li>
 	  <li>RoomSize</li>

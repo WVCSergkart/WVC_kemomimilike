@@ -44,20 +44,6 @@
 	  </li>
 	</stages>
   </ThoughtDef>
-  <ThoughtDef MayRequire="ludeon.rimworld.ideology">
-	<defName>Thought_HediffDryadThoughts_WVC</defName>
-	<workerClass>ThoughtWorker_Hediff</workerClass>
-	<hediff>SpecialHediff_AlienInitial_RoyalDryad_WVC</hediff>
-	<validWhileDespawned>true</validWhileDespawned>
-	<stages>
-	  <li>
-		<visible>false</visible>
-		<label>Dryad</label>
-		<description>Dryad</description>
-		<baseMoodEffect>500</baseMoodEffect>
-	  </li>
-	</stages>
-  </ThoughtDef>
 
   <!-- ===================================================================== -->
 

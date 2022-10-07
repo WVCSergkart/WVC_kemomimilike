@@ -30,22 +30,22 @@
 							</li>
 						</settings>
 					</li>
-					<li>
-						<label>&lt;color=#cca2ff&gt;Herrschers&lt;/color&gt;</label>
-						<settings>
-							<li Class="XmlExtensions.Setting.EmbedMenu">
-								<menu>Settings_Humanoids_Herrschers_WVC</menu>
-							</li>
-						</settings>
-					</li>
-					<li>
-						<label>&lt;color=#ffcea2&gt;Royal Dryads&lt;/color&gt;</label>
-						<settings>
-							<li Class="XmlExtensions.Setting.EmbedMenu">
-								<menu>Settings_Humanoids_RoyalDryads_WVC</menu>
-							</li>
-						</settings>
-					</li>
+					<!-- <li> -->
+						<!-- <label>&lt;color=#cca2ff&gt;Herrschers&lt;/color&gt;</label> -->
+						<!-- <settings> -->
+							<!-- <li Class="XmlExtensions.Setting.EmbedMenu"> -->
+								<!-- <menu>Settings_Humanoids_Herrschers_WVC</menu> -->
+							<!-- </li> -->
+						<!-- </settings> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <label>&lt;color=#ffcea2&gt;Royal Dryads&lt;/color&gt;</label> -->
+						<!-- <settings> -->
+							<!-- <li Class="XmlExtensions.Setting.EmbedMenu"> -->
+								<!-- <menu>Settings_Humanoids_RoyalDryads_WVC</menu> -->
+							<!-- </li> -->
+						<!-- </settings> -->
+					<!-- </li> -->
 					<li>
 						<label>&lt;color=#87ff00&gt;Skins&lt;/color&gt;</label>
 						<settings>

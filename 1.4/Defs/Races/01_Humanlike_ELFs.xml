@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<AlienRace.ThingDef_AlienRace Name="BaseELFs_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
-		<label>&lt;color=#a2adff&gt;ELF&lt;/color&gt;</label>
-		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the Valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the Valkyries, helping to treat wounds, cooking and psychological assistance. The fate of the ELFs was similar, after the closure of the project, they dispersed around the world.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". To create them, the Valkyrie gene is used. Most organs are created with mechanites. Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;\n\nDespite the difficulties of creating ELFs, they meet no less than the Valkyries, however, they cannot answer who creates them and where they come from. According to one of the assumptions, the Mechanoids use them for their own purposes, and some unsuccessful or decommissioned copies fall into the wild.</description>
+		<label>ELF</label>
+		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;</description>
 		<descriptionHyperlinks Inherit="False">
 		  <ThingDef MayRequire="ludeon.rimworld.royalty">Plant_TreeAnima</ThingDef>
 		  <ThingDef MayRequire="ludeon.rimworld.royalty">AnimaSeed_WVC</ThingDef>
@@ -61,15 +61,15 @@
 
 			<!--=====================================================================-->
 			
-			<relationSettings>
-				<!-- <relationChanceModifierLover>1</relationChanceModifierLover> -->
-				<!-- <relationChanceModifierExLover>1</relationChanceModifierExLover> -->
-				<!-- <relationChanceModifierFiance>1</relationChanceModifierFiance> -->
-				<!-- <relationChanceModifierSpouse>1</relationChanceModifierSpouse> -->
-				<!-- <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse> -->
-				<!-- <relationChanceModifierParent>1</relationChanceModifierParent> -->
-				<!-- <relationChanceModifierChild>1</relationChanceModifierChild> -->
-				<!-- <relationChanceModifierSibling>1</relationChanceModifierSibling> -->
+			<relationSettings Inherit="False">
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
 				<renamer>
 				   <li>
 					  <relation>Parent</relation>
@@ -204,21 +204,22 @@
 		<!-- ===================================================================== -->
 
 		<statBases>
-		  <MarketValue>2420</MarketValue>
-		  <!-- <GlobalLearningFactor>1.5</GlobalLearningFactor> -->
+		  <MarketValue>3120</MarketValue>
+		  <GlobalLearningFactor>1.5</GlobalLearningFactor>
 		  <MoveSpeed>7.9</MoveSpeed>
 		  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 		  <ArmorRating_Heat>0.35</ArmorRating_Heat>
 		  <ToxicSensitivity>0.0</ToxicSensitivity>
 		  <PsychicSensitivity>0.75</PsychicSensitivity>
-		  <Flammability>0.5</Flammability>
+		  <!-- <Flammability>0.5</Flammability> -->
 		  <!-- <RoyalFavorValue>12</RoyalFavorValue> -->
 		  <Mass>22</Mass>
 		  <PawnTrapSpringChance>0.0</PawnTrapSpringChance>
 		  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 		  <FoodPoisonChance>0.25</FoodPoisonChance>
-		  <SocialImpact>1.2</SocialImpact>
+		  <PawnBeauty>2</PawnBeauty>
+		  <SocialImpact>1.5</SocialImpact>
 		  <GeneralLaborSpeed>0.8</GeneralLaborSpeed>
 		  <DrugSynthesisSpeed>0.8</DrugSynthesisSpeed>
 		  <MedicalTendSpeed>1.5</MedicalTendSpeed>
@@ -236,11 +237,12 @@
 		  <!-- = -->
 		  <!-- <Ability_EntropyPulseDeathChance_WVC>0</Ability_EntropyPulseDeathChance_WVC> -->
 		  <!-- = -->
+		  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">6</RoyalFavorValue>
 		  <ConversionPower MayRequire="ludeon.rimworld.ideology">1.5</ConversionPower>
 		  <CertaintyLossFactor MayRequire="ludeon.rimworld.ideology">0.5</CertaintyLossFactor>
 		  <SocialIdeoSpreadFrequencyFactor MayRequire="ludeon.rimworld.ideology">2.0</SocialIdeoSpreadFrequencyFactor>
 		  <!-- = -->
-		  <PsychicEntropyMax>125.0</PsychicEntropyMax>
+		  <PsychicEntropyMax>80.0</PsychicEntropyMax>
 		  <MeditationFocusGain>1.0</MeditationFocusGain>
 		  <VPE_PsyfocusCostFactor MayRequire="vanillaexpanded.vpsycastse">0.5</VPE_PsyfocusCostFactor>
 		  <!-- <VPE_PsychicEntropyMinimum MayRequire="vanillaexpanded.vpsycastse">-1000</VPE_PsychicEntropyMinimum> -->
@@ -253,7 +255,7 @@
 		  <baseHealthScale>0.5</baseHealthScale>
 		  <!-- <baseHungerRate>0.3</baseHungerRate> -->
 		  <makesFootprints>false</makesFootprints>
-		  <!-- <body>Body_ELF_WVC</body> -->
+		  <body>Body_ELF_WVC</body>
 		  <!-- <bloodDef>WVC_Filth_AbyssBlood</bloodDef> -->
 		  <lifeStageAges Inherit="False">
 			<li>
@@ -324,6 +326,7 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="BaseELFs_WVC">
 		<defName>Alien_ELF_WVC</defName>
+		<label>ELF</label>
 		<descriptionHyperlinks>
 		  <ConceptDef>WVC_AlienRace_ELF</ConceptDef>
 		</descriptionHyperlinks>

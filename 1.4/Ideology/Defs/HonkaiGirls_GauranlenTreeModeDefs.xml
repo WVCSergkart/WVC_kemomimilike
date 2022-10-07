@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GauranlenTreeModeDef Name="TreeMode_DryadsGirls_WVC" Abstract="True">
+  <GauranlenTreeModeDef>
+	<defName>DryadGirlWVC</defName>
 	<label>royal dryad</label>
 	<description>The dryad caste is universal. They can play both a defensive role and an aggressive one, providing significant support in combat. Unlike ordinary dryads, they grow and become stronger with each year of life (up to 2 years).</description>
 	<displayedStats>
@@ -20,10 +21,6 @@
 	<requiredMemes>
 	  <li>FemaleSupremacy</li>
 	</requiredMemes>
-  </GauranlenTreeModeDef>
-
-  <GauranlenTreeModeDef ParentName="TreeMode_DryadsGirls_WVC">
-	<defName>DryadGirlWVC</defName>
   </GauranlenTreeModeDef>
   
   <GauranlenTreeModeDef>

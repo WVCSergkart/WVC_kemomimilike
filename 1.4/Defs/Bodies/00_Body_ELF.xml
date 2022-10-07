@@ -3,10 +3,11 @@
 
 
   <BodyDef>
-	<defName>Body_Valkyrie_WVC</defName>
-	<label>valkyrie</label>
+	<defName>Body_ELF_WVC</defName>
+	<label>ELF</label>
 	<corePart>
 	  <def>Torso</def>
+	  <customLabel>semi-organic frame</customLabel>
 	  <height>Middle</height>
 	  <depth>Outside</depth>
 	  <groups>
@@ -15,6 +16,7 @@
 	  <parts>
 		<li>
 		  <def>Tail</def>
+		  <customLabel>synthetic tail</customLabel>
 		  <coverage>0.01</coverage>
 		  <height>Bottom</height>
 		  <groups>
@@ -48,6 +50,7 @@
 		</li>
 		<li>
 		  <def>Spine</def>
+		  <customLabel>synthetic spine</customLabel>
 		  <coverage>0.025</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -56,6 +59,7 @@
 		</li>
 		<li>
 		  <def>Stomach</def>
+		  <customLabel>synthetic stomach</customLabel>
 		  <coverage>0.025</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -64,6 +68,7 @@
 		</li>
 		<li>
 		  <def>Heart</def>
+		  <customLabel>synthetic heart</customLabel>
 		  <coverage>0.020</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -72,7 +77,7 @@
 		</li>
 		<li>
 		  <def>Lung</def>
-		  <customLabel>left lung</customLabel>
+		  <customLabel>synthetic left lung</customLabel>
 		  <coverage>0.025</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -81,7 +86,7 @@
 		</li>
 		<li>
 		  <def>Lung</def>
-		  <customLabel>right lung</customLabel>
+		  <customLabel>synthetic right lung</customLabel>
 		  <coverage>0.025</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -90,7 +95,7 @@
 		</li>
 		<li>
 		  <def>Kidney</def>
-		  <customLabel>left kidney</customLabel>
+		  <customLabel>synthetic left kidney</customLabel>
 		  <coverage>0.017</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -99,7 +104,7 @@
 		</li>
 		<li>
 		  <def>Kidney</def>
-		  <customLabel>right kidney</customLabel>
+		  <customLabel>synthetic right kidney</customLabel>
 		  <coverage>0.017</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -108,6 +113,7 @@
 		</li>
 		<li>
 		  <def>Liver</def>
+		  <customLabel>synthetic liver</customLabel>
 		  <coverage>0.025</coverage>
 		  <depth>Inside</depth>
 		  <groups>
@@ -142,6 +148,7 @@
 				  <parts>
 					<li>
 					  <def>Brain</def>
+					  <customLabel>mind matrix</customLabel>
 					  <coverage>0.8</coverage>
 					  <groups>
 						<li>UpperHead</li>
@@ -152,7 +159,7 @@
 				</li>
 				<li>
 				  <def>Eye</def>
-				  <customLabel>left eye</customLabel>
+				  <customLabel>synthetic left eye</customLabel>
 				  <coverage>0.07</coverage>
 				  <groups>
 					<li>FullHead</li>
@@ -162,7 +169,7 @@
 				</li>
 				<li>
 				  <def>Eye</def>
-				  <customLabel>right eye</customLabel>
+				  <customLabel>synthetic right eye</customLabel>
 				  <coverage>0.07</coverage>
 				  <groups>
 					<li>FullHead</li>
@@ -172,7 +179,7 @@
 				</li>
 				<li>
 				  <def>Ear</def>
-				  <customLabel>left ear</customLabel>
+				  <customLabel>synthetic left ear</customLabel>
 				  <coverage>0.07</coverage>
 				  <groups>
 					<li>UpperHead</li>
@@ -181,7 +188,7 @@
 				</li>
 				<li>
 				  <def>Ear</def>
-				  <customLabel>right ear</customLabel>
+				  <customLabel>synthetic right ear</customLabel>
 				  <coverage>0.07</coverage>
 				  <groups>
 					<li>UpperHead</li>
@@ -190,6 +197,7 @@
 				</li>
 				<li>
 				  <def>Nose</def>
+				  <customLabel>synthetic nose</customLabel>
 				  <coverage>0.10</coverage>
 				  <groups>
 					<li>FullHead</li>
@@ -197,6 +205,7 @@
 				</li>
 				<li>
 				  <def>Jaw</def>
+				  <customLabel>synthetic jaw</customLabel>
 				  <coverage>0.15</coverage>
 				  <groups>
 					<li>Teeth</li>
@@ -205,6 +214,7 @@
 				  <parts>
 					<li>
 					  <def>Tongue</def>
+					  <customLabel>synthetic tongue</customLabel>
 					  <coverage>0</coverage>
 					  <depth>Inside</depth>
 					  <groups>
@@ -219,7 +229,7 @@
 		</li>
 		<li>
 		  <def>Shoulder</def>
-		  <customLabel>left shoulder</customLabel>
+		  <customLabel>synthetic left shoulder</customLabel>
 		  <coverage>0.11</coverage>
 		  <woundAnchorTag>LeftShoulder</woundAnchorTag>
 		  <groups>
@@ -238,7 +248,7 @@
 			</li>
 			<li>
 			  <def>Arm</def>
-			  <customLabel>left arm</customLabel>
+			  <customLabel>synthetic left arm</customLabel>
 			  <coverage>0.77</coverage>
 			  <groups>
 				<li>Arms</li>
@@ -264,7 +274,7 @@
 				</li>
 				<li>
 				  <def>Hand</def>
-				  <customLabel>left hand</customLabel>
+				  <customLabel>synthetic left hand</customLabel>
 				  <coverage>0.14</coverage>
 				  <height>Bottom</height>
 				  <groups>
@@ -325,7 +335,7 @@
 		</li>
 		<li>
 		  <def>Shoulder</def>
-		  <customLabel>right shoulder</customLabel>
+		  <customLabel>synthetic right shoulder</customLabel>
 		  <coverage>0.11</coverage>
 		  <woundAnchorTag>RightShoulder</woundAnchorTag>
 		  <groups>
@@ -344,7 +354,7 @@
 			</li>
 			<li>
 			  <def>Arm</def>
-			  <customLabel>right arm</customLabel>
+			  <customLabel>synthetic right arm</customLabel>
 			  <coverage>0.77</coverage>
 			  <groups>
 				<li>Arms</li>
@@ -370,7 +380,7 @@
 				</li>
 				<li>
 				  <def>Hand</def>
-				  <customLabel>right hand</customLabel>
+				  <customLabel>synthetic right hand</customLabel>
 				  <coverage>0.14</coverage>
 				  <height>Bottom</height>
 				  <groups>
@@ -439,7 +449,7 @@
 		</li>
 		<li>
 		  <def>Leg</def>
-		  <customLabel>left leg</customLabel>
+		  <customLabel>synthetic left leg</customLabel>
 		  <coverage>0.105</coverage>
 		  <height>Bottom</height>
 		  <groups>
@@ -467,7 +477,7 @@
 			</li>
 			<li>
 			  <def>Foot</def>
-			  <customLabel>left foot</customLabel>
+			  <customLabel>synthetic left foot</customLabel>
 			  <coverage>0.1</coverage>
 			  <groups>
 				<li>Feet</li>
@@ -520,7 +530,7 @@
 		</li>
 		<li>
 		  <def>Leg</def>
-		  <customLabel>right leg</customLabel>
+		  <customLabel>synthetic right leg</customLabel>
 		  <coverage>0.105</coverage>
 		  <height>Bottom</height>
 		  <groups>
@@ -548,7 +558,7 @@
 			</li>
 			<li>
 			  <def>Foot</def>
-			  <customLabel>right foot</customLabel>
+			  <customLabel>synthetic right foot</customLabel>
 			  <coverage>0.1</coverage>
 			  <groups>
 				<li>Feet</li>
