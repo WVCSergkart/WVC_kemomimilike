@@ -21,7 +21,7 @@
 		<li IfModActive="ludeon.rimworld.ideology">1.4/Ideology</li>
 		<li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li>
 		<li IfModActive="vanillaexpanded.vpsycastse">1.4/VPE</li>
-		<li>1.4/NODES</li>
+		<!-- <li>1.4/NODES</li> -->
 	</v1.4>
 </loadFolders>
 
