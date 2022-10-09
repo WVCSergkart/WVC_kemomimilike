@@ -61,8 +61,8 @@
   <ThingDef ParentName="ResourceBase" Name="SummonPod_WithGirl_Base_WVC" Abstract="True">
 	<label>pod</label>
 	<graphicData>
-		<texPath>WVC/Stuff/AnimaSeed</texPath>
-		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>WVC/Stuff/ILF_Capsule</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>0.1</drawSize>
 	</graphicData>
 	<altitudeLayer>FloorCoverings</altitudeLayer>
@@ -83,32 +83,32 @@
 
   <!-- ================================================================= -->
 
-  <ThingDef Name="WVC_SpawnCapsuleBase" ParentName="ResourceBase" Abstract="True">
-	<graphicData>
-	  <texPath>WVC/Stuff/ILF_Capsule</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<soundInteract>Standard_Drop</soundInteract>
-	<soundDrop>Standard_Drop</soundDrop>
-	<stackLimit>1</stackLimit>
-	<statBases>
-	  <MaxHitPoints>20</MaxHitPoints>
-	  <MarketValue>300</MarketValue>
-	  <Mass>0.10</Mass>
-	  <Flammability>0.0</Flammability>
-	  <DeteriorationRate>0</DeteriorationRate>
-	</statBases>
-	<thingCategories>
-	  <li>WVC_MechanicalEggs</li>
-	</thingCategories>
-	<tickerType>Normal</tickerType>
-	<comps>
-	  <li Class="CompProperties_Glower">
-		<glowRadius>2</glowRadius>
-		<glowColor>(182,255,253)</glowColor>
-	  </li>
-	</comps>
-  </ThingDef>
+  <!-- <ThingDef Name="WVC_SpawnCapsuleBase" ParentName="ResourceBase" Abstract="True"> -->
+	<!-- <graphicData> -->
+	  <!-- <texPath>WVC/Stuff/ILF_Capsule</texPath> -->
+	  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+	<!-- </graphicData> -->
+	<!-- <soundInteract>Standard_Drop</soundInteract> -->
+	<!-- <soundDrop>Standard_Drop</soundDrop> -->
+	<!-- <stackLimit>1</stackLimit> -->
+	<!-- <statBases> -->
+	  <!-- <MaxHitPoints>20</MaxHitPoints> -->
+	  <!-- <MarketValue>300</MarketValue> -->
+	  <!-- <Mass>0.10</Mass> -->
+	  <!-- <Flammability>0.0</Flammability> -->
+	  <!-- <DeteriorationRate>0</DeteriorationRate> -->
+	<!-- </statBases> -->
+	<!-- <thingCategories> -->
+	  <!-- <li>WVC_MechanicalEggs</li> -->
+	<!-- </thingCategories> -->
+	<!-- <tickerType>Normal</tickerType> -->
+	<!-- <comps> -->
+	  <!-- <li Class="CompProperties_Glower"> -->
+		<!-- <glowRadius>2</glowRadius> -->
+		<!-- <glowColor>(182,255,253)</glowColor> -->
+	  <!-- </li> -->
+	<!-- </comps> -->
+  <!-- </ThingDef> -->
 
   <!-- <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_SpawnCapsuleBase"> -->
 	<!-- <defName>WVC_DormantCapsuleILF</defName> -->
@@ -125,14 +125,12 @@
 	<!-- </comps> -->
   <!-- </ThingDef> -->
 
-  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_SpawnCapsuleBase">
-	<defName>WVC_CapsuleILF</defName>
-	<!-- <label>CT capsule</label> -->
-	<!-- <description>A capsule with a dormant cat inside, also known as a "Mechanical Egg".</description> -->
-	<label>ILF capsule</label>
-	<description>A capsule with a dormant ELF inside, also known as a "Mechanical Egg".</description>
-	<comps>
-	</comps>
-  </ThingDef>
+  <!-- <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_SpawnCapsuleBase"> -->
+	<!-- <defName>WVC_CapsuleILF</defName> -->
+	<!-- <label>ILF capsule</label> -->
+	<!-- <description>A capsule with a dormant ELF inside, also known as a "Mechanical Egg".</description> -->
+	<!-- <comps> -->
+	<!-- </comps> -->
+  <!-- </ThingDef> -->
 
 </Defs>
