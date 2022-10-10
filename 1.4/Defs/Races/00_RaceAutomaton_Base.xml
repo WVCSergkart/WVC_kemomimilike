@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BasePawn" Name="WVC_RaceAutomatons_Base" Abstract="True">
+  <ThingDef ParentName="WVC_NodeRacesFormers_Base" Name="WVC_RaceAutomatons_Base" Abstract="True">
 	<!-- <label>primal construct</label> -->
-	<label>construct</label>
+	<label>former: Construct</label>
 	<!-- in progress -->
-	<description>Constructs are a very distant branch in the Former series. Like Formers, Constructs are made of living metal, but most modules work differently.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Constructs never sleep in beds in the way that they are formally considered dryads. If wounded, they can be placed on the bed, however, note that on some beds they will not be visible.</description>
+	<!-- <description>Constructs are a very distant branch in the Former series. Like Formers, Constructs are made of living metal, but most modules work differently.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Constructs never sleep in beds in the way that they are formally considered dryads. If wounded, they can be placed on the bed, however, note that on some beds they will not be visible.</description> -->
 	<!-- in progress -->
 	<descriptionHyperlinks>
 	</descriptionHyperlinks>
@@ -151,9 +151,9 @@
 
 	<!-- ==================================================================== -->
 
-	<tradeTags>
-	  <li MayRequire="kentington.saveourship2">AnimalInsectSpace</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li MayRequire="kentington.saveourship2">AnimalInsectSpace</li> -->
+	<!-- </tradeTags> -->
 
 	<!-- ==================================================================== -->
 
@@ -161,60 +161,6 @@
 	</recipes>
 
 	<!-- ==================================================================== -->
-
-	<tools Inherit="False">
-	  <li>
-		<label>spike</label>
-		<capacities>
-		  <li>Cut</li>
-		  <li>Stab</li>
-		</capacities>
-		<power>20</power>
-		<cooldownTime>1.2</cooldownTime>
-		<linkedBodyPartsGroup>WVC_VeilBlade</linkedBodyPartsGroup>
-		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-	  </li>
-	  <li>
-		<label>head</label>
-		<capacities>
-		  <li>Blunt</li>
-		</capacities>
-		<power>8.5</power>
-		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-		<chanceFactor>0.2</chanceFactor>
-	  </li>
-	</tools>
-
-	<!-- ==================================================================== -->
-
-	<damageMultipliers>
-		<!-- <li MayRequire="kentington.saveourship2"> -->
-			<!-- <damageDef>VacuumDamage</damageDef> -->
-			<!-- <multiplier>0.1</multiplier> -->
-		<!-- </li> -->
-		<li>
-			<damageDef>Arrow</damageDef>
-			<multiplier>0.8</multiplier>
-		</li>
-		<li>
-			<damageDef>Bullet</damageDef>
-			<multiplier>0.8</multiplier>
-		</li>
-		<li>
-			<damageDef>RangedStab</damageDef>
-			<multiplier>0.8</multiplier>
-		</li>
-		<li>
-			<damageDef>Blunt</damageDef>
-			<multiplier>0.8</multiplier>
-		</li>
-		<li>
-			<damageDef>Bite</damageDef>
-			<multiplier>0.5</multiplier>
-		</li>
-	</damageMultipliers>
 
 	<!-- ==================================================================== -->
 

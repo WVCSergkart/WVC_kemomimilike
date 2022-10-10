@@ -19,7 +19,7 @@
 			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>Humanlike_ELF_AllELFsCanDoAnyWork_WVC</key>
-				<label>All ELFs can do any work</label>
+				<label>ELFs can do any work</label>
 				<defaultValue>false</defaultValue>
 				<tKey>HGS_Humanlike_ELF_AllELFsCanDoAnyWork_WVC</tKey>
 			</li>

@@ -302,13 +302,13 @@
 		<!-- ===================================================================== -->
 
 		<comps>
-			<li MayRequire="ludeon.rimworld.royalty" Class="CompProperties_Spawner">
-				<thingToSpawn>AnimaSeed_WVC</thingToSpawn>
-				<spawnCount>1</spawnCount>
-				<spawnIntervalRange><min>2400000</min><max>4200000</max></spawnIntervalRange>
-				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
-				<showMessageIfOwned>false</showMessageIfOwned>
-			</li>
+			<!-- <li MayRequire="ludeon.rimworld.royalty" Class="CompProperties_Spawner"> -->
+				<!-- <thingToSpawn>AnimaSeed_WVC</thingToSpawn> -->
+				<!-- <spawnCount>1</spawnCount> -->
+				<!-- <spawnIntervalRange><min>2400000</min><max>4200000</max></spawnIntervalRange> -->
+				<!-- <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn> -->
+				<!-- <showMessageIfOwned>false</showMessageIfOwned> -->
+			<!-- </li> -->
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_Floating">
 				<!-- <isFloater>true</isFloater> -->
 				<canCrossWater>true</canCrossWater>

@@ -96,28 +96,28 @@
 			<li>Waist</li>
 			<li>Torso</li>
 		  </groups>
-		  <parts>
-			<li>
-			  <def>WVC_Automaton_Spike</def>
-			  <customLabel>left spike</customLabel>
-			  <coverage>0.125</coverage>
-			  <depth>Outside</depth>
-			  <groups>
-				<li>Torso</li>
-				<li>WVC_VeilBlade</li>
-			  </groups>
-			</li>
-			<li>
-			  <def>WVC_Automaton_Spike</def>
-			  <customLabel>right spike</customLabel>
-			  <coverage>0.125</coverage>
-			  <depth>Outside</depth>
-			  <groups>
-				<li>Torso</li>
-				<li>WVC_VeilBlade</li>
-			  </groups>
-			</li>
-		  </parts>
+		  <!-- <parts> -->
+		  <!-- </parts> -->
+		</li>
+		<li>
+		  <def>WVC_Automaton_Spike</def>
+		  <customLabel>left spike</customLabel>
+		  <coverage>0.025</coverage>
+		  <depth>Outside</depth>
+		  <groups>
+			<li>Torso</li>
+			<li>WVC_VeilBlade</li>
+		  </groups>
+		</li>
+		<li>
+		  <def>WVC_Automaton_Spike</def>
+		  <customLabel>right spike</customLabel>
+		  <coverage>0.025</coverage>
+		  <depth>Outside</depth>
+		  <groups>
+			<li>Torso</li>
+			<li>WVC_VeilBlade</li>
+		  </groups>
 		</li>
 	  </parts>
 	</corePart>

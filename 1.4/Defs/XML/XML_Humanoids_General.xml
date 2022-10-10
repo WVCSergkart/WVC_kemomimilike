@@ -7,7 +7,7 @@
 			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.GapLine" />
 			<li Class="XmlExtensions.Setting.Text">
-				<text>Valkyries rarely spawn and join a settlement. However, one Valkyrie is worth a dozen regular settlers.\n\nValkyries become stronger with age, at the moment they will reach their maximum strength by the age of 20. The ages at which Valkyries improve are 13, 16, 18, 20. Very young Valkyries (below 13) get a debuff to defense, hunger, HP, and damage dealt. Valkyries from 13 to 16 have no debuffs. Balance takes into account mutations.\n\nInfo:\n- Valkyries do not display their heads when they are sleeping. This is not a bug, according to the logic of the game, they have no heads.\n- There is a built-in autopatcher that adds all types of clothing, without texture (invisible when put on), to the whitelist.\n- All girls spawn in the pool of the Valkyries faction, they do not have separate factions.\n\n(Description deprecated)</text>
+				<text>Valkyries - This is the main race, they are very strong in close combat and will always be the best fighters in your settlement. This race has a dependence on biological age, some parameters grow with it, so the older the Valkyrie, the stronger it is.&lt;color=#a2adff&gt;\n\n- Have an increased chance of being bonded to a pet in a settlement.\n- Slightly reduced global work speed.\n- Valkyries are good at treating wounds.\n- The chance of a successful surgery operation is 20% lower.\n- Significant melee bonus&lt;/color&gt;</text>
 				<tKey>HGS_Humanoids_GeneralTab_WVC</tKey>
 			</li>
 
