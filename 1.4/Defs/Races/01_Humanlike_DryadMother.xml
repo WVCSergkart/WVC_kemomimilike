@@ -53,7 +53,7 @@
 		  <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
 		  <PawnTrapSpringChance>2.0</PawnTrapSpringChance>
 		  <GlobalLearningFactor>1.2</GlobalLearningFactor>
-		  <ToxicSensitivity>0.0</ToxicSensitivity>
+		  <ToxicResistance>0.0</ToxicResistance>
 		  <MentalBreakThreshold>-1.0</MentalBreakThreshold>
 		  <PsychicSensitivity>1.2</PsychicSensitivity>
 		  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
@@ -84,24 +84,12 @@
 		  </hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>
-			  <def>HumanlikeBaby</def>
-			  <minAge>0</minAge>
-			</li>
-			<li>
-			  <def>HumanlikeToddler</def>
-			  <minAge>1.2</minAge>
-			</li>
-			<!-- <li> -->
-			  <!-- <def>HumanlikeChild</def> -->
-			  <!-- <minAge>4</minAge> -->
-			<!-- </li> -->
-			<li>
 				<def>LifeStage_DryadMother_Immature_WVC</def>
-				<minAge>4</minAge>
+				<minAge>0</minAge>
 			</li>
 			<li>
 				<def>LifeStage_DryadMother_Young_WVC</def>
-				<minAge>13</minAge>
+				<minAge>15</minAge>
 			</li>
 			<li>
 				<def>LifeStage_DryadMother_Adult_WVC</def>
@@ -109,16 +97,12 @@
 			</li>
 			<li>
 				<def>LifeStage_DryadMother_Venerable_WVC</def>
-				<minAge>18</minAge>
+				<minAge>17</minAge>
 			</li>
 			<li>
 				<def>LifeStage_DryadMother_Royal_WVC</def>
-				<minAge>20</minAge>
+				<minAge>18</minAge>
 			</li>
-			<!-- <li> -->
-				<!-- <def>LifeStage_DryadMother_Legend_WVC</def> -->
-				<!-- <minAge>24</minAge> -->
-			<!-- </li> -->
 		  </lifeStageAges>
 		</race>
 		<butcherProducts>

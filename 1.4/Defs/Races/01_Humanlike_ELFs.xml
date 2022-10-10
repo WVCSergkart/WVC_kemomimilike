@@ -210,7 +210,7 @@
 		  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 		  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 		  <ArmorRating_Heat>0.35</ArmorRating_Heat>
-		  <ToxicSensitivity>0.0</ToxicSensitivity>
+		  <ToxicResistance>0.0</ToxicResistance>
 		  <PsychicSensitivity>0.75</PsychicSensitivity>
 		  <!-- <Flammability>0.5</Flammability> -->
 		  <!-- <RoyalFavorValue>12</RoyalFavorValue> -->

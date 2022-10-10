@@ -4,265 +4,265 @@
 	<!-- ================================================================== -->
 
 	<!-- Universal -->
-	<AlienRace.BackstoryDef ParentName="ELFs_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Base_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk1.UNI&lt;/color&gt;</title>
-	</AlienRace.BackstoryDef>
-	<AlienRace.BackstoryDef ParentName="ELFs_HumanoidBackstory_WVC">
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Archivist_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk5.ARC&lt;/color&gt;</title>
 		<titleShort>&lt;color=#a2adff&gt;Archivist&lt;/color&gt;</titleShort>
-		<baseDescription>Surely you have come across strange ancient records with different squiggles and unreadable footnotes leading to somewhere incomprehensible. With no small degree of probability, this &lt;color=#a2adff&gt;ELF&lt;/color&gt; is responsible for these ancient records.</baseDescription>
+		<baseDesc>Surely you have come across strange ancient records with different squiggles and unreadable footnotes leading to somewhere incomprehensible. With no small degree of probability, this &lt;color=#a2adff&gt;ELF&lt;/color&gt; is responsible for these ancient records.</baseDesc>
 		<maleCommonality>10</maleCommonality>
 		<femaleCommonality>10</femaleCommonality>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>20</amount>
+			<key>Intellectual</key>
+			<value>20</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ================================================================== -->
 
-	<AlienRace.BackstoryDef Name="ELFs_SocialModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
+	<AlienRace.AlienBackstoryDef Name="ELFs_SocialModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
 		<workDisables>
 			<li>Constructing</li>
 			<li>Mining</li>
 		</workDisables>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef Name="ELFs_WorkerModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
+	<AlienRace.AlienBackstoryDef Name="ELFs_WorkerModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
 		<workDisables>
 			<li>Social</li>
 			<li>Intellectual</li>
 		</workDisables>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ================================================================== -->
 
 	<!-- Social -->
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Int1_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk1.INT&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>1</amount>
+			<key>Intellectual</key>
+			<value>1</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Int2_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk2.INT&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>2</amount>
+			<key>Intellectual</key>
+			<value>2</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Int3_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk3.INT&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>3</amount>
+			<key>Intellectual</key>
+			<value>3</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Int4_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk4.INT&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>4</amount>
+			<key>Intellectual</key>
+			<value>4</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Int5_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk5.INT&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>5</amount>
+			<key>Intellectual</key>
+			<value>5</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	<!-- ================================================================== -->
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Soc1_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk1.SOC&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Social</defName>
-			<amount>1</amount>
+			<key>Social</key>
+			<value>1</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Soc2_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk2.SOC&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Social</defName>
-			<amount>2</amount>
+			<key>Social</key>
+			<value>2</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Soc3_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk3.SOC&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Social</defName>
-			<amount>3</amount>
+			<key>Social</key>
+			<value>3</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Soc4_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk4.SOC&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Social</defName>
-			<amount>4</amount>
+			<key>Social</key>
+			<value>4</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_SocialModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_Soc5_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk5.SOC&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Social</defName>
-			<amount>5</amount>
+			<key>Social</key>
+			<value>5</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ================================================================== -->
 
 	<!-- Worker -->
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_MIN1_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk1.MIN&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Mining</defName>
-			<amount>1</amount>
+			<key>Mining</key>
+			<value>1</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_MIN2_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk2.MIN&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Mining</defName>
-			<amount>2</amount>
+			<key>Mining</key>
+			<value>2</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_MIN3_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk3.MIN&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Mining</defName>
-			<amount>3</amount>
+			<key>Mining</key>
+			<value>3</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_MIN4_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk4.MIN&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Mining</defName>
-			<amount>4</amount>
+			<key>Mining</key>
+			<value>4</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_MIN5_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk5.MIN&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Mining</defName>
-			<amount>5</amount>
+			<key>Mining</key>
+			<value>5</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	<!-- ================================================================== -->
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_CON1_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk1.CON&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Construction</defName>
-			<amount>1</amount>
+			<key>Construction</key>
+			<value>1</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_CON2_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk2.CON&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Construction</defName>
-			<amount>2</amount>
+			<key>Construction</key>
+			<value>2</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_CON3_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk3.CON&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Construction</defName>
-			<amount>3</amount>
+			<key>Construction</key>
+			<value>3</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_CON4_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk4.CON&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Construction</defName>
-			<amount>4</amount>
+			<key>Construction</key>
+			<value>4</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
+	<AlienRace.AlienBackstoryDef ParentName="ELFs_WorkerModel_HumanoidBackstory_WVC">
 		<defName>BaseBackstoryChild_ELF_CON5_WVC</defName>
 		<title>&lt;color=#a2adff&gt;ELF Mk5.CON&lt;/color&gt;</title>
 		<skillGains>
 		  <li>
-			<defName>Construction</defName>
-			<amount>5</amount>
+			<key>Construction</key>
+			<value>5</value>
 		  </li>
 		</skillGains>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
   
 </Defs>

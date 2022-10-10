@@ -101,7 +101,7 @@
 				<borderScale>1</borderScale>
 				<aliencrowntypes>
 					<!-- invisible head -->
-					<li>Head</li>
+					<li>WVC_InvisibleHead</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Body_Aloy_WVC</li>
@@ -365,7 +365,7 @@
 	  <FilthRate>0</FilthRate>
 	  <MeatAmount>40</MeatAmount>
 	  <LeatherAmount>25</LeatherAmount>
-	  <ToxicSensitivity>0.0</ToxicSensitivity>
+	  <ToxicResistance>0.0</ToxicResistance>
 	  <PsychicSensitivity>1.0</PsychicSensitivity>
 	  <Flammability>0.4</Flammability>
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -389,10 +389,12 @@
 	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
 	  <MeleeHitChance>2.0</MeleeHitChance>
 	  <!-- custom -->
+	  <gestationPeriodDays>18</gestationPeriodDays>
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  <InjuryHealingFactor>1.5</InjuryHealingFactor>
 	  <Mass>46</Mass>
 	  <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">5</RoyalFavorValue>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 	  <!-- CE test -->
 	  <MeleeParryChance MayRequire="ceteam.combatextended">2.0</MeleeParryChance>
 	  <UnarmedDamage MayRequire="ceteam.combatextended">5.0</UnarmedDamage>
@@ -441,25 +443,29 @@
 		</points>
 	  </litterSizeCurve>
 	  <lifeStageAges Inherit="False">
-		<li>
-		  <def>HumanlikeBaby</def>
-		  <minAge>0</minAge>
-		</li>
-		<li>
-		  <def>HumanlikeToddler</def>
-		  <minAge>1.2</minAge>
-		</li>
+		<!-- <li> -->
+		  <!-- <def>HumanlikeBaby</def> -->
+		  <!-- <minAge>0</minAge> -->
+		<!-- </li> -->
 		<!-- <li> -->
 		  <!-- <def>HumanlikeChild</def> -->
-		  <!-- <minAge>4</minAge> -->
+		  <!-- <minAge>3</minAge> -->
+		<!-- </li> -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Biotech"> -->
+		  <!-- <def>HumanlikePreTeenager</def> -->
+		  <!-- <minAge>9</minAge> -->
+		<!-- </li> -->
+		<!-- <li> -->
+		  <!-- <def>HumanlikeTeenager</def> -->
+		  <!-- <minAge>13</minAge> -->
 		<!-- </li> -->
 		<li>
 			<def>LifeStage_Valkyrie_I_WVC</def>
-			<minAge>4</minAge>
+			<minAge>0</minAge>
 		</li>
 		<li>
 			<def>LifeStage_Valkyrie_II_WVC</def>
-			<minAge>13</minAge>
+			<minAge>15</minAge>
 		</li>
 		<li>
 			<def>LifeStage_Valkyrie_III_WVC</def>
@@ -467,17 +473,36 @@
 		</li>
 		<li>
 			<def>LifeStage_Valkyrie_IV_WVC</def>
-			<minAge>18</minAge>
+			<minAge>17</minAge>
 		</li>
 		<li>
 			<def>LifeStage_Valkyrie_V_WVC</def>
-			<minAge>20</minAge>
+			<minAge>18</minAge>
 		</li>
-		<!-- <li> -->
-			<!-- <def>LifeStage_Valkyrie_VI_WVC</def> -->
-			<!-- <minAge>24</minAge> -->
-		<!-- </li> -->
 	  </lifeStageAges>
+	  <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+		<Firefighter>7</Firefighter>
+		<Patient>0</Patient>
+		<Doctor>10</Doctor>
+		<PatientBedRest>0</PatientBedRest>
+		<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+		<BasicWorker>7</BasicWorker>
+		<Warden>10</Warden>
+		<Handling>7</Handling>
+		<Cooking>7</Cooking>
+		<Hunting>7</Hunting>
+		<Construction>10</Construction>
+		<Growing>7</Growing>
+		<Mining>7</Mining>
+		<PlantCutting>7</PlantCutting>
+		<Smithing>13</Smithing>
+		<Tailoring>7</Tailoring>
+		<Art>10</Art>
+		<Crafting>7</Crafting>
+		<Hauling>3</Hauling>
+		<Cleaning>3</Cleaning>
+		<Research>13</Research>
+	  </lifeStageWorkSettings>
 	  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 	  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

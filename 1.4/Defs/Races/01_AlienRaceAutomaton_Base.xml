@@ -32,7 +32,7 @@
 				<atlasScale>4</atlasScale>
 				<borderScale>1</borderScale>
 				<aliencrowntypes>
-					<li>Head</li>
+					<li>WVC_InvisibleHead</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<!-- <li>Body_Reshaper_WVC</li> -->

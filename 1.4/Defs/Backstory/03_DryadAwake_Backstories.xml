@@ -3,59 +3,59 @@
 
 	<!-- ================================================================== -->
 
-	<AlienRace.BackstoryDef ParentName="Backstory_NaturalMeditationBasePatch_WVC" Name="WVC_ChildBackstory_Evolution" Abstract="True">
+	<AlienRace.AlienBackstoryDef ParentName="Backstory_NaturalMeditationBasePatch_WVC" Name="WVC_ChildBackstory_Evolution" Abstract="True">
 		<title>&lt;color=#ffcea2&gt;Dryad&lt;/color&gt;</title>
 		<titleShort>&lt;color=#ffcea2&gt;Evolved&lt;/color&gt;</titleShort>
-		<baseDescription>[PAWN_nameDef] is the evolved royale dryad. [PAWN_possessive] mind was woven from scraps of thoughts that had once been part of the Brood-mind.</baseDescription>
+		<baseDesc>[PAWN_nameDef] is the evolved royale dryad. [PAWN_possessive] mind was woven from scraps of thoughts that had once been part of the Brood-mind.</baseDesc>
 		<slot>Childhood</slot>
 		<skillGains>
 		  <li>
-			<defName>Plants</defName>
-			<amount>-5</amount>
+			<key>Plants</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Shooting</defName>
-			<amount>-5</amount>
+			<key>Shooting</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Melee</defName>
-			<amount>-5</amount>
+			<key>Melee</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Construction</defName>
-			<amount>-5</amount>
+			<key>Construction</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Mining</defName>
-			<amount>-5</amount>
+			<key>Mining</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Cooking</defName>
-			<amount>-5</amount>
+			<key>Cooking</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Animals</defName>
-			<amount>-5</amount>
+			<key>Animals</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Crafting</defName>
-			<amount>-5</amount>
+			<key>Crafting</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Artistic</defName>
-			<amount>-5</amount>
+			<key>Artistic</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Medicine</defName>
-			<amount>-5</amount>
+			<key>Medicine</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Social</defName>
-			<amount>-5</amount>
+			<key>Social</key>
+			<value>-5</value>
 		  </li>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>-5</amount>
+			<key>Intellectual</key>
+			<value>-5</value>
 		  </li>
 		</skillGains>
 		<chronoAgeRange>
@@ -74,29 +74,29 @@
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
 		</relationSettings>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Backstory_NaturalMeditationBasePatch_WVC" Name="WVC_AdultBackstory_Evolution" Abstract="True">
+	<AlienRace.AlienBackstoryDef ParentName="Backstory_NaturalMeditationBasePatch_WVC" Name="WVC_AdultBackstory_Evolution" Abstract="True">
 		<title>&lt;color=#ffcea2&gt;Smart dryad&lt;/color&gt;</title>
 		<titleShort>&lt;color=#ffcea2&gt;Evolved&lt;/color&gt;</titleShort>
-		<baseDescription>The experience of the dryads' minds was rich and detailed, making it easier for [PAWN_nameDef] to navigate separated from [PAWN_possessive] "home".</baseDescription>
+		<baseDesc>The experience of the dryads' minds was rich and detailed, making it easier for [PAWN_nameDef] to navigate separated from [PAWN_possessive] "home".</baseDesc>
 		<slot>Adulthood</slot>
 		<skillGains>
 		  <li>
-			<defName>Melee</defName>
-			<amount>8</amount>
+			<key>Melee</key>
+			<value>8</value>
 		  </li>
 		  <li>
-			<defName>Medicine</defName>
-			<amount>9</amount>
+			<key>Medicine</key>
+			<value>9</value>
 		  </li>
 		  <li>
-			<defName>Social</defName>
-			<amount>7</amount>
+			<key>Social</key>
+			<value>7</value>
 		  </li>
 		  <li>
-			<defName>Intellectual</defName>
-			<amount>2</amount>
+			<key>Intellectual</key>
+			<value>2</value>
 		  </li>
 		</skillGains>
 		<chronoAgeRange>
@@ -115,7 +115,7 @@
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
 		</relationSettings>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 <!-- [PAWN_nameDef] Bobby -->
 <!-- [PAWN_nameFull] Juan Bobby Fisher -->
@@ -125,13 +125,13 @@
 
 	<!-- ================================================================== -->
 
-	<AlienRace.BackstoryDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_ChildBackstory_Evolution">
+	<AlienRace.AlienBackstoryDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_ChildBackstory_Evolution">
 		<defName>WVC_EvolvedBackstoryChild_Base</defName>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_AdultBackstory_Evolution">
+	<AlienRace.AlienBackstoryDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_AdultBackstory_Evolution">
 		<defName>WVC_EvolvedBackstoryAdult_Base</defName>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- ================================================================== -->
 

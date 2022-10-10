@@ -43,9 +43,9 @@
 	<!-- <description>As a result of the mutation, the subject's brain began to create microscopic skip gates, where, according to the subject, he has manipulative limbs. Due to this, the subject seemed to have acquired telekinetic abilities.</description> -->
 	<extraTooltip>Slightly increases the manipulation parameter and added Skip psycast.</extraTooltip>
 	<comps>
-		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
-			<abilityDef>Skip</abilityDef>
-		</li>
+		<!-- <li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility"> -->
+			<!-- <abilityDef>Skip</abilityDef> -->
+		<!-- </li> -->
 	</comps>
 	<stages>
 	  <li>
@@ -104,9 +104,9 @@
 			  </li>
 			</tools>
 		</li>
-		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
-			<abilityDef>Waterskip</abilityDef>
-		</li>
+		<!-- <li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility"> -->
+			<!-- <abilityDef>Waterskip</abilityDef> -->
+		<!-- </li> -->
 	</comps>
 	<stages>
 	  <li>

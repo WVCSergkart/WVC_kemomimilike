@@ -29,9 +29,9 @@
 	  <!-- <li>DrugDesire</li> -->
 	</disablesNeeds>
 	<comps>
-		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
-			<abilityDef>Farskip</abilityDef>
-		</li>
+		<!-- <li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility"> -->
+			<!-- <abilityDef>Farskip</abilityDef> -->
+		<!-- </li> -->
 	</comps>
 	<stages Inherit="False">
 	  <li>

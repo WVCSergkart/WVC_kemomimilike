@@ -13,41 +13,13 @@
 		<!-- <allowOldAgeInjuries>false</allowOldAgeInjuries> -->
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
 		<techHediffsChance>0</techHediffsChance>
 		<techHediffsMoney>0</techHediffsMoney>
 		<defaultFactionType>PlayerFaction_Valkyrie_WVC</defaultFactionType>
 		<!-- <apparelTags> -->
 		  <!-- <li>IndustrialBasic</li> -->
 		<!-- </apparelTags> -->
-	</PawnKindDef>
-
-	<PawnKindDef MayRequire="ludeon.rimworld.ideology" ParentName="Marker_PawnValkyrie_WVC">
-		<defName>Alien_RoyalDryad_WVC</defName>
-		<initialWillRange>999~999</initialWillRange>
-		<initialResistanceRange>999~999</initialResistanceRange>
-		<label>royal dryad</label>
-		<race>Alien_RoyalDryad_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
-		<acceptArrestChanceFactor>0</acceptArrestChanceFactor>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<!-- <apparelDisallowTags> -->
-		  <!-- <li> -->
-			<!-- <li>Neolithic</li> -->
-			<!-- <li>IndustrialBasic</li> -->
-			<!-- <li>IndustrialAdvanced</li> -->
-		  <!-- </li> -->
-		<!-- </apparelDisallowTags> -->
-		<backstoryFiltersOverride>
-		  <li>
-			<categories>
-				<li>BaseBackstory_RoyalDryads_WVC</li>
-			</categories>
-		  </li>
-		</backstoryFiltersOverride>
-		<!-- <requiredWorkTags> -->
-		  <!-- <li>Violent</li> -->
-		<!-- </requiredWorkTags> -->
 	</PawnKindDef>
 
 	<!-- ================================================================== -->
@@ -70,47 +42,84 @@
 
 	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
 		<defName>Alien_Valkyrie_WVC</defName>
-		<label>Valkyrie</label>
+		<label>valkyrie</label>
 		<race>Alien_Valkyrie_WVC</race>
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
-				<li>BaseBackstory_Valkyries_WVC</li>
-				<li>BaseBackstory_ForGirls_WVC</li>
-				<li>BaseBackstory_Adult_Valkyries_WVC</li>
+			  <li>ImperialCommon</li>
+			  <li>ImperialFighter</li>
+			  <li>Offworld</li>
+			  <li>Outlander</li>
+			  <li>Outsider</li>
+			  <li>Pirate</li>
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
+		<!-- <backstoryFiltersOverride> -->
+		  <!-- <li> -->
+			<!-- <categories> -->
+				<!-- <li>BaseBackstory_Valkyries_WVC</li> -->
+				<!-- <li>BaseBackstory_ForGirls_WVC</li> -->
+				<!-- <li>BaseBackstory_Adult_Valkyries_WVC</li> -->
+			<!-- </categories> -->
+		  <!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
-		<defName>Alien_Herrscher_WVC</defName>
-		<label>Herrscher</label>
-		<race>Alien_Herrscher_WVC</race>
-		<extraSkillLevels>2</extraSkillLevels>
+	<PawnKindDef MayRequire="ludeon.rimworld.ideology" ParentName="MarkerSecond_PawnValkyrie_WVC">
+		<defName>Alien_DryadMother_WVC</defName>
+		<label>gaurkyrie</label>
+		<race>Alien_DryadMother_WVC</race>
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>3</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>5</range>
-		  </li>
-		</skills>
+		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+		<chronologicalAgeRange>0</chronologicalAgeRange>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
-				<li>BaseBackstory_Herrschers_WVC</li>
-				<li>BaseBackstory_Adult_Herrschers_WVC</li>
+				<li>Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
+		<!-- <backstoryFiltersOverride> -->
+		  <!-- <li> -->
+			<!-- <categories> -->
+				<!-- <li>BaseBackstory_DryadMothers_WVC</li> -->
+				<!-- <li>BaseBackstory_Adult_DryadMother_WVC</li> -->
+			<!-- </categories> -->
+		  <!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
 	</PawnKindDef>
+
+	<!-- <PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC"> -->
+		<!-- <defName>Alien_Herrscher_WVC</defName> -->
+		<!-- <label>Herrscher</label> -->
+		<!-- <race>Alien_Herrscher_WVC</race> -->
+		<!-- <extraSkillLevels>2</extraSkillLevels> -->
+		<!-- <combatPower>30</combatPower> -->
+		<!-- <isFighter>false</isFighter> -->
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>3</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>5</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
+		<!-- <backstoryFiltersOverride> -->
+		  <!-- <li> -->
+			<!-- <categories> -->
+				<!-- <li>BaseBackstory_Herrschers_WVC</li> -->
+				<!-- <li>BaseBackstory_Adult_Herrschers_WVC</li> -->
+			<!-- </categories> -->
+		  <!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
+	<!-- </PawnKindDef> -->
 
 	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
 		<defName>Alien_ELF_WVC</defName>
@@ -119,27 +128,14 @@
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<extraSkillLevels>5</extraSkillLevels>
+		<abilities>
+			<li>Farskip</li>
+		</abilities>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
 				<li>BaseBackstory_ELFs_WVC</li>
 				<li>BaseBackstory_Adult_ELFs_WVC</li>
-			</categories>
-		  </li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef MayRequire="ludeon.rimworld.ideology" ParentName="MarkerSecond_PawnValkyrie_WVC">
-		<defName>Alien_DryadMother_WVC</defName>
-		<label>Gaurkyrie</label>
-		<race>Alien_DryadMother_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
-		<backstoryFiltersOverride>
-		  <li>
-			<categories>
-				<li>BaseBackstory_DryadMothers_WVC</li>
-				<li>BaseBackstory_Adult_DryadMother_WVC</li>
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
@@ -157,6 +153,9 @@
 		<chronologicalAgeRange>0</chronologicalAgeRange>
 		<apparelMoney>0</apparelMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<abilities>
+			<li>Farskip</li>
+		</abilities>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
@@ -188,7 +187,7 @@
 
 	<PawnKindDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_EvolvedPawnKind_Base">
 		<defName>Alien_Evolved_Valkyrie_WVC</defName>
-		<label>Evolved Valkyrie</label>
+		<label>evolved valkyrie</label>
 		<race>Alien_Valkyrie_WVC</race>
 	</PawnKindDef>
 	<!-- = -->
@@ -197,11 +196,14 @@
 		<!-- :D -->
 		<label>Evolved: Living Form</label>
 		<race>Alien_ELF_WVC</race>
+		<abilities>
+			<li>Farskip</li>
+		</abilities>
 	</PawnKindDef>
 	<!-- = -->
 	<PawnKindDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="WVC_EvolvedPawnKind_Base">
 		<defName>Alien_Evolved_DryadMother_WVC</defName>
-		<label>Evolved Gaurkyrie</label>
+		<label>evolved gaurkyrie</label>
 		<race>Alien_DryadMother_WVC</race>
 	</PawnKindDef>
 

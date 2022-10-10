@@ -11,9 +11,9 @@
 		<li Class="HediffCompProperties">
 			<compClass>HediffComp_Invisibility</compClass>
 		</li>
-		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
-			<abilityDef>Invisibility</abilityDef>
-		</li>
+		<!-- <li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility"> -->
+			<!-- <abilityDef>Invisibility</abilityDef> -->
+		<!-- </li> -->
 	</comps>
 	<stages>
 	  <li>
@@ -65,9 +65,9 @@
 	<!-- </disablesNeeds> -->
 	<extraTooltip>Makes the pawn blind but increases consciousness.</extraTooltip>
 	<comps>
-		<li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility">
-			<abilityDef>BlindingPulse</abilityDef>
-		</li>
+		<!-- <li MayRequire="ludeon.rimworld.royalty" Class="HediffCompProperties_GiveAbility"> -->
+			<!-- <abilityDef>BlindingPulse</abilityDef> -->
+		<!-- </li> -->
 	</comps>
 	<stages>
 	  <li>

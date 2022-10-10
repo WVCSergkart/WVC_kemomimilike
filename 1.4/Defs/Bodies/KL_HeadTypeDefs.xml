@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef Name="WVC_BaseInvisibleHead" Abstract="True">
+	<hairMeshSize>(1.0, 1.0)</hairMeshSize>
+	<beardMeshSize>(1.0, 1.0)</beardMeshSize>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="WVC_BaseInvisibleHead">
+	<defName>WVC_InvisibleHead</defName>
+	<graphicPath>WVC/BaseInvisibleHead/Head</graphicPath>
+	<gender>None</gender>
+  </HeadTypeDef>
+
+</Defs>
