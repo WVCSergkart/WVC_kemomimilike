@@ -5,7 +5,7 @@
 		<!-- <label>&lt;color=#f5ffa2&gt;Dryad mother&lt;/color&gt;</label> -->
 		<!-- Гауркирия -->
 		<label>gaurkyrie</label>
-		<description>A rare subspecies of valkyrie that hybridizes with Gauranlen sprouts.\n\nUsually mutations change Valkyries slightly, an additional tail, an eye, or unusual abilities. In the case of the gaurkyries, the mutation brought about significant changes in both body structure and brain structure, creating separate subspecies.&lt;color=#f5ffa2&gt;\n\nGaurkyries do not experience emotions, and the reproductive system has been modified so that they are able to "give birth" to small mammalian creatures - dryads. Dryads "born" by the gaurkyrie are different from the usual, although they have a direct relationship. They are something like a biomass that has no mind and is controlled directly by the gaurkyrie. The process of birth itself has nothing to do with how it occurs in mammals, since the biomass simply falls away from the gaurkyrie like shed skin. The mucus of the bomass itself accumulates on the body of the gaurkyrie along with sweat, or rather it is. The biomass covering the entire body of the gaurkyrie exists in synbiosis with her, protecting her from the effects of the external environment. The disadvantage is the flammability of biomass.&lt;/color&gt;\n\nDespite her size, the gaurkyrie is very heavy, which limits her mobility, however, despite the fact that she is slow, she can still deftly dodge blows.\n\nAlso on their heads, along with their hair, leaves grow like those of the Gauranlen tree, so leaves can fall from the gaurkyrie's head. Sometimes, instead of leaves of gauranlen, a seed may fall from it.</description>
+		<description>A rare subspecies of valkyrie that hybridizes with Gauranlen sprouts.\n\nUsually mutations change Valkyries slightly, an additional tail, an eye, or unusual abilities. In the case of the gaurkyries, the mutation brought about significant changes in both body structure and brain structure, creating separate subspecies.&lt;color=#f5ffa2&gt;\n\nGaurkyries do not experience emotions, and the reproductive system has been modified so that they are able to "give birth" to small mammalian creatures - dryads. Dryads "born" by the gaurkyrie are different from the usual, although they have a direct relationship. They are something like a biomass that has no mind and is controlled directly by the gaurkyrie. The process of birth itself has nothing to do with how it occurs in mammals, since the biomass simply falls away from the gaurkyrie like shed skin. The mucus of the bomass itself accumulates on the body of the gaurkyrie along with sweat, or rather it is. The biomass covering the entire body of the gaurkyrie exists in synbiosis with her, protecting her from the effects of the external environment. The disadvantage is the flammability of biomass.&lt;/color&gt;\n\nDespite her size, the gaurkyrie is very heavy, which limits her mobility, however, despite the fact that she is slow, she can still deftly dodge blows.\n\nAlso on their heads, along with their hair, leaves grow like those of the Gauranlen tree, so leaves can fall from the gaurkyrie's head. Sometimes, instead of leaves of gauranlen, a seed may fall from it.\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Gaurkyries are very tenacious and strong, but this does not make them invincible, keep in mind that their movement speed is incomprehensibly low.</description>
 		<descriptionHyperlinks Inherit="False">
 		  <!-- <HediffDef>Hediff_Valkyrie_DryadMother_WVC</HediffDef> -->
 		  <ThingDef MayRequire="ludeon.rimworld.ideology">Plant_TreeGauranlen</ThingDef>
@@ -79,9 +79,8 @@
 		  <!-- <useMeatFrom>Alien_Valkyrie_WVC</useMeatFrom> -->
 		  <baseBodySize>1.5</baseBodySize>
 		  <allowedOnCaravan>true</allowedOnCaravan>
-		  <hediffGiverSets Inherit="False">
-			<li>Hediff_Valkyrie_DryadMother_WVC</li>
-		  </hediffGiverSets>
+		  <!-- <hediffGiverSets Inherit="False"> -->
+		  <!-- </hediffGiverSets> -->
 		  <lifeStageAges Inherit="False">
 			<li>
 			  <def>HumanlikeBaby</def>
@@ -152,7 +151,7 @@
 		<defName>Alien_DryadMother_WVC</defName>
 		<label>gaurkyrie</label>
 		<descriptionHyperlinks>
-		  <ConceptDef>WVC_AlienRace_DryadMother</ConceptDef>
+		  <!-- <ConceptDef>WVC_AlienRace_DryadMother</ConceptDef> -->
 		</descriptionHyperlinks>
 		<alienRace>
 			<generalSettings>
@@ -163,7 +162,7 @@
 			</generalSettings>
 			<raceRestriction>
 				<conceptList>
-					<li>WVC_AlienRace_DryadMother</li>
+					<!-- <li>WVC_AlienRace_DryadMother</li> -->
 				</conceptList>
 			</raceRestriction>
 		</alienRace>
@@ -175,6 +174,7 @@
 		</comps>
 		<race>
 		  <hediffGiverSets>
+			<li>WVC_OrganicGaurkyries</li>
 			<li>HediffGiverSet_MutationsBase_WVC</li>
 		  </hediffGiverSets>
 		</race>

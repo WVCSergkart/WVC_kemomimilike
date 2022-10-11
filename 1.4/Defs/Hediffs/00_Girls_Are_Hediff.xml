@@ -21,7 +21,7 @@
   <!--=====================================================================-->
 
   <HediffGiverSetDef ParentName="WVC_GiverSet_HumanlikeBase">
-    <defName>Hediff_Valkyrie_WVC</defName>
+    <defName>WVC_OrganicBase</defName>
 	<hediffGivers>
 		<!-- Environmental -->
 		<li Class="HediffGiver_Bleeding">
@@ -37,7 +37,7 @@
   </HediffGiverSetDef>
   
   <HediffGiverSetDef MayRequire="ludeon.rimworld.ideology" ParentName="WVC_GiverSet_HumanlikeBase">
-	<defName>Hediff_Valkyrie_DryadMother_WVC</defName>
+	<defName>WVC_OrganicGaurkyries</defName>
 	<hediffGivers>
 		<!-- Environmental -->
 		<li Class="HediffGiver_Bleeding">

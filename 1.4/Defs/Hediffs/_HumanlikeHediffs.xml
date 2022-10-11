@@ -129,21 +129,21 @@
 
   <!--=====================================================================-->
 
-  <HediffGiverSetDef>
-	<defName>HediffGiverSet_MutationsValkyrie_WVC</defName>
-	<hediffGivers>
-	</hediffGivers>
-  </HediffGiverSetDef>
-  <HediffGiverSetDef>
-	<defName>HediffGiverSet_MutationsELF_WVC</defName>
-	<hediffGivers>
-	</hediffGivers>
-  </HediffGiverSetDef>
-  <HediffGiverSetDef>
-	<defName>HediffGiverSet_MutationsDryads_WVC</defName>
-	<hediffGivers>
-	</hediffGivers>
-  </HediffGiverSetDef>
+  <!-- <HediffGiverSetDef> -->
+	<!-- <defName>HediffGiverSet_MutationsValkyrie_WVC</defName> -->
+	<!-- <hediffGivers> -->
+	<!-- </hediffGivers> -->
+  <!-- </HediffGiverSetDef> -->
+  <!-- <HediffGiverSetDef> -->
+	<!-- <defName>HediffGiverSet_MutationsELF_WVC</defName> -->
+	<!-- <hediffGivers> -->
+	<!-- </hediffGivers> -->
+  <!-- </HediffGiverSetDef> -->
+  <!-- <HediffGiverSetDef> -->
+	<!-- <defName>HediffGiverSet_MutationsDryads_WVC</defName> -->
+	<!-- <hediffGivers> -->
+	<!-- </hediffGivers> -->
+  <!-- </HediffGiverSetDef> -->
 
   <HediffGiverSetDef>
 	<defName>HediffGiverSet_SuperPowersBase_WVC</defName>

@@ -2,7 +2,7 @@
 <Defs>
 	<AlienRace.ThingDef_AlienRace Name="BaseELFs_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
 		<label>ELF</label>
-		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;</description>
+		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; ELFs can sleep while being held.</description>
 		<descriptionHyperlinks Inherit="False">
 		  <!-- <ThingDef MayRequire="ludeon.rimworld.royalty">Plant_TreeAnima</ThingDef> -->
 		  <!-- <ThingDef MayRequire="ludeon.rimworld.royalty">AnimaSeed_WVC</ThingDef> -->
@@ -328,7 +328,7 @@
 		<defName>Alien_ELF_WVC</defName>
 		<label>ELF</label>
 		<descriptionHyperlinks>
-		  <ConceptDef>WVC_AlienRace_ELF</ConceptDef>
+		  <!-- <ConceptDef>WVC_AlienRace_ELF</ConceptDef> -->
 		</descriptionHyperlinks>
 		<alienRace>
 			<generalSettings>
@@ -339,7 +339,7 @@
 			</generalSettings>
 			<raceRestriction>
 				<conceptList>
-					<li>WVC_AlienRace_ELF</li>
+					<!-- <li>WVC_AlienRace_ELF</li> -->
 				</conceptList>
 			</raceRestriction>
 		</alienRace>
@@ -351,7 +351,8 @@
 		</comps>
 		<race>
 		  <hediffGiverSets>
-			<li>HediffGiverSet_MutationsELF_WVC</li>
+			<li>WVC_OrganicBase</li>
+			<!-- <li>HediffGiverSet_MutationsELF_WVC</li> -->
 			<li>HediffGiverSet_MutationsBase_WVC</li>
 			<li>HediffGiverSet_SuperPowersBase_WVC</li>
 		  </hediffGiverSets>

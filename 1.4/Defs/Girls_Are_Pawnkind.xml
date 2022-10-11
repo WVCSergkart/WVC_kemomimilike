@@ -17,21 +17,7 @@
 		<techHediffsChance>0</techHediffsChance>
 		<techHediffsMoney>0</techHediffsMoney>
 		<defaultFactionType>PlayerFaction_Valkyrie_WVC</defaultFactionType>
-		<!-- <apparelTags> -->
-		  <!-- <li>IndustrialBasic</li> -->
-		<!-- </apparelTags> -->
-	</PawnKindDef>
-
-	<!-- ================================================================== -->
-
-	<PawnKindDef ParentName="Marker_PawnValkyrie_WVC" Name="MarkerSecond_PawnValkyrie_WVC" Abstract="True">
 		<chronologicalAgeRange>100~2000</chronologicalAgeRange>
-		<!-- <backstoryFiltersOverride> -->
-		  <!-- <li> -->
-			<!-- <categories> -->
-			<!-- </categories> -->
-		  <!-- </li> -->
-		<!-- </backstoryFiltersOverride> -->
 		<apparelMoney>600</apparelMoney>
 		<apparelTags>
 			<li>Neolithic</li>
@@ -40,7 +26,9 @@
 		</apparelTags>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
+	<!-- ================================================================== -->
+
+	<PawnKindDef ParentName="Marker_PawnValkyrie_WVC">
 		<defName>Alien_Valkyrie_WVC</defName>
 		<label>valkyrie</label>
 		<race>Alien_Valkyrie_WVC</race>
@@ -66,18 +54,9 @@
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
-		<!-- <backstoryFiltersOverride> -->
-		  <!-- <li> -->
-			<!-- <categories> -->
-				<!-- <li>BaseBackstory_Valkyries_WVC</li> -->
-				<!-- <li>BaseBackstory_ForGirls_WVC</li> -->
-				<!-- <li>BaseBackstory_Adult_Valkyries_WVC</li> -->
-			<!-- </categories> -->
-		  <!-- </li> -->
-		<!-- </backstoryFiltersOverride> -->
 	</PawnKindDef>
 
-	<PawnKindDef MayRequire="ludeon.rimworld.ideology" ParentName="MarkerSecond_PawnValkyrie_WVC">
+	<PawnKindDef MayRequire="ludeon.rimworld.ideology" ParentName="Marker_PawnValkyrie_WVC">
 		<defName>Alien_DryadMother_WVC</defName>
 		<label>gaurkyrie</label>
 		<race>Alien_DryadMother_WVC</race>
@@ -93,44 +72,9 @@
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
-		<!-- <backstoryFiltersOverride> -->
-		  <!-- <li> -->
-			<!-- <categories> -->
-				<!-- <li>BaseBackstory_DryadMothers_WVC</li> -->
-				<!-- <li>BaseBackstory_Adult_DryadMother_WVC</li> -->
-			<!-- </categories> -->
-		  <!-- </li> -->
-		<!-- </backstoryFiltersOverride> -->
 	</PawnKindDef>
 
-	<!-- <PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC"> -->
-		<!-- <defName>Alien_Herrscher_WVC</defName> -->
-		<!-- <label>Herrscher</label> -->
-		<!-- <race>Alien_Herrscher_WVC</race> -->
-		<!-- <extraSkillLevels>2</extraSkillLevels> -->
-		<!-- <combatPower>30</combatPower> -->
-		<!-- <isFighter>false</isFighter> -->
-		<!-- <skills> -->
-		  <!-- <li> -->
-			<!-- <skill>Shooting</skill> -->
-			<!-- <range>3</range> -->
-		  <!-- </li> -->
-		  <!-- <li> -->
-			<!-- <skill>Melee</skill> -->
-			<!-- <range>5</range> -->
-		  <!-- </li> -->
-		<!-- </skills> -->
-		<!-- <backstoryFiltersOverride> -->
-		  <!-- <li> -->
-			<!-- <categories> -->
-				<!-- <li>BaseBackstory_Herrschers_WVC</li> -->
-				<!-- <li>BaseBackstory_Adult_Herrschers_WVC</li> -->
-			<!-- </categories> -->
-		  <!-- </li> -->
-		<!-- </backstoryFiltersOverride> -->
-	<!-- </PawnKindDef> -->
-
-	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
+	<PawnKindDef ParentName="Marker_PawnValkyrie_WVC">
 		<defName>Alien_ELF_WVC</defName>
 		<label>Equipment: Living Form</label>
 		<race>Alien_ELF_WVC</race>
@@ -152,7 +96,7 @@
 
 	<!-- ================================================================== -->
 
-	<PawnKindDef ParentName="MarkerSecond_PawnValkyrie_WVC">
+	<PawnKindDef ParentName="Marker_PawnValkyrie_WVC">
 		<defName>Alien_Assembled_ELF_WVC</defName>
 		<label>Incubated: Living Form</label>
 		<race>Alien_ELF_WVC</race>
@@ -179,7 +123,7 @@
 	<!-- ====================Evolution==================== -->
 	<!-- ====================Evolution==================== -->
 
-	<PawnKindDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="MarkerSecond_PawnValkyrie_WVC" Name="WVC_EvolvedPawnKind_Base" Abstract="True">
+	<PawnKindDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="Marker_PawnValkyrie_WVC" Name="WVC_EvolvedPawnKind_Base" Abstract="True">
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<chronologicalAgeRange>0</chronologicalAgeRange>

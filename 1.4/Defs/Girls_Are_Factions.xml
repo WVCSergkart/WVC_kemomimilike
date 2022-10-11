@@ -3,7 +3,7 @@
 
 	<FactionDef ParentName="PlayerFactionBase" Name="PlayerFaction_Valkyrie_WVC" Abstract="True">
 		<!-- <defName>PlayerFaction_Valkyrie_WVC</defName> -->
-		<label>&lt;color=#a2c8ff&gt;Valkyries&lt;/color&gt;</label>
+		<label>KL</label>
 		<description>A group of wanderers traveling aimlessly.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Alien_Valkyrie_WVC</basicMemberKind>
@@ -24,14 +24,14 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<geneticVariance>0.0</geneticVariance>
+		<!-- <geneticVariance>0.0</geneticVariance> -->
 		<colorSpectrum Inherit="False">
 		  <li>(94,163,255)</li>
 		</colorSpectrum>
 		<startingResearchTags Inherit="False">
 			<!-- <li>ClassicStart</li> -->
-			<li>ValkyriesStart_WVC</li>
-			<li MayRequire="pupa.insectgirls">IGStart</li>
+			<!-- <li>ValkyriesStart_WVC</li> -->
+			<!-- <li MayRequire="pupa.insectgirls">IGStart</li> -->
 		</startingResearchTags>
 		<!-- <startingTechprintsResearchTags> -->
 			<!-- <li>ClassicStart</li> -->

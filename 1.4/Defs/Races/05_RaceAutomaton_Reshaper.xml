@@ -79,7 +79,7 @@
 
 	<!-- ====================================== -->
 
-	<PawnKindDef ParentName="WVC_BasePawn_Automatons">
+	<PawnKindDef ParentName="WVC_BasePawn_Nodes">
 		<defName>WVC_AlienRace_Reshaper</defName>
 		<label>reshaper</label>
 		<race>WVC_AlienRace_Reshaper</race>
