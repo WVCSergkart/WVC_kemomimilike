@@ -7,6 +7,7 @@
 	<meleeDamageFactor>1.0</meleeDamageFactor>
 	<foodMaxFactor>5</foodMaxFactor>
 	<canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
+	<customMoodTipString>Gaurkyries do not experience emotions.</customMoodTipString>
 	<statFactors>
 	</statFactors>
   </LifeStageDef>

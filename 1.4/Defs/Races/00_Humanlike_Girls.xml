@@ -365,7 +365,7 @@
 	  <FilthRate>0</FilthRate>
 	  <MeatAmount>40</MeatAmount>
 	  <LeatherAmount>25</LeatherAmount>
-	  <ToxicResistance>0.0</ToxicResistance>
+	  <ToxicResistance>1.0</ToxicResistance>
 	  <PsychicSensitivity>1.0</PsychicSensitivity>
 	  <Flammability>0.4</Flammability>
 	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
@@ -443,25 +443,25 @@
 		</points>
 	  </litterSizeCurve>
 	  <lifeStageAges Inherit="False">
-		<!-- <li> -->
-		  <!-- <def>HumanlikeBaby</def> -->
-		  <!-- <minAge>0</minAge> -->
-		<!-- </li> -->
-		<!-- <li> -->
-		  <!-- <def>HumanlikeChild</def> -->
-		  <!-- <minAge>3</minAge> -->
-		<!-- </li> -->
-		<!-- <li MayRequire="Ludeon.RimWorld.Biotech"> -->
-		  <!-- <def>HumanlikePreTeenager</def> -->
-		  <!-- <minAge>9</minAge> -->
-		<!-- </li> -->
-		<!-- <li> -->
-		  <!-- <def>HumanlikeTeenager</def> -->
-		  <!-- <minAge>13</minAge> -->
-		<!-- </li> -->
+		<li>
+		  <def>HumanlikeBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>HumanlikeChild</def>
+		  <minAge>3</minAge>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">
+		  <def>HumanlikePreTeenager</def>
+		  <minAge>9</minAge>
+		</li>
+		<li>
+		  <def>HumanlikeTeenager</def>
+		  <minAge>13</minAge>
+		</li>
 		<li>
 			<def>LifeStage_Valkyrie_I_WVC</def>
-			<minAge>0</minAge>
+			<minAge>14</minAge>
 		</li>
 		<li>
 			<def>LifeStage_Valkyrie_II_WVC</def>

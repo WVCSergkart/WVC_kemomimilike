@@ -6,6 +6,8 @@
 	<foodMaxFactor>5</foodMaxFactor>
 	<hungerRateFactor>0.5</hungerRateFactor>
 	<canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
+	<canSleepWhileHeld>true</canSleepWhileHeld>
+	<!-- <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor> -->
 	<statFactors>
 	  <PsychicEntropyGain MayRequire="ludeon.rimworld.royalty">0.0</PsychicEntropyGain>
 	  <PainShockThreshold>0.9</PainShockThreshold>

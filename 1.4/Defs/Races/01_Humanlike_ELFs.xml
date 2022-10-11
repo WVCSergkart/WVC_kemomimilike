@@ -4,8 +4,8 @@
 		<label>ELF</label>
 		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;</description>
 		<descriptionHyperlinks Inherit="False">
-		  <ThingDef MayRequire="ludeon.rimworld.royalty">Plant_TreeAnima</ThingDef>
-		  <ThingDef MayRequire="ludeon.rimworld.royalty">AnimaSeed_WVC</ThingDef>
+		  <!-- <ThingDef MayRequire="ludeon.rimworld.royalty">Plant_TreeAnima</ThingDef> -->
+		  <!-- <ThingDef MayRequire="ludeon.rimworld.royalty">AnimaSeed_WVC</ThingDef> -->
 		</descriptionHyperlinks>
 		<!-- <uiIconScale>1.0</uiIconScale> -->
 		<!-- <uiIconPath>WVC/Stuff/ValksW</uiIconPath> -->
@@ -264,23 +264,23 @@
 			</li>
 			<li>
 				<def>LifeStage_ELF_II_WVC</def>
-				<minAge>4</minAge>
+				<minAge>2</minAge>
 			</li>
 			<li>
 				<def>LifeStage_ELF_III_WVC</def>
-				<minAge>6</minAge>
+				<minAge>3</minAge>
 			</li>
 			<li>
 				<def>LifeStage_ELF_IV_WVC</def>
-				<minAge>8</minAge>
+				<minAge>4</minAge>
 			</li>
 			<li>
 				<def>LifeStage_ELF_V_WVC</def>
-				<minAge>10</minAge>
+				<minAge>5</minAge>
 			</li>
 			<li>
 				<def>LifeStage_ELF_VI_WVC</def>
-				<minAge>12</minAge>
+				<minAge>6</minAge>
 			</li>
 		  </lifeStageAges>
 		  <specialShadowData Inherit="False">
@@ -289,9 +289,9 @@
 		  </specialShadowData>
 		  <ageGenerationCurve Inherit="False">
 			<points>
-				<li>(3,0)</li>
-				<li>(5,100)</li>
-				<li>(10,0)</li>
+				<li>(2,0)</li>
+				<li>(4,100)</li>
+				<li>(8,0)</li>
 			</points>
 		  </ageGenerationCurve>
 		</race>

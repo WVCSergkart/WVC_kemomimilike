@@ -84,8 +84,24 @@
 		  </hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>
+			  <def>HumanlikeBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeChild</def>
+			  <minAge>3</minAge>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+			  <def>HumanlikePreTeenager</def>
+			  <minAge>9</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeTeenager</def>
+			  <minAge>13</minAge>
+			</li>
+			<li>
 				<def>LifeStage_DryadMother_Immature_WVC</def>
-				<minAge>0</minAge>
+				<minAge>14</minAge>
 			</li>
 			<li>
 				<def>LifeStage_DryadMother_Young_WVC</def>

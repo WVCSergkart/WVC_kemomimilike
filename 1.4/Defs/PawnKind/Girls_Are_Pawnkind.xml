@@ -25,7 +25,7 @@
 	<!-- ================================================================== -->
 
 	<PawnKindDef ParentName="Marker_PawnValkyrie_WVC" Name="MarkerSecond_PawnValkyrie_WVC" Abstract="True">
-		<chronologicalAgeRange>100~3000</chronologicalAgeRange>
+		<chronologicalAgeRange>100~2000</chronologicalAgeRange>
 		<!-- <backstoryFiltersOverride> -->
 		  <!-- <li> -->
 			<!-- <categories> -->
@@ -46,15 +46,23 @@
 		<race>Alien_Valkyrie_WVC</race>
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<chronologicalAgeRange>0~2000</chronologicalAgeRange>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
 			  <li>ImperialCommon</li>
 			  <li>ImperialFighter</li>
+			  <li>ImperialRoyal</li>
 			  <li>Offworld</li>
 			  <li>Outlander</li>
 			  <li>Outsider</li>
 			  <li>Pirate</li>
+			  <li>InsectsRelated</li>
+			  <li>Marshal</li>
+			  <li>Mate</li>
+			  <li>Gambler</li>
+			  <li>Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
@@ -80,7 +88,8 @@
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
-				<li>Tribal</li>
+			  <li>Tribal</li>
+			  <li>InsectsRelated</li>
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
