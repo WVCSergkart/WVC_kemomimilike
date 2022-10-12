@@ -7,6 +7,7 @@
 	<hungerRateFactor>0.5</hungerRateFactor>
 	<canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
 	<canSleepWhileHeld>true</canSleepWhileHeld>
+	<meleeDamageFactor>0.6</meleeDamageFactor>
 	<!-- <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor> -->
 	<statFactors>
 	  <PsychicEntropyGain MayRequire="ludeon.rimworld.royalty">0.0</PsychicEntropyGain>
@@ -16,9 +17,9 @@
 
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_I_WVC</defName>
-	<label>0</label>
-	<healthScaleFactor>1.0</healthScaleFactor>
-	<meleeDamageFactor>0.8</meleeDamageFactor>
+	<label>1</label>
+	<!-- <healthScaleFactor>1.0</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>1.2</IncomingDamageFactor>
 	</statFactors>
@@ -26,9 +27,9 @@
   
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_II_WVC</defName>
-	<label>4</label>
-	<healthScaleFactor>1.1</healthScaleFactor>
-	<meleeDamageFactor>0.8</meleeDamageFactor>
+	<label>2</label>
+	<!-- <healthScaleFactor>1.1</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
 	</statFactors>
@@ -36,9 +37,9 @@
   
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_III_WVC</defName>
-	<label>6</label>
-	<healthScaleFactor>1.2</healthScaleFactor>
-	<meleeDamageFactor>0.8</meleeDamageFactor>
+	<label>3</label>
+	<!-- <healthScaleFactor>1.2</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.95</IncomingDamageFactor>
 	  <MentalBreakThreshold>0.8</MentalBreakThreshold>
@@ -47,9 +48,9 @@
   
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_IV_WVC</defName>
-	<label>8</label>
-	<healthScaleFactor>1.3</healthScaleFactor>
-	<meleeDamageFactor>0.8</meleeDamageFactor>
+	<label>4</label>
+	<!-- <healthScaleFactor>1.3</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.9</IncomingDamageFactor>
 	  <MentalBreakThreshold>0.5</MentalBreakThreshold>
@@ -58,9 +59,9 @@
   
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_V_WVC</defName>
-	<label>10</label>
-	<healthScaleFactor>1.4</healthScaleFactor>
-	<meleeDamageFactor>0.8</meleeDamageFactor>
+	<label>5</label>
+	<!-- <healthScaleFactor>1.4</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.85</IncomingDamageFactor>
 	  <MentalBreakThreshold>0.2</MentalBreakThreshold>
@@ -69,9 +70,9 @@
 
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_VI_WVC</defName>
-	<label>12</label>
-	<healthScaleFactor>1.5</healthScaleFactor>
-	<meleeDamageFactor>1.0</meleeDamageFactor>
+	<label>6</label>
+	<!-- <healthScaleFactor>1.5</healthScaleFactor> -->
+	<!-- <meleeDamageFactor>1.0</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
 	  <MentalBreakThreshold>0.0</MentalBreakThreshold>
