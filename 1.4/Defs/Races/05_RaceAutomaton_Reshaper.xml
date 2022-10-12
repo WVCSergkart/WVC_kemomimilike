@@ -19,30 +19,30 @@
 
 		<!-- ==================================================================== -->
 
-		<verbs>
-			<li>
-				<label>blaster</label>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1.0</accuracyTouch>
-				<accuracyShort>1.0</accuracyShort>
-				<accuracyMedium>1.0</accuracyMedium>
-				<accuracyLong>1.0</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultCooldownTime>0.7</defaultCooldownTime>
-				<warmupTime>0.4</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-				<minRange>1</minRange>
-				<range>12.9</range>
-				<defaultProjectile>Bullet_AutomatonPlasma_WVC</defaultProjectile>
-				<soundCast>Shot_ChargeBlaster</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<targetParams>
-				  <canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
+		<!-- <verbs> -->
+			<!-- <li> -->
+				<!-- <label>blaster</label> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <accuracyTouch>1.0</accuracyTouch> -->
+				<!-- <accuracyShort>1.0</accuracyShort> -->
+				<!-- <accuracyMedium>1.0</accuracyMedium> -->
+				<!-- <accuracyLong>1.0</accuracyLong> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultCooldownTime>0.7</defaultCooldownTime> -->
+				<!-- <warmupTime>0.4</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>4</ticksBetweenBurstShots> -->
+				<!-- <minRange>1</minRange> -->
+				<!-- <range>12.9</range> -->
+				<!-- <defaultProjectile>Bullet_AutomatonPlasma_WVC</defaultProjectile> -->
+				<!-- <soundCast>Shot_ChargeBlaster</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+				<!-- <targetParams> -->
+				  <!-- <canTargetLocations>true</canTargetLocations> -->
+				<!-- </targetParams> -->
+			<!-- </li> -->
+		<!-- </verbs> -->
 
 		<tools Inherit="False">
 		  <li>
