@@ -2,10 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="DryadBase">
-	<defName>DryadGirlWVC</defName>
+	<defName>WVC_RoyalDryad_KL</defName>
 	<label>royal dryad</label>
 	<description>This dryad caste bears a strong resemblance to humans, some individuals are even capable of verbal communication.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;</description>
 	<descriptionHyperlinks>
+	  <ThingDef>WVC_LivingMetall</ThingDef>
 	  <ConceptDef>WVC_Dryads_RoyalDryads_Evolution</ConceptDef>
 	  <ConceptDef>WVC_Dryads_RoyalDryads_Hardwork</ConceptDef>
 	</descriptionHyperlinks>
@@ -42,29 +43,16 @@
 		<volume>(0.3, 0.8, 0.4)</volume>
 		<offset>(0,0,-0.4)</offset>
 	  </specialShadowData>
-	  <!-- <lifeStageAges Inherit="False"> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Baby_WVC</def> -->
-			<!-- <minAge>0</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
-		<!-- </li> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Juvenile_WVC</def> -->
-			<!-- <minAge>1</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
-		<!-- </li> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Adult_WVC</def> -->
-			<!-- <minAge>2</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall> -->
-		<!-- </li> -->
-	  <!-- </lifeStageAges> -->
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalAdult</def>
+		  <soundWounded>Pawn_Dryad_Gaumaker_Wounded</soundWounded>
+		  <soundCall>Pawn_Dryad_Gaumaker_Call</soundCall>
+		</li>
+	  </lifeStageAges>
 	</race>
 	<butcherProducts>
-	  <VFEI_ValkyrieGenome_WVC>1</VFEI_ValkyrieGenome_WVC>
+	  <!-- <VFEI_ValkyrieGenome_WVC>1</VFEI_ValkyrieGenome_WVC> -->
 	</butcherProducts>
 	<comps>
 		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_FixedGender">
@@ -113,10 +101,11 @@
 	  <li>
 		<label>left fist</label>
 		<capacities>
-		  <li>WVC_Blunt_FistRed</li>
+		  <li>Blunt</li>
+		  <!-- <li>Stab</li> -->
 		</capacities>
 		<power>12</power>
-		<cooldownTime>1.7</cooldownTime>
+		<cooldownTime>1.8</cooldownTime>
 		<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 		<chanceFactor>1.0</chanceFactor>
 		<armorPenetration>0.1</armorPenetration>
@@ -133,10 +122,11 @@
 	  <li>
 		<label>right fist</label>
 		<capacities>
-		  <li>WVC_Blunt_FistRed</li>
+		  <li>Blunt</li>
+		  <!-- <li>Stab</li> -->
 		</capacities>
 		<power>12</power>
-		<cooldownTime>1.7</cooldownTime>
+		<cooldownTime>1.8</cooldownTime>
 		<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 		<chanceFactor>1.0</chanceFactor>
 		<armorPenetration>0.1</armorPenetration>
@@ -153,12 +143,13 @@
 	  <li>
 		<label>feet</label>
 		<capacities>
-		  <li>WVC_Blunt_FeetRed</li>
+		  <li>Blunt</li>
+		  <!-- <li>Stab</li> -->
 		</capacities>
 		<power>13</power>
 		<cooldownTime>1.5</cooldownTime>
 		<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-		<chanceFactor>0.7</chanceFactor>
+		<chanceFactor>0.5</chanceFactor>
 		<armorPenetration>0.1</armorPenetration>
 		<surpriseAttack>
 		  <extraMeleeDamages>
@@ -175,15 +166,139 @@
 
   <!-- ======================================================= -->
 
-  <PawnKindDef ParentName="PawnAnimal_Base_Skins_WVC">
-	<defName>DryadGirlWVC</defName>
+  <PawnKindDef ParentName="DryadKindBase">
+	<defName>WVC_RoyalDryad_KL</defName>
 	<label>royal dryad</label>
-	<labelPlural>royal dryads</labelPlural>
-	<labelMale>royal dryad</labelMale>
-	<labelFemale>royal dryad</labelFemale>
-	<race>DryadGirlWVC</race>
-	<!-- <combatPower>50</combatPower> -->
-	<lifeStages Inherit="False">
+	<race>WVC_RoyalDryad_KL</race>
+	<alternateGraphicChance>1.0</alternateGraphicChance>
+	<alternateGraphics>
+		<li>
+			<texPath>WVC/Pawns/Yoimiya</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Sayu</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Roza</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Lily</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Yae</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Haxxor</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/HaxxorA</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Delta</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_8Bit_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/cocogoat</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/aloy</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/lumine</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/ayaka</texPath>
+		</li>
+		<!-- h -->
+		<li>
+			<texPath>WVC/Pawns/HoS</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/HoS_Summer</texPath>
+		</li>
+		<!-- elfs -->
+		<!-- <li> -->
+			<!-- <texPath>WVC/Pawns/HoS_Summer</texPath> -->
+		<!-- </li> -->
+		<!-- insects -->
+		<li>
+			<texPath>WVC/Pawns/IG/baier</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_buer_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_kuoer_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_jiaer_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_juer_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_zhuer_WVC</texPath>
+		</li>
+		<!-- kemomimi -->
+		<li>
+			<texPath>WVC/Pawns/house/akame</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/house/aome</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/house/hana</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/house/kohime</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/house/kon</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/house/siro</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_konf_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_miko_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_kuro_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_sirof_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_yuki_WVC</texPath>
+		</li>
+		<!-- Mimikko -->
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Alphazero_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Ariana_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Liuli_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Momona_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Nemuri_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Nonona_WVC</texPath>
+		</li>
+		<li>
+			<texPath>WVC/Pawns/Bodies/Naked_Body_Ulrica_WVC</texPath>
+		</li>
+	</alternateGraphics>
+	<lifeStages>
 	  <li>
 		<bodyGraphicData>
 		  <texPath>WVC/Pawns/lumine</texPath>

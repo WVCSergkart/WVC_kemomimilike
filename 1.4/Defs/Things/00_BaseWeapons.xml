@@ -30,12 +30,12 @@
 	  <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate>
 	</equippedStatOffsets>
 	<costList>
-	  <WVC_ExoticWeaponComponents>1</WVC_ExoticWeaponComponents>
+	  <!-- <WVC_ExoticWeaponComponents>1</WVC_ExoticWeaponComponents> -->
 	  <!-- <Steel>100</Steel> -->
-	  <!-- <Plasteel>30</Plasteel> -->
+	  <Plasteel>120</Plasteel>
 	  <!-- <WVC_UniversalFuel>86</WVC_UniversalFuel> -->
 	  <!-- <AIPersonaCore>1</AIPersonaCore> -->
-	  <!-- <VFE_ComponentMechanoid>3</VFE_ComponentMechanoid> -->
+	  <VFE_ComponentMechanoid>5</VFE_ComponentMechanoid>
 	</costList>
 	<comps>
 	  <li>

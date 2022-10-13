@@ -22,14 +22,14 @@
 	  <li>
 		<label>blade</label>
 		<capacities>
-		  <li>WVC_Cut_AngleRed</li>
+		  <li>Cut</li>
 		</capacities>
 		<power>17</power>
 		<cooldownTime>0.9</cooldownTime>
 		<armorPenetration>0.7</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
-			<def>Scratch_AbyssCorruption_WVC</def>
+			<def>ScratchToxic</def>
 			<amount>5</amount>
 			<chance>1.0</chance>
 		  </li>
@@ -38,14 +38,14 @@
 	  <li>
 		<label>edge</label>
 		<capacities>
-		  <li>WVC_Cut_AngleBlue</li>
+		  <li>Cut</li>
 		</capacities>
 		<power>17</power>
 		<cooldownTime>0.9</cooldownTime>
 		<armorPenetration>0.7</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
-			<def>Scratch_AbyssCorruption_WVC</def>
+			<def>ScratchToxic</def>
 			<amount>5</amount>
 			<chance>1.0</chance>
 		  </li>

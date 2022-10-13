@@ -2,9 +2,9 @@
 <Defs>
 
   <GauranlenTreeModeDef>
-	<defName>DryadGirlWVC</defName>
+	<defName>WVC_RoyalDryad_KL</defName>
 	<label>royal dryad</label>
-	<description>The dryad caste is universal. They can play both a defensive role and an aggressive one, providing significant support in combat. Unlike ordinary dryads, they grow and become stronger with each year of life (up to 2 years).</description>
+	<description>The dryad caste is universal. They can play both a defensive role and an aggressive one, providing significant support in combat.</description>
 	<displayedStats>
 	  <li>MaxHitPoints</li>
 	  <li>MoveSpeed</li>
@@ -13,9 +13,9 @@
 	  <!-- <li>ArmorRating_Heat</li> -->
 	  <li>CarryingCapacity</li>
 	</displayedStats>
-	<pawnKindDef>DryadGirlWVC</pawnKindDef>
+	<pawnKindDef>WVC_RoyalDryad_KL</pawnKindDef>
 	<hyperlinks>
-	  <ThingDef>DryadGirlWVC</ThingDef>
+	  <ThingDef>WVC_RoyalDryad_KL</ThingDef>
 	</hyperlinks>
 	<drawPosition>(0.833, 1)</drawPosition>
 	<requiredMemes>
@@ -26,7 +26,7 @@
   <GauranlenTreeModeDef>
 	<defName>AbyssDryad_Wolf_WVC</defName>
 	<label>abyss wolf dryad</label>
-	<description>A dryad caste specialized in aggression and damage-dealing attacks. The abyss wolf is so named because their usual habitat is deep underground. They are not very durable in close combat, but their attacks are deadly to opponents without resistance to corruption.</description>
+	<description>A dryad caste specialized in aggression and damage-dealing attacks. They are not very durable in close combat, but their attacks are deadly to opponents without resistance to toxins.</description>
 	<pawnKindDef>AbyssDryad_Wolf_WVC</pawnKindDef>
 	<drawPosition>(0.833, 0.833)</drawPosition>
 	<displayedStats Inherit="False">

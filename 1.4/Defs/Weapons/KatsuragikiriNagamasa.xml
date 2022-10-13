@@ -21,7 +21,7 @@
 	  <li>
 		<label>blade</label>
 		<capacities>
-		  <li>WVC_Cut_BlueArk</li>
+		  <li>Cut</li>
 		</capacities>
 		<power>20</power>
 		<cooldownTime>0.9</cooldownTime>
@@ -37,7 +37,7 @@
 	  <li>
 		<label>edge</label>
 		<capacities>
-		  <li>WVC_Cut_BlueArk</li>
+		  <li>Cut</li>
 		</capacities>
 		<power>20</power>
 		<cooldownTime>0.9</cooldownTime>

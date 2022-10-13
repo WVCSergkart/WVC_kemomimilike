@@ -65,28 +65,13 @@
 	  <leatherDef>WVC_LivingMetall</leatherDef>
 	  <baseHealthScale>0.7</baseHealthScale>
 	  <trainability>Intermediate</trainability>
-	  <!-- <baseBodySize>0.7</baseBodySize> -->
-	  <!-- <baseHealthScale>1</baseHealthScale> -->
-	  <!-- <lifeStageAges Inherit="False"> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Baby_WVC</def> -->
-			<!-- <minAge>0</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Clawer_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Clawer_Call</soundCall> -->
-		<!-- </li> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Juvenile_WVC</def> -->
-			<!-- <minAge>1</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Clawer_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Clawer_Call</soundCall> -->
-		<!-- </li> -->
-		<!-- <li> -->
-			<!-- <def>Alien_RoyalDryad_Adult_WVC</def> -->
-			<!-- <minAge>2</minAge> -->
-			<!-- <soundWounded>Pawn_Dryad_Clawer_Wounded</soundWounded> -->
-			<!-- <soundCall>Pawn_Dryad_Clawer_Call</soundCall> -->
-		<!-- </li> -->
-	  <!-- </lifeStageAges> -->
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalAdult</def>
+		  <soundWounded>Pawn_Dryad_Clawer_Wounded</soundWounded>
+		  <soundCall>Pawn_Dryad_Clawer_Call</soundCall>
+		</li>
+	  </lifeStageAges>
 	  <trainableTags>
 		<li>Basic</li>
 		<li>Combat</li>
@@ -118,7 +103,7 @@
 	  <li>
 		<label>left claw</label>
 		<capacities>
-		  <li>Scratch_AbyssCorruption_WVC</li>
+		  <li>ScratchToxic</li>
 		</capacities>
 		<power>17</power>
 		<cooldownTime>1.5</cooldownTime>
@@ -136,7 +121,7 @@
 	  <li>
 		<label>right claw</label>
 		<capacities>
-		  <li>Scratch_AbyssCorruption_WVC</li>
+		  <li>ScratchToxic</li>
 		</capacities>
 		<power>17</power>
 		<cooldownTime>1.5</cooldownTime>
@@ -153,7 +138,7 @@
 	  </li>
 	  <li>
 		<capacities>
-		  <li>Bite_AbyssCorruption_WVC</li>
+		  <li>ToxicBite</li>
 		</capacities>
 		<power>17</power>
 		<cooldownTime>2</cooldownTime>
@@ -210,25 +195,9 @@
 		  <texPath>WVC/Pawns/GI_Abyss/abysswolf_Default</texPath>
 		  <graphicClass>Graphic_Multi</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		  <drawSize>1.3</drawSize>
+		  <drawSize>1.5</drawSize>
 		</bodyGraphicData>
 	  </li>
-	  <!-- <li> -->
-		<!-- <bodyGraphicData> -->
-		  <!-- <texPath>WVC/Pawns/GI_Abyss/abysswolf_Default</texPath> -->
-		  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
-		  <!-- <shaderType>CutoutComplex</shaderType> -->
-		  <!-- <drawSize>1.4</drawSize> -->
-		<!-- </bodyGraphicData> -->
-	  <!-- </li> -->
-	  <!-- <li> -->
-		<!-- <bodyGraphicData> -->
-		  <!-- <texPath>WVC/Pawns/GI_Abyss/abysswolf_Default</texPath> -->
-		  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
-		  <!-- <shaderType>CutoutComplex</shaderType> -->
-		  <!-- <drawSize>1.5</drawSize> -->
-		<!-- </bodyGraphicData> -->
-	  <!-- </li> -->
 	</lifeStages>
   </PawnKindDef>
 

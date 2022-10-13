@@ -45,7 +45,7 @@
 	  <MeleeDodgeChance>1.0</MeleeDodgeChance>
 	  <MeleeHitChance>1.0</MeleeHitChance>
 	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
-	  <WVC_CorruptionSensitivity>0.0</WVC_CorruptionSensitivity>
+	  <!-- <WVC_CorruptionSensitivity>0.0</WVC_CorruptionSensitivity> -->
 	  <Mass>124</Mass>
 	  <!-- custom -->
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
