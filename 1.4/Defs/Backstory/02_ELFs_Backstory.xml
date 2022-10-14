@@ -26,17 +26,17 @@
 	<!-- ================================================================== -->
 
 	<AlienRace.AlienBackstoryDef Name="ELFs_SocialModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
-		<workDisables>
-			<li>Constructing</li>
-			<li>Mining</li>
-		</workDisables>
+		<!-- <workDisables> -->
+			<!-- <li>Constructing</li> -->
+			<!-- <li>Mining</li> -->
+		<!-- </workDisables> -->
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef Name="ELFs_WorkerModel_HumanoidBackstory_WVC" ParentName="ELFs_HumanoidBackstory_WVC" Abstract="True" WVC_Back_WorkTag="ELFsCanWorkToo">
-		<workDisables>
-			<li>Social</li>
-			<li>Intellectual</li>
-		</workDisables>
+		<!-- <workDisables> -->
+			<!-- <li>Social</li> -->
+			<!-- <li>Intellectual</li> -->
+		<!-- </workDisables> -->
 	</AlienRace.AlienBackstoryDef>
 
 	<!-- ================================================================== -->

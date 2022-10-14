@@ -19,14 +19,42 @@
 
 	<!--=====================================================================-->
 
-	<Operation Class="XmlExtensions.OptionalPatch">
-		<modId>honkai.girls.sergkart</modId>
-		<key>Humanlike_ELF_AllELFsCanDoAnyWork_WVC</key>
-		<defaultValue>false</defaultValue>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>ludeon.rimworld.biotech</li>
+		</mods>
+		<packageId>true</packageId>
 		<caseTrue>
-			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-				<xpath>/Defs/AlienRace.BackstoryDef[@WVC_Back_WorkTag="ELFsCanWorkToo"]/workDisables</xpath>
+
+			<Operation Class="PatchOperationAdd">
+			  <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseELFs_WVC"]/race</xpath>
+			  <value>
+				  <lifeStageWorkSettings Inherit="False">
+					<Firefighter>0</Firefighter>
+					<Patient>0</Patient>
+					<Doctor>0</Doctor>
+					<PatientBedRest>0</PatientBedRest>
+					<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+					<BasicWorker>2</BasicWorker>
+					<Warden>4</Warden>
+					<Handling>3</Handling>
+					<Cooking>3</Cooking>
+					<Hunting>3</Hunting>
+					<Construction>2</Construction>
+					<Growing>3</Growing>
+					<Mining>3</Mining>
+					<PlantCutting>4</PlantCutting>
+					<Smithing>5</Smithing>
+					<Tailoring>5</Tailoring>
+					<Art>5</Art>
+					<Crafting>5</Crafting>
+					<Hauling>1</Hauling>
+					<Cleaning>0</Cleaning>
+					<Research>5</Research>
+				  </lifeStageWorkSettings>
+			  </value>
 			</Operation>
+
 		</caseTrue>
 	</Operation>
 

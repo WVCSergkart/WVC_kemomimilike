@@ -26,8 +26,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_I_WVC</defName>
 	<label>1</label>
-	<!-- <healthScaleFactor>1.0</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>1.2</IncomingDamageFactor>
 	</statFactors>
@@ -36,8 +34,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_II_WVC</defName>
 	<label>2</label>
-	<!-- <healthScaleFactor>1.1</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
 	</statFactors>
@@ -46,8 +42,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_III_WVC</defName>
 	<label>3</label>
-	<!-- <healthScaleFactor>1.2</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.95</IncomingDamageFactor>
 	</statFactors>
@@ -56,8 +50,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_IV_WVC</defName>
 	<label>4</label>
-	<!-- <healthScaleFactor>1.3</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.9</IncomingDamageFactor>
 	</statFactors>
@@ -66,8 +58,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_V_WVC</defName>
 	<label>5</label>
-	<!-- <healthScaleFactor>1.4</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.85</IncomingDamageFactor>
 	</statFactors>
@@ -76,8 +66,6 @@
   <LifeStageDef ParentName="LifeStage_BaseELF_WVC">
 	<defName>LifeStage_ELF_VI_WVC</defName>
 	<label>6</label>
-	<!-- <healthScaleFactor>1.5</healthScaleFactor> -->
-	<!-- <meleeDamageFactor>1.0</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
 	</statFactors>
