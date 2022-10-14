@@ -2,8 +2,7 @@
 <Defs>
 
 	<PawnKindDef Name="Marker_PawnValkyrie_WVC" Abstract="True">
-		<!-- <apparelMoney>350~600</apparelMoney> -->
-		<apparelMoney>0</apparelMoney>
+		<apparelMoney>350~600</apparelMoney>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<initialWillRange>9~19</initialWillRange>
@@ -18,7 +17,6 @@
 		<techHediffsMoney>0</techHediffsMoney>
 		<defaultFactionType>PlayerFaction_Valkyrie_WVC</defaultFactionType>
 		<chronologicalAgeRange>100~2000</chronologicalAgeRange>
-		<apparelMoney>600</apparelMoney>
 		<apparelTags>
 			<li>Neolithic</li>
 			<li>IndustrialBasic</li>

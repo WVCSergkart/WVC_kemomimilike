@@ -156,8 +156,8 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<alienbodytypes>
-					</alienbodytypes>
+					<bodytypes>
+					</bodytypes>
 				</alienPartGenerator>
 			</generalSettings>
 			<raceRestriction>

@@ -8,9 +8,9 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<alienbodytypes>
+					<bodytypes>
 						<li>Body_Reshaper_WVC</li>
-					</alienbodytypes>
+					</bodytypes>
 					<customDrawSize>(1.2, 1.2)</customDrawSize>
 					<!-- <customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize> -->
 				</alienPartGenerator>

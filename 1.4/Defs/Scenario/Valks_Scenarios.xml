@@ -148,17 +148,17 @@
 				<factor>0</factor>
 			</li>
 
-			<li Class="KCSG.ScenPart_AddStartingStructure">
-				<def>VFEC_AddStartingStructure</def>
-				<structureLabel>ELF incubation base</structureLabel>
-				<nearMapCenter>True</nearMapCenter>
-				<chooseFrom>
-					<li>WVC_Mech_ILF_A</li>
-					<li>WVC_Mech_ILF_B</li>
-					<li>WVC_Mech_ILF_C</li>
-					<li>WVC_Mech_ILF_D</li>
-				</chooseFrom>
-			</li>
+			<!-- <li Class="KCSG.ScenPart_AddStartingStructure"> -->
+				<!-- <def>VFEC_AddStartingStructure</def> -->
+				<!-- <structureLabel>ELF incubation base</structureLabel> -->
+				<!-- <nearMapCenter>True</nearMapCenter> -->
+				<!-- <chooseFrom> -->
+					<!-- <li>WVC_Mech_ILF_A</li> -->
+					<!-- <li>WVC_Mech_ILF_B</li> -->
+					<!-- <li>WVC_Mech_ILF_C</li> -->
+					<!-- <li>WVC_Mech_ILF_D</li> -->
+				<!-- </chooseFrom> -->
+			<!-- </li> -->
 		
 	  </parts>
 	</scenario>

@@ -99,11 +99,11 @@
 			<alienPartGenerator>
 				<atlasScale>4</atlasScale>
 				<borderScale>1</borderScale>
-				<aliencrowntypes>
+				<headTypes>
 					<!-- invisible head -->
 					<li>WVC_InvisibleHead</li>
-				</aliencrowntypes>
-				<alienbodytypes>
+				</headTypes>
+				<bodytypes>
 					<li>Body_Aloy_WVC</li>
 					<li>Body_Cocogoat_WVC</li>
 					<li>Body_Delta_WVC</li>
@@ -134,7 +134,7 @@
 					<li MayRequire="psyche.kemomimihouse">Body_siro_WVC</li>
 					<li MayRequire="psyche.kemomimihouse">Body_sirof_WVC</li>
 					<li MayRequire="psyche.kemomimihouse">Body_yuki_WVC</li>
-				</alienbodytypes>
+				</bodytypes>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
 				<customDrawSize>(1.1, 1.1)</customDrawSize>
@@ -389,7 +389,6 @@
 	  <MeleeDodgeChance>10.0</MeleeDodgeChance>
 	  <MeleeHitChance>2.0</MeleeHitChance>
 	  <!-- custom -->
-	  <gestationPeriodDays>18</gestationPeriodDays>
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  <InjuryHealingFactor>1.5</InjuryHealingFactor>
 	  <Mass>46</Mass>
@@ -415,6 +414,7 @@
 	  <!-- <needsRest>true</needsRest> -->
 	  <hasGenders>false</hasGenders>
 	  <nameCategory>HumanStandard</nameCategory>
+	  <nameGenerator>WVC_MekaRaceNamer</nameGenerator>
 	  <!-- <body>Human</body> -->
 	  <body>Body_Valkyrie_WVC</body>
 	  <!-- <meatLabel>mutated human meat</meatLabel> -->
@@ -425,6 +425,7 @@
 	  <baseBodySize>0.7</baseBodySize>
 	  <baseHealthScale>1.0</baseHealthScale>
 	  <baseHungerRate>0.8</baseHungerRate>
+	  <gestationPeriodDays>18</gestationPeriodDays>
 	  <!-- <foodType>VegetarianRoughAnimal, OmnivoreHuman, OmnivoreAnimal</foodType> -->
 	  <foodType>OmnivoreHuman</foodType>
 	  <!-- <leatherDef>Leather_Human</leatherDef> -->
@@ -569,8 +570,8 @@
 	<alienRace>
 		<generalSettings>
 			<alienPartGenerator>
-				<alienbodytypes>
-				</alienbodytypes>
+				<bodytypes>
+				</bodytypes>
 			</alienPartGenerator>
 		</generalSettings>
 		<raceRestriction>

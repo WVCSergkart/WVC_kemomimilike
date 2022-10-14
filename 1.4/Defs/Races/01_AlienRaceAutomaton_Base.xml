@@ -31,12 +31,12 @@
 			<alienPartGenerator>
 				<atlasScale>4</atlasScale>
 				<borderScale>1</borderScale>
-				<aliencrowntypes>
+				<headTypes>
 					<li>WVC_InvisibleHead</li>
-				</aliencrowntypes>
-				<alienbodytypes>
+				</headTypes>
+				<bodytypes>
 					<!-- <li>Body_Reshaper_WVC</li> -->
-				</alienbodytypes>
+				</bodytypes>
 				<colorChannels>
 					<li>
 						<!-- always white or cause visual bugs -->

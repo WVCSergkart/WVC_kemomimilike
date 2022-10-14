@@ -25,14 +25,14 @@
 					</li>
 				</forcedRaceTraitEntries>
 				<alienPartGenerator>
-					<alienbodytypes Inherit="False">
+					<bodytypes Inherit="False">
 						<li>Body_ELF_Durandal_WVC</li>
 						<li>Body_ELF_Edge_WVC</li>
 						<li>Body_ELF_Jingwei_WVC</li>
 						<li>Body_ELF_Bella_WVC</li>
 						<li>Body_ELF_Selune_WVC</li>
 						<li>Body_ELF_Fuxi_WVC</li>
-					</alienbodytypes>
+					</bodytypes>
 					<customDrawSize>(0.9, 0.9)</customDrawSize>
 				</alienPartGenerator>
 			</generalSettings>
@@ -333,8 +333,8 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<alienbodytypes>
-					</alienbodytypes>
+					<bodytypes>
+					</bodytypes>
 				</alienPartGenerator>
 			</generalSettings>
 			<raceRestriction>
