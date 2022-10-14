@@ -20,8 +20,8 @@
 		<li IfModActive="ludeon.rimworld.royalty">1.4/Royalty</li>
 		<li IfModActive="ludeon.rimworld.ideology">1.4/Ideology</li>
 		<li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li>
-		<li IfModActive="vanillaexpanded.vpsycastse">1.4/VPE</li>
-		<!-- <li>1.4/NODES</li> -->
+		<!-- <li IfModActive="vanillaexpanded.vpsycastse">1.4/VPE</li> -->
+		<li IfModActive="imranfish.xmlextensions">1.4/XML_Extensions</li>
 	</v1.4>
 </loadFolders>
 

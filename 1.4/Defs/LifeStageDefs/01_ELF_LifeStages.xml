@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <LifeStageDef ParentName="LifeStage_Valkyrie_General_WVC" Name="LifeStage_BaseELF_WVC" Abstract="True">
+  <LifeStageDef Name="LifeStage_BaseELF_WVC" Abstract="True">
+	<label>elf</label>
+	<visible>false</visible>
+	<milkable>false</milkable>
+	<shearable>false</shearable>
+	<caravanRideable>false</caravanRideable>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
 	<reproductive>false</reproductive>
 	<foodMaxFactor>5</foodMaxFactor>
 	<hungerRateFactor>0.5</hungerRateFactor>
@@ -9,9 +15,11 @@
 	<canSleepWhileHeld>true</canSleepWhileHeld>
 	<meleeDamageFactor>0.6</meleeDamageFactor>
 	<!-- <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor> -->
+	<customMoodTipString>ELFs don't get nervous breakdowns.</customMoodTipString>
 	<statFactors>
 	  <PsychicEntropyGain MayRequire="ludeon.rimworld.royalty">0.0</PsychicEntropyGain>
 	  <PainShockThreshold>0.9</PainShockThreshold>
+	  <MentalBreakThreshold>0.0</MentalBreakThreshold>
 	</statFactors>
   </LifeStageDef>
 
@@ -42,7 +50,6 @@
 	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.95</IncomingDamageFactor>
-	  <MentalBreakThreshold>0.8</MentalBreakThreshold>
 	</statFactors>
   </LifeStageDef>
   
@@ -53,7 +60,6 @@
 	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.9</IncomingDamageFactor>
-	  <MentalBreakThreshold>0.5</MentalBreakThreshold>
 	</statFactors>
   </LifeStageDef>
   
@@ -64,7 +70,6 @@
 	<!-- <meleeDamageFactor>0.8</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.85</IncomingDamageFactor>
-	  <MentalBreakThreshold>0.2</MentalBreakThreshold>
 	</statFactors>
   </LifeStageDef>
 
@@ -75,7 +80,6 @@
 	<!-- <meleeDamageFactor>1.0</meleeDamageFactor> -->
 	<statFactors>
 	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
-	  <MentalBreakThreshold>0.0</MentalBreakThreshold>
 	</statFactors>
   </LifeStageDef>
 

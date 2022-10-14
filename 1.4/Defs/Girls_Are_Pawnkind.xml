@@ -2,6 +2,8 @@
 <Defs>
 
 	<PawnKindDef Name="Marker_PawnValkyrie_WVC" Abstract="True">
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
 		<apparelMoney>350~600</apparelMoney>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
@@ -16,7 +18,7 @@
 		<techHediffsChance>0</techHediffsChance>
 		<techHediffsMoney>0</techHediffsMoney>
 		<defaultFactionType>PlayerFaction_Valkyrie_WVC</defaultFactionType>
-		<chronologicalAgeRange>100~2000</chronologicalAgeRange>
+		<chronologicalAgeRange>0~2000</chronologicalAgeRange>
 		<apparelTags>
 			<li>Neolithic</li>
 			<li>IndustrialBasic</li>
@@ -30,8 +32,6 @@
 		<defName>Alien_Valkyrie_WVC</defName>
 		<label>valkyrie</label>
 		<race>Alien_Valkyrie_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<chronologicalAgeRange>0~2000</chronologicalAgeRange>
 		<backstoryFiltersOverride>
@@ -58,8 +58,6 @@
 		<defName>Alien_DryadMother_WVC</defName>
 		<label>gaurkyrie</label>
 		<race>Alien_DryadMother_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
 		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
 		<chronologicalAgeRange>0</chronologicalAgeRange>
 		<backstoryFiltersOverride>
@@ -76,10 +74,9 @@
 		<defName>Alien_ELF_WVC</defName>
 		<label>Equipment: Living Form</label>
 		<race>Alien_ELF_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
 		<extraSkillLevels>5</extraSkillLevels>
 		<abilities>
+			<li>Skip</li>
 			<li>Farskip</li>
 		</abilities>
 		<backstoryFiltersOverride>
@@ -98,13 +95,12 @@
 		<defName>Alien_Assembled_ELF_WVC</defName>
 		<label>Incubated: Living Form</label>
 		<race>Alien_ELF_WVC</race>
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
 		<!-- <extraSkillLevels>1</extraSkillLevels> -->
 		<chronologicalAgeRange>0</chronologicalAgeRange>
 		<apparelMoney>0</apparelMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<abilities>
+			<li>Skip</li>
 			<li>Farskip</li>
 		</abilities>
 		<backstoryFiltersOverride>
@@ -122,8 +118,6 @@
 	<!-- ====================Evolution==================== -->
 
 	<PawnKindDef MayRequire="vanillaexpanded.ideo.dryads" ParentName="Marker_PawnValkyrie_WVC" Name="WVC_EvolvedPawnKind_Base" Abstract="True">
-		<combatPower>30</combatPower>
-		<isFighter>false</isFighter>
 		<chronologicalAgeRange>0</chronologicalAgeRange>
 		<apparelMoney>0</apparelMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
@@ -148,6 +142,7 @@
 		<label>Evolved: Living Form</label>
 		<race>Alien_ELF_WVC</race>
 		<abilities>
+			<li>Skip</li>
 			<li>Farskip</li>
 		</abilities>
 	</PawnKindDef>

@@ -478,9 +478,9 @@
 	<stages>
 	  <li>
 		<partEfficiencyOffset>0.1</partEfficiencyOffset>
-		<statFactors>
-			<ToxicSensitivity>0.8</ToxicSensitivity>
-		</statFactors>
+		<statOffsets>
+		  <ToxicResistance>0.6</ToxicResistance>
+		</statOffsets>
 	  </li>
 	</stages>
 	<tags>

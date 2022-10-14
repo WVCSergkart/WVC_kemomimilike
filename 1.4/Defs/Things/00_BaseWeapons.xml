@@ -33,7 +33,8 @@
 	  <!-- <WVC_ExoticWeaponComponents>1</WVC_ExoticWeaponComponents> -->
 	  <!-- <Steel>100</Steel> -->
 	  <Plasteel>120</Plasteel>
-	  <!-- <WVC_UniversalFuel>86</WVC_UniversalFuel> -->
+	  <Uranium>33</Uranium>
+	  <WVC_UniversalFuel>44</WVC_UniversalFuel>
 	  <!-- <AIPersonaCore>1</AIPersonaCore> -->
 	  <VFE_ComponentMechanoid>5</VFE_ComponentMechanoid>
 	</costList>
@@ -41,9 +42,7 @@
 	  <li>
 		<compClass>CompQuality</compClass>
 	  </li>
-	  <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-		<!-- <isDualWeapon>true</isDualWeapon> -->
-	  </li>
+	  <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/> -->
 	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
 		<biocodeOnEquip>true</biocodeOnEquip>
 	  </li>

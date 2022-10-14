@@ -27,7 +27,7 @@
 		<armorPenetration>0.7</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
-			<def>Scratch_MechanitesPunch_WVC</def>
+			<def>EMP</def>
 			<amount>9</amount>
 			<chance>0.7</chance>
 		  </li>
@@ -43,7 +43,7 @@
 		<armorPenetration>0.7</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
-			<def>Scratch_MechanitesPunch_WVC</def>
+			<def>EMP</def>
 			<amount>9</amount>
 			<chance>0.7</chance>
 		  </li>

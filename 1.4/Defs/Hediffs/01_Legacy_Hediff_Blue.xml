@@ -123,10 +123,9 @@
 	<stages>
 	  <li>
 		<partEfficiencyOffset>-0.20</partEfficiencyOffset>
-		<statFactors>
-		  <!-- <ToxicSensitivity>0</ToxicSensitivity> -->
-		  <WVC_CorruptionSensitivity>0</WVC_CorruptionSensitivity>
-		</statFactors>
+		<statOffsets>
+		  <ToxicResistance>1</ToxicResistance>
+		</statOffsets>
 	  </li>
 	</stages>
 	<tags>

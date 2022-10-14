@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_UltraComponents_Base">
-	<defName>WVC_ExoticWeaponComponents</defName>
-	<label>exotic weapon blank</label>
-	<description>Very advanced components for equally advanced weapon.</description>
-	<graphicData>
-	  <texPath>WVC/Stuff/WeaponComponents</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.1</drawSize>
-	</graphicData>
-	<thingCategories Inherit="False">
-	  <li>Manufactured</li>
-	</thingCategories>
-	<stackLimit>5</stackLimit>
-	<statBases>
-	  <MaxHitPoints>210</MaxHitPoints>
-	  <MarketValue>2450</MarketValue>
-	</statBases>
-  </ThingDef>
+  <!-- <ThingDef MayRequire="honkai.girls.sergkart" ParentName="WVC_UltraComponents_Base"> -->
+	<!-- <defName>WVC_ExoticWeaponComponents</defName> -->
+	<!-- <label>exotic weapon blank</label> -->
+	<!-- <description>Very advanced components for equally advanced weapon.</description> -->
+	<!-- <graphicData> -->
+	  <!-- <texPath>WVC/Stuff/WeaponComponents</texPath> -->
+	  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+	  <!-- <drawSize>1.1</drawSize> -->
+	<!-- </graphicData> -->
+	<!-- <thingCategories Inherit="False"> -->
+	  <!-- <li>Manufactured</li> -->
+	<!-- </thingCategories> -->
+	<!-- <stackLimit>5</stackLimit> -->
+	<!-- <statBases> -->
+	  <!-- <MaxHitPoints>210</MaxHitPoints> -->
+	  <!-- <MarketValue>2450</MarketValue> -->
+	<!-- </statBases> -->
+  <!-- </ThingDef> -->
 
   <!-- ===================================================================== -->
 

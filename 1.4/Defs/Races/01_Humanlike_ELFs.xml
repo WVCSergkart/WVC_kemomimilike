@@ -177,13 +177,6 @@
 					<!-- </li> -->
 				<!-- </researchList> -->
 				<apparelList>
-					<li>ChipELF_Empty_WVC</li>
-					<li>ChipELF_MartialArt_WVC</li>
-					<li>ChipELF_Medical_WVC</li>
-					<li>ChipELF_Research_WVC</li>
-					<li>ChipELF_Social_WVC</li>
-					<li>ChipELF_Miner_WVC</li>
-					<li>ChipELF_Labor_WVC</li>
 				</apparelList>
 				<whiteApparelList>
 					<!-- <li>Apparel_FlakVest</li> -->
