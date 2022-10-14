@@ -72,7 +72,7 @@
 				<value>
 					<li>PlayerFaction_Valkyrie_WVC</li>
 					<li>PlayerFaction_ELF_WVC</li>
-					<li>PlayerFaction_Node_WVC</li>
+					<!-- <li>PlayerFaction_Node_WVC</li> -->
 				</value>
 			</Operation>
 			<Operation Class="PatchOperationAdd">

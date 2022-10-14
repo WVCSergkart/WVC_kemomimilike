@@ -8,10 +8,10 @@
 		<caseTrue>
 
 			<Operation Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC" or @Name="BaseELFs_WVC"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC" or @Name="BaseELFs_WVC"]/alienRace/generalSettings/alienPartGenerator/bodytypes</xpath>
 				<value>
-					<alienbodytypes Inherit="False">
-					</alienbodytypes>
+					<bodytypes Inherit="False">
+					</bodytypes>
 				</value>
 			</Operation>
 
@@ -24,7 +24,6 @@
 					<li>defName</li> <!-- defName or @Name -->
 					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
 					<li>Alien_DryadMother_WVC</li>
-					<li>Alien_RoyalDryad_WVC</li>
 					<li>ludeon.rimworld</li> <!-- ( MayRequire="ludeon.rimworld") -->
 					<li>1</li> <!-- Number 1,2,3 -->
 					<li>true</li> <!-- True or False -->
@@ -37,7 +36,6 @@
 					<li>defName</li> <!-- defName or @Name -->
 					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
 					<li>Alien_DryadMother_WVC</li>
-					<li>Alien_RoyalDryad_WVC</li>
 					<li>ludeon.rimworld</li>
 					<li>2</li> <!-- Number 1,2,3 -->
 					<li>false</li> <!-- True or False -->
@@ -50,7 +48,6 @@
 					<li>defName</li> <!-- defName or @Name -->
 					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
 					<li>Alien_DryadMother_WVC</li>
-					<li>Alien_RoyalDryad_WVC</li>
 					<li>ludeon.rimworld</li> <!-- ( MayRequire="ludeon.rimworld") -->
 					<li>3</li> <!-- Number 1,2,3 -->
 					<li>false</li> <!-- True or False -->
@@ -63,7 +60,6 @@
 					<li>defName</li>
 					<li>Alien_Valkyrie_WVC</li>
 					<li>Alien_DryadMother_WVC</li>
-					<li>Alien_RoyalDryad_WVC</li>
 					<li>ludeon.rimworld</li>
 					<li>4</li>
 					<li>false</li>
