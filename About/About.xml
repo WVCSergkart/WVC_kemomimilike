@@ -1,18 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
 <ModMetaData>
-	<!-- Don't use a name, use an ID -->
 	<name>WVC - kemomimilike</name>
-	<!-- Don't use a name, use an ID -->
 	<author>Sergkart</author>
 	<url>https://steamcommunity.com/profiles/76561198019114858/myworkshopfiles/?appid=294100</url>
 	<supportedVersions>
 		<li>1.3</li>
 		<li>1.4</li>
 	</supportedVersions>
-	<!-- Use an ID! -->
 	<packageId>honkai.girls.sergkart</packageId>
-	<!-- Use an ID! -->
 	<description>This mod was inspired by kemomimihouse. I wanted to make monster-like girls who could be of great help to the colony and just be cute. Initially, I tried to repeat the style, but it didn’t work out for me and I decided to do it my own way. The mod is in a state of endless development and will be constantly updated with content.
 The characters and weapons are made on the basis of games (Honkai/Genshin Impact), some descriptions and names are also taken from there, but the main part of the mod was invented by me. The mod does not copy the main idea but have some support from it. There may be names taken from the original source, but globally, only the images of the characters are borrowed.</description>
 	<modDependencies>
@@ -24,13 +20,11 @@ The characters and weapons are made on the basis of games (Honkai/Genshin Impact
 			<packageId>Ludeon.RimWorld.Ideology</packageId>
 			<displayName>Ideology</displayName>
 		</li>
-		<!-- - -->
 		<li>
 			<packageId>wvc.sergkart.core</packageId>
 			<displayName>WVC - Core</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2815269136</steamWorkshopUrl>
 		</li>
-		<!-- - -->
 		<li>
 			<packageId>imranfish.xmlextensions</packageId>
 			<displayName>XML Extensions</displayName>
@@ -42,7 +36,6 @@ The characters and weapons are made on the basis of games (Honkai/Genshin Impact
 			<displayName>Humanoid Alien Races</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
 		</li>
-		<!-- - -->
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
@@ -54,14 +47,8 @@ The characters and weapons are made on the basis of games (Honkai/Genshin Impact
 		<li>wvc.sergkart.nodes</li>
 	</loadAfter>
 	<loadBefore>
-		<!-- <li>kimomimilikelimitpatch.sergkart</li> -->
 		<li>krkr.rocketman</li>
-		<!-- <li>dontsleep.kemomimi.sergkart</li> -->
-		<!-- <li>Alt.Hard.Kemomimi</li> -->
 	</loadBefore>
 	<incompatibleWith>
-		<!-- <li>Sergkart.Wanderer.Kemomimi.Insect</li> -->
-		<!-- - -->
-		<!-- <li>honkai.girls.sergkart.beta</li> -->
 	</incompatibleWith>
 </ModMetaData>
