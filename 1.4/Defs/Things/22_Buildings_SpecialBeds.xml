@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="AncientBuildings_WVC" WVC_Tag="NoHeadsBeds">
+  <ThingDef MayRequire="oskarpotocki.vfe.classical" ParentName="AncientBuildings_WVC" WVC_Tag="NoHeadsBeds">
 	<defName>WVC_SleepPod</defName>
 	<label>sleep pod</label>
 	<description>Capsule for serving humanoid creatures, organic or semi-organic. Also suitable for sleeping.</description>
@@ -56,7 +56,7 @@
 	  <!-- <artificialForMeditationPurposes>false</artificialForMeditationPurposes> -->
 	  <bed_showSleeperBody>False</bed_showSleeperBody>
 	  <bed_healPerDay>50</bed_healPerDay>
-	  <bed_maxBodySize>0.71</bed_maxBodySize>
+	  <!-- <bed_maxBodySize>0.71</bed_maxBodySize> -->
 	  <buildingTags>
 		<li>Bed</li>
 	  </buildingTags>
@@ -84,7 +84,7 @@
 
   <!-- ===================================================================== -->
 
-  <ThingDef MayRequire="honkai.girls.sergkart" ParentName="MechanoidBuildings_WVC" WVC_Tag="NoHeadsBeds">
+  <ThingDef MayRequire="oskarpotocki.vfe.classical" ParentName="MechanoidBuildings_WVC" WVC_Tag="NoHeadsBeds">
 	<defName>ELF_MendingStation_WVC</defName>
 	<label>mending capsule</label>
 	<description>Capsule for serving humanoid creatures, organic or semi-organic. The size of the capsule is able to accommodate up to three creatures at the same time.\n\nThis is a complex device, most of which is underground, it requires a special surface.</description>
@@ -110,7 +110,7 @@
 	  <bed_healPerDay>50</bed_healPerDay>
 	  <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
 	  <ai_chillDestination>false</ai_chillDestination>
-	  <bed_maxBodySize>0.53</bed_maxBodySize>
+	  <!-- <bed_maxBodySize>0.53</bed_maxBodySize> -->
 	  <buildingTags>
 		<li>Bed</li>
 	  </buildingTags>

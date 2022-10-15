@@ -287,57 +287,6 @@
 				</value>
 			</Operation>
 
-			<!-- <Operation Class="XmlExtensions.FindMod"> -->
-				<!-- <mods> -->
-					<!-- <li>isorex.communityframework</li> -->
-				<!-- </mods> -->
-				<!-- <packageId>true</packageId> -->
-				<!-- <caseFalse> -->
-
-				<!-- </caseFalse> -->
-				<!-- <caseTrue> -->
-
-					<!-- <Operation Class="PatchOperationAdd"> -->
-						<!-- <xpath>/Defs/ThingDef[defName="WVC_CapsuleILF"]/comps</xpath> -->
-						<!-- <value> -->
-						   <!-- <li Class="CompProperties_Hatcher"> -->
-							  <!-- <hatcherDaystoHatch>2</hatcherDaystoHatch> -->
-							  <!-- <hatcherPawn>Alien_Assembled_ELF_WVC</hatcherPawn> -->
-						   <!-- </li> -->
-						<!-- </value> -->
-					<!-- </Operation> -->
-
-					<!-- <Operation Class="PatchOperationAdd"> -->
-						<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_ELF_WVC"]/comps</xpath> -->
-						<!-- <value> -->
-						   <!-- <li Class="CompProperties_Hatcher"> -->
-							  <!-- <hatcherDaystoHatch>0.0001</hatcherDaystoHatch> -->
-							  <!-- <hatcherPawn>Alien_ELF_WVC</hatcherPawn> -->
-						   <!-- </li> -->
-						<!-- </value> -->
-					<!-- </Operation> -->
-					<!-- <Operation Class="PatchOperationAdd"> -->
-						<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Valkyrie_WVC"]/comps</xpath> -->
-						<!-- <value> -->
-						   <!-- <li Class="CompProperties_Hatcher"> -->
-							  <!-- <hatcherDaystoHatch>0.0001</hatcherDaystoHatch> -->
-							  <!-- <hatcherPawn>Alien_Valkyrie_WVC</hatcherPawn> -->
-						   <!-- </li> -->
-						<!-- </value> -->
-					<!-- </Operation> -->
-					<!-- <Operation Class="PatchOperationAdd"> -->
-						<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Gaurkyrie_WVC"]/comps</xpath> -->
-						<!-- <value> -->
-						   <!-- <li Class="CompProperties_Hatcher"> -->
-							  <!-- <hatcherDaystoHatch>0.0001</hatcherDaystoHatch> -->
-							  <!-- <hatcherPawn>Alien_DryadMother_WVC</hatcherPawn> -->
-						   <!-- </li> -->
-						<!-- </value> -->
-					<!-- </Operation> -->
-
-				<!-- </caseTrue> -->
-			<!-- </Operation> -->
-
 		</caseTrue>
 	</Operation>
 
@@ -403,32 +352,6 @@
 				</arguments>
 			</Operation>
 
-			<!-- <Operation Class="XmlExtensions.FindMod"> -->
-				<!-- <mods> -->
-					<!-- <li>vanillaexpanded.vpsycastse</li> -->
-				<!-- </mods> -->
-				<!-- <packageId>true</packageId> -->
-				<!-- <caseTrue> -->
-				<!-- </caseTrue> -->
-				<!-- <caseFalse> -->
-
-			<!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
-				<!-- <modId>honkai.girls.sergkart</modId> -->
-				<!-- <key>Mutations_HediffGiverSet_SuperPowersAbilities_WVC</key> -->
-				<!-- <defaultValue>true</defaultValue> -->
-				<!-- <caseTrue> -->
-					<!-- <Operation Class="PatchOperationAdd"> -->
-						<!-- <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/race/hediffGiverSets</xpath> -->
-						<!-- <value> -->
-							<!-- <li MayRequire="ludeon.rimworld.royalty">HediffGiverSet_SuperPowersAbilities_WVC</li> -->
-						<!-- </value> -->
-					<!-- </Operation> -->
-				<!-- </caseTrue> -->
-			<!-- </Operation> -->
-
-				<!-- </caseFalse> -->
-			<!-- </Operation> -->
-
 			<Operation Class="XmlExtensions.OptionalPatch">
 				<modId>honkai.girls.sergkart</modId>
 				<key>Mutations_HediffGiverSet_VFEI_WVC</key>
@@ -473,65 +396,6 @@
 	</Operation>
 
 	<!--=====================================================================-->
-
-	<Operation Class="XmlExtensions.FindMod">
-		<mods>
-			<li>ceteam.combatextended</li>
-		</mods>
-		<packageId>true</packageId>
-		<caseFalse>
-
-			<Operation Class="XmlExtensions.OptionalPatch">
-				<modId>honkai.girls.sergkart</modId>
-				<key>ExtraSetting_ApparelWhiteListPatch_ValksOrAll_WVC</key>
-				<defaultValue>false</defaultValue>
-				<caseFalse>
-
-					<Operation Class="XmlExtensions.ApplyPatch">
-						<patchName>Autopatcher_whiteApparelListPatch_Patch_WVC</patchName>
-						<arguments>
-							<li>ApparelBase</li>
-							<li>[@Name="BaseValkyrie_WVC"]</li>
-						</arguments>
-					</Operation>
-
-				</caseFalse>
-			</Operation>
-
-			<!-- Hats -->
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_AllHats</patchName>
-				<arguments>
-					<li>HatBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_AllHats</patchName>
-				<arguments>
-					<li>HatMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_AllHats</patchName>
-				<arguments>
-					<li>ArmorHelmetMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_WhiteApparelPatch_AllHats</patchName>
-				<arguments>
-					<li>NobleHatMakeableBase</li>
-					<li>[@Name="BaseValkyrie_WVC"]</li>
-				</arguments>
-			</Operation>
-
-		</caseFalse>
-		<caseTrue>
-		</caseTrue>
-	</Operation>
 
 	<Operation Class="XmlExtensions.ApplyPatch">
 		<patchName>ThoughtsOpinion_Autopatcher_WVC</patchName>

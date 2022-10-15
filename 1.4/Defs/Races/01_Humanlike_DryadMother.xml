@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" Name="BaseDryadMother_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" Name="BaseDryadMother_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True" WVC_Tag="SkinPatchInBed">
 		<!-- <defName>Alien_DryadMother_WVC</defName> -->
 		<!-- <label>&lt;color=#f5ffa2&gt;Dryad mother&lt;/color&gt;</label> -->
 		<!-- Гауркирия -->
@@ -19,7 +19,19 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<customDrawSize>(1.2, 1.2)</customDrawSize>
+					<!-- <customDrawSize>(1.2, 1.2)</customDrawSize> -->
+					<bodyAddons Inherit="False">
+					  <li>
+						<path>WVC/KL_Races/Default/Skin</path>
+						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+						<drawSize>(1.2,1.2)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<thoughtSettings>
@@ -147,7 +159,7 @@
 		</damageMultipliers>
 	</AlienRace.ThingDef_AlienRace>
 
-	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="BaseDryadMother_WVC">
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="BaseDryadMother_WVC" WVC_Tag="SkinPatchInBed">
 		<defName>Alien_DryadMother_WVC</defName>
 		<label>gaurkyrie</label>
 		<descriptionHyperlinks>
@@ -158,6 +170,8 @@
 				<alienPartGenerator>
 					<bodytypes>
 					</bodytypes>
+					<bodyAddons>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<raceRestriction>

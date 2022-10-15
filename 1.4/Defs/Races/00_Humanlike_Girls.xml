@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <AlienRace.ThingDef_AlienRace ParentName="GeneralThing_BaseValkyrie_WVC" Name="BaseValkyrie_WVC" Abstract="True">
+  <AlienRace.ThingDef_AlienRace ParentName="GeneralThing_BaseValkyrie_WVC" Name="BaseValkyrie_WVC" Abstract="True" WVC_Tag="SkinPatchInBed">
 	<!-- <defName>Alien_Valkyrie_WVC</defName> -->
 	<label>valkyrie</label>
 	<description>Valkyries - an ancient race created to resist the mechanoids. Despite all the genetic changes, they are almost indistinguishable from humans in appearance, with the exception of the not rare presence of tails, horns, additional pairs of ears and other minor distinguishing features.&lt;color=#a2c8ff&gt;\n\nAccording to the original idea, mutations were supposed to be a replacement for the degradation of organs and not be so obvious. However, with the change of generations, less "human" and more "alien" representatives of this race began to appear, some of which are only indirectly related to the valkyries.\n\nOne of the significant genetic deviations was the complete degeneration of the male half of this race, which is why this race consists entirely of girls and was called the valkyries. But despite this, the representatives of the valkyries race have full compatibility with non-genetically modified humans, thanks to which they have not become extinct.&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Valkyries have a significant bonus to melee and survivability, which compensates for the inability to wear some armor.</description>
@@ -100,49 +100,19 @@
 				<atlasScale>4</atlasScale>
 				<borderScale>1</borderScale>
 				<headTypes>
-					<!-- invisible head -->
 					<li>WVC_InvisibleHead</li>
 				</headTypes>
 				<bodytypes>
-					<li>Body_Aloy_WVC</li>
-					<li>Body_Cocogoat_WVC</li>
-					<li>Body_Delta_WVC</li>
-					<li>Body_Haxxor_WVC</li>
-					<li>Body_Lily_WVC</li>
-					<li>Body_Roza_WVC</li>
-					<li>Body_Sayu_WVC</li>
-					<li>Body_Yae_WVC</li>
-					<li>Body_Yoimiya_WVC</li>
-					<li>Body_Lumine_WVC</li>
-					<li>Body_Ayaka_WVC</li>
-					<!-- Insects -->
-					<li MayRequire="pupa.insectgirls">Body_baier_WVC</li>
-					<li MayRequire="pupa.insectgirls">Body_zhuer_WVC</li>
-					<li MayRequire="pupa.insectgirls">Body_kuoer_WVC</li>
-					<li MayRequire="pupa.insectgirls">Body_jiaer_WVC</li>
-					<li MayRequire="pupa.insectgirls">Body_buer_WVC</li>
-					<li MayRequire="pupa.insectgirls">Body_juer_WVC</li>
-					<!-- House -->
-					<li MayRequire="psyche.kemomimihouse">Body_akame_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_aome_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_hana_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_kon_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_konf_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_kohime_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_kuro_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_miko_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_siro_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_sirof_WVC</li>
-					<li MayRequire="psyche.kemomimihouse">Body_yuki_WVC</li>
+					<li>Female</li>
 				</bodytypes>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
-				<customDrawSize>(1.1, 1.1)</customDrawSize>
-				<customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize>
-				<!-- invisible headwears -->
+				<!-- invisible body -->
+				<customDrawSize>(0.001, 0.001)</customDrawSize>
+				<customPortraitDrawSize>(0.001, 0.001)</customPortraitDrawSize>
 				<customHeadDrawSize>(0.001, 0.001)</customHeadDrawSize>
-				<!-- on portrait too -->
 				<customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
+				<!-- invisible body -->
 				<headOffset>(0.0, 0.0)</headOffset>
 				<colorChannels>
 					<li>
@@ -158,6 +128,19 @@
 						</first>
 					</li>
 				</colorChannels>
+				<!-- main body -->
+				<bodyAddons>
+				  <li>
+					<path>WVC/KL_Races/Default/Skin</path>
+					<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+					<drawSize>(1.1,1.1)</drawSize>
+					<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+					<drawnInBed>true</drawnInBed>
+					<drawnDesiccated>true</drawnDesiccated>
+					<colorChannel>skin</colorChannel>
+					<shaderType>CutoutComplex</shaderType>
+				  </li>
+				</bodyAddons>
 			</alienPartGenerator>
 		</generalSettings>
 
@@ -165,7 +148,7 @@
 
 		<graphicPaths>
 			<li>
-				<body>WVC/Pawns/Bodies/</body>
+				<body>WVC/BaseInvisibleHead/</body>
 				<head>WVC/BaseInvisibleHead/</head>
 				<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 				<!-- <skull>WVC/BaseInvisibleHead/Head</skull> -->
@@ -257,59 +240,10 @@
 					<!-- </projects> -->
 				<!-- </li> -->
 			<!-- </researchList> -->
-			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+			<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 			<apparelList>
-				<!-- = -->
-				<!-- <li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Blindfold</li> -->
-				<!-- <li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_SheerVeil</li> -->
 			</apparelList>
 			<whiteApparelList>
-				<li MayRequire="vanillaexpanded.vpsycastse">VPE_Psyring</li>
-				<!-- <li>Apparel_GirlyUnderwear_WVC</li> -->
-				<li>WVC_Apparel_PerfectUnderwear</li>
-				<li>WVC_Apparel_WarmUnderwear</li>
-				<li>WVC_Apparel_SummerUnderwear</li>
-				<li>WVC_Apparel_ThermalUnderwear</li>
-				<li>WVC_Apparel_ExoticUnderwear</li>
-				<li>WVC_Apparel_MechanoidShieldBelt</li>
-				<li MayRequire="ludeon.rimworld.ideology">WVC_Apparel_Shibari</li>
-				<!-- = -->
-				<li>Apparel_PsychicShockLance</li>
-				<li>Apparel_PsychicInsanityLance</li>
-				<li>Apparel_SmokepopBelt</li>
-				<li>Apparel_ShieldBelt</li>
-				<li MayRequire="ludeon.rimworld.royalty">Apparel_PackJump</li>
-				<li MayRequire="ludeon.rimworld.royalty">Apparel_PackBroadshield</li>
-				<!-- Vanilla Expanded -->
-				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Boots</li> -->
-				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Shoes</li> -->
-				<!-- <li MayRequire="vanillaexpanded.vappe">VAE_Handwear_Gloves</li> -->
-				<!-- Accessories -->
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_Backpack</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_BattleBanner</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_MedicBag</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_Quiver</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_ToolBelt</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_AmmoPack</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_ExplosiveBelt</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_RangedShieldBelt</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_RessurectorBelt</li>
-				<li MayRequire="vanillaexpanded.vaeaccessories">VAEA_Apparel_MiniTurretPack</li>
-				<!-- Medieval Overhaul -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesLeather</li> -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesSplinted</li> -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Handwear_GlovesPlate</li> -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsLeather</li> -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsSplinted</li> -->
-				<!-- <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Footwear_BootsPlate</li> -->
-				<!-- SoS -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_EVA_Bubble_WVC</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBody</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmet</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavy</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_SpaceSurvivalBelt</li> -->
-				<!-- <li MayRequire="kentington.saveourship2">Apparel_HologramRelay</li> -->
 			</whiteApparelList>
 			<blackApparelList>
 			</blackApparelList>
@@ -358,10 +292,10 @@
 	  <MoveSpeed>5.9</MoveSpeed>
 	  <!-- <MoveSpeed>5.6</MoveSpeed> -->
 	  <MarketValue>2280</MarketValue>
-	  <ComfyTemperatureMin>-18</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>36</ComfyTemperatureMax>
-	  <!-- <ComfyTemperatureMin>-5</ComfyTemperatureMin> -->
-	  <!-- <ComfyTemperatureMax>26</ComfyTemperatureMax> -->
+	  <!-- <ComfyTemperatureMin>-18</ComfyTemperatureMin> -->
+	  <!-- <ComfyTemperatureMax>36</ComfyTemperatureMax> -->
+	  <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>26</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
 	  <MeatAmount>40</MeatAmount>
 	  <LeatherAmount>25</LeatherAmount>
@@ -561,7 +495,7 @@
 
   <!-- ==================================================================== -->
 
-  <AlienRace.ThingDef_AlienRace ParentName="BaseValkyrie_WVC">
+  <AlienRace.ThingDef_AlienRace ParentName="BaseValkyrie_WVC" WVC_Tag="SkinPatchInBed">
 	<defName>Alien_Valkyrie_WVC</defName>
 	<label>valkyrie</label>
 	<descriptionHyperlinks>
@@ -572,6 +506,8 @@
 			<alienPartGenerator>
 				<bodytypes>
 				</bodytypes>
+				<bodyAddons>
+				</bodyAddons>
 			</alienPartGenerator>
 		</generalSettings>
 		<raceRestriction>

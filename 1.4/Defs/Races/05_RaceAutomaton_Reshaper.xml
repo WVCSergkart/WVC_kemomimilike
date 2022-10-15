@@ -8,11 +8,23 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<bodytypes>
-						<li>Body_Reshaper_WVC</li>
-					</bodytypes>
-					<customDrawSize>(1.2, 1.2)</customDrawSize>
+					<!-- <bodytypes> -->
+						<!-- <li>Body_Reshaper_WVC</li> -->
+					<!-- </bodytypes> -->
+					<!-- <customDrawSize>(1.2, 1.2)</customDrawSize> -->
 					<!-- <customPortraitDrawSize>(1.2, 1.2)</customPortraitDrawSize> -->
+					<bodyAddons>
+					  <li>
+						<path>WVC/KL_Races/Automatons/Reshaper</path>
+						<drawSizePortrait>(1.5,1.5)</drawSizePortrait>
+						<drawSize>(1.2,1.2)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 		</alienRace>

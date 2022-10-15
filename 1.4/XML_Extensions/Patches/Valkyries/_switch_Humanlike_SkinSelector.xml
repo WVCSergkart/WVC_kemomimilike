@@ -8,107 +8,76 @@
 		<caseTrue>
 
 			<Operation Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC" or @Name="BaseELFs_WVC"]/alienRace/generalSettings/alienPartGenerator/bodytypes</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Valkyrie_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 				<value>
-					<bodytypes Inherit="False">
-					</bodytypes>
+					<bodyAddons Inherit="False">
+					  <li>
+						<path>WVC/KL_Races/Valks/Skin</path>
+						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+						<drawSize>(1.1,1.1)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_ELF_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+				<value>
+					<bodyAddons Inherit="False">
+					  <li>
+						<path>WVC/KL_Races/ELFs/Skin</path>
+						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+						<drawSize>(0.9,0.9)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_DryadMother_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+				<value>
+					<bodyAddons Inherit="False">
+					  <li>
+						<path>WVC/KL_Races/Gaur/Skin</path>
+						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+						<drawSize>(1.2,1.2)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
 				</value>
 			</Operation>
 
 			<!-- ===================================================== -->
 
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_SkinSelector_Second_Patch_WVC</patchName>
-				<arguments>
-					<li>Marker_HG_Valkyrie_BodieType_WVC</li>
-					<li>defName</li> <!-- defName or @Name -->
-					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
-					<li>Alien_DryadMother_WVC</li>
-					<li>ludeon.rimworld</li> <!-- ( MayRequire="ludeon.rimworld") -->
-					<li>1</li> <!-- Number 1,2,3 -->
-					<li>true</li> <!-- True or False -->
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_SkinSelector_Second_Patch_WVC</patchName>
-				<arguments>
-					<li>Marker_IG_Valkyrie_BodieType_WVC</li>
-					<li>defName</li> <!-- defName or @Name -->
-					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
-					<li>Alien_DryadMother_WVC</li>
-					<li>ludeon.rimworld</li>
-					<li>2</li> <!-- Number 1,2,3 -->
-					<li>false</li> <!-- True or False -->
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_SkinSelector_Second_Patch_WVC</patchName>
-				<arguments>
-					<li>Marker_KH_Valkyrie_BodieType_WVC</li>
-					<li>defName</li> <!-- defName or @Name -->
-					<li>Alien_Valkyrie_WVC</li> <!-- Alien_Valkyrie_WVC -->
-					<li>Alien_DryadMother_WVC</li>
-					<li>ludeon.rimworld</li> <!-- ( MayRequire="ludeon.rimworld") -->
-					<li>3</li> <!-- Number 1,2,3 -->
-					<li>false</li> <!-- True or False -->
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_SkinSelector_Second_Patch_WVC</patchName>
-				<arguments>
-					<li>Marker_Mimikko_Valkyrie_BodieType_WVC</li>
-					<li>defName</li>
-					<li>Alien_Valkyrie_WVC</li>
-					<li>Alien_DryadMother_WVC</li>
-					<li>ludeon.rimworld</li>
-					<li>4</li>
-					<li>false</li>
-				</arguments>
-			</Operation>
+		</caseTrue>
+	</Operation>
 
-			<!-- ===================================================== -->
+	<!-- ===================================================== -->
 
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_SkinSelectorPatch_ImageVersion</patchName>
-				<arguments>
-					<li>Marker_HG_Valkyrie_BodieType_WVC</li>
-					<li>true</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_SkinSelectorPatch_ImageVersion</patchName>
-				<arguments>
-					<li>Marker_IG_Valkyrie_BodieType_WVC</li>
-					<li>false</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_SkinSelectorPatch_ImageVersion</patchName>
-				<arguments>
-					<li>Marker_KH_Valkyrie_BodieType_WVC</li>
-					<li>false</li>
-				</arguments>
-			</Operation>
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>WVC_SkinSelectorPatch_ImageVersion</patchName>
-				<arguments>
-					<li>Marker_Mimikko_Valkyrie_BodieType_WVC</li>
-					<li>false</li>
-				</arguments>
-			</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>honkai.girls.sergkart</modId>
+		<key>Valkyries_SkinSelector_SkinPatchInBed_WVC</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
 
-			<!-- ===================================================== -->
-
-			<Operation Class="XmlExtensions.ApplyPatch">
-				<patchName>Autopatcher_SkinSelectorELF_Patch_WVC</patchName>
-				<arguments>
-					<li>Marker_HG_ELFs_BodieType_WVC</li>
-					<!-- <li>AlienRace.ThingDef_AlienRace</li> -->
-					<!-- <li>BaseELFs_WVC</li> -->
-				</arguments>
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[@WVC_Tag="SkinPatchInBed"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li/drawnInBed</xpath>
+				<value>
+					<drawnInBed>falue</drawnInBed>
+				</value>
 			</Operation>
-
-			<!-- ===================================================== -->
 
 		</caseTrue>
 	</Operation>

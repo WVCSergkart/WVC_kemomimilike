@@ -10,7 +10,7 @@
 			<!--=====================================================================-->
 
 			<li Class="XmlExtensions.Setting.Text">
-				<text>Skin selection settings. All are enabled by default.\n\n- Do not affect existing girls\n- Only affect humanoids\n- After enabling, a reboot is required for the list to appear</text>
+				<text>Skin selection settings. All are enabled by default.\n\nSince 1.4 the skin selector now works differently and requires manual intervention.\n\nNow to change the skin you need to go to the mod folder and follow the path "Textures/WVC/KL_Races". There are 5 folders there.\n\nDefault - skins for Valkyries and Gaurkyries are taken from here\nELF_Default - same but for ELFs\n\nThese folders are used for race, by default.\n\nTo change skins for races, you first need to enable the skin selector. This will change skin paths for all 3 races.\n\nELFs - folder for ELFs skins\nValks - for Valkyries\nGaur - for Gaurkyries\n\nSelect the skins you need from the folders named "Default" and copy them to the appropriate folders.\nPlease note that the names of the skins must be in this order!\n\nSkin_north (_east _west _south)\nSkin1_north\nSkin2_north\n\nIf you mix up or miss the number, then the skin simply will not be displayed.\n\nQ: Why such a radical and uncomfortable change?\nA: Skins for girls have been rewritten from scratch, now body addons are used instead of bodies. This is done to allow girls to use clothes without restrictions and visual bugs. It also solves the problem with displaying sleeping girls.\n\nDo not delete anything from the Default folder or it will cause errors!</text>
 				<tKey>HGS_Humanoids_SkinSelectorTab_WVC</tKey>
 			</li>
 
@@ -24,43 +24,51 @@
 				<key>Valkyries_SkinSelector_MainSwitch_WVC</key>
 				<label>Enable skin selector</label>
 				<defaultValue>false</defaultValue>
-				<tooltip>After enabling, a reboot is required for the list to appear.</tooltip>
+				<!-- <tooltip>After enabling, a reboot is required for the list to appear.</tooltip> -->
 				<tKey>HGS_Humanoids_SkinSelector_Checker_WVC</tKey>
-				<tKeyTip>HGS_Global_AutoPatcherSettings_Desc_WVC</tKeyTip>
+				<!-- <tKeyTip>HGS_Global_AutoPatcherSettings_Desc_WVC</tKeyTip> -->
 			</li>
 			<li Class="XmlExtensions.Setting.SetColor"/>
-			<li Class="XmlExtensions.Setting.GapLine" />
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>Valkyries_SkinSelector_SkinPatchInBed_WVC</key>
+				<label>Disable draw in bed</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>Disable rendering of girls when they sleep on the bed.</tooltip>
+				<tKey>HGS_Valkyries_SkinSelector_SkinPatchInBed_WVC</tKey>
+				<tKeyTip>HGS_Valkyries_SkinSelector_SkinPatchInBed_Desc_WVC</tKeyTip>
+			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine" /> -->
 
 			<!--=====================================================================-->
 
-			<li Class="XmlExtensions.Setting.TabView">
-				<tabs>
-					<li>
-						<label>Default</label>
-						<settings>
-							<li Class="XmlExtensions.Setting.EmbedMenu">
-								<menu>Settings_Humanoids_Skins_WVC</menu>
-							</li>
-						</settings>
-					</li>
-					<li>
-						<label>Image</label>
-						<settings>
-							<li Class="XmlExtensions.Setting.EmbedMenu">
-								<menu>Settings_Humanoids_SkinsWithImage_WVC</menu>
-							</li>
-						</settings>
-					</li>
-					<li>
-						<label>ELFs</label>
-						<settings>
-							<li Class="XmlExtensions.Setting.EmbedMenu">
-								<menu>Settings_Humanoids_ELFsSkins_WVC</menu>
-							</li>
-						</settings>
-					</li>
-				</tabs>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.TabView"> -->
+				<!-- <tabs> -->
+					<!-- <li> -->
+						<!-- <label>Default</label> -->
+						<!-- <settings> -->
+							<!-- <li Class="XmlExtensions.Setting.EmbedMenu"> -->
+								<!-- <menu>Settings_Humanoids_Skins_WVC</menu> -->
+							<!-- </li> -->
+						<!-- </settings> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <label>Image</label> -->
+						<!-- <settings> -->
+							<!-- <li Class="XmlExtensions.Setting.EmbedMenu"> -->
+								<!-- <menu>Settings_Humanoids_SkinsWithImage_WVC</menu> -->
+							<!-- </li> -->
+						<!-- </settings> -->
+					<!-- </li> -->
+					<!-- <li> -->
+						<!-- <label>ELFs</label> -->
+						<!-- <settings> -->
+							<!-- <li Class="XmlExtensions.Setting.EmbedMenu"> -->
+								<!-- <menu>Settings_Humanoids_ELFsSkins_WVC</menu> -->
+							<!-- </li> -->
+						<!-- </settings> -->
+					<!-- </li> -->
+				<!-- </tabs> -->
+			<!-- </li> -->
 
 			<!--=====================================================================-->
 

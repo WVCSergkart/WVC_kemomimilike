@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace Name="BaseELFs_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True">
+	<AlienRace.ThingDef_AlienRace Name="BaseELFs_WVC" ParentName="MeatPatch_BaseValkyrie_WVC" Abstract="True" WVC_Tag="SkinPatchInBed">
 		<label>ELF</label>
 		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; This race is very fragile, any damage can become lethal for them, but they have significant bonuses to psi abilities. Also ELFs can sleep while being held.</description>
 		<descriptionHyperlinks Inherit="False">
@@ -26,15 +26,27 @@
 					</li>
 				</forcedRaceTraitEntries>
 				<alienPartGenerator>
-					<bodytypes Inherit="False">
-						<li>Body_ELF_Durandal_WVC</li>
-						<li>Body_ELF_Edge_WVC</li>
-						<li>Body_ELF_Jingwei_WVC</li>
-						<li>Body_ELF_Bella_WVC</li>
-						<li>Body_ELF_Selune_WVC</li>
-						<li>Body_ELF_Fuxi_WVC</li>
-					</bodytypes>
-					<customDrawSize>(0.9, 0.9)</customDrawSize>
+					<!-- <bodytypes Inherit="False"> -->
+						<!-- <li>Body_ELF_Durandal_WVC</li> -->
+						<!-- <li>Body_ELF_Edge_WVC</li> -->
+						<!-- <li>Body_ELF_Jingwei_WVC</li> -->
+						<!-- <li>Body_ELF_Bella_WVC</li> -->
+						<!-- <li>Body_ELF_Selune_WVC</li> -->
+						<!-- <li>Body_ELF_Fuxi_WVC</li> -->
+					<!-- </bodytypes> -->
+					<!-- <customDrawSize>(0.9, 0.9)</customDrawSize> -->
+					<bodyAddons Inherit="False">
+					  <li>
+						<path>WVC/KL_Races/ELF_Default/Skin</path>
+						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
+						<drawSize>(0.9,0.9)</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<drawnDesiccated>true</drawnDesiccated>
+						<colorChannel>skin</colorChannel>
+						<shaderType>CutoutComplex</shaderType>
+					  </li>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 
@@ -157,15 +169,14 @@
 
 			<!--=====================================================================-->
 
-			<graphicPaths Inherit="False">
-				<li>
-					<body>WVC/Pawns/ELFs/</body>
-					<head>WVC/BaseInvisibleHead/</head>
-					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
-					<!-- <skull>WVC/BaseInvisibleHead/Head</skull> -->
-					<skinShader>CutoutComplex</skinShader>
-				</li>
-			</graphicPaths>
+			<!-- <graphicPaths Inherit="False"> -->
+				<!-- <li> -->
+					<!-- <body>WVC/Pawns/ELFs/</body> -->
+					<!-- <head>WVC/BaseInvisibleHead/</head> -->
+					<!-- <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton> -->
+					<!-- <skinShader>CutoutComplex</skinShader> -->
+				<!-- </li> -->
+			<!-- </graphicPaths> -->
 
 			<!--=====================================================================-->
 
@@ -320,7 +331,7 @@
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BaseELFs_WVC">
+	<AlienRace.ThingDef_AlienRace ParentName="BaseELFs_WVC" WVC_Tag="SkinPatchInBed">
 		<defName>Alien_ELF_WVC</defName>
 		<label>ELF</label>
 		<descriptionHyperlinks>
@@ -331,6 +342,8 @@
 				<alienPartGenerator>
 					<bodytypes>
 					</bodytypes>
+					<bodyAddons>
+					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 			<raceRestriction>

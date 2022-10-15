@@ -35,7 +35,7 @@
 					<li>WVC_InvisibleHead</li>
 				</headTypes>
 				<bodytypes>
-					<!-- <li>Body_Reshaper_WVC</li> -->
+					<li>Female</li>
 				</bodytypes>
 				<colorChannels>
 					<li>
@@ -51,14 +51,14 @@
 						</first>
 					</li>
 				</colorChannels>
-				<headOffset>(-0.03, -0.06)</headOffset>
+				<!-- <headOffset>(-0.03, -0.06)</headOffset> -->
 				<!-- <headOffset>(-0.03, 0.00)</headOffset> -->
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
-				<customDrawSize>(1.0, 1.0)</customDrawSize>
-				<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
-				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+				<customDrawSize>(0.001, 0.001)</customDrawSize>
+				<customPortraitDrawSize>(0.001, 0.001)</customPortraitDrawSize>
+				<customHeadDrawSize>(0.001, 0.001)</customHeadDrawSize>
+				<customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
 				<headBodyPartDef>MechanicalHead</headBodyPartDef>
 			</alienPartGenerator>
 		</generalSettings>
@@ -67,7 +67,7 @@
 
 		<graphicPaths>
 			<li>
-				<body>WVC/Automatons/</body>
+				<body>WVC/BaseInvisibleHead/</body>
 				<head>WVC/BaseInvisibleHead/</head>
 				<skeleton>WVC/NodeRace/Dead</skeleton>
 				<!-- <skull>WVC/Pawns/Head/Head</skull> -->
@@ -112,9 +112,9 @@
 			<relationChanceModifierFiance>0.1</relationChanceModifierFiance>
 			<relationChanceModifierSpouse>0.1</relationChanceModifierSpouse>
 			<relationChanceModifierExSpouse>0.1</relationChanceModifierExSpouse>
-			<relationChanceModifierParent>1</relationChanceModifierParent>
-			<relationChanceModifierChild>1</relationChanceModifierChild>
-			<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
 			<renamer>
 			   <li>
 				  <relation>Parent</relation>

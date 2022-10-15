@@ -173,135 +173,136 @@
 	<alternateGraphicChance>1.0</alternateGraphicChance>
 	<alternateGraphics>
 		<li>
-			<texPath>WVC/Pawns/Yoimiya</texPath>
+			<texPath>WVC/KL_Races/Default/Skin</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Sayu</texPath>
+			<texPath>WVC/KL_Races/Default/Skin1</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Roza</texPath>
+			<texPath>WVC/KL_Races/Default/Skin2</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Lily</texPath>
+			<texPath>WVC/KL_Races/Default/Skin3</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Yae</texPath>
+			<texPath>WVC/KL_Races/Default/Skin4</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Haxxor</texPath>
+			<texPath>WVC/KL_Races/Default/Skin5</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/HaxxorA</texPath>
+			<texPath>WVC/KL_Races/Default/Skin6</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Delta</texPath>
+			<texPath>WVC/KL_Races/Default/Skin7</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_8Bit_WVC</texPath>
+			<texPath>WVC/KL_Races/Default/Skin8</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/cocogoat</texPath>
+			<texPath>WVC/KL_Races/Default/Skin9</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/aloy</texPath>
+			<texPath>WVC/KL_Races/Default/Skin10</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/lumine</texPath>
+			<texPath>WVC/KL_Races/Default/Skin11</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/ayaka</texPath>
-		</li>
-		<!-- h -->
-		<li>
-			<texPath>WVC/Pawns/HoS</texPath>
+			<texPath>WVC/KL_Races/Default/Skin12</texPath>
 		</li>
 		<li>
-			<texPath>WVC/Pawns/HoS_Summer</texPath>
+			<texPath>WVC/KL_Races/Default/Skin13</texPath>
 		</li>
-		<!-- elfs -->
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin14</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin15</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin16</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin17</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin18</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin19</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin20</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin21</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin22</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin23</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin24</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin25</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin26</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin27</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin28</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin29</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin30</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin31</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin32</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin33</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin34</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin35</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin36</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin37</texPath>
+		</li>
+		<li>
+			<texPath>WVC/KL_Races/Default/Skin38</texPath>
+		</li>
 		<!-- <li> -->
-			<!-- <texPath>WVC/Pawns/HoS_Summer</texPath> -->
+			<!-- <texPath>WVC/KL_Races/Default/Skin39</texPath> -->
 		<!-- </li> -->
-		<!-- insects -->
-		<li>
-			<texPath>WVC/Pawns/IG/baier</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_buer_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_kuoer_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_jiaer_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_juer_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_zhuer_WVC</texPath>
-		</li>
-		<!-- kemomimi -->
-		<li>
-			<texPath>WVC/Pawns/house/akame</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/house/aome</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/house/hana</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/house/kohime</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/house/kon</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/house/siro</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_konf_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_miko_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_kuro_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_sirof_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_yuki_WVC</texPath>
-		</li>
-		<!-- Mimikko -->
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Alphazero_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Ariana_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Liuli_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Momona_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Nemuri_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Nonona_WVC</texPath>
-		</li>
-		<li>
-			<texPath>WVC/Pawns/Bodies/Naked_Body_Ulrica_WVC</texPath>
-		</li>
+		<!-- <li> -->
+			<!-- <texPath>WVC/KL_Races/Default/Skin40</texPath> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <texPath>WVC/KL_Races/Default/Skin41</texPath> -->
+		<!-- </li> -->
 	</alternateGraphics>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>WVC/Pawns/lumine</texPath>
+		  <texPath>WVC/KL_Races/Default/Skin</texPath>
 		  <graphicClass>Graphic_Multi</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <drawSize>1.6</drawSize>

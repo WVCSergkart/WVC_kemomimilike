@@ -18,7 +18,7 @@
 			<li Class="KCSG.ScenPart_AddStartingStructure">
 				<def>VFEC_AddStartingStructure</def>
 				<structureLabel>mechanoid base</structureLabel>
-				<nearMapCenter>True</nearMapCenter>
+				<nearMapCenter>false</nearMapCenter>
 				<chooseFrom>
 					<li>WVC_Mech_ILF_A</li>
 					<li>WVC_Mech_ILF_B</li>
