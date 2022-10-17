@@ -34,9 +34,9 @@
 				<headTypes>
 					<li>WVC_InvisibleHead</li>
 				</headTypes>
-				<bodytypes>
+				<bodyTypes>
 					<li>Female</li>
-				</bodytypes>
+				</bodyTypes>
 				<colorChannels>
 					<li>
 						<!-- always white or cause visual bugs -->
@@ -53,8 +53,8 @@
 				</colorChannels>
 				<!-- <headOffset>(-0.03, -0.06)</headOffset> -->
 				<!-- <headOffset>(-0.03, 0.00)</headOffset> -->
-				<useGenderedHeads>false</useGenderedHeads>
-				<useGenderedBodies>false</useGenderedBodies>
+				<!-- <useGenderedHeads>false</useGenderedHeads> -->
+				<!-- <useGenderedBodies>false</useGenderedBodies> -->
 				<customDrawSize>(0.001, 0.001)</customDrawSize>
 				<customPortraitDrawSize>(0.001, 0.001)</customPortraitDrawSize>
 				<customHeadDrawSize>(0.001, 0.001)</customHeadDrawSize>
@@ -66,13 +66,13 @@
 		<!--=====================================================================-->
 
 		<graphicPaths>
-			<li>
+			<!-- <li> -->
 				<body>WVC/BaseInvisibleHead/</body>
-				<head>WVC/BaseInvisibleHead/</head>
+				<!-- <head>WVC/BaseInvisibleHead/</head> -->
 				<skeleton>WVC/NodeRace/Dead</skeleton>
 				<!-- <skull>WVC/Pawns/Head/Head</skull> -->
 				<skinShader>CutoutComplex</skinShader>
-			</li>
+			<!-- </li> -->
 		</graphicPaths>
 		<styleSettings>
 			<li>

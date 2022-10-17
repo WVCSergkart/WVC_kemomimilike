@@ -26,17 +26,17 @@
 					</li>
 				</forcedRaceTraitEntries>
 				<alienPartGenerator>
-					<!-- <bodytypes Inherit="False"> -->
+					<!-- <bodyTypes Inherit="False"> -->
 						<!-- <li>Body_ELF_Durandal_WVC</li> -->
 						<!-- <li>Body_ELF_Edge_WVC</li> -->
 						<!-- <li>Body_ELF_Jingwei_WVC</li> -->
 						<!-- <li>Body_ELF_Bella_WVC</li> -->
 						<!-- <li>Body_ELF_Selune_WVC</li> -->
 						<!-- <li>Body_ELF_Fuxi_WVC</li> -->
-					<!-- </bodytypes> -->
+					<!-- </bodyTypes> -->
 					<!-- <customDrawSize>(0.9, 0.9)</customDrawSize> -->
 					<bodyAddons Inherit="False">
-					  <li>
+					  <!-- <li> -->
 						<path>WVC/KL_Races/ELF_Default/Skin</path>
 						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
 						<drawSize>(0.9,0.9)</drawSize>
@@ -45,7 +45,7 @@
 						<drawnDesiccated>true</drawnDesiccated>
 						<colorChannel>skin</colorChannel>
 						<shaderType>CutoutComplex</shaderType>
-					  </li>
+					  <!-- </li> -->
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
@@ -340,8 +340,8 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<bodytypes>
-					</bodytypes>
+					<bodyTypes>
+					</bodyTypes>
 					<bodyAddons>
 					</bodyAddons>
 				</alienPartGenerator>
