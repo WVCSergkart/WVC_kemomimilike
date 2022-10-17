@@ -5,7 +5,7 @@
 
   <HediffDef ParentName="Special_Hediff_HumanlikeInitial_WVC">
 	<defName>SpecialHediff_AlienInitial_Valkyrie_WVC</defName>
-	<label>Valkyrie</label>
+	<label>valkyrie</label>
 	<defaultLabelColor>(162,200,255)</defaultLabelColor>
 	<disablesNeeds>
 	</disablesNeeds>
@@ -47,7 +47,7 @@
 
   <HediffDef ParentName="Special_Hediff_HumanlikeInitial_WVC">
 	<defName>SpecialHediff_AlienInitial_Mother_WVC</defName>
-	<label>Dryad Mother</label>
+	<label>gaurkyrie</label>
 	<defaultLabelColor>(245,255,162)</defaultLabelColor>
 	<disablesNeeds>
 	  <li>Comfort</li>

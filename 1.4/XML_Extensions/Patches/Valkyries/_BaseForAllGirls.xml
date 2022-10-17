@@ -3,22 +3,6 @@
 
 	<!--=====================================================================-->
 
-	<Operation Class="XmlExtensions.UseSetting">
-		<modId>honkai.girls.sergkart</modId>
-		<key>Valkyries_HediffPriceOffset_Slider_WVC</key>
-		<defaultValue>1300</defaultValue>
-		<apply>
-			<Operation Class="PatchOperationReplace">
-				  <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BaseValkyrie_WVC"]/statBases/MarketValue</xpath> 
-				  <value>
-					<MarketValue>{Valkyries_HediffPriceOffset_Slider_WVC}00</MarketValue>
-				  </value>
-			</Operation>
-		</apply>
-	</Operation>
-
-	<!--=====================================================================-->
-
 	<Operation Class="XmlExtensions.FindMod">
 		<mods>
 			<li>ludeon.rimworld.biotech</li>
