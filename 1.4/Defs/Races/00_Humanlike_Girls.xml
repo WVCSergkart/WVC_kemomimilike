@@ -101,6 +101,7 @@
 				<borderScale>1</borderScale>
 				<headTypes>
 					<li>WVC_InvisibleHead</li>
+					<!-- <li>Female_AverageNormal</li> -->
 				</headTypes>
 				<bodyTypes>
 					<li>Female</li>
@@ -149,7 +150,7 @@
 		<graphicPaths>
 			<!-- <li> -->
 				<body>WVC/BaseInvisibleHead/</body>
-				<!-- <head>WVC/BaseInvisibleHead/</head> -->
+				<head>WVC/BaseInvisibleHead/</head>
 				<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
 				<!-- <skull>WVC/BaseInvisibleHead/Head</skull> -->
 				<skinShader>CutoutComplex</skinShader>

@@ -68,7 +68,7 @@
 		<graphicPaths>
 			<!-- <li> -->
 				<body>WVC/BaseInvisibleHead/</body>
-				<!-- <head>WVC/BaseInvisibleHead/</head> -->
+				<head>WVC/BaseInvisibleHead/</head>
 				<skeleton>WVC/NodeRace/Dead</skeleton>
 				<!-- <skull>WVC/Pawns/Head/Head</skull> -->
 				<skinShader>CutoutComplex</skinShader>
