@@ -32,10 +32,10 @@
 				<atlasScale>4</atlasScale>
 				<borderScale>1</borderScale>
 				<headTypes>
-					<!-- <li>WVC_InvisibleHead</li> -->
+					<li>WVC_MechaRace_HeadA</li>
 				</headTypes>
 				<bodyTypes>
-					<!-- <li>Female</li> -->
+					<li>Female</li>
 				</bodyTypes>
 				<colorChannels>
 					<li>
@@ -67,10 +67,8 @@
 
 		<graphicPaths>
 			<!-- <li> -->
-				<body>WVC/BaseInvisibleHead/</body>
-				<!-- <head>WVC/BaseInvisibleHead/</head> -->
-				<!-- <body>WVC/BaseInvisibleHead/Head</body> -->
-				<head>WVC/BaseInvisibleHead/Head</head>
+				<head>WVC/MechaRace/</head>
+				<body>WVC/MechaRace/</body>
 				<skeleton>WVC/NodeRace/Dead</skeleton>
 				<!-- <skull>WVC/Pawns/Head/Head</skull> -->
 				<skinShader>CutoutComplex</skinShader>

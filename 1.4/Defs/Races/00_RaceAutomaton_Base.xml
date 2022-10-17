@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="WVC_NodeRacesFormers_Base" Name="WVC_RaceAutomatons_Base" Abstract="True">
 	<!-- <label>primal construct</label> -->
-	<label>former: Construct</label>
+	<label>construct</label>
 	<!-- in progress -->
 	<!-- <description>Constructs are a very distant branch in the Former series. Like Formers, Constructs are made of living metal, but most modules work differently.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Constructs never sleep in beds in the way that they are formally considered dryads. If wounded, they can be placed on the bed, however, note that on some beds they will not be visible.</description> -->
 	<!-- in progress -->

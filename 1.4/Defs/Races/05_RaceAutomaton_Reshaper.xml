@@ -3,7 +3,7 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="WVC_AlienRaceAutomatons_Base" WVC_AutoPatchTag="OpinionPatcherTarget">
 		<defName>WVC_AlienRace_Reshaper</defName>
-		<label>former: Reshaper</label>
+		<label>reshaper</label>
 		<!-- <description>TEST\n\nTEST</description> -->
 		<alienRace>
 			<generalSettings>
