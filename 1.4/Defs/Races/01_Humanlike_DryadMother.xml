@@ -21,7 +21,7 @@
 				<alienPartGenerator>
 					<!-- <customDrawSize>(1.2, 1.2)</customDrawSize> -->
 					<bodyAddons Inherit="False">
-					  <!-- <li> -->
+					  <li>
 						<path>WVC/KL_Races/Default/Skin</path>
 						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
 						<drawSize>(1.2,1.2)</drawSize>
@@ -30,7 +30,7 @@
 						<drawnDesiccated>true</drawnDesiccated>
 						<colorChannel>skin</colorChannel>
 						<shaderType>CutoutComplex</shaderType>
-					  <!-- </li> -->
+					  </li>
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>

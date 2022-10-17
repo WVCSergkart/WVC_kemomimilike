@@ -11,7 +11,7 @@
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Valkyrie_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 				<value>
 					<bodyAddons Inherit="False">
-					  <!-- <li> -->
+					  <li>
 						<path>WVC/KL_Races/Valks/Skin</path>
 						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
 						<drawSize>(1.1,1.1)</drawSize>
@@ -20,7 +20,7 @@
 						<drawnDesiccated>true</drawnDesiccated>
 						<colorChannel>skin</colorChannel>
 						<shaderType>CutoutComplex</shaderType>
-					  <!-- </li> -->
+					  </li>
 					</bodyAddons>
 				</value>
 			</Operation>
@@ -28,7 +28,7 @@
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_ELF_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 				<value>
 					<bodyAddons Inherit="False">
-					  <!-- <li> -->
+					  <li>
 						<path>WVC/KL_Races/ELFs/Skin</path>
 						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
 						<drawSize>(0.9,0.9)</drawSize>
@@ -37,7 +37,7 @@
 						<drawnDesiccated>true</drawnDesiccated>
 						<colorChannel>skin</colorChannel>
 						<shaderType>CutoutComplex</shaderType>
-					  <!-- </li> -->
+					  </li>
 					</bodyAddons>
 				</value>
 			</Operation>
@@ -45,7 +45,7 @@
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_DryadMother_WVC"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 				<value>
 					<bodyAddons Inherit="False">
-					  <!-- <li> -->
+					  <li>
 						<path>WVC/KL_Races/Gaur/Skin</path>
 						<drawSizePortrait>(1.2,1.2)</drawSizePortrait>
 						<drawSize>(1.2,1.2)</drawSize>
@@ -54,7 +54,7 @@
 						<drawnDesiccated>true</drawnDesiccated>
 						<colorChannel>skin</colorChannel>
 						<shaderType>CutoutComplex</shaderType>
-					  <!-- </li> -->
+					  </li>
 					</bodyAddons>
 				</value>
 			</Operation>

@@ -8,7 +8,7 @@
 
   <HeadTypeDef ParentName="WVC_BaseInvisibleHead">
 	<defName>WVC_InvisibleHead</defName>
-	<graphicPath>WVC/BaseInvisibleHead/Head</graphicPath>
+	<graphicPath>WVC/BaseInvisibleHead/WVC_InvisibleHead</graphicPath>
 	<gender>None</gender>
   </HeadTypeDef>
 
