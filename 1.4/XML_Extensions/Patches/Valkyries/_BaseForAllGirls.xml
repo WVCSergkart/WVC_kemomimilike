@@ -381,12 +381,12 @@
 
 	<!--=====================================================================-->
 
-	<Operation Class="XmlExtensions.ApplyPatch">
-		<patchName>ThoughtsOpinion_Autopatcher_WVC</patchName>
-		<arguments>
-			<li>Alien_DryadMother_WVC</li>
-		</arguments>
-	</Operation>
+	<!-- <Operation Class="XmlExtensions.ApplyPatch"> -->
+		<!-- <patchName>ThoughtsOpinion_Autopatcher_WVC</patchName> -->
+		<!-- <arguments> -->
+			<!-- <li>Alien_DryadMother_WVC</li> -->
+		<!-- </arguments> -->
+	<!-- </Operation> -->
 
 	<!--=====================================================================-->
 

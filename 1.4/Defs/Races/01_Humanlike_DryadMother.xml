@@ -159,7 +159,7 @@
 		</damageMultipliers>
 	</AlienRace.ThingDef_AlienRace>
 
-	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="BaseDryadMother_WVC" WVC_Tag="SkinPatchInBed">
+	<AlienRace.ThingDef_AlienRace MayRequire="ludeon.rimworld.ideology" ParentName="BaseDryadMother_WVC" WVC_Tag="SkinPatchInBed" WVC_AutoPatchTag="OpinionPatcherTarget">
 		<defName>Alien_DryadMother_WVC</defName>
 		<label>gaurkyrie</label>
 		<descriptionHyperlinks>
