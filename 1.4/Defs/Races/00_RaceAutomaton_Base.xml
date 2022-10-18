@@ -66,6 +66,7 @@
 	<!-- ==================================================================== -->
 
 	<race>
+	  <deathActionWorkerClass>WVC.DeathActionWorker_ReplaceCorpse_YellowNode</deathActionWorkerClass>
 	  <animalType MayRequire="ludeon.rimworld.ideology">Dryad</animalType>
 	  <thinkTreeMain>Humanlike</thinkTreeMain>
 	  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
