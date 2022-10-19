@@ -12,7 +12,7 @@
 	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 
 	<statBases>
-	  <GlobalLearningFactor>2.0</GlobalLearningFactor>
+	  <GlobalLearningFactor>0.8</GlobalLearningFactor>
 	  <MeatAmount>56</MeatAmount>
 	  <LeatherAmount>16</LeatherAmount>
 	  <MoveSpeed>5.9</MoveSpeed>
@@ -47,7 +47,7 @@
 	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
 	  <Mass>124</Mass>
 	  <!-- custom -->
-	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+	  <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
 	  <InjuryHealingFactor>2.0</InjuryHealingFactor>
 	  <PruningSpeed MayRequire="ludeon.rimworld.ideology">2.0</PruningSpeed>
 	  <MentalBreakThreshold>0.0</MentalBreakThreshold>
