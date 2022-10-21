@@ -219,16 +219,16 @@
 			  <!-- <xpath>/Defs/ThingDef[defName="WVC_IncubatorLF"]/comps/li[@WVC_Tag="RemoveItFromIncubator"]</xpath> -->
 			<!-- </Operation> -->
 
-			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/ThingDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
-			</Operation>
+			<!-- <Operation Class="XmlExtensions.PatchOperationSafeRemove"> -->
+			  <!-- <xpath>/Defs/ThingDef[@WVC_Tag="RemoveWithoutVAED"]</xpath> -->
+			<!-- </Operation> -->
 
-			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
-			</Operation>
-			<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-			  <xpath>/Defs/VFECore.Abilities.AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath>
-			</Operation>
+			<!-- <Operation Class="XmlExtensions.PatchOperationSafeRemove"> -->
+			  <!-- <xpath>/Defs/AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath> -->
+			<!-- </Operation> -->
+			<!-- <Operation Class="XmlExtensions.PatchOperationSafeRemove"> -->
+			  <!-- <xpath>/Defs/VFECore.Abilities.AbilityDef[@WVC_Tag="RemoveWithoutVAED"]</xpath> -->
+			<!-- </Operation> -->
 
 		</caseFalse>
 		<caseTrue>
@@ -243,33 +243,33 @@
 				<!-- </value> -->
 			<!-- </Operation> -->
 
-			<Operation Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_ELF_WVC"]/comps</xpath>
-				<value>
-				  <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
-					<ticksToSpawn>1</ticksToSpawn>
-					<dryadToSpawn>Alien_ELF_WVC</dryadToSpawn>
-				  </li>
-				</value>
-			</Operation>
-			<Operation Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Valkyrie_WVC"]/comps</xpath>
-				<value>
-				  <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
-					<ticksToSpawn>1</ticksToSpawn>
-					<dryadToSpawn>Alien_Valkyrie_WVC</dryadToSpawn>
-				  </li>
-				</value>
-			</Operation>
-			<Operation Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Gaurkyrie_WVC"]/comps</xpath>
-				<value>
-				  <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened">
-					<ticksToSpawn>1</ticksToSpawn>
-					<dryadToSpawn>Alien_DryadMother_WVC</dryadToSpawn>
-				  </li>
-				</value>
-			</Operation>
+			<!-- <Operation Class="PatchOperationAdd"> -->
+				<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_ELF_WVC"]/comps</xpath> -->
+				<!-- <value> -->
+				  <!-- <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened"> -->
+					<!-- <ticksToSpawn>1</ticksToSpawn> -->
+					<!-- <dryadToSpawn>Alien_ELF_WVC</dryadToSpawn> -->
+				  <!-- </li> -->
+				<!-- </value> -->
+			<!-- </Operation> -->
+			<!-- <Operation Class="PatchOperationAdd"> -->
+				<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Valkyrie_WVC"]/comps</xpath> -->
+				<!-- <value> -->
+				  <!-- <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened"> -->
+					<!-- <ticksToSpawn>1</ticksToSpawn> -->
+					<!-- <dryadToSpawn>Alien_Valkyrie_WVC</dryadToSpawn> -->
+				  <!-- </li> -->
+				<!-- </value> -->
+			<!-- </Operation> -->
+			<!-- <Operation Class="PatchOperationAdd"> -->
+				<!-- <xpath>/Defs/ThingDef[defName="PsyAbility_SummonPod_Gaurkyrie_WVC"]/comps</xpath> -->
+				<!-- <value> -->
+				  <!-- <li Class="VanillaIdeologyExpanded_Dryads.CompProperties_SpawnAwakened"> -->
+					<!-- <ticksToSpawn>1</ticksToSpawn> -->
+					<!-- <dryadToSpawn>Alien_DryadMother_WVC</dryadToSpawn> -->
+				  <!-- </li> -->
+				<!-- </value> -->
+			<!-- </Operation> -->
 
 		</caseTrue>
 	</Operation>
