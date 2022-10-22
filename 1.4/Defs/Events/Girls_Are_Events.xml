@@ -23,11 +23,11 @@
 		<letterLabel>Wanderer joins: ELF</letterLabel>
 		<pawnKind>Alien_ELF_WVC</pawnKind>
 	</IncidentDef>
-	<IncidentDef ParentName="BaseWandererJoin_Valkyrie_WVC">
-		<defName>WandererJoin_Herrscher_WVC</defName>
-		<label>(WVC) Wanderer joins: Herrscher</label>
-		<letterLabel>Wanderer joins: Herrscher</letterLabel>
-		<pawnKind>Alien_ELF_WVC</pawnKind>
-	</IncidentDef>
+	<!-- <IncidentDef ParentName="BaseWandererJoin_Valkyrie_WVC"> -->
+		<!-- <defName>WandererJoin_Herrscher_WVC</defName> -->
+		<!-- <label>(WVC) Wanderer joins: Herrscher</label> -->
+		<!-- <letterLabel>Wanderer joins: Herrscher</letterLabel> -->
+		<!-- <pawnKind>Alien_ELF_WVC</pawnKind> -->
+	<!-- </IncidentDef> -->
   
 </Defs>
