@@ -17,6 +17,7 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
+		<li IfModActive="wvc.sergkart.races">1.4/NodeRace</li>
 		<li IfModActive="ludeon.rimworld.royalty">1.4/Royalty</li>
 		<li IfModActive="ludeon.rimworld.ideology">1.4/Ideology</li>
 		<li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li>

@@ -5,7 +5,7 @@
 		<modId>honkai.girls.sergkart</modId>
 		<settings>
 			<li Class="XmlExtensions.Setting.Text">
-				<text>KL v0.50.35</text>
+				<text>KL v0.50.50</text>
 				<anchor>Middle</anchor>
 			</li>
 		</settings>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="WVC_NodeRacesFormers_Base" Name="WVC_RaceAutomatons_Base" Abstract="True">
+  <ThingDef MayRequire="wvc.sergkart.races" ParentName="WVC_NodeRacesFormers_Base" Name="WVC_RaceAutomatons_Base" Abstract="True">
 	<!-- <label>primal construct</label> -->
 	<label>construct</label>
 	<!-- in progress -->

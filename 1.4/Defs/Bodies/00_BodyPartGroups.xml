@@ -28,11 +28,4 @@
 	<!-- <listOrder>75</listOrder> -->
   <!-- </BodyPartGroupDef> -->
 
-  <BodyPartGroupDef>
-	<defName>WVC_SemiOrganicPort</defName>
-	<label>SO-Port</label>
-	<labelShort>SO-Port</labelShort>
-	<listOrder>50</listOrder>
-  </BodyPartGroupDef>
-
 </Defs>

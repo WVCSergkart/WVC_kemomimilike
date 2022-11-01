@@ -3,7 +3,7 @@
 
   <!-- =================================================== -->
 
-  <AlienRace.ThingDef_AlienRace ParentName="WVC_RaceAutomatons_Base" Name="WVC_AlienRaceAutomatons_Base" Abstract="True">
+  <AlienRace.ThingDef_AlienRace MayRequire="wvc.sergkart.races" ParentName="WVC_RaceAutomatons_Base" Name="WVC_AlienRaceAutomatons_Base" Abstract="True">
 	<alienRace Inherit="False">
 		<generalSettings>
 			<!-- <validBeds> -->

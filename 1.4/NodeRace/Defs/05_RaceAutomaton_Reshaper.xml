@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="WVC_AlienRaceAutomatons_Base" WVC_AutoPatchTag="OpinionPatcherTarget">
+	<AlienRace.ThingDef_AlienRace MayRequire="wvc.sergkart.races" ParentName="WVC_AlienRaceAutomatons_Base" WVC_AutoPatchTag="OpinionPatcherTarget">
 		<defName>WVC_AlienRace_Reshaper</defName>
 		<label>reshaper</label>
 		<!-- <description>TEST\n\nTEST</description> -->
@@ -66,7 +66,7 @@
 
 	<!-- ====================================== -->
 
-	<PawnKindDef ParentName="WVC_BasePawn_Nodes">
+	<PawnKindDef MayRequire="wvc.sergkart.races" ParentName="WVC_BasePawn_Nodes">
 		<defName>WVC_AlienRace_Reshaper</defName>
 		<label>reshaper</label>
 		<race>WVC_AlienRace_Reshaper</race>

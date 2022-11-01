@@ -28,11 +28,4 @@
 	</tags>
   </BodyPartDef>
 
-  <BodyPartDef>
-	<defName>WVC_SemiOrganicPort</defName>
-	<label>SO-Port</label>
-	<hitPoints>2</hitPoints>
-	<conceptual>true</conceptual>
-  </BodyPartDef>
-
 </Defs>

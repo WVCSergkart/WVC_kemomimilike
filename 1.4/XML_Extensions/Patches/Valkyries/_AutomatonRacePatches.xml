@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationAdd">
 		  <xpath>/Defs/RecipeDef[@Name="WVC_SurgeryInstall_BodyPartBase"]/recipeUsers</xpath> 
 		  <value>
-			<li>WVC_AlienRace_Reshaper</li>
+			<li MayRequire="wvc.sergkart.races">WVC_AlienRace_Reshaper</li>
 		  </value>
 	</Operation>
 

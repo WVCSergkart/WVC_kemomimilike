@@ -2,7 +2,7 @@
 <Defs>
 
 
-  <BodyDef>
+  <BodyDef MayRequire="wvc.sergkart.races">
 	<defName>WVC_PrimalConstruct_Reshaper</defName>
 	<label>Automaton</label>
 	<corePart>
