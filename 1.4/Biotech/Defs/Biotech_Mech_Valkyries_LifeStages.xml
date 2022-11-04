@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LifeStageDef Name="WVC_Mechanoid_LifeStage_Valkyrie" Abstract="True">
+	<!-- <defName>Alien_RoyalDryad_Baby_WVC</defName> -->
+	<label>valkyrie</label>
+	<visible>false</visible>
+	<!-- <foodMaxFactor>1</foodMaxFactor> -->
+	<reproductive>false</reproductive>
+	<milkable>false</milkable>
+	<shearable>false</shearable>
+	<caravanRideable>false</caravanRideable>
+	<statFactors>
+	  <PainShockThreshold>5.0</PainShockThreshold>
+	</statFactors>
+  </LifeStageDef>
+
+  <!-- ===================================================================== -->
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_Valkyrie">
+	<defName>WVC_Mech_Valkyrie_I</defName>
+	<!-- <label>1</label> -->
+	<healthScaleFactor>1.0</healthScaleFactor>
+	<hungerRateFactor>1.2</hungerRateFactor>
+	<meleeDamageFactor>1.25</meleeDamageFactor>
+	<statFactors>
+	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
+	</statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_Valkyrie">
+	<defName>WVC_Mech_Valkyrie_II</defName>
+	<!-- <label>2</label> -->
+	<healthScaleFactor>1.2</healthScaleFactor>
+	<hungerRateFactor>1.0</hungerRateFactor>
+	<meleeDamageFactor>1.5</meleeDamageFactor>
+	<statFactors>
+	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
+	  <MeleeDodgeChance>2.0</MeleeDodgeChance>
+	  <MeleeHitChance>2.0</MeleeHitChance>
+	</statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_Valkyrie">
+	<defName>WVC_Mech_Valkyrie_III</defName>
+	<!-- <label>3</label> -->
+	<healthScaleFactor>1.35</healthScaleFactor>
+	<hungerRateFactor>0.8</hungerRateFactor>
+	<meleeDamageFactor>1.75</meleeDamageFactor>
+	<statFactors>
+	  <IncomingDamageFactor>0.6</IncomingDamageFactor>
+	  <MeleeDodgeChance>3.0</MeleeDodgeChance>
+	  <MeleeHitChance>3.0</MeleeHitChance>
+	</statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_Valkyrie">
+	<defName>WVC_Mech_Valkyrie_IV</defName>
+	<!-- <label>4</label> -->
+	<healthScaleFactor>1.5</healthScaleFactor>
+	<hungerRateFactor>0.5</hungerRateFactor>
+	<meleeDamageFactor>2.0</meleeDamageFactor>
+	<statFactors>
+	  <IncomingDamageFactor>0.4</IncomingDamageFactor>
+	  <MeleeDodgeChance>4.0</MeleeDodgeChance>
+	  <MeleeHitChance>4.0</MeleeHitChance>
+	</statFactors>
+  </LifeStageDef>
+
+</Defs>

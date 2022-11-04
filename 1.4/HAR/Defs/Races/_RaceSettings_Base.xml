@@ -44,4 +44,33 @@
 	</pawnKindSettings>
   </AlienRace.RaceSettings>
 
+  <FleshTypeDef>
+	<defName>ValkyriesFlesh_WVC</defName>
+	<corpseCategory>CorpsesHumanlike</corpseCategory>
+	<damageEffecter>Damage_HitFlesh</damageEffecter>
+	<genericWounds>
+	  <!-- mini flesh wounds -->
+	  <li>
+		<texture>WVC/Wounds/WoundFleshA</texture>
+	  </li>
+	  <li>
+		<texture>WVC/Wounds/WoundFleshB</texture>
+	  </li>
+	  <li>
+		<texture>WVC/Wounds/WoundFleshC</texture>
+	  </li>
+	</genericWounds>
+	<bandagedWounds>
+	  <li>
+		<texture>Things/Pawn/Wounds/BandagedA</texture>
+	  </li>
+	  <li>
+		<texture>Things/Pawn/Wounds/BandagedB</texture>
+	  </li>
+	  <li>
+		<texture>Things/Pawn/Wounds/BandagedC</texture>
+	  </li>
+	</bandagedWounds>
+  </FleshTypeDef>
+
 </Defs>

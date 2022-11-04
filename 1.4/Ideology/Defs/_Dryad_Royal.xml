@@ -58,27 +58,6 @@
 		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="AnimalBehaviours.CompProperties_FixedGender">
 			<gender>Female</gender>
 		</li>
-		<li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
-			<requiredCount>6</requiredCount>
-			<podToBuild>VIE_Awakening_DryadMother_Cocoon_WVC</podToBuild>
-			<gizmoImage>WVC/Stuff/ValksD</gizmoImage>
-			<gizmoLabel>VDE_EvolveDryadMother_WVC</gizmoLabel>
-			<gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc>
-		</li>
-		<li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
-			<requiredCount>5</requiredCount>
-			<podToBuild>VIE_Awakening_Valkyries_Cocoon_WVC</podToBuild>
-			<gizmoImage>WVC/Stuff/ValksB</gizmoImage>
-			<gizmoLabel>VDE_EvolveValkyrie_WVC</gizmoLabel>
-			<gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc>
-		</li>
-		<li MayRequire="vanillaexpanded.ideo.dryads" Class="VanillaIdeologyExpanded_Dryads.CompProperties_PawnMerge">
-			<requiredCount>3</requiredCount>
-			<podToBuild>VIE_Awakening_ELF_Cocoon_WVC</podToBuild>
-			<gizmoImage>WVC/Stuff/ValksW</gizmoImage>
-			<gizmoLabel>VDE_EvolveELF_WVC</gizmoLabel>
-			<gizmoDesc>VDE_EvolveDesc_WVC</gizmoDesc>
-		</li>
 		<!-- <li Class="AnimalBehaviours.CompProperties_AnimalProduct"> -->
 			<!-- <resourceDef>WVC_LivingMetall</resourceDef> -->
 			<!-- <gatheringIntervalDays>8</gatheringIntervalDays> -->

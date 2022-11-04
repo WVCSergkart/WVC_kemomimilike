@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="WVC_KLMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+	<recipeUsers>
+	  <li>MechGestator</li>
+	  <!-- <li>LargeMechGestator</li> -->
+	</recipeUsers>
+	<researchPrerequisite>HighMechtech</researchPrerequisite>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>WVC_LivingMetall</li>
+		  </thingDefs>
+		</filter>
+		<count>50</count>
+	  </li>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>SubcoreHigh</li>
+		  </thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+	</ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WVC_KLMechanoidRecipe">
+	<defName>WVC_Mech_Valkyrie</defName>
+	<label>gestate valkyrie</label>
+	<description>Gestate a valkyrie hybrid.</description>
+	<researchPrerequisite>ValkyriesTechs_I_WVC</researchPrerequisite>
+	<products>
+	  <WVC_Mech_Valkyrie>1</WVC_Mech_Valkyrie>
+	</products>
+	<descriptionHyperlinks>
+	  <ThingDef>WVC_Mech_Valkyrie</ThingDef>
+	</descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WVC_KLMechanoidRecipe">
+	<defName>WVC_Mech_ELF</defName>
+	<label>gestate ELF</label>
+	<description>Gestate a ELF hybrid.</description>
+	<researchPrerequisite>ValkyriesTechs_II_WVC</researchPrerequisite>
+	<products>
+	  <WVC_Mech_ELF>1</WVC_Mech_ELF>
+	</products>
+	<descriptionHyperlinks>
+	  <ThingDef>WVC_Mech_ELF</ThingDef>
+	</descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WVC_KLMechanoidRecipe">
+	<defName>WVC_Mech_Reshaper</defName>
+	<label>gestate reshaper</label>
+	<description>Gestate a reshaper mechanoid.</description>
+	<products>
+	  <WVC_Mech_Reshaper>1</WVC_Mech_Reshaper>
+	</products>
+	<descriptionHyperlinks>
+	  <ThingDef>WVC_Mech_Reshaper</ThingDef>
+	</descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>

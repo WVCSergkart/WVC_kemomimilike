@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================================================== -->
+
+	<!-- Reshaper -->
+	<ThingDef ParentName="WVC_NodeMechanoid">
+	  <defName>WVC_Mech_Reshaper</defName>
+	  <label>reshaper</label>
+	  <statBases>
+		<!-- <GlobalLearningFactor>0.8</GlobalLearningFactor> -->
+		<!-- <MeatAmount>56</MeatAmount> -->
+		<!-- <LeatherAmount>16</LeatherAmount> -->
+		<MoveSpeed>5.9</MoveSpeed>
+		<!-- <MoveSpeed>5.6</MoveSpeed> -->
+		<MarketValue>3150</MarketValue>
+		<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+		<ComfyTemperatureMax>250</ComfyTemperatureMax>
+		<FilthRate>1</FilthRate>
+		<ToxicResistance>1.0</ToxicResistance>
+		<PsychicSensitivity>0.25</PsychicSensitivity>
+		<Flammability>0</Flammability>
+		<ArmorRating_Blunt>1.15</ArmorRating_Blunt>
+		<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+		<ArmorRating_Heat>2.0</ArmorRating_Heat>
+		<!-- custom -->
+		<PawnTrapSpringChance>0.0</PawnTrapSpringChance>
+		<ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency>
+		<ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency>
+		<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		<PawnBeauty>0</PawnBeauty>
+		<SocialImpact>0.2</SocialImpact>
+		<BondAnimalChanceFactor>0.2</BondAnimalChanceFactor>
+		<RestRateMultiplier>1.0</RestRateMultiplier>
+		<MeleeDodgeChance>1.0</MeleeDodgeChance>
+		<MeleeHitChance>1.0</MeleeHitChance>
+		<IncomingDamageFactor>1.0</IncomingDamageFactor>
+		<Mass>124</Mass>
+		<!-- custom -->
+		<ImmunityGainSpeed>2.0</ImmunityGainSpeed>
+		<InjuryHealingFactor>2.0</InjuryHealingFactor>
+	  </statBases>
+	  <race>
+		<mechEnabledWorkTypes>
+		  <li>Research</li>
+		</mechEnabledWorkTypes>
+		<body>WVC_PrimalConstruct_Reshaper</body>
+		<lifeStageAges>
+		  <li>
+			<def>MechanoidFullyFormed</def>
+			<minAge>0</minAge>
+			<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+			<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+			<soundCall>Pawn_Mech_Militor_Call</soundCall>
+		  </li>
+		</lifeStageAges>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.4)</offset>
+		</specialShadowData>
+	  </race>
+	  <comps>
+		<!-- <li Class="CompProperties_Shield"> -->
+			<!-- <startingTicksToReset>1500</startingTicksToReset> -->
+			<!-- <minDrawSize>1.6</minDrawSize> -->
+			<!-- <maxDrawSize>2.2</maxDrawSize> -->
+			<!-- <energyLossPerDamage>0.01</energyLossPerDamage> -->
+			<!-- <energyOnReset>4.0</energyOnReset> -->
+			<!-- <blocksRangedWeapons>false</blocksRangedWeapons> -->
+		<!-- </li> -->
+	  </comps>
+	</ThingDef>
+  
+	<PawnKindDef ParentName="NonCombatLightMechanoidKind">
+	  <defName>WVC_Mech_Reshaper</defName>
+	  <label>reshaper</label>
+	  <race>WVC_Mech_Reshaper</race>
+	  <controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
+	  <lifeStages>
+		<li>
+		  <bodyGraphicData>
+			<texPath>WVC/KL_Races/Automatons/Reshaper</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>2.0</drawSize>
+		  </bodyGraphicData>
+		</li>
+	  </lifeStages>
+	  <weaponMoney>9999~9999</weaponMoney>
+	  <weaponTags>
+		<li>MechanoidGunMedium</li>
+	  </weaponTags>
+	  <techHediffsChance>1</techHediffsChance>
+	  <techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+
+	<!-- ======================================================== -->
+
+</Defs>

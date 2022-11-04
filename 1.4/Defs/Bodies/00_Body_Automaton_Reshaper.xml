@@ -2,9 +2,9 @@
 <Defs>
 
 
-  <BodyDef MayRequire="wvc.sergkart.races">
+  <BodyDef>
 	<defName>WVC_PrimalConstruct_Reshaper</defName>
-	<label>Automaton</label>
+	<label>construct</label>
 	<corePart>
 	  <def>WVC_FormerFrame</def>
 	  <height>Middle</height>

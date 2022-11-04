@@ -31,11 +31,11 @@ The characters and weapons are made on the basis of games (Honkai/Genshin Impact
 			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
 		</li>
-		<li>
-			<packageId>erdelf.HumanoidAlienRaces</packageId>
-			<displayName>Humanoid Alien Races</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-		</li>
+		<!-- <li> -->
+			<!-- <packageId>erdelf.HumanoidAlienRaces</packageId> -->
+			<!-- <displayName>Humanoid Alien Races</displayName> -->
+			<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl> -->
+		<!-- </li> -->
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
@@ -45,6 +45,8 @@ The characters and weapons are made on the basis of games (Honkai/Genshin Impact
 	<loadAfter>
 		<li>wvc.sergkart.core</li>
 		<li>wvc.sergkart.nodes</li>
+		<li>wvc.sergkart.races</li>
+		<li>wvc.sergkart.races.biotech</li>
 	</loadAfter>
 	<loadBefore>
 		<li>krkr.rocketman</li>

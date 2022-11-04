@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <LifeStageDef Name="WVC_Mechanoid_LifeStage_ELF" Abstract="True">
+	<label>ELF</label>
+	<visible>false</visible>
+	<milkable>false</milkable>
+	<shearable>false</shearable>
+	<caravanRideable>false</caravanRideable>
+	<!-- <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass> -->
+	<reproductive>false</reproductive>
+	<!-- <foodMaxFactor>5</foodMaxFactor> -->
+	<!-- <hungerRateFactor>0.5</hungerRateFactor> -->
+	<!-- <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks> -->
+	<!-- <canSleepWhileHeld>true</canSleepWhileHeld> -->
+	<meleeDamageFactor>0.6</meleeDamageFactor>
+	<!-- <equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor> -->
+	<!-- <customMoodTipString>ELFs don't get nervous breakdowns.</customMoodTipString> -->
+	<statFactors>
+	  <!-- <PsychicEntropyGain MayRequire="ludeon.rimworld.royalty">0.0</PsychicEntropyGain> -->
+	  <PainShockThreshold>0.9</PainShockThreshold>
+	  <!-- <MentalBreakThreshold>0.0</MentalBreakThreshold> -->
+	</statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_ELF">
+	<defName>WVC_Mech_ELF_I</defName>
+	<!-- <label>0</label> -->
+	<statFactors>
+	  <IncomingDamageFactor>1.0</IncomingDamageFactor>
+	</statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_ELF">
+	<defName>WVC_Mech_ELF_II</defName>
+	<!-- <label>1</label> -->
+	<statFactors>
+	  <IncomingDamageFactor>0.9</IncomingDamageFactor>
+	</statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="WVC_Mechanoid_LifeStage_ELF">
+	<defName>WVC_Mech_ELF_III</defName>
+	<!-- <label>2</label> -->
+	<statFactors>
+	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
+	</statFactors>
+  </LifeStageDef>
+
+</Defs>

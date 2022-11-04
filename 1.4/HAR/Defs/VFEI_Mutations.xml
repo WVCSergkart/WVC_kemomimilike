@@ -3,7 +3,7 @@
 
   <!--=====================================================================-->
 
-  <RecipeDef ParentName="SurgeryFlesh">
+  <RecipeDef MayRequire="oskarpotocki.vfe.insectoid" ParentName="SurgeryFlesh">
 	<defName>VFEI_InstallValkyrieGenome_WVC</defName>
 	<label>install living form genome</label>
 	<description>Install a living form genome.</description>
@@ -38,7 +38,7 @@
 	<addsHediff>VFEI_ValkyrieGenome_WVC</addsHediff>
   </RecipeDef>
 
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef MayRequire="oskarpotocki.vfe.insectoid" ParentName="AddedBodyPartBase">
 	<defName>VFEI_ValkyrieGenome_WVC</defName>
 	<hediffClass>HediffWithComps</hediffClass>
 	<label>living form genome</label>

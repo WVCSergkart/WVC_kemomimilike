@@ -17,11 +17,17 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
+		<!-- HAR -->
+		<li IfModActive="erdelf.humanoidalienraces.dev">1.4/HAR</li>
+		<li IfModActive="erdelf.humanoidalienraces">1.4/HAR</li>
 		<li IfModActive="wvc.sergkart.races">1.4/NodeRace</li>
-		<li IfModActive="ludeon.rimworld.royalty">1.4/Royalty</li>
+		<!-- Other -->
+		<!-- <li IfModActive="ludeon.rimworld.royalty">1.4/Royalty</li> -->
 		<li IfModActive="ludeon.rimworld.ideology">1.4/Ideology</li>
-		<li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li>
+		<li IfModActive="wvc.sergkart.races.biotech">1.4/Biotech</li>
+		<!-- <li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li> -->
 		<!-- <li IfModActive="vanillaexpanded.vpsycastse">1.4/VPE</li> -->
+		<!-- XML -->
 		<li IfModActive="imranfish.xmlextensions">1.4/XML_Extensions</li>
 	</v1.4>
 </loadFolders>

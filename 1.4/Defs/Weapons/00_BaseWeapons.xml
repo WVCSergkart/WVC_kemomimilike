@@ -4,7 +4,7 @@
   <ThingDef MayRequire="honkai.girls.sergkart" Name="MeleeBladelink_WVC" ParentName="BaseWeapon" Abstract="True">
 	<!-- <devNote>MeleeBladelink_WVC</devNote> -->
 	<label>(TEST WEAPON)</label>
-	<description>This is a replica of an ancient weapon recreated using mechanoid technology. It is incredibly lightweight and easy to handle.\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+	<description>This is a replica of an ancient weapon recreated using mechanoid technology. It is incredibly lightweight and easy to handle.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. \n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Does not bond to the wielder.</description>
 	<uiIconScale>1.0</uiIconScale>
 	<techLevel>Ultra</techLevel>
 	<tradeNeverStack>true</tradeNeverStack>
@@ -12,6 +12,7 @@
 	<weaponTags>
 	  <li>UltratechMelee</li>
 	  <li MayRequire="Ludeon.RimWorld.Royalty">Bladelink</li>
+	  <li>WVC_Mechanoids_Bladelink</li>
 	</weaponTags>
 	<weaponClasses>
 	  <li>Melee</li>
@@ -44,7 +45,7 @@
 	  </li>
 	  <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/> -->
 	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
-		<biocodeOnEquip>true</biocodeOnEquip>
+		<biocodeOnEquip>false</biocodeOnEquip>
 	  </li>
 	  <!-- <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_GeneratedName"> -->
 		<!-- <nameMaker>NamerWeaponBladelink</nameMaker> -->
