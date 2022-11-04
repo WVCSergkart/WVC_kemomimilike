@@ -1,42 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- The most basic set for all girls -->
-
-  <HediffGiverSetDef Name="WVC_GiverSet_HumanlikeBase" Abstract="True">
-	<hediffGivers>
-		<!-- ... -->
-		<!-- <li Class="HediffGiver_Birthday"> -->
-			<!-- <hediff>Hediff_Valkyrie_TEST_WVC</hediff> -->
-			<!-- <ageFractionChanceCurve> -->
-			  <!-- <points> -->
-				<!-- <li>(0, 1)</li> -->
-				<!-- <li>(1, 1)</li> -->
-			  <!-- </points> -->
-			<!-- </ageFractionChanceCurve> -->
-		<!-- </li> -->
-	</hediffGivers>
-  </HediffGiverSetDef>
   
-  <!--=====================================================================-->
-
-  <HediffGiverSetDef ParentName="WVC_GiverSet_HumanlikeBase">
-    <defName>WVC_OrganicBase</defName>
-	<hediffGivers>
-		<!-- Environmental -->
-		<li Class="HediffGiver_Bleeding">
-			<hediff>BloodLoss</hediff>
-		</li>
-		<li Class="HediffGiver_Hypothermia">
-			<hediff>Hypothermia</hediff>
-		</li>
-		<li Class="HediffGiver_Heat">
-			<hediff>Heatstroke</hediff>
-		</li>
-	</hediffGivers>
-  </HediffGiverSetDef>
-  
-  <HediffGiverSetDef MayRequire="ludeon.rimworld.ideology" ParentName="WVC_GiverSet_HumanlikeBase">
+  <HediffGiverSetDef MayRequire="ludeon.rimworld.ideology">
 	<defName>WVC_OrganicGaurkyries</defName>
 	<hediffGivers>
 		<!-- Environmental -->

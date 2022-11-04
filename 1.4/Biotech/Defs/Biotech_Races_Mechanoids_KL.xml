@@ -10,8 +10,8 @@
 		  <MarketValue>2280</MarketValue>
 		  <!-- <ComfyTemperatureMin>-18</ComfyTemperatureMin> -->
 		  <!-- <ComfyTemperatureMax>36</ComfyTemperatureMax> -->
-		  <ComfyTemperatureMin>-5</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>26</ComfyTemperatureMax>
+		  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>46</ComfyTemperatureMax>
 		  <FilthRate>0.5</FilthRate>
 		  <!-- <MeatAmount>40</MeatAmount> -->
 		  <LeatherAmount>25</LeatherAmount>
@@ -42,6 +42,9 @@
 		  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 		  <InjuryHealingFactor>1.5</InjuryHealingFactor>
 		  <Mass>46</Mass>
+		  <!-- Mech -->
+		  <MechEnergyLossPerHP>0.05</MechEnergyLossPerHP>
+		  <BandwidthCost>0</BandwidthCost>
 		</statBases>
 		<race>
 		  <mechEnabledWorkTypes>
@@ -81,6 +84,9 @@
 				<soundCall>Pawn_Mech_Militor_Call</soundCall>
 			</li>
 		  </lifeStageAges>
+		  <hediffGiverSets>
+			<li>WVC_OrganicBase</li>
+		  </hediffGiverSets>
 		</race>
 		<butcherProducts>
 			<!-- <Steel>30</Steel> -->
@@ -161,8 +167,10 @@
 	<ThingDef ParentName="WVC_KL_Mechanoids">
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
-		<description>Valkyries - an ancient race created to resist the mechanoids. Despite all the genetic changes, they are almost indistinguishable from humans in appearance, with the exception of the not rare presence of tails, horns, additional pairs of ears and other minor distinguishing features.&lt;color=#a2c8ff&gt;\n\nAccording to the original idea, mutations were supposed to be a replacement for the degradation of organs and not be so obvious. However, with the change of generations, less "human" and more "alien" representatives of this race began to appear, some of which are only indirectly related to the valkyries.\n\nOne of the significant genetic deviations was the complete degeneration of the male half of this race, which is why this race consists entirely of girls and was called the valkyries. But despite this, the representatives of the valkyries race have full compatibility with non-genetically modified humans, thanks to which they have not become extinct.&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Valkyries have a significant bonus to melee and survivability, which compensates for the inability to wear some armor.</description>
+		<description>Valkyries - an ancient hybrids created to resist the mechanoids.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
 		<statBases>
+		  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>46</ComfyTemperatureMax>
 		</statBases>
 		<race>
 		  <mechEnabledWorkTypes>
@@ -198,6 +206,14 @@
 		  </lifeStageAges>
 		</race>
 		<comps>
+			<li Class="CompProperties_Shield">
+				<startingTicksToReset>1500</startingTicksToReset>
+				<minDrawSize>1.6</minDrawSize>
+				<maxDrawSize>2.2</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>4.0</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
 		</comps>
 	</ThingDef>
   
@@ -205,7 +221,7 @@
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
 		<race>WVC_Mech_Valkyrie</race>
-		<controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+		<!-- <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom> -->
 		<alternateGraphicChance>1.0</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -400,7 +416,7 @@
 	<ThingDef ParentName="WVC_KL_Mechanoids">
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
-		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries, their bodies are subject to the same mutations and aberrations. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n\nELFs are considered adults from the age of 6, and their height does not exceed 1 meter. They are incapable of reproduction and new ELFs are reared in "mechanical eggs". Their bodies are small and light, and they can also hover in the air, but only for a short period of time.&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; This race is very fragile, any damage can become lethal for them, but they have significant bonuses to psi abilities. Also ELFs can sleep while being held.</description>
+		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
 		<statBases>
 		  <MarketValue>3120</MarketValue>
 		  <!-- <GlobalLearningFactor>1.5</GlobalLearningFactor> -->
@@ -477,7 +493,7 @@
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
 		<race>WVC_Mech_ELF</race>
-		<controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+		<!-- <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom> -->
 		<alternateGraphicChance>1.0</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -549,12 +565,12 @@
 			</dessicatedBodyGraphicData>
 		  </li>
 		</lifeStages>
-		<weaponMoney>9999~9999</weaponMoney>
-		<weaponTags>
-			<li>MechanoidGunMedium</li>
-		</weaponTags>
-		<techHediffsChance>1</techHediffsChance>
-		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<!-- <weaponMoney>9999~9999</weaponMoney> -->
+		<!-- <weaponTags> -->
+			<!-- <li>MechanoidGunMedium</li> -->
+		<!-- </weaponTags> -->
+		<!-- <techHediffsChance>1</techHediffsChance> -->
+		<!-- <techHediffsMoney>9999~9999</techHediffsMoney> -->
 	</PawnKindDef>
 
 </Defs>
