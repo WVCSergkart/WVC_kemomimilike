@@ -460,7 +460,7 @@
 			  <li>Tailoring</li>
 			  <li>Cooking</li>
 			  <li>Doctor</li>
-			  <li>Research</li>
+			  <!-- <li>Research</li> -->
 			  <li>WVC_ComplexWork</li>
 			</mechEnabledWorkTypes>
 			<specialShadowData Inherit="False">

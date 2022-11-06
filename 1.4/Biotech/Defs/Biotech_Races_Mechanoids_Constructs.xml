@@ -42,7 +42,8 @@
 	  </statBases>
 	  <race>
 		<mechEnabledWorkTypes>
-		  <li>Research</li>
+		  <!-- <li>Research</li> -->
+		  <li>Construction</li>
 		</mechEnabledWorkTypes>
 		<body>WVC_PrimalConstruct_Reshaper</body>
 		<lifeStageAges>
