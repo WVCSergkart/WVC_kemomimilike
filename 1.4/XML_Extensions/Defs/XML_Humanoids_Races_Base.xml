@@ -5,25 +5,26 @@
 		<modId>honkai.girls.sergkart</modId>
 		<settings>
 			<li Class="XmlExtensions.Setting.TabView">
+				<rows>2</rows>
 				<tabs>
-					<li>
-						<label>&lt;color=#a2c8ff&gt;Valkyries&lt;/color&gt;</label>
+					<li MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev">
+						<label>&lt;color=#a2c8ff&gt;Valkyries (HAR)&lt;/color&gt;</label>
 						<settings>
 							<li Class="XmlExtensions.Setting.EmbedMenu">
 								<menu>Settings_Humanoids_General_WVC</menu>
 							</li>
 						</settings>
 					</li>
-					<li>
-						<label>&lt;color=#a2adff&gt;ELFs&lt;/color&gt;</label>
+					<li MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev">
+						<label>&lt;color=#a2adff&gt;ELFs (HAR)&lt;/color&gt;</label>
 						<settings>
 							<li Class="XmlExtensions.Setting.EmbedMenu">
 								<menu>Settings_Humanoids_ELFs_WVC</menu>
 							</li>
 						</settings>
 					</li>
-					<li>
-						<label>&lt;color=#f5ffa2&gt;Gaurkyries&lt;/color&gt;</label>
+					<li MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev">
+						<label>&lt;color=#f5ffa2&gt;Gaurkyries (HAR)&lt;/color&gt;</label>
 						<settings>
 							<li Class="XmlExtensions.Setting.EmbedMenu">
 								<menu>Settings_Humanoids_DryadMother_WVC</menu>
@@ -46,11 +47,43 @@
 							<!-- </li> -->
 						<!-- </settings> -->
 					<!-- </li> -->
-					<li>
-						<label>&lt;color=#87ff00&gt;Skins&lt;/color&gt;</label>
+					<li MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev">
+						<label>&lt;color=#87ff00&gt;Skins (HAR)&lt;/color&gt;</label>
 						<settings>
 							<li Class="XmlExtensions.Setting.EmbedMenu">
 								<menu>Settings_Humanoids_SkinsDescs_WVC</menu>
+							</li>
+						</settings>
+					</li>
+					<li MayRequire="ludeon.rimworld.ideology">
+						<label>&lt;color=#ffcea2&gt;Dryads (Ideology)&lt;/color&gt;</label>
+						<settings>
+							<li Class="XmlExtensions.Setting.EmbedMenu">
+								<menu>Settings_Ideology_Races_Valks_WVC</menu>
+							</li>
+						</settings>
+					</li>
+					<li MayRequire="wvc.sergkart.races.biotech">
+						<label>&lt;color=#a2c8ff&gt;Valkyries (Biotech)&lt;/color&gt;</label>
+						<settings>
+							<li Class="XmlExtensions.Setting.EmbedMenu">
+								<menu>Settings_Biotech_Races_Valks_WVC</menu>
+							</li>
+						</settings>
+					</li>
+					<li MayRequire="wvc.sergkart.races.biotech">
+						<label>&lt;color=#a2adff&gt;ELFs (Biotech)&lt;/color&gt;</label>
+						<settings>
+							<li Class="XmlExtensions.Setting.EmbedMenu">
+								<menu>Settings_Biotech_Races_ELF_WVC</menu>
+							</li>
+						</settings>
+					</li>
+					<li MayRequire="wvc.sergkart.races.biotech">
+						<label>&lt;color=#cca2ff&gt;Constructs (Biotech)&lt;/color&gt;</label>
+						<settings>
+							<li Class="XmlExtensions.Setting.EmbedMenu">
+								<menu>Settings_Biotech_Races_Construct_WVC</menu>
 							</li>
 						</settings>
 					</li>

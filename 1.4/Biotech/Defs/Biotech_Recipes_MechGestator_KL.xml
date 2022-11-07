@@ -9,6 +9,14 @@
 	</recipeUsers>
 	<researchPrerequisite>HighMechtech</researchPrerequisite>
 	<ingredients>
+	  <!-- <li> -->
+		<!-- <filter> -->
+		  <!-- <thingDefs> -->
+			<!-- <li>WVC_LivingMetall</li> -->
+		  <!-- </thingDefs> -->
+		<!-- </filter> -->
+		<!-- <count>50</count> -->
+	  <!-- </li> -->
 	  <li>
 		<filter>
 		  <thingDefs>
@@ -17,10 +25,18 @@
 		</filter>
 		<count>50</count>
 	  </li>
+	  <!-- <li> -->
+		<!-- <filter> -->
+		  <!-- <thingDefs> -->
+			<!-- <li>SubcoreHigh</li> -->
+		  <!-- </thingDefs> -->
+		<!-- </filter> -->
+		<!-- <count>1</count> -->
+	  <!-- </li> -->
 	  <li>
 		<filter>
 		  <thingDefs>
-			<li>SubcoreHigh</li>
+			<li>AIPersonaCore</li>
 		  </thingDefs>
 		</filter>
 		<count>1</count>
@@ -54,10 +70,22 @@
 	</descriptionHyperlinks>
   </RecipeDef>
 
-  <RecipeDef ParentName="WVC_KLMechanoidRecipe">
+  <!-- ================================================================================= -->
+
+  <RecipeDef ParentName="WVC_NodesMechanoidRecipe">
 	<defName>WVC_Mech_Reshaper</defName>
 	<label>gestate reshaper</label>
 	<description>Gestate a reshaper mechanoid.</description>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>WVC_LivingMetall</li>
+		  </thingDefs>
+		</filter>
+		<count>50</count>
+	  </li>
+	</ingredients>
 	<products>
 	  <WVC_Mech_Reshaper>1</WVC_Mech_Reshaper>
 	</products>
