@@ -10,8 +10,8 @@
 		  <MarketValue>2280</MarketValue>
 		  <!-- <ComfyTemperatureMin>-18</ComfyTemperatureMin> -->
 		  <!-- <ComfyTemperatureMax>36</ComfyTemperatureMax> -->
-		  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>46</ComfyTemperatureMax>
+		  <!-- <ComfyTemperatureMin>-25</ComfyTemperatureMin> -->
+		  <!-- <ComfyTemperatureMax>46</ComfyTemperatureMax> -->
 		  <FilthRate>0.5</FilthRate>
 		  <!-- <MeatAmount>40</MeatAmount> -->
 		  <LeatherAmount>25</LeatherAmount>
@@ -169,13 +169,14 @@
 		<label>valkyrie</label>
 		<description>Valkyries - an ancient hybrids created to resist the mechanoids.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
 		<statBases>
-		  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>46</ComfyTemperatureMax>
+		  <!-- <ComfyTemperatureMin>-25</ComfyTemperatureMin> -->
+		  <!-- <ComfyTemperatureMax>46</ComfyTemperatureMax> -->
+		  <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
 		</statBases>
 		<race>
 		  <mechEnabledWorkTypes>
 			<li>Hauling</li>
-			<li>Warden</li>
+			<!-- <li>Warden</li> -->
 			<!-- <li>Cooking</li> -->
 			<li>Hunting</li>
 			<li>BasicWorker</li>
@@ -221,7 +222,7 @@
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
 		<race>WVC_Mech_Valkyrie</race>
-		<!-- <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom> -->
+		<controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
 		<alternateGraphicChance>1.0</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -442,8 +443,8 @@
 		  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 		  <!-- <CarryingCapacity>35</CarryingCapacity> -->
 		  <!-- = -->
-		  <ComfyTemperatureMin>-50</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+		  <!-- <ComfyTemperatureMin>-50</ComfyTemperatureMin> -->
+		  <!-- <ComfyTemperatureMax>60</ComfyTemperatureMax> -->
 		  <!-- = -->
 		  <MeleeDodgeChance>1.0</MeleeDodgeChance>
 		  <MeleeHitChance>1.0</MeleeHitChance>
