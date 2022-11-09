@@ -211,7 +211,7 @@
 				<startingTicksToReset>1500</startingTicksToReset>
 				<minDrawSize>1.6</minDrawSize>
 				<maxDrawSize>2.2</maxDrawSize>
-				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<!-- <energyLossPerDamage>0.01</energyLossPerDamage> -->
 				<energyOnReset>4.0</energyOnReset>
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
