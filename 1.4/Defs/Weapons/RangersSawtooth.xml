@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="Marker_TwoHandWeapon_WVC" Name="MeleeWeapon_RangersSawtooth_WVC" Abstract="True">
+  <ThingDef ParentName="WVC_KL_Bladelink_Big" Name="MeleeWeapon_RangersSawtooth_WVC" Abstract="True">
 	<graphicData>
 	  <texPath>WVC/weapon/RangersSawtoothB</texPath>
 	</graphicData>
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <MeleeDamageFactor MayRequire="wvc.sergkart.races.biotech">0.2</MeleeDamageFactor>
+	  <MeleeArmorPenetration MayRequire="wvc.sergkart.races.biotech">0.2</MeleeArmorPenetration>
+	  <StaggerDurationFactor MayRequire="wvc.sergkart.races.biotech">0.25</StaggerDurationFactor>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -14,7 +19,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>17</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -23,8 +28,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>17</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>
@@ -39,8 +44,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>17</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

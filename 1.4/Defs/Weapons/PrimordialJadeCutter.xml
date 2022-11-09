@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="MeleeWeapon_PrimordialJadeCutter_WVC" ParentName="Marker_OneHandWeapon_WVC" Abstract="True">
+  <ThingDef Name="MeleeWeapon_PrimordialJadeCutter_WVC" ParentName="WVC_KL_Bladelink_Small" Abstract="True">
 	<label>Primordial Jade Cutter</label>
 	<graphicData>
 	  <texPath>WVC/weapon/PrimordialJadeCutter</texPath>
@@ -9,6 +9,10 @@
 	<equippedAngleOffset>-125</equippedAngleOffset>
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <MeleeDamageFactor MayRequire="wvc.sergkart.races.biotech">0.1</MeleeDamageFactor>
+	  <MeleeHitChance MayRequire="wvc.sergkart.races.biotech">0.05</MeleeHitChance>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -16,7 +20,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>10</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -25,8 +29,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>23</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 	  </li>
 	  <li>
 		<label>edge</label>
@@ -34,8 +38,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>20</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

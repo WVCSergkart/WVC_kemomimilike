@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="Marker_TwoHandWeapon_WVC" Name="MeleeWeapon_SleepingBeauty_WVC" Abstract="True">
+  <ThingDef ParentName="WVC_KL_Bladelink_Big" Name="MeleeWeapon_SleepingBeauty_WVC" Abstract="True">
 	<!-- <defName>MeleeWeapon_SleepingBeautyB_WVC</defName> -->
 	<label>Sleeping Beauty MkI</label>
 	<!-- <description>A plasteel-based greatsword constructed using centipede carapace.\n\n(Only Valkyries know how to use this weapon)</description> -->
@@ -11,6 +11,11 @@
 	<!-- <equippedAngleOffset>-50</equippedAngleOffset> -->
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <MeleeDamageFactor MayRequire="wvc.sergkart.races.biotech">0.1</MeleeDamageFactor>
+	  <MeleeArmorPenetration MayRequire="wvc.sergkart.races.biotech">-0.1</MeleeArmorPenetration>
+	  <StaggerDurationFactor MayRequire="wvc.sergkart.races.biotech">-0.2</StaggerDurationFactor>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -18,7 +23,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>16</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -27,8 +32,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>24</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>
@@ -43,8 +48,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>24</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

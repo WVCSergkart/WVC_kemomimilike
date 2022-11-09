@@ -50,7 +50,6 @@
 		  <mechEnabledWorkTypes>
 			<li>Firefighter</li>
 			<!-- <li>Hauling</li> -->
-			<li>Cleaning</li>
 			<!-- <li>Construction</li> -->
 			<!-- <li>Crafting</li> -->
 			<!-- <li>Smithing</li> -->
@@ -100,7 +99,7 @@
 			  <!-- <li>Stab</li> -->
 			</capacities>
 			<power>12</power>
-			<cooldownTime>1.2</cooldownTime>
+			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<chanceFactor>1.0</chanceFactor>
 			<armorPenetration>0.1</armorPenetration>
@@ -121,7 +120,7 @@
 			  <!-- <li>Stab</li> -->
 			</capacities>
 			<power>12</power>
-			<cooldownTime>1.2</cooldownTime>
+			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<chanceFactor>1.0</chanceFactor>
 			<armorPenetration>0.1</armorPenetration>
@@ -142,7 +141,7 @@
 			  <!-- <li>Stab</li> -->
 			</capacities>
 			<power>13</power>
-			<cooldownTime>1.0</cooldownTime>
+			<cooldownTime>1.6</cooldownTime>
 			<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 			<chanceFactor>0.7</chanceFactor>
 			<armorPenetration>0.1</armorPenetration>
@@ -163,7 +162,7 @@
 
 	<!-- ======================================================== -->
 
-	<!-- ELF -->
+	<!-- Valkyrie -->
 	<ThingDef ParentName="WVC_KL_Mechanoids">
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
@@ -174,19 +173,20 @@
 		  <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
 		</statBases>
 		<race>
+		  <mechFixedSkillLevel>12</mechFixedSkillLevel>
 		  <mechEnabledWorkTypes>
-			<li>Hauling</li>
+			<li>BasicWorker</li>
 			<!-- <li>Warden</li> -->
 			<!-- <li>Cooking</li> -->
 			<li>Hunting</li>
-			<li>BasicWorker</li>
 			<li>Construction</li>
+			<li>Hauling</li>
 			<!-- <li>Smithing</li> -->
 			<!-- <li>Crafting</li> -->
 			<!-- <li>Tailoring</li> -->
+			<li>Cleaning</li>
 		  </mechEnabledWorkTypes>
 		  <body>Body_Valkyrie_WVC</body>
-		  <mechFixedSkillLevel>12</mechFixedSkillLevel>
 		  <lifeStageAges Inherit="False">
 			<li>
 				<def>WVC_Mech_Valkyrie_I</def>
@@ -222,7 +222,7 @@
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
 		<race>WVC_Mech_Valkyrie</race>
-		<controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
 		<alternateGraphicChance>1.0</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
@@ -456,11 +456,11 @@
 			<mechFixedSkillLevel>18</mechFixedSkillLevel>
 			<mechEnabledWorkTypes>
 			  <!-- <li>Construction</li> -->
+			  <li>Doctor</li>
 			  <li>Crafting</li>
 			  <li>Smithing</li>
 			  <li>Tailoring</li>
 			  <li>Cooking</li>
-			  <li>Doctor</li>
 			  <!-- <li>Research</li> -->
 			  <li>WVC_ComplexWork</li>
 			</mechEnabledWorkTypes>
@@ -494,7 +494,7 @@
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
 		<race>WVC_Mech_ELF</race>
-		<!-- <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom> -->
+		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
 		<alternateGraphicChance>1.0</alternateGraphicChance>
 		<alternateGraphics>
 			<li>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="Marker_OneHandWeapon_WVC" Name="MeleeWeapon_DomainOfSanction_WVC" Abstract="True">
+  <ThingDef ParentName="WVC_KL_Bladelink_Small" Name="MeleeWeapon_DomainOfSanction_WVC" Abstract="True">
 	<!-- <defName>MeleeWeapon_DomainOfSanctionA_WVC</defName> -->
 	<label>Domain Of Sanction</label>
 	<!-- <description>An ancient katana created from dead mechanoids.\n\n(Only Valkyries know how to use this weapon)</description> -->
@@ -12,6 +12,11 @@
 	<!-- <equippedAngleOffset>-50</equippedAngleOffset> -->
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <MeleeDamageFactor MayRequire="wvc.sergkart.races.biotech">0.05</MeleeDamageFactor>
+	  <MeleeArmorPenetration MayRequire="wvc.sergkart.races.biotech">0.05</MeleeArmorPenetration>
+	  <MeleeHitChance MayRequire="wvc.sergkart.races.biotech">0.05</MeleeHitChance>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -19,7 +24,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>12</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -28,7 +33,7 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 	  </li>
 	  <li>
 		<label>edge</label>
@@ -36,8 +41,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

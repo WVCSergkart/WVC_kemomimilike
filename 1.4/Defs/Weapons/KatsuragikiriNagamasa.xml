@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="Marker_TwoHandWeapon_WVC" Name="MeleeWeapon_KatsuragikiriNagamasa_WVC" Abstract="True">
+  <ThingDef ParentName="WVC_KL_Bladelink_Big" Name="MeleeWeapon_KatsuragikiriNagamasa_WVC" Abstract="True">
 	<graphicData>
 	  <texPath>WVC/weapon/KatsuragikiriNagamasa</texPath>
 	</graphicData>
 	<equippedAngleOffset>-125</equippedAngleOffset>
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <IncomingDamageFactor MayRequire="wvc.sergkart.races.biotech">-0.1</IncomingDamageFactor>
+	  <MeleeHitChance MayRequire="wvc.sergkart.races.biotech">0.05</MeleeHitChance>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -15,7 +19,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>12</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -24,8 +28,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>20</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>
@@ -40,8 +44,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>20</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

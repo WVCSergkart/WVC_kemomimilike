@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="MeleeWeapon_HaranGeppakuFutsu_WVC" ParentName="Marker_OneHandWeapon_WVC" Abstract="True">
+  <ThingDef Name="MeleeWeapon_HaranGeppakuFutsu_WVC" ParentName="WVC_KL_Bladelink_Small" Abstract="True">
 	<!-- <label>Primordial Jade Cutter</label> -->
 	<graphicData>
 	  <texPath>WVC/weapon/HaranGeppakuFutsu</texPath>
@@ -10,6 +10,10 @@
 	<equippedAngleOffset>-125</equippedAngleOffset>
 	<statBases>
 	</statBases>
+	<equippedStatOffsets>
+	  <!-- <IncomingDamageFactor MayRequire="wvc.sergkart.races.biotech">0.1</IncomingDamageFactor> -->
+	  <StaggerDurationFactor MayRequire="wvc.sergkart.races.biotech">-0.2</StaggerDurationFactor>
+	</equippedStatOffsets>
 	<tools>
 	  <li>
 		<label>handle</label>
@@ -17,7 +21,7 @@
 		  <li>Blunt</li>
 		</capacities>
 		<power>10</power>
-		<cooldownTime>0.9</cooldownTime>
+		<cooldownTime>1.2</cooldownTime>
 		<chanceFactor>0.25</chanceFactor> 
 	  </li>
 	  <li>
@@ -26,8 +30,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>
@@ -42,8 +46,8 @@
 		  <li>Cut</li>
 		</capacities>
 		<power>22</power>
-		<cooldownTime>0.9</cooldownTime>
-		<armorPenetration>0.7</armorPenetration>
+		<cooldownTime>1.2</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
 		<extraMeleeDamages>
 		  <li>
 			<def>EMP</def>

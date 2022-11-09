@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef MayRequire="honkai.girls.sergkart" Name="MeleeBladelink_WVC" ParentName="BaseWeapon" Abstract="True">
+  <ThingDef MayRequire="honkai.girls.sergkart" Name="WVC_KL_Bladelink" ParentName="BaseWeapon" Abstract="True">
 	<!-- <devNote>MeleeBladelink_WVC</devNote> -->
 	<label>(TEST WEAPON)</label>
-	<description>This is a replica of an ancient weapon recreated using mechanoid technology. It is incredibly lightweight and easy to handle.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. \n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Does not bond to the wielder.</description>
+	<description>This is a replica of an ancient weapon recreated using mechanoid technology. It is incredibly lightweight and easy to handle.\n\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity.</description>
 	<uiIconScale>1.0</uiIconScale>
 	<techLevel>Ultra</techLevel>
 	<tradeNeverStack>true</tradeNeverStack>
 	<relicChance>1</relicChance>
 	<weaponTags>
-	  <li>UltratechMelee</li>
+	  <!-- <li>UltratechMelee</li> -->
 	  <li MayRequire="Ludeon.RimWorld.Royalty">Bladelink</li>
 	  <li>WVC_Mechanoids_Bladelink</li>
 	</weaponTags>
@@ -27,8 +27,8 @@
 	<equippedAngleOffset>-85</equippedAngleOffset>
 	<equippedStatOffsets>
 	  <MoveSpeed>0.20</MoveSpeed>
-	  <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivityOffset>
-	  <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate>
+	  <!-- <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivityOffset> -->
+	  <!-- <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate> -->
 	</equippedStatOffsets>
 	<costList>
 	  <!-- <WVC_ExoticWeaponComponents>1</WVC_ExoticWeaponComponents> -->
@@ -45,13 +45,13 @@
 	  </li>
 	  <!-- <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/> -->
 	  <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
-		<biocodeOnEquip>false</biocodeOnEquip>
+		<biocodeOnEquip>true</biocodeOnEquip>
 	  </li>
 	  <!-- <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_GeneratedName"> -->
 		<!-- <nameMaker>NamerWeaponBladelink</nameMaker> -->
 	  <!-- </li> -->
 	</comps>
-	<recipeMaker Inherit="False">
+	<recipeMaker MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev" Inherit="False">
 	  <!-- <workSpeedStat>MechaniteCrafter_WorkSpeed_WVC</workSpeedStat> -->
 	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	  <workSkill>Crafting</workSkill>
@@ -65,7 +65,7 @@
 		<Intellectual>12</Intellectual>
 	  </skillRequirements>
 	  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-	  <researchPrerequisite>WVC_Tech_ExoticWeaponCraft</researchPrerequisite>
+	  <researchPrerequisite MayRequireAnyOf="erdelf.humanoidalienraces,erdelf.humanoidalienraces.dev">WVC_Tech_ExoticWeaponCraft</researchPrerequisite>
 	  <useIngredientsForColor>false</useIngredientsForColor>
 	</recipeMaker>
 	<smeltable>true</smeltable>
@@ -78,7 +78,7 @@
 	</thingSetMakerTags>
   </ThingDef>
 
-  <ThingDef MayRequire="honkai.girls.sergkart" Name="Marker_OneHandWeapon_WVC" Abstract="True" ParentName="MeleeBladelink_WVC">
+  <ThingDef MayRequire="honkai.girls.sergkart" Name="WVC_KL_Bladelink_Small" Abstract="True" ParentName="WVC_KL_Bladelink">
 	<statBases>
 	  <Mass>1.3</Mass>
 	</statBases>
@@ -87,7 +87,7 @@
 	  <drawSize>1.1</drawSize>
 	</graphicData>
   </ThingDef>
-  <ThingDef MayRequire="honkai.girls.sergkart" Name="Marker_TwoHandWeapon_WVC" Abstract="True" ParentName="MeleeBladelink_WVC">
+  <ThingDef MayRequire="honkai.girls.sergkart" Name="WVC_KL_Bladelink_Big" Abstract="True" ParentName="WVC_KL_Bladelink">
 	<statBases>
 	  <Mass>1.5</Mass>
 	</statBases>
