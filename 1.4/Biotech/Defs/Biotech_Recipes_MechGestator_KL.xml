@@ -25,22 +25,30 @@
 		</filter>
 		<count>50</count>
 	  </li>
-	  <!-- <li> -->
-		<!-- <filter> -->
-		  <!-- <thingDefs> -->
-			<!-- <li>SubcoreHigh</li> -->
-		  <!-- </thingDefs> -->
-		<!-- </filter> -->
-		<!-- <count>1</count> -->
-	  <!-- </li> -->
+	  <li MayRequireAnyOf="vanillaexpanded.vgeneticse">
+		<filter>
+		  <thingDefs>
+			<li>GR_HumanoidGenetic</li>
+		  </thingDefs>
+		</filter>
+		<count>5</count>
+	  </li>
 	  <li>
 		<filter>
 		  <thingDefs>
-			<li>AIPersonaCore</li>
+			<li>SubcoreHigh</li>
 		  </thingDefs>
 		</filter>
 		<count>1</count>
 	  </li>
+	  <!-- <li> -->
+		<!-- <filter> -->
+		  <!-- <thingDefs> -->
+			<!-- <li>AIPersonaCore</li> -->
+		  <!-- </thingDefs> -->
+		<!-- </filter> -->
+		<!-- <count>1</count> -->
+	  <!-- </li> -->
 	</ingredients>
   </RecipeDef>
 
