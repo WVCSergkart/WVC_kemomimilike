@@ -44,11 +44,12 @@
 		  <Mass>46</Mass>
 		  <!-- Mech -->
 		  <MechEnergyLossPerHP>0.05</MechEnergyLossPerHP>
-		  <BandwidthCost>0</BandwidthCost>
+		  <BandwidthCost>3</BandwidthCost>
+		  <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">0</WastepacksPerRecharge>
 		</statBases>
 		<race>
 		  <mechEnabledWorkTypes>
-			<li>Firefighter</li>
+			<!-- <li>Firefighter</li> -->
 			<!-- <li>Hauling</li> -->
 			<!-- <li>Construction</li> -->
 			<!-- <li>Crafting</li> -->
@@ -166,7 +167,7 @@
 	<ThingDef ParentName="WVC_KL_Mechanoids">
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
-		<description>Valkyries - an ancient hybrids created to resist the mechanoids.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
+		<description>Valkyries - an ancient hybrids created to resist the mechanoids.\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not produce waste packs.</description>
 		<statBases>
 		  <!-- <ComfyTemperatureMin>-25</ComfyTemperatureMin> -->
 		  <!-- <ComfyTemperatureMax>46</ComfyTemperatureMax> -->
@@ -174,8 +175,9 @@
 		</statBases>
 		<!-- <uiIconPath>WVC/Icons/Meka_Valks</uiIconPath> -->
 		<race>
-		  <mechFixedSkillLevel>12</mechFixedSkillLevel>
+		  <mechFixedSkillLevel>16</mechFixedSkillLevel>
 		  <mechEnabledWorkTypes>
+			<li>Firefighter</li>
 			<li>BasicWorker</li>
 			<!-- <li>Warden</li> -->
 			<!-- <li>Cooking</li> -->
@@ -419,7 +421,7 @@
 	<ThingDef ParentName="WVC_KL_Mechanoids">
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
-		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
+		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not produce waste packs.</description>
 		<!-- <uiIconPath>WVC/Icons/Meka_ELF</uiIconPath> -->
 		<statBases>
 		  <MarketValue>3120</MarketValue>
