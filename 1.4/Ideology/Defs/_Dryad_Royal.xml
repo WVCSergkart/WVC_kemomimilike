@@ -11,7 +11,8 @@
 	  <ConceptDef>WVC_Dryads_RoyalDryads_Hardwork</ConceptDef>
 	</descriptionHyperlinks>
 	<uiIconScale>1.0</uiIconScale>
-	<uiIconPath>WVC/Stuff/ValksA</uiIconPath>
+	<!-- <uiIconPath>WVC/Stuff/ValksA</uiIconPath> -->
+	<!-- <uiIconPath>WVC/Icons/Meka_Dryads</uiIconPath> -->
 	<statBases>
 	  <MoveSpeed>4.9</MoveSpeed>
 	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>

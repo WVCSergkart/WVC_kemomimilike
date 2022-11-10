@@ -172,6 +172,7 @@
 		  <!-- <ComfyTemperatureMax>46</ComfyTemperatureMax> -->
 		  <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
 		</statBases>
+		<!-- <uiIconPath>WVC/Icons/Meka_Valks</uiIconPath> -->
 		<race>
 		  <mechFixedSkillLevel>12</mechFixedSkillLevel>
 		  <mechEnabledWorkTypes>
@@ -222,8 +223,9 @@
 		<defName>WVC_Mech_Valkyrie</defName>
 		<label>valkyrie</label>
 		<race>WVC_Mech_Valkyrie</race>
-		<controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
 		<alternateGraphicChance>1.0</alternateGraphicChance>
+		<allowInMechClusters>false</allowInMechClusters>
 		<alternateGraphics>
 			<li>
 				<texPath>WVC/KL_Races/Default/Skin</texPath>
@@ -418,6 +420,7 @@
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
 		<description>Equipment: Living Form - small humanoid helpers. They are miniature copies of the valkyries. They were created to simplify the life of the valkyries, helping to treat wounds, cooking and psychological assistance.&lt;color=#a2adff&gt;\n&lt;color=#FF8585&gt;Description in progress&lt;/color&gt;\n\n&lt;color=#f5ffa2&gt;Note:&lt;/color&gt; Do not require bandwidth and do not produce waste packs.</description>
+		<!-- <uiIconPath>WVC/Icons/Meka_ELF</uiIconPath> -->
 		<statBases>
 		  <MarketValue>3120</MarketValue>
 		  <!-- <GlobalLearningFactor>1.5</GlobalLearningFactor> -->
@@ -494,8 +497,9 @@
 		<defName>WVC_Mech_ELF</defName>
 		<label>ELF</label>
 		<race>WVC_Mech_ELF</race>
-		<controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
+		<controlGroupPortraitZoom>2.0</controlGroupPortraitZoom>
 		<alternateGraphicChance>1.0</alternateGraphicChance>
+		<allowInMechClusters>false</allowInMechClusters>
 		<alternateGraphics>
 			<li>
 				<texPath>WVC/KL_Races/ELF_Default/Skin</texPath>

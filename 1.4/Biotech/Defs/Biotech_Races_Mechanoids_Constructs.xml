@@ -76,7 +76,8 @@
 	  <defName>WVC_Mech_Reshaper</defName>
 	  <label>reshaper</label>
 	  <race>WVC_Mech_Reshaper</race>
-	  <controlGroupPortraitZoom>0.8</controlGroupPortraitZoom>
+	  <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+	  <allowInMechClusters>false</allowInMechClusters>
 	  <lifeStages>
 		<li>
 		  <bodyGraphicData>
