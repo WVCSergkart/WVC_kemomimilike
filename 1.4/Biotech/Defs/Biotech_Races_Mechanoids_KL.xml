@@ -26,7 +26,7 @@
 		  <ButcheryFleshEfficiency>0.8</ButcheryFleshEfficiency>
 		  <ButcheryMechanoidEfficiency>1.2</ButcheryMechanoidEfficiency>
 		  <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
-		  <FoodPoisonChance>0.8</FoodPoisonChance>
+		  <!-- <FoodPoisonChance>0.8</FoodPoisonChance> -->
 		  <PawnBeauty>1</PawnBeauty>
 		  <SocialImpact>1.2</SocialImpact>
 		  <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
