@@ -437,7 +437,7 @@
 		  <Mass>22</Mass>
 		  <PawnTrapSpringChance>0.0</PawnTrapSpringChance>
 		  <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
-		  <FoodPoisonChance>0.25</FoodPoisonChance>
+		  <FoodPoisonChance>0.0</FoodPoisonChance>
 		  <PawnBeauty>2</PawnBeauty>
 		  <SocialImpact>1.5</SocialImpact>
 		  <GeneralLaborSpeed>0.8</GeneralLaborSpeed>

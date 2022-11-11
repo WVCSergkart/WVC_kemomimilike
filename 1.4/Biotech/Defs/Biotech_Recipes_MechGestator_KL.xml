@@ -81,7 +81,7 @@
   <!-- ================================================================================= -->
 
   <RecipeDef ParentName="WVC_NodesMechanoidRecipe">
-	<defName>WVC_Mech_Reshaper</defName>
+	<defName>WVC_Mech_PrimalConstruct</defName>
 	<label>gestate reshaper</label>
 	<description>Gestate a reshaper mechanoid.</description>
 	<ingredients>
@@ -109,12 +109,20 @@
 		</filter>
 		<count>12</count>
 	  </li>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>WVC_ResourceNodes_Violet</li>
+		  </thingDefs>
+		</filter>
+		<count>12</count>
+	  </li>
 	</ingredients>
 	<products>
-	  <WVC_Mech_Reshaper>1</WVC_Mech_Reshaper>
+	  <WVC_Mech_PrimalConstruct>1</WVC_Mech_PrimalConstruct>
 	</products>
 	<descriptionHyperlinks>
-	  <ThingDef>WVC_Mech_Reshaper</ThingDef>
+	  <ThingDef>WVC_Mech_PrimalConstruct</ThingDef>
 	</descriptionHyperlinks>
   </RecipeDef>
 

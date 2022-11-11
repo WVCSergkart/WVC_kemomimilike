@@ -37,7 +37,7 @@
 					<thingDefs>
 					  <li>Corpse_WVC_Mech_ELF</li>
 					  <li>Corpse_WVC_Mech_Valkyrie</li>
-					  <li>Corpse_WVC_Mech_Reshaper</li>
+					  <li>Corpse_WVC_Mech_PrimalConstruct</li>
 					</thingDefs>
 				</fixedIngredientFilter>
 			  </value>

@@ -3,21 +3,21 @@
 
 	<!-- ======================================================== -->
 
-	<!-- Reshaper -->
+	<!-- Primal construct -->
 	<ThingDef ParentName="WVC_NodeMechanoid">
-	  <defName>WVC_Mech_Reshaper</defName>
-	  <label>reshaper</label>
+	  <defName>WVC_Mech_PrimalConstruct</defName>
+	  <label>primal construct</label>
 	  <statBases>
 		<!-- <GlobalLearningFactor>0.8</GlobalLearningFactor> -->
 		<!-- <MeatAmount>56</MeatAmount> -->
 		<!-- <LeatherAmount>16</LeatherAmount> -->
-		<MoveSpeed>5.9</MoveSpeed>
+		<MoveSpeed>3.9</MoveSpeed>
 		<!-- <MoveSpeed>5.6</MoveSpeed> -->
 		<MarketValue>3150</MarketValue>
-		<ComfyTemperatureMin>-100</ComfyTemperatureMin>
-		<ComfyTemperatureMax>250</ComfyTemperatureMax>
-		<FilthRate>1</FilthRate>
-		<ToxicResistance>1.0</ToxicResistance>
+		<!-- <ComfyTemperatureMin>-100</ComfyTemperatureMin> -->
+		<!-- <ComfyTemperatureMax>250</ComfyTemperatureMax> -->
+		<!-- <FilthRate>1</FilthRate> -->
+		<!-- <ToxicResistance>1.0</ToxicResistance> -->
 		<PsychicSensitivity>0.25</PsychicSensitivity>
 		<Flammability>0</Flammability>
 		<ArmorRating_Blunt>1.15</ArmorRating_Blunt>
@@ -25,27 +25,32 @@
 		<ArmorRating_Heat>2.0</ArmorRating_Heat>
 		<!-- custom -->
 		<PawnTrapSpringChance>0.0</PawnTrapSpringChance>
-		<ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency>
-		<ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency>
-		<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
-		<PawnBeauty>0</PawnBeauty>
-		<SocialImpact>0.2</SocialImpact>
-		<BondAnimalChanceFactor>0.2</BondAnimalChanceFactor>
-		<RestRateMultiplier>1.0</RestRateMultiplier>
-		<MeleeDodgeChance>1.0</MeleeDodgeChance>
-		<MeleeHitChance>1.0</MeleeHitChance>
-		<IncomingDamageFactor>1.0</IncomingDamageFactor>
+		<!-- <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency> -->
+		<!-- <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> -->
+		<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+		<!-- <PawnBeauty>0</PawnBeauty> -->
+		<!-- <SocialImpact>0.2</SocialImpact> -->
+		<!-- <BondAnimalChanceFactor>0.2</BondAnimalChanceFactor> -->
+		<!-- <RestRateMultiplier>1.0</RestRateMultiplier> -->
+		<!-- <MeleeDodgeChance>1.0</MeleeDodgeChance> -->
+		<!-- <MeleeHitChance>1.0</MeleeHitChance> -->
+		<!-- <IncomingDamageFactor>1.0</IncomingDamageFactor> -->
 		<Mass>124</Mass>
 		<!-- custom -->
-		<ImmunityGainSpeed>2.0</ImmunityGainSpeed>
-		<InjuryHealingFactor>2.0</InjuryHealingFactor>
+		<!-- <ImmunityGainSpeed>2.0</ImmunityGainSpeed> -->
+		<!-- <InjuryHealingFactor>2.0</InjuryHealingFactor> -->
 	  </statBases>
 	  <race>
+		<mechFixedSkillLevel>10</mechFixedSkillLevel>
 		<mechEnabledWorkTypes>
 		  <!-- <li>Research</li> -->
-		  <li>Construction</li>
+		  <!-- <li>Construction</li> -->
+		  <li>Cooking</li>
+		  <li>PlantCutting</li>
+		  <li>Growing</li>
 		</mechEnabledWorkTypes>
 		<body>WVC_PrimalConstruct_Reshaper</body>
+		<baseHealthScale>2</baseHealthScale>
 		<lifeStageAges>
 		  <li>
 			<def>MechanoidFullyFormed</def>
@@ -73,11 +78,17 @@
 	</ThingDef>
   
 	<PawnKindDef ParentName="NonCombatLightMechanoidKind">
-	  <defName>WVC_Mech_Reshaper</defName>
-	  <label>reshaper</label>
-	  <race>WVC_Mech_Reshaper</race>
-	  <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+	  <defName>WVC_Mech_PrimalConstruct</defName>
+	  <label>primal construct</label>
+	  <race>WVC_Mech_PrimalConstruct</race>
+	  <controlGroupPortraitZoom>1.5</controlGroupPortraitZoom>
 	  <allowInMechClusters>false</allowInMechClusters>
+	  <alternateGraphicChance>1.0</alternateGraphicChance>
+	  <alternateGraphics>
+		<li>
+			<texPath>WVC/KL_Races/Automatons/Reshaper</texPath>
+		</li>
+	  </alternateGraphics>
 	  <lifeStages>
 		<li>
 		  <bodyGraphicData>
