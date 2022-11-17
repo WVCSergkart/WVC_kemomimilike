@@ -1,19 +1,4 @@
 <loadFolders>
-	<v1.3>
-		<!-- Assemblies, Defs, Languages, Patches, Textures -->
-		<li>/</li>
-		<li>1.3</li>
-		<!-- "Defs" is loaded first because it is higher, further in the numerical order of the folders -->
-		<!-- <li>00_Defs_Base</li> -->
-		<!-- Royalty -->
-		<li IfModActive="ludeon.rimworld.royalty">1.3/Royalty</li>
-		<!-- Ideology -->
-		<li IfModActive="ludeon.rimworld.ideology">1.3/Ideology</li>
-		<!-- VE -->
-		<li IfModActive="oskarpotocki.vfe.insectoid">1.3/VFEI</li>
-		<li IfModActive="vanillaexpanded.vpsycastse">1.3/VPE</li>
-		<li IfModActive="wvc.sergkart.nodes">1.3/NODES</li>
-	</v1.3>
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
