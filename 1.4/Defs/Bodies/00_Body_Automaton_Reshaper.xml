@@ -2,7 +2,7 @@
 <Defs>
 
 
-  <BodyDef MayRequireAnyOf="wvc.sergkart.races.biotech,wvc.sergkart.races">
+  <BodyDef MayRequireAnyOf="ludeon.rimworld.biotech,wvc.sergkart.races">
 	<defName>WVC_PrimalConstruct_Reshaper</defName>
 	<label>construct</label>
 	<corePart>
