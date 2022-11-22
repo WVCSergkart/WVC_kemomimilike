@@ -9,7 +9,7 @@
 		<!-- Other -->
 		<!-- <li IfModActive="ludeon.rimworld.royalty">1.4/Royalty</li> -->
 		<li IfModActive="ludeon.rimworld.ideology">1.4/Ideology</li>
-		<li IfModActive="wvc.sergkart.races.biotech">1.4/Biotech</li>
+		<li IfModActive="ludeon.rimworld.biotech">1.4/Biotech</li>
 		<!-- <li IfModActive="oskarpotocki.vfe.insectoid">1.4/VFEI</li> -->
 		<!-- <li IfModActive="vanillaexpanded.vpsycastse">1.4/VPE</li> -->
 		<!-- XML -->
