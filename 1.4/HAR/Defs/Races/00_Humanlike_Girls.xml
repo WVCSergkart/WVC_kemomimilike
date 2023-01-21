@@ -287,6 +287,8 @@
 			</weaponList>
 			<!-- <workGiverList> -->
 			<!-- </workGiverList> -->
+			<canReproduce>false</canReproduce>
+			<onlyHaveRaceRestrictedGenes>true</onlyHaveRaceRestrictedGenes>
 		</raceRestriction>
 		<compatibility>
 		</compatibility>
