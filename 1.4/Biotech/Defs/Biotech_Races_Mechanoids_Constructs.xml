@@ -49,7 +49,7 @@
 		  <li>PlantCutting</li>
 		  <li>Growing</li>
 		</mechEnabledWorkTypes>
-		<body>WVC_PrimalConstruct_Reshaper</body>
+		<!-- <body>WVC_PrimalConstruct_Reshaper</body> -->
 		<baseHealthScale>2</baseHealthScale>
 		<lifeStageAges>
 		  <li>
